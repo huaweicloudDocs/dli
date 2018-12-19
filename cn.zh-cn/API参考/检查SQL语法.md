@@ -65,7 +65,7 @@
 <td class="cellrowborder" valign="top" width="8.080808080808081%" headers="mcps1.2.5.1.3 "><p id="p63311321143542"><a name="p63311321143542"></a><a name="p63311321143542"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="74.74747474747475%" headers="mcps1.2.5.1.4 "><p id="p27943382143542"><a name="p27943382143542"></a><a name="p27943382143542"></a>SQL语句执行所在的数据库。</p>
-<div class="note" id="note2355567214459"><a name="note2355567214459"></a><a name="note2355567214459"></a><span class="notetitle"> NOTE: </span><div class="notebody"><a name="ul59257121144616"></a><a name="ul59257121144616"></a><ul id="ul59257121144616"><li>在SQL里面已经包含db_name的情况下可以不选该参数，例如SQL为：<i><b><span class="cmdname" style="font-family:Arial" id="cmdname24207892144758"><a name="cmdname24207892144758"></a><a name="cmdname24207892144758"></a>select * from db1.t1</span></b></i>。</li><li>SQL里面不包含db_name时，不选该参数或者选错该参数均会导致语法校验不通过。</li></ul>
+<div class="note" id="note2355567214459"><a name="note2355567214459"></a><a name="note2355567214459"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul59257121144616"></a><a name="ul59257121144616"></a><ul id="ul59257121144616"><li>在SQL里面已经包含db_name的情况下可以不选该参数，例如SQL为：<i><b><span class="cmdname" style="font-family:Arial" id="cmdname24207892144758"><a name="cmdname24207892144758"></a><a name="cmdname24207892144758"></a>select * from db1.t1</span></b></i>。</li><li>SQL里面不包含db_name时，不选该参数或者选错该参数均会导致语法校验不通过。</li></ul>
 </div></div>
 </td>
 </tr>
@@ -89,7 +89,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="10%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0069077896_p48699120"><a name="zh-cn_topic_0069077896_p48699120"></a><a name="zh-cn_topic_0069077896_p48699120"></a>Boolean</p>
 </td>
-<td class="cellrowborder" valign="top" width="79%" headers="mcps1.2.4.1.3 "><p id="p1216075194811"><a name="p1216075194811"></a><a name="p1216075194811"></a>执行请求是否成功。<span class="parmvalue" id="parmvalue2253974916747"><a name="parmvalue2253974916747"></a><a name="parmvalue2253974916747"></a><b>true</b></span>表示请求执行成功。</p>
+<td class="cellrowborder" valign="top" width="79%" headers="mcps1.2.4.1.3 "><p id="p1216075194811"><a name="p1216075194811"></a><a name="p1216075194811"></a>执行请求是否成功。<span class="parmvalue" id="parmvalue2253974916747"><a name="parmvalue2253974916747"></a><a name="parmvalue2253974916747"></a>“true”</span>表示请求执行成功。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0069077896_row1070040"><td class="cellrowborder" valign="top" width="11%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0069077896_p19564417"><a name="zh-cn_topic_0069077896_p19564417"></a><a name="zh-cn_topic_0069077896_p19564417"></a>message</p>

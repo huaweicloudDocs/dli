@@ -34,7 +34,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="12.121212121212121%" headers="mcps1.2.4.1.2 "><p id="p9901746512"><a name="p9901746512"></a><a name="p9901746512"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70.70707070707071%" headers="mcps1.2.4.1.3 "><p id="p14901346515"><a name="p14901346515"></a><a name="p14901346515"></a>作业类型，对于dna-germline作业为：<span class="parmvalue" id="parmvalue931133812598"><a name="parmvalue931133812598"></a><a name="parmvalue931133812598"></a><b>DNA_GERMLINE</b></span>。</p>
+    <td class="cellrowborder" valign="top" width="70.70707070707071%" headers="mcps1.2.4.1.3 "><p id="p14901346515"><a name="p14901346515"></a><a name="p14901346515"></a>作业类型，对于dna-germline作业为：<span class="parmvalue" id="parmvalue931133812598"><a name="parmvalue931133812598"></a><a name="parmvalue931133812598"></a>“DNA_GERMLINE”</span>。</p>
     </td>
     </tr>
     <tr id="row1226716573912"><td class="cellrowborder" valign="top" width="17.171717171717173%" headers="mcps1.2.4.1.1 "><p id="p1826713571397"><a name="p1826713571397"></a><a name="p1826713571397"></a>limit</p>
@@ -103,7 +103,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="12.790000000000001%" headers="mcps1.2.4.1.2 "><p id="p19976101143410"><a name="p19976101143410"></a><a name="p19976101143410"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="72.09%" headers="mcps1.2.4.1.3 "><p id="p4976111183419"><a name="p4976111183419"></a><a name="p4976111183419"></a>具体请参考<a href="#dli_02_0141__table1066213340337">表3</a>。</p>
+<td class="cellrowborder" valign="top" width="72.09%" headers="mcps1.2.4.1.3 "><p id="p4976111183419"><a name="p4976111183419"></a><a name="p4976111183419"></a>具体请参考<a href="#table1066213340337">表3</a>。</p>
 </td>
 </tr>
 </tbody>

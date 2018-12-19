@@ -96,7 +96,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="10%" headers="mcps1.2.5.1.3 "><p id="p64596322143542"><a name="p64596322143542"></a><a name="p64596322143542"></a>List</p>
 </td>
-<td class="cellrowborder" valign="top" width="69%" headers="mcps1.2.5.1.4 "><p id="p23997108143542"><a name="p23997108143542"></a><a name="p23997108143542"></a>用户以“key/value”的形式设置用于此作业的配置参数。目前支持的配置项请参考<a href="#dli_02_0102__table0995047105710">表3</a>。</p>
+<td class="cellrowborder" valign="top" width="69%" headers="mcps1.2.5.1.4 "><p id="p23997108143542"><a name="p23997108143542"></a><a name="p23997108143542"></a>用户以“key/value”的形式设置用于此作业的配置参数。目前支持的配置项请参考<a href="#table0995047105710">表3</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -136,16 +136,6 @@
 <td class="cellrowborder" valign="top" width="70.04%" headers="mcps1.2.3.1.2 "><p id="p19996154717576"><a name="p19996154717576"></a><a name="p19996154717576"></a>OBS表的指定目录或OBS表分区表的分区目录下有子目录时，是否查询子目录的内容；默认不查询。</p>
 </td>
 </tr>
-<tr id="row777181714181"><td class="cellrowborder" valign="top" width="29.959999999999997%" headers="mcps1.2.3.1.1 "><p id="p1377391717187"><a name="p1377391717187"></a><a name="p1377391717187"></a>dli.sql.user.accessKey</p>
-</td>
-<td class="cellrowborder" valign="top" width="70.04%" headers="mcps1.2.3.1.2 "><p id="p12773201719181"><a name="p12773201719181"></a><a name="p12773201719181"></a>指定执行SQL时使用的AK。</p>
-</td>
-</tr>
-<tr id="row9773121712184"><td class="cellrowborder" valign="top" width="29.959999999999997%" headers="mcps1.2.3.1.1 "><p id="p177391771816"><a name="p177391771816"></a><a name="p177391771816"></a>dli.sql.user.secretKey</p>
-</td>
-<td class="cellrowborder" valign="top" width="70.04%" headers="mcps1.2.3.1.2 "><p id="p14773151719188"><a name="p14773151719188"></a><a name="p14773151719188"></a>指定执行SQL时使用的SK。</p>
-</td>
-</tr>
 </tbody>
 </table>
 
@@ -170,7 +160,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="11%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077806_p51378430"><a name="zh-cn_topic_0069077806_p51378430"></a><a name="zh-cn_topic_0069077806_p51378430"></a>Boolean</p>
 </td>
-<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.5.1.4 "><p id="p4367201211150"><a name="p4367201211150"></a><a name="p4367201211150"></a>当<span class="parmname" id="parmname20849116111318"><a name="parmname20849116111318"></a><a name="parmname20849116111318"></a><b>job_type</b></span>为<span class="parmvalue" id="parmvalue2347564101624"><a name="parmvalue2347564101624"></a><a name="parmvalue2347564101624"></a><b>DCL</b></span>时，为请求执行是否成功。<span class="parmvalue" id="parmvalue218731155923"><a name="parmvalue218731155923"></a><a name="parmvalue218731155923"></a><b>true</b></span>表示请求执行成功。</p>
+<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.5.1.4 "><p id="p4367201211150"><a name="p4367201211150"></a><a name="p4367201211150"></a>当<span class="parmname" id="parmname20849116111318"><a name="parmname20849116111318"></a><a name="parmname20849116111318"></a>“job_type”</span>为<span class="parmvalue" id="parmvalue2347564101624"><a name="parmvalue2347564101624"></a><a name="parmvalue2347564101624"></a>“DCL”</span>时，为请求执行是否成功。<span class="parmvalue" id="parmvalue218731155923"><a name="parmvalue218731155923"></a><a name="parmvalue218731155923"></a>“true”</span>表示请求执行成功。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0069077806_row8129598"><td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077806_p54517712"><a name="zh-cn_topic_0069077806_p54517712"></a><a name="zh-cn_topic_0069077806_p54517712"></a>message</p>

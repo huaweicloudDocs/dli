@@ -34,7 +34,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="12.121212121212121%" headers="mcps1.2.4.1.2 "><p id="p9901746512"><a name="p9901746512"></a><a name="p9901746512"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70.70707070707071%" headers="mcps1.2.4.1.3 "><p id="p14901346515"><a name="p14901346515"></a><a name="p14901346515"></a>作业类型，对于rna-diffExpr作业为：<span class="parmvalue" id="parmvalue1479322015820"><a name="parmvalue1479322015820"></a><a name="parmvalue1479322015820"></a><b>RNA_DIFF_EXPR</b></span>。</p>
+    <td class="cellrowborder" valign="top" width="70.70707070707071%" headers="mcps1.2.4.1.3 "><p id="p14901346515"><a name="p14901346515"></a><a name="p14901346515"></a>作业类型，对于rna-diffExpr作业为：<span class="parmvalue" id="parmvalue1479322015820"><a name="parmvalue1479322015820"></a><a name="parmvalue1479322015820"></a>“RNA_DIFF_EXPR”</span>。</p>
     </td>
     </tr>
     <tr id="row1426711571890"><td class="cellrowborder" valign="top" width="17.171717171717173%" headers="mcps1.2.4.1.1 "><p id="p1826713571397"><a name="p1826713571397"></a><a name="p1826713571397"></a>limit</p>

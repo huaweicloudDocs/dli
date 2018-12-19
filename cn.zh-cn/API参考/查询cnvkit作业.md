@@ -1,14 +1,14 @@
-# 查询dna-somatic作业<a name="dli_02_0154"></a>
+# 查询cnvkit作业<a name="dli_02_0157"></a>
 
 ## 功能介绍<a name="section6968756197"></a>
 
-查询所有已经提交的体细胞肿瘤检测作业的信息，包括作业状态、运行时间等。
+查询所有已经提交的cnvkit作业的信息，包括作业状态、运行时间等。
 
 ## URI<a name="section169693561590"></a>
 
 -   URI格式
 
-    GET /v2.0/\{project\_id\}/gene/jobs?job\_type=DNA\_SOMATIC&limit=limit&offset=offset&start=start\_time&end=end\_time
+    GET /v2.0/\{project\_id\}/gene/tools/cnvkit?instance-id=instance\_id&limit=limit&offset=offset&start=start\_time&end=end\_time
 
 -   参数说明
 
@@ -30,11 +30,11 @@
     <td class="cellrowborder" valign="top" width="70.70707070707071%" headers="mcps1.2.4.1.3 "><p id="p82675571912"><a name="p82675571912"></a><a name="p82675571912"></a>项目编号。</p>
     </td>
     </tr>
-    <tr id="row1226716573912"><td class="cellrowborder" valign="top" width="17.171717171717173%" headers="mcps1.2.4.1.1 "><p id="p690111461916"><a name="p690111461916"></a><a name="p690111461916"></a>job_type</p>
+    <tr id="row1226716573912"><td class="cellrowborder" valign="top" width="17.171717171717173%" headers="mcps1.2.4.1.1 "><p id="p690111461916"><a name="p690111461916"></a><a name="p690111461916"></a>instance-id</p>
     </td>
     <td class="cellrowborder" valign="top" width="12.121212121212121%" headers="mcps1.2.4.1.2 "><p id="p9901746512"><a name="p9901746512"></a><a name="p9901746512"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70.70707070707071%" headers="mcps1.2.4.1.3 "><p id="p14901346515"><a name="p14901346515"></a><a name="p14901346515"></a>作业类型，对于dna_somatic作业为：<span class="parmvalue" id="parmvalue1479322015820"><a name="parmvalue1479322015820"></a><a name="parmvalue1479322015820"></a>“DNA_SOMATIC”</span>。</p>
+    <td class="cellrowborder" valign="top" width="70.70707070707071%" headers="mcps1.2.4.1.3 "><p id="p14901346515"><a name="p14901346515"></a><a name="p14901346515"></a>作业id。</p>
     </td>
     </tr>
     <tr id="row1426711571890"><td class="cellrowborder" valign="top" width="17.171717171717173%" headers="mcps1.2.4.1.1 "><p id="p1826713571397"><a name="p1826713571397"></a><a name="p1826713571397"></a>limit</p>
@@ -94,17 +94,35 @@
 
     ```
     {
-     "job_count": 1,
-        "jobs": [
+     "count": 1,
+        "instances": [
             {
+                "bed": "s3a://genes/cnvkit/tEXOME2_ext50.bed",
+                "instance_id": "cea3856c-4563-4858-8a53-2f057653ea50",
                 "owner": "h00251609",
-                "duration": 2770,
                 "status": "RUNNING",
-                "progress": "6/7",
-                "request": "{\"output\":\"s3a://genes/somatic/gwjfastqout.vcf\",\"ref\":\"hg38\",\"intervals\":[\"wgs_calling_regions.hg38.interval_list\"],\"conf\":null,\"access_encoded_key\":null,\"secret_encoded_key\":null,\"job_type\":\"DNA_SOMATIC\",\"inputs\":[{\"sample_type\":\"tumor\",\"sample_inputs\":[\"s3a://genes/somatic/tumor_1.fastq.gz\",\"s3a://genes/somatic/tumor_2.fastq.gz\"]},{\"sample_type\":\"normal\",\"sample_inputs\":[\"s3a://genes/somatic/normal_1.fastq.gz\",\"s3a://genes/somatic/normal_2.fastq.gz\"]}],\"tumor_sample_name\":\"HCC1143_tumor\",\"normal_sample_name\":\"HCC1143_normal\",\"file_type\":\"fastq\",\"knownsites\":[\"1000g_omni2.5.hg38.vcf\"],\"fastq_ubam_conf\":null,\"bwaspark_conf\":null,\"read_pipeline_spark_conf\":null,\"pon\":\"somatic-hg38-1000g_pon.hg38.vcf.gz\",\"germline_resource\":\"somatic-hg38faf-only-gnomad.hg38.vcf.gz\",\"mutect_is_export_bam\":false,\"mutect_bam_output\":\"s3a://genes/somatic/test.bam\",\"mutect_calls_variant\":\"small_exac_common_3.hg38.vcf.gz\",\"is_filter_by_orientationBias\":false,\"artifact_modes\":[\"G/T\"],\"is_filter_by_alignmentArtifacts\":false,\"expect_time\":8}",
-                "message": null,
-                "job_id": "c0619372-983d-4861-9133-69a518fca074",
-                "start_time": 1540954644485
+                "start_time": 1543997475771,
+                "duration": 1463,
+                "ref": "s3a://genes/cnvkit/hg38.filtered.fa",
+                "experimental_inputs": [
+                    "s3a://genes/cnvkit/Son_S2_test.sort.mkdup.bam"
+                ],
+                "control_inputs": [
+                    "s3a://genes/cnvkit/Father_S5_test.sort.mkdup.bam",
+                    "s3a://genes/cnvkit/Mather_S1_test.sort.mkdup.bam"
+                ],
+                "output_dir": "s3a://genes/cnvkit/output/gwj",
+                "has_annotate": true,
+                "annotation_file": "s3a://genes/cnvkit/gencode.v29.annotation.gff3",
+                "target_conf": "--split",
+                "coverage_conf": "-q 10 -p 5",
+                "reference_conf": "--no-rmask",
+                "fix_conf": "--no-rmask",
+                "segment_conf": "-m cbs  --drop-low-coverage -t 0.001  --drop-outliers 5",
+                "call_conf": "--center mean  --center-at 0 --drop-low-coverage",
+                "sex_conf": "-y",
+                "genemetrics_conf": "--drop-low-coverage -a 0.001 -b 150 --mean",
+                "antitarget_conf": "-a 100000"
             }
          ]
     }

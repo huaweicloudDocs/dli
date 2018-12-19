@@ -55,7 +55,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="11.25%" headers="mcps1.2.5.1.3 "><p id="p2476202818368"><a name="p2476202818368"></a><a name="p2476202818368"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.75%" headers="mcps1.2.5.1.4 "><p id="p11476162810366"><a name="p11476162810366"></a><a name="p11476162810366"></a>作业类型，对于DNA-Germline作业为：<span class="parmvalue" id="parmvalue931133812598"><a name="parmvalue931133812598"></a><a name="parmvalue931133812598"></a><b>DNA_GERMLINE</b></span>。</p>
+<td class="cellrowborder" valign="top" width="65.75%" headers="mcps1.2.5.1.4 "><p id="p11476162810366"><a name="p11476162810366"></a><a name="p11476162810366"></a>作业类型，对于DNA-Germline作业为：<span class="parmvalue" id="parmvalue931133812598"><a name="parmvalue931133812598"></a><a name="parmvalue931133812598"></a>“DNA_GERMLINE”</span>。</p>
 </td>
 </tr>
 <tr id="row17476828143615"><td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.5.1.1 "><p id="p19476162803619"><a name="p19476162803619"></a><a name="p19476162803619"></a>input</p>
@@ -65,7 +65,7 @@
 <td class="cellrowborder" valign="top" width="11.25%" headers="mcps1.2.5.1.3 "><p id="p847672812361"><a name="p847672812361"></a><a name="p847672812361"></a>Array[String]</p>
 </td>
 <td class="cellrowborder" valign="top" width="65.75%" headers="mcps1.2.5.1.4 "><p id="p19676154814477"><a name="p19676154814477"></a><a name="p19676154814477"></a>输入文件的路径。</p>
-<a name="ul941712599472"></a><a name="ul941712599472"></a><ul id="ul941712599472"><li>当输入文件类型为FASTQ时，必须有两个输入文件。<div class="note" id="note1080012315201"><a name="note1080012315201"></a><a name="note1080012315201"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p118011631132019"><a name="p118011631132019"></a><a name="p118011631132019"></a>FASTQ类型的文件后缀必须为“.fastq”，“.fq”，“.fastq.gz”和“.fq.gz”这四种中的一种。</p>
+<a name="ul941712599472"></a><a name="ul941712599472"></a><ul id="ul941712599472"><li>当输入文件类型为FASTQ时，必须有两个输入文件。<div class="note" id="note1080012315201"><a name="note1080012315201"></a><a name="note1080012315201"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p118011631132019"><a name="p118011631132019"></a><a name="p118011631132019"></a>FASTQ类型的文件后缀必须为“.fastq”，“.fq”，“.fastq.gz”和“.fq.gz”这四种中的一种。</p>
 </div></div>
 </li><li>当输入文件类型为BAM时，只能有一个输入文件。</li></ul>
 </td>
@@ -103,7 +103,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="11.25%" headers="mcps1.2.5.1.3 "><p id="p14477182893615"><a name="p14477182893615"></a><a name="p14477182893615"></a>Array[String]</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.75%" headers="mcps1.2.5.1.4 "><p id="p5477142817365"><a name="p5477142817365"></a><a name="p5477142817365"></a>异常基因的比对文件列表，可以选择多个文件。具体请参考<a href="#dli_02_0140__table664016193569">表3</a>。</p>
+<td class="cellrowborder" valign="top" width="65.75%" headers="mcps1.2.5.1.4 "><p id="p5477142817365"><a name="p5477142817365"></a><a name="p5477142817365"></a>异常基因的比对文件列表，可以选择多个文件。具体请参考<a href="#table664016193569">表3</a>。</p>
 </td>
 </tr>
 <tr id="row8841105712311"><td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.5.1.1 "><p id="p1084217579320"><a name="p1084217579320"></a><a name="p1084217579320"></a>engine</p>
@@ -121,8 +121,8 @@
 </td>
 <td class="cellrowborder" valign="top" width="11.25%" headers="mcps1.2.5.1.3 "><p id="p947716288367"><a name="p947716288367"></a><a name="p947716288367"></a>Array[String]</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.75%" headers="mcps1.2.5.1.4 "><p id="p8477142817362"><a name="p8477142817362"></a><a name="p8477142817362"></a>执行FastqToSam方法时业务相关的配置项，用户可手动添加。具体可参考<a href="#dli_02_0140__table56408147518">表4</a>。</p>
-<div class="note" id="note15644147192311"><a name="note15644147192311"></a><a name="note15644147192311"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p464614719234"><a name="p464614719234"></a><a name="p464614719234"></a>当engine选择tensorflow时，不支持该配置项。</p>
+<td class="cellrowborder" valign="top" width="65.75%" headers="mcps1.2.5.1.4 "><p id="p8477142817362"><a name="p8477142817362"></a><a name="p8477142817362"></a>执行FastqToSam方法时业务相关的配置项，用户可手动添加。具体可参考<a href="#table56408147518">表4</a>。</p>
+<div class="note" id="note15644147192311"><a name="note15644147192311"></a><a name="note15644147192311"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p464614719234"><a name="p464614719234"></a><a name="p464614719234"></a>当engine选择tensorflow时，不支持该配置项。</p>
 </div></div>
 </td>
 </tr>
@@ -133,7 +133,7 @@
 <td class="cellrowborder" valign="top" width="11.25%" headers="mcps1.2.5.1.3 "><p id="p147101123111919"><a name="p147101123111919"></a><a name="p147101123111919"></a>Array[String]</p>
 </td>
 <td class="cellrowborder" valign="top" width="65.75%" headers="mcps1.2.5.1.4 "><p id="p101771738171817"><a name="p101771738171817"></a><a name="p101771738171817"></a>执行GATK BwaSpark方法时业务相关的配置项，用户可手动添加。</p>
-<div class="note" id="note621205716240"><a name="note621205716240"></a><a name="note621205716240"></a><span class="notetitle"> NOTE: </span><div class="notebody"><a name="ul398444762520"></a><a name="ul398444762520"></a><ul id="ul398444762520"><li>暂不支持关于输出文件格式以及输入输出路径相关的配置项。</li><li>当engine选择tensorflow时，不支持该配置项。</li></ul>
+<div class="note" id="note621205716240"><a name="note621205716240"></a><a name="note621205716240"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul398444762520"></a><a name="ul398444762520"></a><ul id="ul398444762520"><li>暂不支持关于输出文件格式以及输入输出路径相关的配置项。</li><li>当engine选择tensorflow时，不支持该配置项。</li></ul>
 </div></div>
 </td>
 </tr>
@@ -144,7 +144,7 @@
 <td class="cellrowborder" valign="top" width="11.25%" headers="mcps1.2.5.1.3 "><p id="p179136244192"><a name="p179136244192"></a><a name="p179136244192"></a>Array[String]</p>
 </td>
 <td class="cellrowborder" valign="top" width="65.75%" headers="mcps1.2.5.1.4 "><p id="p667810411184"><a name="p667810411184"></a><a name="p667810411184"></a>执行GATK ReadsPipelineSpark方法时业务相关的配置项，用户可手动添加。</p>
-<div class="note" id="note1741981116265"><a name="note1741981116265"></a><a name="note1741981116265"></a><span class="notetitle"> NOTE: </span><div class="notebody"><a name="ul2211123910263"></a><a name="ul2211123910263"></a><ul id="ul2211123910263"><li>暂不支持关于输出文件格式以及输入输出路径相关的配置项。</li><li>当engine选择tensorflow时，不支持该配置项。</li></ul>
+<div class="note" id="note1741981116265"><a name="note1741981116265"></a><a name="note1741981116265"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul2211123910263"></a><a name="ul2211123910263"></a><ul id="ul2211123910263"><li>暂不支持关于输出文件格式以及输入输出路径相关的配置项。</li><li>当engine选择tensorflow时，不支持该配置项。</li></ul>
 </div></div>
 </td>
 </tr>
@@ -155,7 +155,7 @@
 <td class="cellrowborder" valign="top" width="11.25%" headers="mcps1.2.5.1.3 "><p id="p347010135226"><a name="p347010135226"></a><a name="p347010135226"></a>Boolean</p>
 </td>
 <td class="cellrowborder" valign="top" width="65.75%" headers="mcps1.2.5.1.4 "><p id="p1247071320224"><a name="p1247071320224"></a><a name="p1247071320224"></a>是否导出BQSR bam文件，默认值为false。</p>
-<div class="note" id="note5441919102715"><a name="note5441919102715"></a><a name="note5441919102715"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p2044619152714"><a name="p2044619152714"></a><a name="p2044619152714"></a>当engine选择tensorflow时，不支持导出BQSR bam文件。</p>
+<div class="note" id="note5441919102715"><a name="note5441919102715"></a><a name="note5441919102715"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p2044619152714"><a name="p2044619152714"></a><a name="p2044619152714"></a>当engine选择tensorflow时，不支持导出BQSR bam文件。</p>
 </div></div>
 </td>
 </tr>
@@ -165,7 +165,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="11.25%" headers="mcps1.2.5.1.3 "><p id="p5713164542511"><a name="p5713164542511"></a><a name="p5713164542511"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.75%" headers="mcps1.2.5.1.4 "><p id="p57131455250"><a name="p57131455250"></a><a name="p57131455250"></a>中间BAQSR bam文件输出路径，若<span class="parmname" id="parmname46303611408"><a name="parmname46303611408"></a><a name="parmname46303611408"></a><b>is_export_bam</b></span>为<span class="parmvalue" id="parmvalue1382714015407"><a name="parmvalue1382714015407"></a><a name="parmvalue1382714015407"></a><b>true</b></span>，该参数为必选。</p>
+<td class="cellrowborder" valign="top" width="65.75%" headers="mcps1.2.5.1.4 "><p id="p57131455250"><a name="p57131455250"></a><a name="p57131455250"></a>中间BAQSR bam文件输出路径，若<span class="parmname" id="parmname46303611408"><a name="parmname46303611408"></a><a name="parmname46303611408"></a>“is_export_bam”</span>为<span class="parmvalue" id="parmvalue1382714015407"><a name="parmvalue1382714015407"></a><a name="parmvalue1382714015407"></a>“true”</span>，该参数为必选。</p>
 </td>
 </tr>
 <tr id="row2045418420480"><td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.5.1.1 "><p id="p1046924213485"><a name="p1046924213485"></a><a name="p1046924213485"></a>is_output_gvcf</p>
@@ -175,7 +175,7 @@
 <td class="cellrowborder" valign="top" width="11.25%" headers="mcps1.2.5.1.3 "><p id="p1246914211489"><a name="p1246914211489"></a><a name="p1246914211489"></a>Boolean</p>
 </td>
 <td class="cellrowborder" valign="top" width="65.75%" headers="mcps1.2.5.1.4 "><p id="p84691142124812"><a name="p84691142124812"></a><a name="p84691142124812"></a>输出文件格式是否为GVCF，默认值为“false”。设置为“true”时，输出文件的路径必须是已经存在的OBS目录或者是以g.vcf为后缀的文件名。</p>
-<div class="note" id="note52174062416"><a name="note52174062416"></a><a name="note52174062416"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p321440192418"><a name="p321440192418"></a><a name="p321440192418"></a>当engine选择tensorflow时，不支持导出GVCF文件。</p>
+<div class="note" id="note52174062416"><a name="note52174062416"></a><a name="note52174062416"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p321440192418"><a name="p321440192418"></a><a name="p321440192418"></a>当engine选择tensorflow时，不支持导出GVCF文件。</p>
 </div></div>
 </td>
 </tr>

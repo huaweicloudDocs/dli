@@ -55,7 +55,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="15.590000000000002%" headers="mcps1.2.5.1.3 "><p id="p2476202818368"><a name="p2476202818368"></a><a name="p2476202818368"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.809999999999995%" headers="mcps1.2.5.1.4 "><p id="p11476162810366"><a name="p11476162810366"></a><a name="p11476162810366"></a>作业类型，对于RNA差异表达分析作业为：<span class="parmvalue" id="parmvalue1479322015820"><a name="parmvalue1479322015820"></a><a name="parmvalue1479322015820"></a><b>RNA_DIFF_EXPR</b></span>。</p>
+<td class="cellrowborder" valign="top" width="60.809999999999995%" headers="mcps1.2.5.1.4 "><p id="p11476162810366"><a name="p11476162810366"></a><a name="p11476162810366"></a>作业类型，对于RNA差异表达分析作业为：<span class="parmvalue" id="parmvalue1479322015820"><a name="parmvalue1479322015820"></a><a name="parmvalue1479322015820"></a>“RNA_DIFF_EXPR”</span>。</p>
 </td>
 </tr>
 <tr id="row8477328193612"><td class="cellrowborder" valign="top" width="11.020000000000001%" headers="mcps1.2.5.1.1 "><p id="p19476162803619"><a name="p19476162803619"></a><a name="p19476162803619"></a>inputs</p>
@@ -64,7 +64,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="15.590000000000002%" headers="mcps1.2.5.1.3 "><p id="p847672812361"><a name="p847672812361"></a><a name="p847672812361"></a>Array[RnaGroup]</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.809999999999995%" headers="mcps1.2.5.1.4 "><p id="p19676154814477"><a name="p19676154814477"></a><a name="p19676154814477"></a>输入实验组及对照组列表，组详情可参加<a href="#dli_02_0149__table94842054488">表3</a>。</p>
+<td class="cellrowborder" valign="top" width="60.809999999999995%" headers="mcps1.2.5.1.4 "><p id="p19676154814477"><a name="p19676154814477"></a><a name="p19676154814477"></a>输入实验组及对照组列表，组详情可参加<a href="#table94842054488">表3</a>。</p>
 </td>
 </tr>
 <tr id="row184771028183617"><td class="cellrowborder" valign="top" width="11.020000000000001%" headers="mcps1.2.5.1.1 "><p id="p16477152815366"><a name="p16477152815366"></a><a name="p16477152815366"></a>output</p>
@@ -91,7 +91,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="15.590000000000002%" headers="mcps1.2.5.1.3 "><p id="p847702863615"><a name="p847702863615"></a><a name="p847702863615"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.809999999999995%" headers="mcps1.2.5.1.4 "><p id="p11477152863617"><a name="p11477152863617"></a><a name="p11477152863617"></a>参考基因库文件，当前支持<span class="parmvalue" id="parmvalue2912122514313"><a name="parmvalue2912122514313"></a><a name="parmvalue2912122514313"></a><b>hg19</b></span>、<span class="parmvalue" id="parmvalue726918314318"><a name="parmvalue726918314318"></a><a name="parmvalue726918314318"></a><b>hg38</b></span>两种。</p>
+<td class="cellrowborder" valign="top" width="60.809999999999995%" headers="mcps1.2.5.1.4 "><p id="p11477152863617"><a name="p11477152863617"></a><a name="p11477152863617"></a>参考基因库文件，当前支持<span class="parmvalue" id="parmvalue2912122514313"><a name="parmvalue2912122514313"></a><a name="parmvalue2912122514313"></a>“hg19”</span>、<span class="parmvalue" id="parmvalue726918314318"><a name="parmvalue726918314318"></a><a name="parmvalue726918314318"></a>“hg38”</span>两种。</p>
 </td>
 </tr>
 <tr id="row15477828153615"><td class="cellrowborder" valign="top" width="11.020000000000001%" headers="mcps1.2.5.1.1 "><p id="p17524521125218"><a name="p17524521125218"></a><a name="p17524521125218"></a>gtf</p>
@@ -101,7 +101,7 @@
 <td class="cellrowborder" valign="top" width="15.590000000000002%" headers="mcps1.2.5.1.3 "><p id="p10521182195212"><a name="p10521182195212"></a><a name="p10521182195212"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="60.809999999999995%" headers="mcps1.2.5.1.4 "><p id="p1252112218522"><a name="p1252112218522"></a><a name="p1252112218522"></a>基因注释文件。可选文件列表如下：</p>
-<a name="ul286742616172"></a><a name="ul286742616172"></a><ul id="ul286742616172"><li>hg19对应的gtf支持<span class="parmvalue" id="parmvalue19865152615175"><a name="parmvalue19865152615175"></a><a name="parmvalue19865152615175"></a><b>gencode.v17.annotation.gtf</b></span></li><li>hg38对应的gtf支持<span class="parmvalue" id="parmvalue5867162611175"><a name="parmvalue5867162611175"></a><a name="parmvalue5867162611175"></a><b>gencode.v28.annotation.gtf</b></span></li></ul>
+<a name="ul286742616172"></a><a name="ul286742616172"></a><ul id="ul286742616172"><li>hg19对应的gtf支持<span class="parmvalue" id="parmvalue19865152615175"><a name="parmvalue19865152615175"></a><a name="parmvalue19865152615175"></a>“gencode.v17.annotation.gtf”</span></li><li>hg38对应的gtf支持<span class="parmvalue" id="parmvalue5867162611175"><a name="parmvalue5867162611175"></a><a name="parmvalue5867162611175"></a>“gencode.v28.annotation.gtf”</span></li></ul>
 </td>
 </tr>
 <tr id="row1356218203715"><td class="cellrowborder" valign="top" width="11.020000000000001%" headers="mcps1.2.5.1.1 "><p id="p12563138103714"><a name="p12563138103714"></a><a name="p12563138103714"></a>is_export_qc</p>
@@ -128,7 +128,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="15.590000000000002%" headers="mcps1.2.5.1.3 "><p id="p129638456267"><a name="p129638456267"></a><a name="p129638456267"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="60.809999999999995%" headers="mcps1.2.5.1.4 "><p id="p12963945172618"><a name="p12963945172618"></a><a name="p12963945172618"></a>建库方式，包括：<span class="parmvalue" id="parmvalue677415875610"><a name="parmvalue677415875610"></a><a name="parmvalue677415875610"></a><b>fr-unstranded</b></span>, <span class="parmvalue" id="parmvalue164450297574"><a name="parmvalue164450297574"></a><a name="parmvalue164450297574"></a><b>fr-firststrand</b></span>, <span class="parmvalue" id="parmvalue141874975710"><a name="parmvalue141874975710"></a><a name="parmvalue141874975710"></a><b>fr-secondstrand</b></span>三种类型，默认为<span class="parmvalue" id="parmvalue174641096580"><a name="parmvalue174641096580"></a><a name="parmvalue174641096580"></a><b>fr-unstranded</b></span>。</p>
+<td class="cellrowborder" valign="top" width="60.809999999999995%" headers="mcps1.2.5.1.4 "><p id="p12963945172618"><a name="p12963945172618"></a><a name="p12963945172618"></a>建库方式，包括：<span class="parmvalue" id="parmvalue677415875610"><a name="parmvalue677415875610"></a><a name="parmvalue677415875610"></a>“fr-unstranded”</span>, <span class="parmvalue" id="parmvalue164450297574"><a name="parmvalue164450297574"></a><a name="parmvalue164450297574"></a>“fr-firststrand”</span>, <span class="parmvalue" id="parmvalue141874975710"><a name="parmvalue141874975710"></a><a name="parmvalue141874975710"></a>“fr-secondstrand”</span>三种类型，默认为<span class="parmvalue" id="parmvalue174641096580"><a name="parmvalue174641096580"></a><a name="parmvalue174641096580"></a>“fr-unstranded”</span>。</p>
 </td>
 </tr>
 </tbody>
@@ -162,7 +162,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="15.151515151515152%" headers="mcps1.2.5.1.3 "><p id="p10499754485"><a name="p10499754485"></a><a name="p10499754485"></a>Array[RnaSample]</p>
 </td>
-<td class="cellrowborder" valign="top" width="62.62626262626263%" headers="mcps1.2.5.1.4 "><p id="p95011541683"><a name="p95011541683"></a><a name="p95011541683"></a>该组包含的样本列表，样本信息详情可参考<a href="#dli_02_0149__table61801720201611">表4</a>。</p>
+<td class="cellrowborder" valign="top" width="62.62626262626263%" headers="mcps1.2.5.1.4 "><p id="p95011541683"><a name="p95011541683"></a><a name="p95011541683"></a>该组包含的样本列表，样本信息详情可参考<a href="#table61801720201611">表4</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -197,7 +197,7 @@
 <td class="cellrowborder" valign="top" width="15.151515151515152%" headers="mcps1.2.5.1.3 "><p id="p19200172041616"><a name="p19200172041616"></a><a name="p19200172041616"></a>Array[String]</p>
 </td>
 <td class="cellrowborder" valign="top" width="62.62626262626263%" headers="mcps1.2.5.1.4 "><p id="p520062011163"><a name="p520062011163"></a><a name="p520062011163"></a>该样本包含的文件列表。</p>
-<div class="note" id="note1080012315201"><a name="note1080012315201"></a><a name="note1080012315201"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p118011631132019"><a name="p118011631132019"></a><a name="p118011631132019"></a>当前文件类型必须为.fastq.gz，且文件必须有两个。</p>
+<div class="note" id="note1080012315201"><a name="note1080012315201"></a><a name="note1080012315201"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p118011631132019"><a name="p118011631132019"></a><a name="p118011631132019"></a>当前文件类型必须为.fastq.gz，且文件必须有两个。</p>
 </div></div>
 </td>
 </tr>

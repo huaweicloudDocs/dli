@@ -55,7 +55,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="14.67%" headers="mcps1.2.5.1.3 "><p id="p2476202818368"><a name="p2476202818368"></a><a name="p2476202818368"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p11476162810366"><a name="p11476162810366"></a><a name="p11476162810366"></a>作业类型，对于DNA-Somatic作业为：<span class="parmvalue" id="parmvalue931133812598"><a name="parmvalue931133812598"></a><a name="parmvalue931133812598"></a><b>DNA_SOMATIC</b></span>。</p>
+<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p11476162810366"><a name="p11476162810366"></a><a name="p11476162810366"></a>作业类型，对于DNA-Somatic作业为：<span class="parmvalue" id="parmvalue931133812598"><a name="parmvalue931133812598"></a><a name="parmvalue931133812598"></a>“DNA_SOMATIC”</span>。</p>
 </td>
 </tr>
 <tr id="row17476828143615"><td class="cellrowborder" valign="top" width="20.31%" headers="mcps1.2.5.1.1 "><p id="p19476162803619"><a name="p19476162803619"></a><a name="p19476162803619"></a>inputs</p>
@@ -64,7 +64,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="14.67%" headers="mcps1.2.5.1.3 "><p id="p847672812361"><a name="p847672812361"></a><a name="p847672812361"></a>Array[SampleObject]</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p19676154814477"><a name="p19676154814477"></a><a name="p19676154814477"></a>输入文件列表，组详情可参照<a href="#dli_02_0153__table94842054488">表5</a>。</p>
+<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p19676154814477"><a name="p19676154814477"></a><a name="p19676154814477"></a>输入文件列表，组详情可参照<a href="#table94842054488">表5</a>。</p>
 </td>
 </tr>
 <tr id="row8477328193612"><td class="cellrowborder" valign="top" width="20.31%" headers="mcps1.2.5.1.1 "><p id="p16477152815366"><a name="p16477152815366"></a><a name="p16477152815366"></a>output</p>
@@ -92,7 +92,7 @@
 <td class="cellrowborder" valign="top" width="14.67%" headers="mcps1.2.5.1.3 "><p id="p847702863615"><a name="p847702863615"></a><a name="p847702863615"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p11477152863617"><a name="p11477152863617"></a><a name="p11477152863617"></a>参考基因库的文件。</p>
-<div class="note" id="note1943417304916"><a name="note1943417304916"></a><a name="note1943417304916"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p94345301911"><a name="p94345301911"></a><a name="p94345301911"></a>目前只支持hg38。</p>
+<div class="note" id="note1943417304916"><a name="note1943417304916"></a><a name="note1943417304916"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p94345301911"><a name="p94345301911"></a><a name="p94345301911"></a>目前只支持hg38。</p>
 </div></div>
 </td>
 </tr>
@@ -112,7 +112,7 @@
 <td class="cellrowborder" valign="top" width="14.67%" headers="mcps1.2.5.1.3 "><p id="p52852017217"><a name="p52852017217"></a><a name="p52852017217"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p1031112082113"><a name="p1031112082113"></a><a name="p1031112082113"></a>正常样本的样本名。由英文字母、数字、下划线和中划线组成，长度为[1-128]个字符。</p>
-<div class="note" id="note1106251131012"><a name="note1106251131012"></a><a name="note1106251131012"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p161061651131011"><a name="p161061651131011"></a><a name="p161061651131011"></a>如果file_type指定为BAM时，该名称必须与BAM文件中的名称一致。</p>
+<div class="note" id="note1106251131012"><a name="note1106251131012"></a><a name="note1106251131012"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p161061651131011"><a name="p161061651131011"></a><a name="p161061651131011"></a>如果file_type指定为BAM时，该名称必须与BAM文件中的名称一致。</p>
 </div></div>
 </td>
 </tr>
@@ -122,7 +122,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="14.67%" headers="mcps1.2.5.1.3 "><p id="p14477182893615"><a name="p14477182893615"></a><a name="p14477182893615"></a>Array[String]</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p5477142817365"><a name="p5477142817365"></a><a name="p5477142817365"></a>异常基因的比对文件列表，可以选择多个文件。具体请参考<a href="#dli_02_0153__table664016193569">表3</a>。</p>
+<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p5477142817365"><a name="p5477142817365"></a><a name="p5477142817365"></a>异常基因的比对文件列表，可以选择多个文件。具体请参考<a href="#table664016193569">表3</a>。</p>
 </td>
 </tr>
 <tr id="row15477828153615"><td class="cellrowborder" valign="top" width="20.31%" headers="mcps1.2.5.1.1 "><p id="p174775286367"><a name="p174775286367"></a><a name="p174775286367"></a>fastq_to_sam_conf</p>
@@ -131,7 +131,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="14.67%" headers="mcps1.2.5.1.3 "><p id="p947716288367"><a name="p947716288367"></a><a name="p947716288367"></a>Array[String]</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p8477142817362"><a name="p8477142817362"></a><a name="p8477142817362"></a>执行FastqToSam过程中业务相关的配置项，用户可手动添加。具体可参考<a href="#dli_02_0153__table92006772114">表4</a>。</p>
+<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p8477142817362"><a name="p8477142817362"></a><a name="p8477142817362"></a>执行FastqToSam过程中业务相关的配置项，用户可手动添加。具体可参考<a href="#table92006772114">表4</a>。</p>
 </td>
 </tr>
 <tr id="row817763831811"><td class="cellrowborder" valign="top" width="20.31%" headers="mcps1.2.5.1.1 "><p id="p7177113816182"><a name="p7177113816182"></a><a name="p7177113816182"></a>bwaspark_conf</p>
@@ -141,7 +141,7 @@
 <td class="cellrowborder" valign="top" width="14.67%" headers="mcps1.2.5.1.3 "><p id="p147101123111919"><a name="p147101123111919"></a><a name="p147101123111919"></a>Array[String]</p>
 </td>
 <td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p101771738171817"><a name="p101771738171817"></a><a name="p101771738171817"></a>执行GATK BwaSpark方法中业务相关的配置项，用户可手动添加。</p>
-<div class="note" id="note27210135198"><a name="note27210135198"></a><a name="note27210135198"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p1472211351914"><a name="p1472211351914"></a><a name="p1472211351914"></a>暂不支持关于输出文件格式以及输入输出路径相关的配置项。</p>
+<div class="note" id="note27210135198"><a name="note27210135198"></a><a name="note27210135198"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1472211351914"><a name="p1472211351914"></a><a name="p1472211351914"></a>暂不支持关于输出文件格式以及输入输出路径相关的配置项。</p>
 </div></div>
 </td>
 </tr>
@@ -152,7 +152,7 @@
 <td class="cellrowborder" valign="top" width="14.67%" headers="mcps1.2.5.1.3 "><p id="p179136244192"><a name="p179136244192"></a><a name="p179136244192"></a>Array[String]</p>
 </td>
 <td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p667810411184"><a name="p667810411184"></a><a name="p667810411184"></a>执行GATK ReadsPipelineSpark方法中业务相关的配置项，用户可手动添加。</p>
-<div class="note" id="note1117473114185"><a name="note1117473114185"></a><a name="note1117473114185"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p8174631161815"><a name="p8174631161815"></a><a name="p8174631161815"></a>暂不支持关于输出文件格式以及输入输出路径相关的配置项。</p>
+<div class="note" id="note1117473114185"><a name="note1117473114185"></a><a name="note1117473114185"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p8174631161815"><a name="p8174631161815"></a><a name="p8174631161815"></a>暂不支持关于输出文件格式以及输入输出路径相关的配置项。</p>
 </div></div>
 </td>
 </tr>
@@ -208,7 +208,7 @@
 <td class="cellrowborder" valign="top" width="14.67%" headers="mcps1.2.5.1.3 "><p id="p193349121361"><a name="p193349121361"></a><a name="p193349121361"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p1533441213615"><a name="p1533441213615"></a><a name="p1533441213615"></a>突变频率库。</p>
-<div class="note" id="note29888217134"><a name="note29888217134"></a><a name="note29888217134"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p59888217135"><a name="p59888217135"></a><a name="p59888217135"></a>目前只支持small_exac_common_3.hg38.vcf.gz。</p>
+<div class="note" id="note29888217134"><a name="note29888217134"></a><a name="note29888217134"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p59888217135"><a name="p59888217135"></a><a name="p59888217135"></a>目前只支持small_exac_common_3.hg38.vcf.gz。</p>
 </div></div>
 </td>
 </tr>
@@ -351,9 +351,9 @@
 </td>
 <td class="cellrowborder" valign="top" width="15.151515151515152%" headers="mcps1.2.5.1.3 "><p id="p10499754485"><a name="p10499754485"></a><a name="p10499754485"></a>Array[String]</p>
 </td>
-<td class="cellrowborder" valign="top" width="62.62626262626263%" headers="mcps1.2.5.1.4 "><a name="ul941712599472"></a><a name="ul941712599472"></a><ul id="ul941712599472"><li>当输入文件类型为FASTQ时，必须有两个输入文件。<div class="note" id="note1080012315201"><a name="note1080012315201"></a><a name="note1080012315201"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p118011631132019"><a name="p118011631132019"></a><a name="p118011631132019"></a>FASTQ类型的文件后缀必须为“.fastq”，“.fq”，“.fastq.gz”和“.fq.gz”这四种中的一种。</p>
+<td class="cellrowborder" valign="top" width="62.62626262626263%" headers="mcps1.2.5.1.4 "><a name="ul941712599472"></a><a name="ul941712599472"></a><ul id="ul941712599472"><li>当输入文件类型为FASTQ时，必须有两个输入文件。<div class="note" id="note1080012315201"><a name="note1080012315201"></a><a name="note1080012315201"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p118011631132019"><a name="p118011631132019"></a><a name="p118011631132019"></a>FASTQ类型的文件后缀必须为“.fastq”，“.fq”，“.fastq.gz”和“.fq.gz”这四种中的一种。</p>
 </div></div>
-</li><li>当输入文件类型为BAM时，只能有一个输入文件。<div class="note" id="note1699419591189"><a name="note1699419591189"></a><a name="note1699419591189"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p5994135961818"><a name="p5994135961818"></a><a name="p5994135961818"></a>文件类型为BAM时，必须提供BQSR比对之后的BAM文件。</p>
+</li><li>当输入文件类型为BAM时，只能有一个输入文件。<div class="note" id="note1699419591189"><a name="note1699419591189"></a><a name="note1699419591189"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p5994135961818"><a name="p5994135961818"></a><a name="p5994135961818"></a>文件类型为BAM时，必须提供BQSR比对之后的BAM文件。</p>
 </div></div>
 </li></ul>
 </td>

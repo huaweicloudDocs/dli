@@ -16,4 +16,8 @@
 
 -   **[查询dna-somatic作业](查询dna-somatic作业.md)**  
 
+-   **[提交cnvkit作业](提交cnvkit作业.md)**  
+
+-   **[查询cnvkit作业](查询cnvkit作业.md)**  
+
 
