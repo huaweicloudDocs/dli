@@ -25,7 +25,7 @@ val sql = "create table customer(id int,name varchar(20),age int)"
 
 ```
 val sql = "drop table customer"
-  try {  
+ try {  
       Class.forName(driver)  
     conn = DriverManager.getConnection(url, userName, password)  
      val statement = conn.createStatement();

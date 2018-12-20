@@ -46,7 +46,7 @@ Spark作业编辑器支持提交Spark作业，为用户提供全托管式的Spar
 <td class="cellrowborder" valign="top" width="22.772277227722775%" headers="mcps1.2.4.1.2 "><p id="p129191956144716"><a name="p129191956144716"></a><a name="p129191956144716"></a>增加作业编辑窗口</p>
 </td>
 <td class="cellrowborder" valign="top" width="69.3069306930693%" headers="mcps1.2.4.1.3 "><p id="p39191556154710"><a name="p39191556154710"></a><a name="p39191556154710"></a>增加Spark作业编辑窗口。</p>
-<div class="note" id="note1939391324020"><a name="note1939391324020"></a><a name="note1939391324020"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p20395413184013"><a name="p20395413184013"></a><a name="p20395413184013"></a>最多可同时开启5个作业编辑窗口。</p>
+<div class="note" id="note1939391324020"><a name="note1939391324020"></a><a name="note1939391324020"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p20395413184013"><a name="p20395413184013"></a><a name="p20395413184013"></a>最多可同时开启5个作业编辑窗口。</p>
 </div></div>
 </td>
 </tr>
@@ -166,7 +166,7 @@ Spark作业编辑器支持提交Spark作业，为用户提供全托管式的Spar
 
 ## 操作步骤<a name="zh-cn_topic_0115200017_zh-cn_topic_0093946815_section6030699152035"></a>
 
-1.  登录数据湖探索管理控制台，选择Spark作业，单击![](figures/zh-cn_image_0128174392.png)，进入“作业编辑器“页面。
+1.  登录数据湖探索管理控制台，选择Spark作业，单击![](figures/icon-创建作业.png)，进入“作业编辑器“页面。
 2.  若是第一次提交Spark作业，需要先创建集群和上传程序包，具体请参见[创建集群](创建集群.md)和[创建程序包](创建程序包.md)。
 3.  在当前编辑窗口右上方选择所使用的集群。
 4.  在编辑窗口中，输入相关参数，具体如[图4](#zh-cn_topic_0115200017_fig138651058151411)所示。
@@ -174,6 +174,6 @@ Spark作业编辑器支持提交Spark作业，为用户提供全托管式的Spar
     **图 4**  编辑Spark作业<a name="zh-cn_topic_0115200017_fig138651058151411"></a>  
     ![](figures/编辑Spark作业.png "编辑Spark作业")
 
-5.  单击编辑窗口右上方![](figures/zh-cn_image_0125711042.png)提交作业，页面显示“批量提交成功”。
+5.  单击编辑窗口右上方![](figures/icon-运行灰.png)提交作业，页面显示“批量提交成功”。
 6.  （可选）可到“作业管理”页面查看提交作业的状态及日志。
 

@@ -24,7 +24,7 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0093946815_p1072813016594"><a name="zh-cn_topic_0093946815_p1072813016594"></a><a name="zh-cn_topic_0093946815_p1072813016594"></a>菜单栏</p>
 </td>
-<td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0093946815_p6367220516594"><a name="zh-cn_topic_0093946815_p6367220516594"></a><a name="zh-cn_topic_0093946815_p6367220516594"></a>SQL作业的菜单栏，包括总览、作业编辑器、数据管理、队列管理、模板管理和作业管理。</p>
+<td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0093946815_p6367220516594"><a name="zh-cn_topic_0093946815_p6367220516594"></a><a name="zh-cn_topic_0093946815_p6367220516594"></a>SQL作业的菜单栏，包括总览、作业编辑器、数据管理、队列管理、模板管理、作业管理和跨源。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0093946815_row4924339316587"><td class="cellrowborder" valign="top" width="7.000000000000001%" headers="mcps1.2.4.1.1 "><p id="p882981673514"><a name="p882981673514"></a><a name="p882981673514"></a>2</p>
@@ -46,7 +46,7 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p129191956144716"><a name="p129191956144716"></a><a name="p129191956144716"></a>增加作业编辑窗口</p>
 </td>
 <td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.4.1.3 "><p id="p39191556154710"><a name="p39191556154710"></a><a name="p39191556154710"></a>增加SQL作业编辑窗口。</p>
-<div class="note" id="note1939391324020"><a name="note1939391324020"></a><a name="note1939391324020"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p20395413184013"><a name="p20395413184013"></a><a name="p20395413184013"></a>最多可同时开启10个作业编辑窗口。</p>
+<div class="note" id="note1939391324020"><a name="note1939391324020"></a><a name="note1939391324020"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p20395413184013"><a name="p20395413184013"></a><a name="p20395413184013"></a>最多可同时开启10个作业编辑窗口。</p>
 </div></div>
 </td>
 </tr>
@@ -86,7 +86,7 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.4.1.2 "><p id="p451112576203"><a name="p451112576203"></a><a name="p451112576203"></a>数据库</p>
 </td>
 <td class="cellrowborder" valign="top" width="67%" headers="mcps1.2.4.1.3 "><p id="p75761589710"><a name="p75761589710"></a><a name="p75761589710"></a>显示已有的数据库及其下所有的表。</p>
-<div class="note" id="note21812225470"><a name="note21812225470"></a><a name="note21812225470"></a><span class="notetitle"> NOTE: </span><div class="notebody"><a name="ul10186152210479"></a><a name="ul10186152210479"></a><ul id="ul10186152210479"><li>单击数据库名，将显示该数据库中的表。</li><li>单击表名，将在表名下显示该表中的元数据，最多可显示20个元数据。</li><li>双击表名，将在作业编辑窗口自动输入SQL查询语句。</li></ul>
+<div class="note" id="note21812225470"><a name="note21812225470"></a><a name="note21812225470"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul10186152210479"></a><a name="ul10186152210479"></a><ul id="ul10186152210479"><li>单击数据库名，将显示该数据库中的表。</li><li>单击表名，将在表名下显示该表中的元数据，最多可显示20个元数据。</li><li>双击表名，将在作业编辑窗口自动输入SQL查询语句。</li></ul>
 </div></div>
 </td>
 </tr>
@@ -147,7 +147,7 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 <td class="cellrowborder" valign="top" width="14.85148514851485%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0093946815_p15920355171120"><a name="zh-cn_topic_0093946815_p15920355171120"></a><a name="zh-cn_topic_0093946815_p15920355171120"></a>数据库名</p>
 </td>
 <td class="cellrowborder" valign="top" width="77.22772277227723%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0093946815_p14480403171120"><a name="zh-cn_topic_0093946815_p14480403171120"></a><a name="zh-cn_topic_0093946815_p14480403171120"></a>下拉选择需要使用的数据库。如果没有可用数据库，此处显示“请选择数据库”，请先创建数据库。</p>
-<div class="note" id="note163344794910"><a name="note163344794910"></a><a name="note163344794910"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p563324794919"><a name="p563324794919"></a><a name="p563324794919"></a>如果SQL语句中指定了表所在的数据库，则此处选择的数据库无效。</p>
+<div class="note" id="note163344794910"><a name="note163344794910"></a><a name="note163344794910"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p563324794919"><a name="p563324794919"></a><a name="p563324794919"></a>如果SQL语句中指定了表所在的数据库，则此处选择的数据库无效。</p>
 </div></div>
 </td>
 </tr>
@@ -156,7 +156,7 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 <td class="cellrowborder" valign="top" width="14.85148514851485%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0093946815_p20122653171120"><a name="zh-cn_topic_0093946815_p20122653171120"></a><a name="zh-cn_topic_0093946815_p20122653171120"></a>执行</p>
 </td>
 <td class="cellrowborder" valign="top" width="77.22772277227723%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0093946815_p19322157171120"><a name="zh-cn_topic_0093946815_p19322157171120"></a><a name="zh-cn_topic_0093946815_p19322157171120"></a>执行作业编辑窗口中的SQL语句。</p>
-<div class="note" id="note18922131716143"><a name="note18922131716143"></a><a name="note18922131716143"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p1192312178144"><a name="p1192312178144"></a><a name="p1192312178144"></a>若窗口中没有SQL语句，该按键禁用。</p>
+<div class="note" id="note18922131716143"><a name="note18922131716143"></a><a name="note18922131716143"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1192312178144"><a name="p1192312178144"></a><a name="p1192312178144"></a>若窗口中没有SQL语句，该按键禁用。</p>
 </div></div>
 </td>
 </tr>
@@ -165,7 +165,7 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 <td class="cellrowborder" valign="top" width="14.85148514851485%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0093946815_p10118717157"><a name="zh-cn_topic_0093946815_p10118717157"></a><a name="zh-cn_topic_0093946815_p10118717157"></a>格式化</p>
 </td>
 <td class="cellrowborder" valign="top" width="77.22772277227723%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0093946815_p819621917157"><a name="zh-cn_topic_0093946815_p819621917157"></a><a name="zh-cn_topic_0093946815_p819621917157"></a>格式化SQL语句。</p>
-<div class="note" id="note11930151811175"><a name="note11930151811175"></a><a name="note11930151811175"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p793271811715"><a name="p793271811715"></a><a name="p793271811715"></a>若窗口中没有SQL语句，该按键禁用。</p>
+<div class="note" id="note11930151811175"><a name="note11930151811175"></a><a name="note11930151811175"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p793271811715"><a name="p793271811715"></a><a name="p793271811715"></a>若窗口中没有SQL语句，该按键禁用。</p>
 </div></div>
 </td>
 </tr>
@@ -202,7 +202,7 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 </td>
 <td class="cellrowborder" valign="top" width="14.85148514851485%" headers="mcps1.2.4.1.2 "><p id="p414053541419"><a name="p414053541419"></a><a name="p414053541419"></a>快捷键</p>
 </td>
-<td class="cellrowborder" valign="top" width="77.22772277227723%" headers="mcps1.2.4.1.3 "><p id="p142031189146"><a name="p142031189146"></a><a name="p142031189146"></a>快捷键介绍具体请参考<a href="#dli_01_0320__table209301155311">表5</a>。</p>
+<td class="cellrowborder" valign="top" width="77.22772277227723%" headers="mcps1.2.4.1.3 "><p id="p142031189146"><a name="p142031189146"></a><a name="p142031189146"></a>快捷键介绍具体请参考<a href="#table209301155311">表5</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -257,22 +257,22 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 </thead>
 <tbody><tr id="row119311915038"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p1393131514314"><a name="p1393131514314"></a><a name="p1393131514314"></a>Ctrl+R或Ctrl+Enter</p>
 </td>
-<td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p15931161514320"><a name="p15931161514320"></a><a name="p15931161514320"></a>执行SQL。具体操作请参考<a href="#dli_01_0320__zh-cn_topic_0093946815_li1692825313355">作业编辑器页面中的常用操作快捷键</a>。</p>
+<td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p15931161514320"><a name="p15931161514320"></a><a name="p15931161514320"></a>执行SQL。具体操作请参考<a href="#zh-cn_topic_0093946815_li1692825313355">作业编辑器页面中的常用操作快捷键</a>。</p>
 </td>
 </tr>
 <tr id="row1793118157315"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p093181512318"><a name="p093181512318"></a><a name="p093181512318"></a>Ctrl+F</p>
 </td>
-<td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p179321615337"><a name="p179321615337"></a><a name="p179321615337"></a>格式化SQL。具体操作请参考<a href="#dli_01_0320__zh-cn_topic_0093946815_li1692825313355">作业编辑器页面中的常用操作快捷键</a>。</p>
+<td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p179321615337"><a name="p179321615337"></a><a name="p179321615337"></a>格式化SQL。具体操作请参考<a href="#zh-cn_topic_0093946815_li1692825313355">作业编辑器页面中的常用操作快捷键</a>。</p>
 </td>
 </tr>
 <tr id="row159326153319"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p1093215151731"><a name="p1093215151731"></a><a name="p1093215151731"></a>Ctrl+Z</p>
 </td>
-<td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p19325151236"><a name="p19325151236"></a><a name="p19325151236"></a>回退。具体操作请参考<a href="#dli_01_0320__zh-cn_topic_0093946815_li1692825313355">作业编辑器页面中的常用操作快捷键</a>。</p>
+<td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p19325151236"><a name="p19325151236"></a><a name="p19325151236"></a>回退。具体操作请参考<a href="#zh-cn_topic_0093946815_li1692825313355">作业编辑器页面中的常用操作快捷键</a>。</p>
 </td>
 </tr>
 <tr id="row166952451254"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p1069618456512"><a name="p1069618456512"></a><a name="p1069618456512"></a>Tab</p>
 </td>
-<td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p869674517515"><a name="p869674517515"></a><a name="p869674517515"></a>自动联想。具体操作请参考<a href="#dli_01_0320__zh-cn_topic_0093946815_li1692825313355">作业编辑器页面中的常用操作快捷键</a>。</p>
+<td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p869674517515"><a name="p869674517515"></a><a name="p869674517515"></a>自动联想。具体操作请参考<a href="#zh-cn_topic_0093946815_li1692825313355">作业编辑器页面中的常用操作快捷键</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -280,7 +280,7 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 
 ## 操作步骤<a name="zh-cn_topic_0093946815_section6030699152035"></a>
 
-1.  登录数据湖探索管理控制台，选择SQL作业，单击![](figures/zh-cn_image_0126541861.png)，进入“作业编辑器“页面。
+1.  登录数据湖探索管理控制台，选择SQL作业，单击![](figures/icon-创建作业.png)，进入“作业编辑器“页面。
 2.  在当前SQL作业编辑窗口右上方的“队列”列表中选择所使用的队列，默认选择“default“，创建队列详细信息请参见[创建队列](创建队列.md)。
 3.  在“数据库”列表中选择所使用的数据库，例如选择选择“qw“。
 4.  在SQL作业编辑窗口输入SQL查询语句：
@@ -290,14 +290,14 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
     或者双击左侧表名“qw”，上述查询语句会自动在作业编辑窗口输入。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
-    >当作业编辑窗口没有输入SQL语句时，![](figures/zh-cn_image_0132306499.png)和![](figures/zh-cn_image_0132305741.png)两个按钮不可用。  
+    >当作业编辑窗口没有输入SQL语句时，![](figures/icon-执行.png)和![](figures/icon-格式化.png)两个按钮不可用。  
 
-5.  单击![](figures/zh-cn_image_0132306157.png)中的“语义校验“，确认SQL语句书写是否正确。
+5.  单击![](figures/icon-更多.png)中的“语义校验“，确认SQL语句书写是否正确。
     1.  若校验失败，请参考[《数据湖探索SQL语法参考》](https://support.huaweicloud.com/sqlreference-uquery/uquery_08_0001.html)，检查SQL语句准确性。
-    2.  若校验通过，单击![](figures/zh-cn_image_0132306499.png)，执行SQL语句。
+    2.  若校验通过，单击![](figures/icon-执行.png)，执行SQL语句。
     3.  SQL语句执行成功后，在SQL作业编辑窗口下方会显示执行结果。
 
-6.  （可选）在执行结果窗口，单击右上![](figures/zh-cn_image_0126972566.png)，查询结果将以图形形式呈现。再单击![](figures/zh-cn_image_0126972642.png)，查询结果可切换回表格形式。
+6.  （可选）在执行结果窗口，单击右上![](figures/icon-柱状图.png)，查询结果将以图形形式呈现。再单击![](figures/icon-表格.png)，查询结果可切换回表格形式。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >-   若执行结果中无数值列，则无法进行图形化。  
@@ -309,9 +309,9 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 
 -   在SQL作业编辑窗口中导入SQL查询语句的简便方法
 
-    您可以双击左侧导航栏列表中的表名，即可将选定表的查询语句导入SQL语句编辑窗口中，单击![](figures/zh-cn_image_0132306499.png)，即可完成查询；也可以通过单击![](figures/zh-cn_image_0132306497.png)，选择“设为模板”，将对应的查询语句保存为模板，供将来执行使用。
+    您可以双击左侧导航栏列表中的表名，即可将选定表的查询语句导入SQL语句编辑窗口中，单击![](figures/icon-执行.png)，即可完成查询；也可以通过单击![](figures/icon-更多.png)，选择“设为模板”，将对应的查询语句保存为模板，供将来执行使用。
 
-    除了查询语句，其他SQL语句也可以通过单击![](figures/zh-cn_image_0132306497.png)，选择“设为模板”保存为模板。需要使用时，通过单击![](figures/zh-cn_image_0132306497.png)，选择“选择模板”，在已有模板中双击所需的SQL语句，导入SQL作业编辑窗口中，单击![](figures/zh-cn_image_0132306499.png)，或根据需要进行修改后执行。
+    除了查询语句，其他SQL语句也可以通过单击![](figures/icon-更多.png)，选择“设为模板”保存为模板。需要使用时，通过单击![](figures/icon-更多.png)，选择“选择模板”，在已有模板中双击所需的SQL语句，导入SQL作业编辑窗口中，单击![](figures/icon-执行.png)，或根据需要进行修改后执行。
 
 -   <a name="zh-cn_topic_0093946815_li1692825313355"></a>作业编辑窗口中的常用快捷键
 

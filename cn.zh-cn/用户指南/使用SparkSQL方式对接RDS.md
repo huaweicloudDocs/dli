@@ -27,11 +27,12 @@
     read.format\(“jdbc”\)指定jdbc的连接方式，并且在option中指定数据源，比如连接设置的url，要读取的数据库表dbtable等，并且将读取到的数据转换为DataFrame。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
-    >其中option支持url、driver、dbtable、partitionColumn、lowerBound、upperBound以及numPartitions选项。  
+    >-   option支持url、driver、dbtable、partitionColumn、lowerBound、upperBound以及numPartitions选项。  
+    >-   url是跨源连接地址。  
 
     ```
     //连接配置
-    val url = "jdbc:mysql://192.168.0.31:3306";  
+    val url = "jdbc:mysql://to-rds-1174405062-ljDSiO73.datasource.com:3306";  
     val dbtable = "rds_test.customer_test";  
     val userName = "root";  
     val password = "test";  

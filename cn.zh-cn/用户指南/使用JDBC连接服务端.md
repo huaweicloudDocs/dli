@@ -114,8 +114,8 @@ DLI支持13种数据类型，每一种类型都可以映射成一种JDBC类型�
 ## 操作步骤<a name="section51761783175346"></a>
 
 1.  在使用JDBC的机器中安装JDK，JDK版本为1.7或以上版本，并配置环境变量。
-2.  参考[下载JDBC或ODBC驱动包](下载JDBC或ODBC驱动包.md)章节DLI JDBC驱动包，并将获取的驱动包“dli-jdbc-<version\>.zip”解压，获得“dli-jdbc-1.1.1-jar-with-dependencies.jar”。
-3.  在使用JDBC的机器中，将“dli-jdbc-1.1.1-jar-with-dependencies.jar”添加至Java工程的“classpath“路径下。
+2.  参考[下载JDBC或ODBC驱动包](下载JDBC或ODBC驱动包.md)章节DLI JDBC驱动包，并将获取的驱动包“huaweicloud-dli-jdbc-<version\>.zip”解压，获得“huaweicloud-dli-jdbc-<version\>-jar-with-dependencies.jar”。
+3.  在使用JDBC的机器中，将“huaweicloud-dli-jdbc-1.1.1-jar-with-dependencies.jar”添加至Java工程的“classpath“路径下。
 4.  DLI JDBC提供两种身份认证模式连接到DLI服务，即Token和AK/SK。获取Token和AK/SK的方法请参见[认证](认证.md)。
 5.  使用Class.forName（）加载DLI JDBC驱动程序。
 
@@ -140,7 +140,7 @@ DLI支持13种数据类型，每一种类型都可以映射成一种JDBC类型�
     </td>
     <td class="cellrowborder" valign="top" width="75.75%" headers="mcps1.2.3.1.2 "><p id="p54896577105347"><a name="p54896577105347"></a><a name="p54896577105347"></a>url的格式如下。</p>
     <p id="p59619235143640"><a name="p59619235143640"></a><a name="p59619235143640"></a>jdbc:dli://&lt;endPoint&gt;/projectId? &lt;key1&gt;=&lt;val1&gt;;&lt;key2&gt;=&lt;val2&gt;…</p>
-    <a name="ul079115391211"></a><a name="ul079115391211"></a><ul id="ul079115391211"><li>endpoint指DLI的域名。projectId指项目ID。在<a href="https://developer.huaweicloud.com/endpoint" target="_blank" rel="noopener noreferrer">地区和终端节点</a>获取DLI对应的Endpoint，从公有云“用户名”&gt;“我的凭证”页面获取项目编号。</li><li><span class="parmname" id="parmname11811939422"><a name="parmname11811939422"></a><a name="parmname11811939422"></a><b>？</b></span>后面接其他配置项，每个配置项以<span class="parmname" id="parmname198134391527"><a name="parmname198134391527"></a><a name="parmname198134391527"></a><b>key=value</b></span>的形式列出，配置项之间以<span class="parmname" id="parmname18157391211"><a name="parmname18157391211"></a><a name="parmname18157391211"></a><b>;</b></span>隔开，这些配置项也可以通过Info对象传入。</li></ul>
+    <a name="ul079115391211"></a><a name="ul079115391211"></a><ul id="ul079115391211"><li>endpoint指DLI的域名。projectId指项目ID。在<a href="https://developer.huaweicloud.com/endpoint" target="_blank" rel="noopener noreferrer">地区和终端节点</a>获取DLI对应的Endpoint，从公有云“用户名”&gt;“我的凭证”页面获取项目编号。</li><li><span class="parmname" id="parmname11811939422"><a name="parmname11811939422"></a><a name="parmname11811939422"></a>“？”</span>后面接其他配置项，每个配置项以<span class="parmname" id="parmname198134391527"><a name="parmname198134391527"></a><a name="parmname198134391527"></a>“key=value”</span>的形式列出，配置项之间以<span class="parmname" id="parmname18157391211"><a name="parmname18157391211"></a><a name="parmname18157391211"></a>“;”</span>隔开，这些配置项也可以通过Info对象传入。</li></ul>
     </td>
     </tr>
     <tr id="row24307152105347"><td class="cellrowborder" valign="top" width="24.25%" headers="mcps1.2.3.1.1 "><p id="p22722282105347"><a name="p22722282105347"></a><a name="p22722282105347"></a>Info</p>

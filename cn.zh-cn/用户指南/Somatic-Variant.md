@@ -1,0 +1,294 @@
+# Somatic Variant<a name="dli_01_0398"></a>
+
+## Somatic Variant概述<a name="section8244204903017"></a>
+
+DLI全托管的体细胞肿瘤检测流程，为GATK官方的体细胞癌症检测流程，用于分析正常样本与癌症样本差异, 获取癌症病变的基因突变, 用于指导癌症治疗药物的选择。
+
+>![](public_sys-resources/icon-note.gif) **说明：**   
+>提交Somatic Variant作业需进行实名认证，并且需要进行委托授权。具体操作请参考[准备工作](准备工作.md)。  
+
+## 创建作业<a name="section13481158113"></a>
+
+**图 1**  Somatic Variant创建作业<a name="fig5850193418534"></a>  
+![](figures/Somatic-Variant创建作业.png "Somatic-Variant创建作业")
+
+1.  数据导入
+
+    **图 2**  Somatic Variant数据导入<a name="fig16945784146"></a>  
+    ![](figures/Somatic-Variant数据导入.png "Somatic-Variant数据导入")
+
+    **表 1**  参数说明
+
+    <a name="table67331330132118"></a>
+    <table><thead align="left"><tr id="row147341730192117"><th class="cellrowborder" valign="top" width="13.09130913091309%" id="mcps1.2.4.1.1"><p id="p9734830202115"><a name="p9734830202115"></a><a name="p9734830202115"></a>参数名称</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="63.406340634063405%" id="mcps1.2.4.1.2"><p id="p3734830112116"><a name="p3734830112116"></a><a name="p3734830112116"></a>描述</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="23.5023502350235%" id="mcps1.2.4.1.3"><p id="p14734530142113"><a name="p14734530142113"></a><a name="p14734530142113"></a>示例</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row873403014212"><td class="cellrowborder" valign="top" width="13.09130913091309%" headers="mcps1.2.4.1.1 "><p id="p973411309219"><a name="p973411309219"></a><a name="p973411309219"></a>文件类型</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="63.406340634063405%" headers="mcps1.2.4.1.2 "><p id="p3737163032115"><a name="p3737163032115"></a><a name="p3737163032115"></a>有FASTQ和BAM两种类型的输入文件。</p>
+    <div class="note" id="note863438122719"><a name="note863438122719"></a><a name="note863438122719"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1563448162710"><a name="p1563448162710"></a><a name="p1563448162710"></a>文件类型为BAM时，必须提供BQSR比对之后的BAM文件。</p>
+    </div></div>
+    </td>
+    <td class="cellrowborder" valign="top" width="23.5023502350235%" headers="mcps1.2.4.1.3 "><p id="p197371330112115"><a name="p197371330112115"></a><a name="p197371330112115"></a>FASTQ</p>
+    </td>
+    </tr>
+    <tr id="row12737163015215"><td class="cellrowborder" colspan="3" valign="top" headers="mcps1.2.4.1.1 mcps1.2.4.1.2 mcps1.2.4.1.3 "><p id="p77381430182111"><a name="p77381430182111"></a><a name="p77381430182111"></a><strong id="b1223852922314"><a name="b1223852922314"></a><a name="b1223852922314"></a>正常样本</strong></p>
+    </td>
+    </tr>
+    <tr id="row173823012215"><td class="cellrowborder" valign="top" width="13.09130913091309%" headers="mcps1.2.4.1.1 "><p id="p273843018215"><a name="p273843018215"></a><a name="p273843018215"></a>样本名称</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="63.406340634063405%" headers="mcps1.2.4.1.2 "><p id="p6738330132114"><a name="p6738330132114"></a><a name="p6738330132114"></a>正常样本对应的SM值。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="23.5023502350235%" headers="mcps1.2.4.1.3 "><p id="p97389309217"><a name="p97389309217"></a><a name="p97389309217"></a>-</p>
+    </td>
+    </tr>
+    <tr id="row473853072119"><td class="cellrowborder" valign="top" width="13.09130913091309%" headers="mcps1.2.4.1.1 "><p id="p15738163062114"><a name="p15738163062114"></a><a name="p15738163062114"></a>样本路径</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="63.406340634063405%" headers="mcps1.2.4.1.2 "><p id="p673810303212"><a name="p673810303212"></a><a name="p673810303212"></a>输入正常样本文件OBS路径。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="23.5023502350235%" headers="mcps1.2.4.1.3 "><p id="p10738430132114"><a name="p10738430132114"></a><a name="p10738430132114"></a>-</p>
+    </td>
+    </tr>
+    <tr id="row8738113010210"><td class="cellrowborder" colspan="3" valign="top" headers="mcps1.2.4.1.1 mcps1.2.4.1.2 mcps1.2.4.1.3 "><p id="p18738113015212"><a name="p18738113015212"></a><a name="p18738113015212"></a><strong id="b16015112247"><a name="b16015112247"></a><a name="b16015112247"></a>肿瘤样本</strong></p>
+    </td>
+    </tr>
+    <tr id="row7738730192110"><td class="cellrowborder" valign="top" width="13.09130913091309%" headers="mcps1.2.4.1.1 "><p id="p107382304213"><a name="p107382304213"></a><a name="p107382304213"></a>样本名称</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="63.406340634063405%" headers="mcps1.2.4.1.2 "><p id="p2884194815251"><a name="p2884194815251"></a><a name="p2884194815251"></a>肿瘤样本对应的SM值。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="23.5023502350235%" headers="mcps1.2.4.1.3 "><p id="p473813017216"><a name="p473813017216"></a><a name="p473813017216"></a>-</p>
+    </td>
+    </tr>
+    <tr id="row1738193092116"><td class="cellrowborder" valign="top" width="13.09130913091309%" headers="mcps1.2.4.1.1 "><p id="p1473853082111"><a name="p1473853082111"></a><a name="p1473853082111"></a>样本路径</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="63.406340634063405%" headers="mcps1.2.4.1.2 "><p id="p168881048162514"><a name="p168881048162514"></a><a name="p168881048162514"></a>输入肿瘤样本文件OBS路径。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="23.5023502350235%" headers="mcps1.2.4.1.3 "><p id="p13738230202116"><a name="p13738230202116"></a><a name="p13738230202116"></a>-</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+2.  基本参数配置
+
+    **图 3**  Somatic Variant基本参数配置<a name="fig2521134601810"></a>  
+    ![](figures/Somatic-Variant基本参数配置.png "Somatic-Variant基本参数配置")
+
+    **表 2**  参数说明
+
+    <a name="table34159998103738"></a>
+    <table><thead align="left"><tr id="row18398987103738"><th class="cellrowborder" valign="top" width="16.393939393939394%" id="mcps1.2.4.1.1"><p id="p13922998103738"><a name="p13922998103738"></a><a name="p13922998103738"></a>参数名称</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="58.01010101010101%" id="mcps1.2.4.1.2"><p id="p54021066103738"><a name="p54021066103738"></a><a name="p54021066103738"></a>描述</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="25.5959595959596%" id="mcps1.2.4.1.3"><p id="p13630189103738"><a name="p13630189103738"></a><a name="p13630189103738"></a>示例</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row16943758105944"><td class="cellrowborder" valign="top" width="16.393939393939394%" headers="mcps1.2.4.1.1 "><p id="p30267119105944"><a name="p30267119105944"></a><a name="p30267119105944"></a>参考基因</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="58.01010101010101%" headers="mcps1.2.4.1.2 "><p id="p127371727548"><a name="p127371727548"></a><a name="p127371727548"></a>基因行业内标准的基因库，目前仅支持hg38。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="25.5959595959596%" headers="mcps1.2.4.1.3 "><p id="p1354613491044"><a name="p1354613491044"></a><a name="p1354613491044"></a>hg38</p>
+    </td>
+    </tr>
+    <tr id="row172161944183112"><td class="cellrowborder" valign="top" width="16.393939393939394%" headers="mcps1.2.4.1.1 "><p id="p1521784417314"><a name="p1521784417314"></a><a name="p1521784417314"></a>已知变异基因集</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="58.01010101010101%" headers="mcps1.2.4.1.2 "><p id="p6217194443113"><a name="p6217194443113"></a><a name="p6217194443113"></a>根据给定的下拉框，选择需要进行比对的已知变异基因集合，可以多选。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="25.5959595959596%" headers="mcps1.2.4.1.3 "><p id="p17217194483111"><a name="p17217194483111"></a><a name="p17217194483111"></a>-</p>
+    </td>
+    </tr>
+    <tr id="row8664577112415"><td class="cellrowborder" valign="top" width="16.393939393939394%" headers="mcps1.2.4.1.1 "><p id="p55414053311"><a name="p55414053311"></a><a name="p55414053311"></a>输出路径</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="58.01010101010101%" headers="mcps1.2.4.1.2 "><p id="p1356002333"><a name="p1356002333"></a><a name="p1356002333"></a>存放分析结果的OBS路径。可以指定OBS上已经存在的文件夹路径，或者OBS上一个vcf文件的路径。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="25.5959595959596%" headers="mcps1.2.4.1.3 "><p id="p20591706335"><a name="p20591706335"></a><a name="p20591706335"></a>-</p>
+    </td>
+    </tr>
+    <tr id="row1161063874114"><td class="cellrowborder" valign="top" width="16.393939393939394%" headers="mcps1.2.4.1.1 "><p id="p223174615326"><a name="p223174615326"></a><a name="p223174615326"></a>FastqToSam参数</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="58.01010101010101%" headers="mcps1.2.4.1.2 "><p id="p8477142817362"><a name="p8477142817362"></a><a name="p8477142817362"></a>执行FastqToSam过程中业务相关的配置项，用户可手动添加。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="25.5959595959596%" headers="mcps1.2.4.1.3 "><p id="p1922646103211"><a name="p1922646103211"></a><a name="p1922646103211"></a>-</p>
+    </td>
+    </tr>
+    <tr id="row208095231057"><td class="cellrowborder" valign="top" width="16.393939393939394%" headers="mcps1.2.4.1.1 "><p id="p2020846193212"><a name="p2020846193212"></a><a name="p2020846193212"></a>BwaSpark参数</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="58.01010101010101%" headers="mcps1.2.4.1.2 "><p id="p379142518238"><a name="p379142518238"></a><a name="p379142518238"></a>执行GATK BwaSpark方法中业务相关的配置项，用户可手动添加。</p>
+    <div class="note" id="note3661850105817"><a name="note3661850105817"></a><a name="note3661850105817"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1666216507581"><a name="p1666216507581"></a><a name="p1666216507581"></a>暂不支持关于输出文件格式以及输入输出路径相关的配置项。</p>
+    </div></div>
+    </td>
+    <td class="cellrowborder" valign="top" width="25.5959595959596%" headers="mcps1.2.4.1.3 "><p id="p1518184693216"><a name="p1518184693216"></a><a name="p1518184693216"></a>-</p>
+    </td>
+    </tr>
+    <tr id="row562270711021"><td class="cellrowborder" valign="top" width="16.393939393939394%" headers="mcps1.2.4.1.1 "><p id="p123174373320"><a name="p123174373320"></a><a name="p123174373320"></a>ReadsPipelineSpark参数</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="58.01010101010101%" headers="mcps1.2.4.1.2 "><p id="p667810411184"><a name="p667810411184"></a><a name="p667810411184"></a>执行GATK ReadsPipelineSpark方法中业务相关的配置项，用户可手动添加。</p>
+    <div class="note" id="note1565101225920"><a name="note1565101225920"></a><a name="note1565101225920"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1165141217596"><a name="p1165141217596"></a><a name="p1165141217596"></a>暂不支持关于输出文件格式以及输入输出路径相关的配置项。</p>
+    </div></div>
+    </td>
+    <td class="cellrowborder" valign="top" width="25.5959595959596%" headers="mcps1.2.4.1.3 "><p id="p63145303317"><a name="p63145303317"></a><a name="p63145303317"></a>-</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+3.  肿瘤检测参数设置
+
+    **图 4**  肿瘤检测参数设置<a name="fig649863113413"></a>  
+    ![](figures/肿瘤检测参数设置.png "肿瘤检测参数设置")
+
+    **表 3**  参数说明
+
+    <a name="table923017405392"></a>
+    <table><thead align="left"><tr id="row523924012390"><th class="cellrowborder" valign="top" width="23.080808080808083%" id="mcps1.2.4.1.1"><p id="p142411540173919"><a name="p142411540173919"></a><a name="p142411540173919"></a>参数名称</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="39.97979797979798%" id="mcps1.2.4.1.2"><p id="p1924412403396"><a name="p1924412403396"></a><a name="p1924412403396"></a>描述</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="36.939393939393945%" id="mcps1.2.4.1.3"><p id="p824444012393"><a name="p824444012393"></a><a name="p824444012393"></a>示例</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row15246940133915"><td class="cellrowborder" valign="top" width="23.080808080808083%" headers="mcps1.2.4.1.1 "><p id="p15248194013390"><a name="p15248194013390"></a><a name="p15248194013390"></a>Intervals</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="39.97979797979798%" headers="mcps1.2.4.1.2 "><p id="p82501040183915"><a name="p82501040183915"></a><a name="p82501040183915"></a>索引文件的名称，目前仅支持给定的索引，暂不支持用户指定自己的索引文件。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="36.939393939393945%" headers="mcps1.2.4.1.3 "><p id="p19255174053915"><a name="p19255174053915"></a><a name="p19255174053915"></a>wgs_calling_regions.hg38.interval_list</p>
+    </td>
+    </tr>
+    <tr id="row125618401396"><td class="cellrowborder" valign="top" width="23.080808080808083%" headers="mcps1.2.4.1.1 "><p id="p42586408396"><a name="p42586408396"></a><a name="p42586408396"></a>PON</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="39.97979797979798%" headers="mcps1.2.4.1.2 "><p id="p6259104033910"><a name="p6259104033910"></a><a name="p6259104033910"></a>肿瘤检测Mutect中用到的PON文件，暂不支持用户指定自己的PON文件。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="36.939393939393945%" headers="mcps1.2.4.1.3 "><p id="p1826024043912"><a name="p1826024043912"></a><a name="p1826024043912"></a>somatic-hg38-1000g_pon.hg38.vcf.gz</p>
+    </td>
+    </tr>
+    <tr id="row126184014393"><td class="cellrowborder" valign="top" width="23.080808080808083%" headers="mcps1.2.4.1.1 "><p id="p226220408398"><a name="p226220408398"></a><a name="p226220408398"></a>GermlineResource</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="39.97979797979798%" headers="mcps1.2.4.1.2 "><p id="p926612407397"><a name="p926612407397"></a><a name="p926612407397"></a>肿瘤检测Mutect中用到的GermlineResource文件，暂不支持用户指定自己的GermlineResource文件。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="36.939393939393945%" headers="mcps1.2.4.1.3 "><p id="p22671840133918"><a name="p22671840133918"></a><a name="p22671840133918"></a>somatic-hg38faf-only-gnomad.hg38.vcf.gz</p>
+    </td>
+    </tr>
+    <tr id="row122671940103919"><td class="cellrowborder" valign="top" width="23.080808080808083%" headers="mcps1.2.4.1.1 "><p id="p82681040203920"><a name="p82681040203920"></a><a name="p82681040203920"></a>突变频率库</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="39.97979797979798%" headers="mcps1.2.4.1.2 "><p id="p7271240133917"><a name="p7271240133917"></a><a name="p7271240133917"></a>根据突变频率进行过滤时使用的突变频率库。目前默认使用ExAC突变频率库，暂不支持用户指定自己的频率库。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="36.939393939393945%" headers="mcps1.2.4.1.3 "><p id="p18272640113917"><a name="p18272640113917"></a><a name="p18272640113917"></a>small_exac_common_3.hg38.vcf.gz</p>
+    </td>
+    </tr>
+    <tr id="row027314018395"><td class="cellrowborder" valign="top" width="23.080808080808083%" headers="mcps1.2.4.1.1 "><p id="p3275114016398"><a name="p3275114016398"></a><a name="p3275114016398"></a>OrientationBias过滤</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="39.97979797979798%" headers="mcps1.2.4.1.2 "><p id="p1327615404397"><a name="p1327615404397"></a><a name="p1327615404397"></a>选择是否进行OrientationBias过滤。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="36.939393939393945%" headers="mcps1.2.4.1.3 "><p id="p112778407393"><a name="p112778407393"></a><a name="p112778407393"></a>False</p>
+    </td>
+    </tr>
+    <tr id="row52791240173910"><td class="cellrowborder" valign="top" width="23.080808080808083%" headers="mcps1.2.4.1.1 "><p id="p15280240143911"><a name="p15280240143911"></a><a name="p15280240143911"></a>ArtifactModes</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="39.97979797979798%" headers="mcps1.2.4.1.2 "><p id="p328111407396"><a name="p328111407396"></a><a name="p328111407396"></a>如果选择进行OrientationBias过滤，则需填入ArtifactModes参数，多个参数请以逗号分隔。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="36.939393939393945%" headers="mcps1.2.4.1.3 "><p id="p12845406399"><a name="p12845406399"></a><a name="p12845406399"></a>-</p>
+    </td>
+    </tr>
+    <tr id="row1575105974219"><td class="cellrowborder" valign="top" width="23.080808080808083%" headers="mcps1.2.4.1.1 "><p id="p6752105984215"><a name="p6752105984215"></a><a name="p6752105984215"></a>AlignmentArtifacts过滤</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="39.97979797979798%" headers="mcps1.2.4.1.2 "><p id="p19752125984217"><a name="p19752125984217"></a><a name="p19752125984217"></a>选择是否进行OrientationBias过滤。</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="36.939393939393945%" headers="mcps1.2.4.1.3 "><p id="p7752115911427"><a name="p7752115911427"></a><a name="p7752115911427"></a>False</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+4.  单击“提交”。
+
+## 作业列表<a name="section152131585110"></a>
+
+**图 5**  Somatic Variant作业列表<a name="fig1121113581819"></a>  
+![](figures/Somatic-Variant作业列表.png "Somatic-Variant作业列表")
+
+作业列表显示所有Somatic Variant作业，作业数量较多时，系统分页显示，您可以查看所有历史提交的作业。作业列表默认按创建时间排列，可选择升序或降序排列；也可以选择时间范围，查看特定时间范围内提交的作业。
+
+**表 4**  作业列表参数
+
+<a name="table421110587113"></a>
+<table><thead align="left"><tr id="row1021119582117"><th class="cellrowborder" valign="top" width="21.18%" id="mcps1.2.3.1.1"><p id="p1121155811113"><a name="p1121155811113"></a><a name="p1121155811113"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="78.82000000000001%" id="mcps1.2.3.1.2"><p id="p1921116581113"><a name="p1921116581113"></a><a name="p1921116581113"></a>参数说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row3211145810117"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="p621114581812"><a name="p621114581812"></a><a name="p621114581812"></a>创建时间</p>
+</td>
+<td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><p id="p821165815111"><a name="p821165815111"></a><a name="p821165815111"></a>每个作业的创建时间，目前按创建时间倒序显示作业列表。</p>
+</td>
+</tr>
+<tr id="row32115581915"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="p152111582012"><a name="p152111582012"></a><a name="p152111582012"></a>作业状态</p>
+</td>
+<td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><p id="p18211758310"><a name="p18211758310"></a><a name="p18211758310"></a>作业的状态信息，包括如下五种状态。</p>
+<a name="ul4211135814117"></a><a name="ul4211135814117"></a><ul id="ul4211135814117"><li>提交中（launching）</li><li>运行中（running）</li><li>已成功（finished）</li><li>已失败（failed）</li></ul>
+</td>
+</tr>
+<tr id="row1121118581312"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="p11211195812114"><a name="p11211195812114"></a><a name="p11211195812114"></a>作业ID</p>
+</td>
+<td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><p id="p721119582012"><a name="p721119582012"></a><a name="p721119582012"></a>所提交作业的ID，由系统默认生成的唯一标识。</p>
+</td>
+</tr>
+<tr id="row4211958813"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="p1421118584113"><a name="p1421118584113"></a><a name="p1421118584113"></a>用户名</p>
+</td>
+<td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><p id="p102111758111"><a name="p102111758111"></a><a name="p102111758111"></a>提交作业的用户名称。</p>
+</td>
+</tr>
+<tr id="row192110581013"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="p2211358416"><a name="p2211358416"></a><a name="p2211358416"></a>运行时长</p>
+</td>
+<td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><p id="p6211165813111"><a name="p6211165813111"></a><a name="p6211165813111"></a>作业运行的时间长度。</p>
+</td>
+</tr>
+<tr id="row18211165811117"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="p521116581713"><a name="p521116581713"></a><a name="p521116581713"></a>进度</p>
+</td>
+<td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><p id="p142112058319"><a name="p142112058319"></a><a name="p142112058319"></a>作业运行的进度， 例如：1/1表示该作业有一个步骤，当前已完成。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+-   查找作业
+
+    在[图5](#fig1121113581819)右上侧“日期”栏，单击![](figures/icon-日期.png)选择“开始时间”和“结束时间”，可查找对应时间段内提交的作业。
+
+-   查看作业详情
+
+    在[图5](#fig1121113581819)页面，选中一条作业，单击该作业对应的![](figures/icon-展开.png)，可查看该条作业的详细信息。
+
+    -   正常样本
+
+        包括：样本名称，样本路径。
+
+    -   肿瘤样本
+
+        包括：样本名称，样本路径。
+
+
+    -   基本配置
+
+        包括：文件类型，输出路径，参考基因，已知变异基因集，Intervals，PON，GermlineResource，突变频率库，导出bam，OrientationBias过滤，导出路径，ArtifactModes，AlignmentArtifacts过滤，BwaSpark参数，FastqToSam参数，ReadPipelineSpark参数。
+
+    -   日志详情
+
+        **图 6**  Somatic Variant作业详情<a name="fig187315426564"></a>  
+        ![](figures/Somatic-Variant作业详情.png "Somatic-Variant作业详情")
+
+
+
+## 流程介绍<a name="section203881449428"></a>
+
+**图 7**  Somatic Variant流程介绍<a name="fig1422153344213"></a>  
+![](figures/Somatic-Variant流程介绍.png "Somatic-Variant流程介绍")
+

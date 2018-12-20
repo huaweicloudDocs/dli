@@ -11,6 +11,5 @@ Tableau Desktop与DLI对接之前的准备工作。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >-   Tableau Desktop对接DLI服务，需要通过DLI ODBC驱动完成。  
-    >-   DLI ODBC驱动鉴权认证模式，需要配置为华为云账号认证模式。  
 
 
