@@ -42,7 +42,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p3511535081542"><a name="p3511535081542"></a><a name="p3511535081542"></a>URL的格式如下。</p>
     <p id="p708227581542"><a name="p708227581542"></a><a name="p708227581542"></a><strong id="b6522801516319"><a name="b6522801516319"></a><a name="b6522801516319"></a><em id="i5018122416319"><a name="i5018122416319"></a><a name="i5018122416319"></a>jdbc:dli://&lt;endPoint&gt;/&lt;projectId&gt;?&lt;key1&gt;=&lt;val1&gt;;&lt;key2&gt;=&lt;val2&gt;</em><em id="i2577107481542"><a name="i2577107481542"></a><a name="i2577107481542"></a>…</em></strong></p>
-    <div class="note" id="note1118670681542"><a name="note1118670681542"></a><a name="note1118670681542"></a><span class="notetitle"> NOTE: </span><div class="notebody"><a name="ul4598221081542"></a><a name="ul4598221081542"></a><ul id="ul4598221081542"><li>endpoint指DLI的域名，具体请参考<a href="https://developer.huaweicloud.com/endpoint" target="_blank" rel="noopener noreferrer">地区和终端节点</a>。</li><li>projectId指项目编号，从公有云“基本信息&gt;我的凭证”页面获取项编号。</li><li>“？”后面接其他配置项，每个配置项以“key=value”的形式列出，配置项之间以“;”隔开，详见<a href="#dli_01_0233__table3788775181542">表2</a></li></ul>
+    <div class="note" id="note1118670681542"><a name="note1118670681542"></a><a name="note1118670681542"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul4598221081542"></a><a name="ul4598221081542"></a><ul id="ul4598221081542"><li>endpoint指DLI的域名，具体请参考<a href="https://developer.huaweicloud.com/endpoint" target="_blank" rel="noopener noreferrer">地区和终端节点</a>。</li><li>projectId指项目编号，从公有云“基本信息&gt;我的凭证”页面获取项编号。</li><li>“？”后面接其他配置项，每个配置项以“key=value”的形式列出，配置项之间以“;”隔开，详见<a href="#table3788775181542">表2</a></li></ul>
     </div></div>
     </td>
     </tr>
@@ -133,7 +133,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="43%" headers="mcps1.2.5.1.4 "><p id="p1948134194414"><a name="p1948134194414"></a><a name="p1948134194414"></a>是否允许调用executeQuery接口执行没有返回结果的语句（如DDL）。</p>
     <a name="ul1147419597345"></a><a name="ul1147419597345"></a><ul id="ul1147419597345"><li>“false”表示允许调用。</li><li>“true”表示不允许调用。</li></ul>
-    <div class="note" id="note775915164312"><a name="note775915164312"></a><a name="note775915164312"></a><span class="notetitle"> NOTE: </span><div class="notebody"><p id="p6759131614316"><a name="p6759131614316"></a><a name="p6759131614316"></a>当dli.sql.checkNoResultQuery=false时，非查询语句会执行两次。</p>
+    <div class="note" id="note775915164312"><a name="note775915164312"></a><a name="note775915164312"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p6759131614316"><a name="p6759131614316"></a><a name="p6759131614316"></a>当dli.sql.checkNoResultQuery=false时，非查询语句会执行两次。</p>
     </div></div>
     </td>
     </tr>

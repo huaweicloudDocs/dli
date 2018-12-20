@@ -33,7 +33,7 @@ DLI可以查询来自OBS的数据，查询数据前，需要在OBS上传数据�
 3.  在“EI企业智能“列表中，单击“数据湖探索“。
 4.  单击“进入控制台“，进入数据湖探索管理控制台页面。
 5.  输入“帐户名“和“密码“，单击“登录“。进入数据湖探索管理控制台总览页面。
-6.  单击总览页面“SQL作业”框或其右侧的![](figures/zh-cn_image_0126502805.png)，可进入SQL作业“作业编辑器”页面。
+6.  单击总览页面“SQL作业”框或其右侧的![](figures/icon-创建作业.png)，可进入SQL作业“作业编辑器”页面。
 
 ## 创建队列<a name="section10742144985011"></a>
 
@@ -49,7 +49,7 @@ DLI有预置的可用队列“default“。若使用default队列，将按照扫
 >![](public_sys-resources/icon-note.gif) **说明：**   
 >“default”为内置数据库，不能创建名为“default”的数据库。  
 
-在“作业编辑器”页面右侧的编辑窗口中，输入如下SQL语句，单击![](figures/zh-cn_image_0132305202.png)。
+在“作业编辑器”页面右侧的编辑窗口中，输入如下SQL语句，单击![](figures/icon-执行.png)。
 
 **create database db1**
 
@@ -59,12 +59,12 @@ DLI有预置的可用队列“default“。若使用default队列，将按照扫
 
 数据库创建完成后，需要在数据库db1里基于OBS上的样本数据“s3a://obs1/sampledata.csv“创建一个表，例如table1。
 
-1.  在“作业编辑器“页面，单击![](figures/zh-cn_image_0125947491.png)，选择新创建的数据库db1。
-2.  在右侧的编辑窗口中，输入如下SQL语句，单击![](figures/zh-cn_image_0132306499.png)。
+1.  在“作业编辑器“页面，单击![](figures/icon-数据库.png)，选择新创建的数据库db1。
+2.  在右侧的编辑窗口中，输入如下SQL语句，单击![](figures/icon-执行.png)。
 
     **create table table1 \(id int, name string\) using csv options \(path 's3a://obs1/sampledata.csv'\)**
 
-    表创建成功后，单击![](figures/zh-cn_image_0125950568.png)，再单击db1，新创建的表table1会在“表“区域下方显示。
+    表创建成功后，单击![](figures/icon-数据库.png)，再单击db1，新创建的表table1会在“表“区域下方显示。
 
 
 ## 查询数据<a name="section37788816112733"></a>
@@ -73,7 +73,7 @@ DLI有预置的可用队列“default“。若使用default队列，将按照扫
 
     **select \* from db1.table1 limit 1000**。
 
-2.  单击![](figures/zh-cn_image_0132306499.png)，系统开始查询。
+2.  单击![](figures/icon-执行.png)，系统开始查询。
 
     SQL语句执行成功后，可在SQL作业编辑窗口下方查看查询结果。
 
