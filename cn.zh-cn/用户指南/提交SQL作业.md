@@ -40,7 +40,7 @@ DLI可以查询来自OBS的数据，查询数据前，需要在OBS上传数据�
 DLI有预置的可用队列“default“。若使用default队列，将按照扫描量计费。用户也可根据需要自己创建队列，使用自建队列将按照CU时计费。
 
 -   创建队列详细介绍请参考[创建队列](创建队列.md)。
--   具体计费方式请参考[《数据湖探索购买指南》](https://support.huaweicloud.com/pg-uquery/uquery_06_0001.html)。
+-   具体计费方式请参考[《数据湖探索价格说明》](https://support.huaweicloud.com/price-dli/dli_06_0001.html)。
 
 ## 创建数据库<a name="section21433273112656"></a>
 

@@ -6,7 +6,7 @@
 -   导入数据到DLI表时，仅支持导入到DLI非分区表中。
 -   导入数据时只能指定一个路径，路径中不能包含逗号。
 -   当OBS的目录下有同名文件夹和文件时，数据导入指向该路径会优先指向文件而非文件夹。
--   不支持并发提交同一张表的导入任务。
+-   不建议对同一张表并发导入数据，因为有一定概率发生并发冲突，导致导入失败。
 -   导入文件支持CSV，Parquet，ORC和JSON四种格式，且文本格式仅支持UTF-8。
 
 ## 前提条件<a name="section46923850144935"></a>
@@ -108,7 +108,7 @@
     <tr id="row27500407144515"><td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.4.1.1 "><p id="p30762396144515"><a name="p30762396144515"></a><a name="p30762396144515"></a>日期格式</p>
     </td>
     <td class="cellrowborder" valign="top" width="70.5%" headers="mcps1.2.4.1.2 "><p id="p1784915111018"><a name="p1784915111018"></a><a name="p1784915111018"></a>当<span class="parmname" id="parmname1219616248016"><a name="parmname1219616248016"></a><a name="parmname1219616248016"></a>“数据格式”</span>为<span class="parmvalue" id="parmvalue1284217371206"><a name="parmvalue1284217371206"></a><a name="parmvalue1284217371206"></a>“CSV”</span>和<span class="parmvalue" id="parmvalue115595441809"><a name="parmvalue115595441809"></a><a name="parmvalue115595441809"></a>“JSON”</span>时此参数有效。</p>
-    <p id="p11426781144515"><a name="p11426781144515"></a><a name="p11426781144515"></a>选中<span class="parmvalue" id="parmvalue8726182144515"><a name="parmvalue8726182144515"></a><a name="parmvalue8726182144515"></a>“高级选项”</span>，该参数表示表中日期的格式，默认格式为<span class="parmname" id="parmname39411477155041"><a name="parmname39411477155041"></a><a name="parmname39411477155041"></a>“yyyy-MM-dd”</span>。日期格式字符定义详见<a href="https://support.huaweicloud.com/sqlreference-uquery/uquery_08_0100.html" target="_blank" rel="noopener noreferrer">加载数据</a>中的“表3 日期及时间模式字符定义”。</p>
+    <p id="p11426781144515"><a name="p11426781144515"></a><a name="p11426781144515"></a>选中<span class="parmvalue" id="parmvalue8726182144515"><a name="parmvalue8726182144515"></a><a name="parmvalue8726182144515"></a>“高级选项”</span>，该参数表示表中日期的格式，默认格式为<span class="parmname" id="parmname39411477155041"><a name="parmname39411477155041"></a><a name="parmname39411477155041"></a>“yyyy-MM-dd”</span>。日期格式字符定义详见<a href="https://support.huaweicloud.com/sqlreference-dli/dli_08_0100.html" target="_blank" rel="noopener noreferrer">加载数据</a>中的“表3 日期及时间模式字符定义”。</p>
     </td>
     <td class="cellrowborder" valign="top" width="15.5%" headers="mcps1.2.4.1.3 "><p id="p8624556144515"><a name="p8624556144515"></a><a name="p8624556144515"></a>2000-01-01</p>
     </td>
@@ -116,7 +116,7 @@
     <tr id="row639781049130"><td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.4.1.1 "><p id="p389320299130"><a name="p389320299130"></a><a name="p389320299130"></a>时间戳格式</p>
     </td>
     <td class="cellrowborder" valign="top" width="70.5%" headers="mcps1.2.4.1.2 "><p id="p34074178118"><a name="p34074178118"></a><a name="p34074178118"></a>当<span class="parmname" id="parmname1374022216119"><a name="parmname1374022216119"></a><a name="parmname1374022216119"></a>“数据格式”</span>为<span class="parmvalue" id="parmvalue274042211115"><a name="parmvalue274042211115"></a><a name="parmvalue274042211115"></a>“CSV”</span>和<span class="parmvalue" id="parmvalue1574110221215"><a name="parmvalue1574110221215"></a><a name="parmvalue1574110221215"></a>“JSON”</span>时此参数有效。</p>
-    <p id="p28390848155126"><a name="p28390848155126"></a><a name="p28390848155126"></a>选中<span class="parmvalue" id="parmvalue42192596155126"><a name="parmvalue42192596155126"></a><a name="parmvalue42192596155126"></a>“高级选项”</span>，该参数表示表中时间戳的格式，默认格式为<span class="parmname" id="parmname22543377155126"><a name="parmname22543377155126"></a><a name="parmname22543377155126"></a>“yyyy-MM-dd HH:mm:ss”</span>。时间戳格式字符定义详见<a href="https://support.huaweicloud.com/sqlreference-uquery/uquery_08_0100.html" target="_blank" rel="noopener noreferrer">加载数据</a>中的“表3 日期及时间模式字符定义”。</p>
+    <p id="p28390848155126"><a name="p28390848155126"></a><a name="p28390848155126"></a>选中<span class="parmvalue" id="parmvalue42192596155126"><a name="parmvalue42192596155126"></a><a name="parmvalue42192596155126"></a>“高级选项”</span>，该参数表示表中时间戳的格式，默认格式为<span class="parmname" id="parmname22543377155126"><a name="parmname22543377155126"></a><a name="parmname22543377155126"></a>“yyyy-MM-dd HH:mm:ss”</span>。时间戳格式字符定义详见<a href="https://support.huaweicloud.com/sqlreference-dli/dli_08_0100.html" target="_blank" rel="noopener noreferrer">加载数据</a>中的“表3 日期及时间模式字符定义”。</p>
     </td>
     <td class="cellrowborder" valign="top" width="15.5%" headers="mcps1.2.4.1.3 "><p id="p167064109130"><a name="p167064109130"></a><a name="p167064109130"></a>2000-01-01 09:00:00</p>
     </td>
@@ -125,6 +125,6 @@
     </table>
 
 4.  单击“确定“，系统开始导入数据。
-5.  （可选）可以在“作业管理“页面，查看该导入作业的状态以及执行结果。
-6.  在“操作”栏选择“更多”中的“属性”，在弹框的“预览”中，可查看导入的内容。
+5.  在“操作”栏选择“更多”中的“属性”，在弹框的“预览”中，可查看导入的内容。
+6.  （可选）可以在“作业管理“页面，查看该导入作业的状态以及执行结果。
 
