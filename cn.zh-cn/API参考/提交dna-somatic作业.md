@@ -92,7 +92,7 @@
 <td class="cellrowborder" valign="top" width="14.67%" headers="mcps1.2.5.1.3 "><p id="p847702863615"><a name="p847702863615"></a><a name="p847702863615"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p11477152863617"><a name="p11477152863617"></a><a name="p11477152863617"></a>参考基因库的文件。</p>
-<div class="note" id="note1943417304916"><a name="note1943417304916"></a><a name="note1943417304916"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p94345301911"><a name="p94345301911"></a><a name="p94345301911"></a>目前只支持hg38。</p>
+<div class="note" id="note1943417304916"><a name="note1943417304916"></a><a name="note1943417304916"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p94345301911"><a name="p94345301911"></a><a name="p94345301911"></a>目前只支持hg19和hg38。</p>
 </div></div>
 </td>
 </tr>
@@ -158,29 +158,35 @@
 </tr>
 <tr id="row147081313227"><td class="cellrowborder" valign="top" width="20.31%" headers="mcps1.2.5.1.1 "><p id="p619653517220"><a name="p619653517220"></a><a name="p619653517220"></a>intervals</p>
 </td>
-<td class="cellrowborder" valign="top" width="5.67%" headers="mcps1.2.5.1.2 "><p id="p9470161362216"><a name="p9470161362216"></a><a name="p9470161362216"></a>是</p>
+<td class="cellrowborder" valign="top" width="5.67%" headers="mcps1.2.5.1.2 "><p id="p9470161362216"><a name="p9470161362216"></a><a name="p9470161362216"></a>否</p>
 </td>
 <td class="cellrowborder" valign="top" width="14.67%" headers="mcps1.2.5.1.3 "><p id="p18773165420226"><a name="p18773165420226"></a><a name="p18773165420226"></a>Array[String]</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p159923308235"><a name="p159923308235"></a><a name="p159923308235"></a>interval文件，目前仅支持 wgs_calling_regions.hg38.interval_list。</p>
+<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p159923308235"><a name="p159923308235"></a><a name="p159923308235"></a>目标区域文件，支持 .bed，.intervals，.interval-list后缀的文件，若该参数为空，则使用默认文件wgs_calling_regions.hg38.interval_list。</p>
+<div class="note" id="note954713501165"><a name="note954713501165"></a><a name="note954713501165"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p855018501619"><a name="p855018501619"></a><a name="p855018501619"></a>ref为hg19时，该参数为必选项。</p>
+</div></div>
 </td>
 </tr>
 <tr id="row12711124515252"><td class="cellrowborder" valign="top" width="20.31%" headers="mcps1.2.5.1.1 "><p id="p17131845172519"><a name="p17131845172519"></a><a name="p17131845172519"></a>pon</p>
 </td>
-<td class="cellrowborder" valign="top" width="5.67%" headers="mcps1.2.5.1.2 "><p id="p1571354512252"><a name="p1571354512252"></a><a name="p1571354512252"></a>是</p>
+<td class="cellrowborder" valign="top" width="5.67%" headers="mcps1.2.5.1.2 "><p id="p1571354512252"><a name="p1571354512252"></a><a name="p1571354512252"></a>否</p>
 </td>
 <td class="cellrowborder" valign="top" width="14.67%" headers="mcps1.2.5.1.3 "><p id="p5713164542511"><a name="p5713164542511"></a><a name="p5713164542511"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p193746227257"><a name="p193746227257"></a><a name="p193746227257"></a>panel of normals文件，目前仅支持 somatic-hg38-1000g_pon.hg38.vcf.gz。</p>
+<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p193746227257"><a name="p193746227257"></a><a name="p193746227257"></a>panel of normals文件，若该参数为空，则使用默认文件somatic-hg38-1000g_pon.hg38.vcf.gz。</p>
+<div class="note" id="note1997218511971"><a name="note1997218511971"></a><a name="note1997218511971"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p698517511719"><a name="p698517511719"></a><a name="p698517511719"></a>ref为hg19时，该参数为必选项。</p>
+</div></div>
 </td>
 </tr>
 <tr id="row2045418420480"><td class="cellrowborder" valign="top" width="20.31%" headers="mcps1.2.5.1.1 "><p id="p1619835362518"><a name="p1619835362518"></a><a name="p1619835362518"></a>germline_resource</p>
 </td>
-<td class="cellrowborder" valign="top" width="5.67%" headers="mcps1.2.5.1.2 "><p id="p134691442104811"><a name="p134691442104811"></a><a name="p134691442104811"></a>是</p>
+<td class="cellrowborder" valign="top" width="5.67%" headers="mcps1.2.5.1.2 "><p id="p134691442104811"><a name="p134691442104811"></a><a name="p134691442104811"></a>否</p>
 </td>
 <td class="cellrowborder" valign="top" width="14.67%" headers="mcps1.2.5.1.3 "><p id="p67148115275"><a name="p67148115275"></a><a name="p67148115275"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p84691142124812"><a name="p84691142124812"></a><a name="p84691142124812"></a>生殖细胞突变的vcf文件，目前仅支持 somatic-hg38faf-only-gnomad.hg38.vcf.gz。</p>
+<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p84691142124812"><a name="p84691142124812"></a><a name="p84691142124812"></a>生殖细胞突变的vcf文件，若该参数为空，则使用默认文件somatic-hg38faf-only-gnomad.hg38.vcf.gz。</p>
+<div class="note" id="note179727544717"><a name="note179727544717"></a><a name="note179727544717"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p209786549719"><a name="p209786549719"></a><a name="p209786549719"></a>ref为hg19时，该参数为必选项。</p>
+</div></div>
 </td>
 </tr>
 <tr id="row53355211292"><td class="cellrowborder" valign="top" width="20.31%" headers="mcps1.2.5.1.1 "><p id="p933175212920"><a name="p933175212920"></a><a name="p933175212920"></a>mutect_is_export_bam</p>
@@ -203,12 +209,12 @@
 </tr>
 <tr id="row163331512183616"><td class="cellrowborder" valign="top" width="20.31%" headers="mcps1.2.5.1.1 "><p id="p4334712143620"><a name="p4334712143620"></a><a name="p4334712143620"></a>mutect_calls_variant</p>
 </td>
-<td class="cellrowborder" valign="top" width="5.67%" headers="mcps1.2.5.1.2 "><p id="p1033421253614"><a name="p1033421253614"></a><a name="p1033421253614"></a>是</p>
+<td class="cellrowborder" valign="top" width="5.67%" headers="mcps1.2.5.1.2 "><p id="p1033421253614"><a name="p1033421253614"></a><a name="p1033421253614"></a>否</p>
 </td>
 <td class="cellrowborder" valign="top" width="14.67%" headers="mcps1.2.5.1.3 "><p id="p193349121361"><a name="p193349121361"></a><a name="p193349121361"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p1533441213615"><a name="p1533441213615"></a><a name="p1533441213615"></a>突变频率库。</p>
-<div class="note" id="note29888217134"><a name="note29888217134"></a><a name="note29888217134"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p59888217135"><a name="p59888217135"></a><a name="p59888217135"></a>目前只支持small_exac_common_3.hg38.vcf.gz。</p>
+<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p1533441213615"><a name="p1533441213615"></a><a name="p1533441213615"></a>突变频率库。若该参数为空，则使用默认文件mall_exac_common_3.hg38.vcf.gz</p>
+<div class="note" id="note4632100189"><a name="note4632100189"></a><a name="note4632100189"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1164030489"><a name="p1164030489"></a><a name="p1164030489"></a>ref为hg19时，该参数为必选项。</p>
 </div></div>
 </td>
 </tr>
@@ -227,7 +233,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="14.67%" headers="mcps1.2.5.1.3 "><p id="p79941243183814"><a name="p79941243183814"></a><a name="p79941243183814"></a>Array[String]</p>
 </td>
-<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p108461617113615"><a name="p108461617113615"></a><a name="p108461617113615"></a>filter_by_orientationBias步骤参数。</p>
+<td class="cellrowborder" valign="top" width="59.35%" headers="mcps1.2.5.1.4 "><p id="p108461617113615"><a name="p108461617113615"></a><a name="p108461617113615"></a>filter_by_orientationBias步骤参数，若参数为空，则使用默认值"G/T"</p>
 </td>
 </tr>
 <tr id="row11166202362"><td class="cellrowborder" valign="top" width="20.31%" headers="mcps1.2.5.1.1 "><p id="p8117152083612"><a name="p8117152083612"></a><a name="p8117152083612"></a>is_filter_by_alignmentArtifacts</p>
@@ -414,11 +420,11 @@
         "tumor_sample_name": "HCC1143_tumor",
         "normal_sample_name": "HCC1143_normal",
         "knownsites": ["1000g_omni2.5.hg38.vcf"],
-        "intervals": ["wgs_calling_regions.hg38.interval_list"],
-        "pon": "somatic-hg38-1000g_pon.hg38.vcf.gz",
-        "germline_resource": "somatic-hg38faf-only-gnomad.hg38.vcf.gz",
+        "intervals": ["s3a://genes/somatic/wgs_calling_regions.hg38.interval_list"],
+        "pon": "s3a://genes/somatic/somatic-hg38-1000g_pon.hg38.vcf.gz",
+        "germline_resource": "s3a://genes/somatic/somatic-hg38faf-only-gnomad.hg38.vcf.gz",
         "mutect_is_export_bam": false,
-        "mutect_calls_variant": "small_exac_common_3.hg38.vcf.gz",
+        "mutect_calls_variant": "s3a://genes/somatic/small_exac_common_3.hg38.vcf.gz",
         "is_filter_by_orientationBias": false,
         "artifact_modes": ["G/T"],
         "is_filter_by_alignmentArtifacts": false

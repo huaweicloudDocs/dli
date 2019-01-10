@@ -41,7 +41,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="8.91089108910891%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0069077803_p26746391"><a name="zh-cn_topic_0069077803_p26746391"></a><a name="zh-cn_topic_0069077803_p26746391"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="79.20792079207921%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0069077803_p18974100"><a name="zh-cn_topic_0069077803_p18974100"></a><a name="zh-cn_topic_0069077803_p18974100"></a>来自公有云的Project ID，用于资源隔离。获取方式请参考<a href="获取项目编号.md">获取项目编号</a>。</p>
+    <td class="cellrowborder" valign="top" width="79.20792079207921%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0069077803_p18974100"><a name="zh-cn_topic_0069077803_p18974100"></a><a name="zh-cn_topic_0069077803_p18974100"></a>项目编号，用于资源隔离。获取方式请参考<a href="获取项目编号.md">获取项目编号</a>。</p>
     </td>
     </tr>
     </tbody>
@@ -105,35 +105,40 @@
 **表 3**  conf参数说明
 
 <a name="table0995047105710"></a>
-<table><thead align="left"><tr id="row1899634735718"><th class="cellrowborder" valign="top" width="29.959999999999997%" id="mcps1.2.3.1.1"><p id="p499615477576"><a name="p499615477576"></a><a name="p499615477576"></a>参数名称</p>
+<table><thead align="left"><tr id="row1899634735718"><th class="cellrowborder" valign="top" width="27.810000000000002%" id="mcps1.2.3.1.1"><p id="p499615477576"><a name="p499615477576"></a><a name="p499615477576"></a>参数名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="70.04%" id="mcps1.2.3.1.2"><p id="p1599618476576"><a name="p1599618476576"></a><a name="p1599618476576"></a>说明</p>
+<th class="cellrowborder" valign="top" width="72.19%" id="mcps1.2.3.1.2"><p id="p1599618476576"><a name="p1599618476576"></a><a name="p1599618476576"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row4996647165719"><td class="cellrowborder" valign="top" width="29.959999999999997%" headers="mcps1.2.3.1.1 "><p id="p599684745716"><a name="p599684745716"></a><a name="p599684745716"></a>dli.sql.autoBroadcastJoinThreshold</p>
+<tbody><tr id="row4996647165719"><td class="cellrowborder" valign="top" width="27.810000000000002%" headers="mcps1.2.3.1.1 "><p id="p599684745716"><a name="p599684745716"></a><a name="p599684745716"></a>dli.sql.autoBroadcastJoinThreshold</p>
 </td>
-<td class="cellrowborder" valign="top" width="70.04%" headers="mcps1.2.3.1.2 "><p id="p1999664775720"><a name="p1999664775720"></a><a name="p1999664775720"></a>自动使用BroadcastJoin的数据量阈值。</p>
-</td>
-</tr>
-<tr id="row1399694719578"><td class="cellrowborder" valign="top" width="29.959999999999997%" headers="mcps1.2.3.1.1 "><p id="p13996347135720"><a name="p13996347135720"></a><a name="p13996347135720"></a>dli.sql.shuffle.partitions</p>
-</td>
-<td class="cellrowborder" valign="top" width="70.04%" headers="mcps1.2.3.1.2 "><p id="p1699684710571"><a name="p1699684710571"></a><a name="p1699684710571"></a>指定Shuffle过程中Partition的个数。</p>
+<td class="cellrowborder" valign="top" width="72.19%" headers="mcps1.2.3.1.2 "><p id="p1999664775720"><a name="p1999664775720"></a><a name="p1999664775720"></a>自动使用BroadcastJoin的数据量阈值。</p>
 </td>
 </tr>
-<tr id="row099614718573"><td class="cellrowborder" valign="top" width="29.959999999999997%" headers="mcps1.2.3.1.1 "><p id="p499684713577"><a name="p499684713577"></a><a name="p499684713577"></a>dli.sql.cbo.enabled</p>
+<tr id="row1399694719578"><td class="cellrowborder" valign="top" width="27.810000000000002%" headers="mcps1.2.3.1.1 "><p id="p13996347135720"><a name="p13996347135720"></a><a name="p13996347135720"></a>dli.sql.shuffle.partitions</p>
 </td>
-<td class="cellrowborder" valign="top" width="70.04%" headers="mcps1.2.3.1.2 "><p id="p10996154712571"><a name="p10996154712571"></a><a name="p10996154712571"></a>是否打开CBO优化策略。</p>
-</td>
-</tr>
-<tr id="row09965476573"><td class="cellrowborder" valign="top" width="29.959999999999997%" headers="mcps1.2.3.1.1 "><p id="p109967470579"><a name="p109967470579"></a><a name="p109967470579"></a>dli.sql.cbo.joinReorder.enabled</p>
-</td>
-<td class="cellrowborder" valign="top" width="70.04%" headers="mcps1.2.3.1.2 "><p id="p18996174775716"><a name="p18996174775716"></a><a name="p18996174775716"></a>开启CBO优化时，是否允许重新调整join的顺序。</p>
+<td class="cellrowborder" valign="top" width="72.19%" headers="mcps1.2.3.1.2 "><p id="p1699684710571"><a name="p1699684710571"></a><a name="p1699684710571"></a>指定Shuffle过程中Partition的个数。</p>
 </td>
 </tr>
-<tr id="row20996647105715"><td class="cellrowborder" valign="top" width="29.959999999999997%" headers="mcps1.2.3.1.1 "><p id="p6996547105719"><a name="p6996547105719"></a><a name="p6996547105719"></a>dli.sql.multiLevelDir.enabled</p>
+<tr id="row18496151319011"><td class="cellrowborder" valign="top" width="27.810000000000002%" headers="mcps1.2.3.1.1 "><p id="p6996547105719"><a name="p6996547105719"></a><a name="p6996547105719"></a>dli.sql.multiLevelDir.enabled</p>
 </td>
-<td class="cellrowborder" valign="top" width="70.04%" headers="mcps1.2.3.1.2 "><p id="p19996154717576"><a name="p19996154717576"></a><a name="p19996154717576"></a>OBS表的指定目录或OBS表分区表的分区目录下有子目录时，是否查询子目录的内容；默认不查询。</p>
+<td class="cellrowborder" valign="top" width="72.19%" headers="mcps1.2.3.1.2 "><p id="p19996154717576"><a name="p19996154717576"></a><a name="p19996154717576"></a>OBS表的指定目录或OBS表分区表的分区目录下有子目录时，是否查询子目录的内容；默认不查询。</p>
+</td>
+</tr>
+<tr id="row20996647105715"><td class="cellrowborder" valign="top" width="27.810000000000002%" headers="mcps1.2.3.1.1 "><p id="p204131117801"><a name="p204131117801"></a><a name="p204131117801"></a>dli.sql.dynamicPartitionOverwrite.enabled</p>
+</td>
+<td class="cellrowborder" valign="top" width="72.19%" headers="mcps1.2.3.1.2 "><p id="p03876172011"><a name="p03876172011"></a><a name="p03876172011"></a>在动态分区模式时，只会重写查询中的数据涉及的分区，未涉及的分区不删除。</p>
+</td>
+</tr>
+<tr id="row79568586212"><td class="cellrowborder" valign="top" width="27.810000000000002%" headers="mcps1.2.3.1.1 "><p id="p199565584216"><a name="p199565584216"></a><a name="p199565584216"></a>dli.sql.files.maxPartitionBytes</p>
+</td>
+<td class="cellrowborder" valign="top" width="72.19%" headers="mcps1.2.3.1.2 "><p id="p895616583219"><a name="p895616583219"></a><a name="p895616583219"></a>最大分区字节数。设置一个分区可以处理的最大字节数，当一个文件或分区大小大于这个值时会被拆分到多个分区。</p>
+</td>
+</tr>
+<tr id="row3229125343618"><td class="cellrowborder" valign="top" width="27.810000000000002%" headers="mcps1.2.3.1.1 "><p id="p523012535362"><a name="p523012535362"></a><a name="p523012535362"></a>dli.sql.badRecordsPath</p>
+</td>
+<td class="cellrowborder" valign="top" width="72.19%" headers="mcps1.2.3.1.2 "><p id="p2230145383612"><a name="p2230145383612"></a><a name="p2230145383612"></a>INSERT类型作业执行过程的bad records的存储目录。建议与<span class="parmvalue" id="parmvalue19990322495"><a name="parmvalue19990322495"></a><a name="parmvalue19990322495"></a>“DROPMALFORMED”</span>这一数据源ParseMode结合使用。</p>
 </td>
 </tr>
 </tbody>
