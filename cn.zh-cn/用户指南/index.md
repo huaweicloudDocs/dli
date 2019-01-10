@@ -57,8 +57,9 @@
     -   [基因作业总览](基因作业总览.md)
     -   [基因数据管理](基因数据管理.md)
     -   [基因测序](基因测序.md)
-        -   [Germline Variant](Germline-Variant.md)
-        -   [Somatic Variant](Somatic-Variant.md)
+        -   [基因测序概述](基因测序概述.md)
+        -   [胚系突变检测](胚系突变检测.md)
+        -   [体细胞突变检测](体细胞突变检测.md)
         -   [RNA差异表达分析](RNA差异表达分析.md)
 
     -   [工具](工具.md)
