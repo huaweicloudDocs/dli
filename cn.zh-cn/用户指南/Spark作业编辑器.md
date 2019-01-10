@@ -54,7 +54,7 @@ Spark作业编辑器支持提交Spark作业，为用户提供全托管式的Spar
 </td>
 <td class="cellrowborder" valign="top" width="22.772277227722775%" headers="mcps1.2.4.1.2 "><p id="p1893203561719"><a name="p1893203561719"></a><a name="p1893203561719"></a>购买CU时套餐包</p>
 </td>
-<td class="cellrowborder" valign="top" width="69.3069306930693%" headers="mcps1.2.4.1.3 "><p id="p4932153541713"><a name="p4932153541713"></a><a name="p4932153541713"></a>根据需要购买CU时套餐包。如果不购买，则按需计费。计费详情请参考<a href="https://support.huaweicloud.com/pg-uquery/uquery_06_0001.html" target="_blank" rel="noopener noreferrer">《数据湖探索购买指南》</a>。</p>
+<td class="cellrowborder" valign="top" width="69.3069306930693%" headers="mcps1.2.4.1.3 "><p id="p4932153541713"><a name="p4932153541713"></a><a name="p4932153541713"></a>根据需要购买CU时套餐包。如果不购买，则按需计费。计费详情请参考<a href="https://support.huaweicloud.com/price-dli/dli_06_0001.html" target="_blank" rel="noopener noreferrer">《数据湖探索价格说明》</a>。</p>
 </td>
 </tr>
 <tr id="row910191019434"><td class="cellrowborder" valign="top" width="7.920792079207921%" headers="mcps1.2.4.1.1 "><p id="p441516587201"><a name="p441516587201"></a><a name="p441516587201"></a>15</p>
@@ -151,7 +151,7 @@ Spark作业编辑器支持提交Spark作业，为用户提供全托管式的Spar
 </td>
 <td class="cellrowborder" valign="top" width="26.82%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0115200017_p6977134361415"><a name="zh-cn_topic_0115200017_p6977134361415"></a><a name="zh-cn_topic_0115200017_p6977134361415"></a>设置</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0115200017_p12641156192611"><a name="zh-cn_topic_0115200017_p12641156192611"></a><a name="zh-cn_topic_0115200017_p12641156192611"></a>以“key/value”的形式设置提交Spark作业的属性。详细内容请参见《数据湖探索API参考》&gt;《提交Spark作业相关API》&gt;<a href="https://support.huaweicloud.com/api-uquery/uquery_02_0124.html" target="_blank" rel="noopener noreferrer">《创建批处理作业》</a>&gt;“表2 请求参数说明”。</p>
+<td class="cellrowborder" valign="top" width="65.66%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0115200017_p12641156192611"><a name="zh-cn_topic_0115200017_p12641156192611"></a><a name="zh-cn_topic_0115200017_p12641156192611"></a>以“key/value”的形式设置提交Spark作业的属性。详细内容请参见《数据湖探索API参考》&gt;《提交Spark作业相关API》&gt;<a href="https://support.huaweicloud.com/api-dli/dli_02_0124.html" target="_blank" rel="noopener noreferrer">《创建批处理作业》</a>&gt;“表2 请求参数说明”。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0115200017_row16218165101513"><td class="cellrowborder" valign="top" width="7.5200000000000005%" headers="mcps1.2.4.1.1 "><p id="p19782016202519"><a name="p19782016202519"></a><a name="p19782016202519"></a>13</p>

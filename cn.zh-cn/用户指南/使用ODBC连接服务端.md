@@ -45,13 +45,14 @@
 3.  配置日志参数（可选）。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
-    >当ODBC驱动安装目录不是：“C:\\huaweicloud-dli-odbc”时，需要执行该步骤。  
+    >当ODBC驱动安装目录不是“C:\\huaweicloud-dli-odbc”时，需要执行该步骤。  
 
-    打开驱动安装目录下的log.properties文件，例如：“C:\\xxx\\windows\\log.properties”，修改以下配置：
+    1.  打开驱动安装目录下的log.properties文件，例如：“C:\\xxx\\windows\\log.properties”。
+    2.  修改日志输出路径，例如：“log4cplus.appender.DLILog.File=C:\\xxx\\windows\\log\\dli\_odbc.log”。
 
-    日志输出路径：“log4cplus.appender.DLILog.File=C:\\xxx\\windows\\log\\dli\_odbc.log”。
+        >![](public_sys-resources/icon-note.gif) **说明：**   
+        >日志输出路径建议为安装路径下log目录，根据实际安装路径配置。  
 
-    日志输出路径建议为安装路径下log目录，根据实际安装路径配置。
 
 4.  <a name="li65930874174932"></a>配置数据源。
     1.  进入Windows控制面板中的管理工具，双击“ODBC Data Sources \(32-bit\)”启动32位ODBC数据源管理器。

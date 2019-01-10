@@ -1,6 +1,6 @@
 # SQL作业编辑器<a name="dli_01_0320"></a>
 
-SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003，兼容SparkSQL，详细语法描述请参见[《数据湖探索SQL语法参考》](https://support.huaweicloud.com/sqlreference-uquery/uquery_08_0001.html)。
+SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003，兼容SparkSQL，详细语法描述请参见[《数据湖探索SQL语法参考》](https://support.huaweicloud.com/sqlreference-dli/dli_08_0001.html)。
 
 ## 界面说明<a name="zh-cn_topic_0093946815_section56922894165137"></a>
 
@@ -54,7 +54,7 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 </td>
 <td class="cellrowborder" valign="top" width="17%" headers="mcps1.2.4.1.2 "><p id="p1893203561719"><a name="p1893203561719"></a><a name="p1893203561719"></a>购买CU时套餐包</p>
 </td>
-<td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.4.1.3 "><p id="p4932153541713"><a name="p4932153541713"></a><a name="p4932153541713"></a>根据需要购买CU时套餐包。如果不购买，则按需计费。计费详情请参考<a href="https://support.huaweicloud.com/pg-uquery/uquery_06_0001.html" target="_blank" rel="noopener noreferrer">《数据湖探索购买指南》</a>。</p>
+<td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.4.1.3 "><p id="p4932153541713"><a name="p4932153541713"></a><a name="p4932153541713"></a>根据需要购买CU时套餐包。如果不购买，则按需计费。计费详情请参考<a href="https://support.huaweicloud.com/price-dli/dli_06_0001.html" target="_blank" rel="noopener noreferrer">《数据湖探索价格说明》</a>。</p>
 </td>
 </tr>
 <tr id="row1441425852013"><td class="cellrowborder" valign="top" width="7.000000000000001%" headers="mcps1.2.4.1.1 "><p id="p441516587201"><a name="p441516587201"></a><a name="p441516587201"></a>23</p>
@@ -173,15 +173,15 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 </td>
 <td class="cellrowborder" valign="top" width="14.85148514851485%" headers="mcps1.2.4.1.2 "><p id="p14722170162310"><a name="p14722170162310"></a><a name="p14722170162310"></a>设置</p>
 </td>
-<td class="cellrowborder" valign="top" width="77.22772277227723%" headers="mcps1.2.4.1.3 "><p id="p13725140112319"><a name="p13725140112319"></a><a name="p13725140112319"></a>以“key/value”的形式设置提交SQL作业的属性。详细内容请参见《数据湖探索API参考》&gt;<a href="https://support.huaweicloud.com/api-uquery/uquery_02_0102.html" target="_blank" rel="noopener noreferrer">《提交SQL作业（推荐）》</a>&gt;“表2 请求参数”中“conf”参数的说明。最多可设置10个属性。</p>
+<td class="cellrowborder" valign="top" width="77.22772277227723%" headers="mcps1.2.4.1.3 "><p id="p13725140112319"><a name="p13725140112319"></a><a name="p13725140112319"></a>以“key/value”的形式设置提交SQL作业的属性。详细内容请参见《数据湖探索API参考》&gt;<a href="https://support.huaweicloud.com/api-dli/dli_02_0102.html" target="_blank" rel="noopener noreferrer">《提交SQL作业（推荐）》</a>&gt;“表2 请求参数”中“conf”参数的说明。最多可设置10个属性。</p>
 </td>
 </tr>
 <tr id="row1791418324558"><td class="cellrowborder" valign="top" width="7.920792079207921%" headers="mcps1.2.4.1.1 "><p id="p1933175491115"><a name="p1933175491115"></a><a name="p1933175491115"></a>16</p>
 </td>
 <td class="cellrowborder" valign="top" width="14.85148514851485%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0093946815_p60099992171120"><a name="zh-cn_topic_0093946815_p60099992171120"></a><a name="zh-cn_topic_0093946815_p60099992171120"></a>更多</p>
 </td>
-<td class="cellrowborder" valign="top" width="77.22772277227723%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0093946815_p36261170171120"><a name="zh-cn_topic_0093946815_p36261170171120"></a><a name="zh-cn_topic_0093946815_p36261170171120"></a>包括“语义校验”，“设为模板”和“选择模板”。</p>
-<a name="ul59151629162312"></a><a name="ul59151629162312"></a><ul id="ul59151629162312"><li>语义校验：判断SQL语句编写是否正确。</li><li>设为模板：将常用的SQL语句设为模板。</li><li>选择模板：选择已保存为模板的SQL语句。</li></ul>
+<td class="cellrowborder" valign="top" width="77.22772277227723%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0093946815_p36261170171120"><a name="zh-cn_topic_0093946815_p36261170171120"></a><a name="zh-cn_topic_0093946815_p36261170171120"></a>包括“语法校验”，“设为模板”和“选择模板”。</p>
+<a name="ul59151629162312"></a><a name="ul59151629162312"></a><ul id="ul59151629162312"><li>语法校验：判断SQL语句编写是否正确。</li><li>设为模板：将常用的SQL语句设为模板。</li><li>选择模板：选择已保存为模板的SQL语句。</li></ul>
 </td>
 </tr>
 <tr id="row1520319811149"><td class="cellrowborder" valign="top" width="7.920792079207921%" headers="mcps1.2.4.1.1 "><p id="p123317547111"><a name="p123317547111"></a><a name="p123317547111"></a>17</p>
@@ -292,12 +292,12 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >当作业编辑窗口没有输入SQL语句时，![](figures/icon-执行.png)和![](figures/icon-格式化.png)两个按钮不可用。  
 
-5.  单击![](figures/icon-更多.png)中的“语义校验“，确认SQL语句书写是否正确。
-    1.  若校验失败，请参考[《数据湖探索SQL语法参考》](https://support.huaweicloud.com/sqlreference-uquery/uquery_08_0001.html)，检查SQL语句准确性。
-    2.  若校验通过，单击![](figures/icon-执行.png)，执行SQL语句。
+5.  单击![](figures/icon-更多.png)中的“语法校验“，确认SQL语句书写是否正确。
+    1.  若语法校验失败，请参考[《数据湖探索SQL语法参考》](https://support.huaweicloud.com/sqlreference-dli/dli_08_0001.html)，检查SQL语句准确性。
+    2.  若语法校验通过，单击![](figures/icon-执行.png)，执行SQL语句。
     3.  SQL语句执行成功后，在SQL作业编辑窗口下方会显示执行结果。
 
-6.  （可选）在执行结果窗口，单击右上![](figures/icon-柱状图.png)，查询结果将以图形形式呈现。再单击![](figures/icon-表格.png)，查询结果可切换回表格形式。
+6.  （可选）在执行结果窗口，单击右上![](figures/icon-柱状图.png)，上述查询结果将以图形形式呈现。再单击![](figures/icon-表格.png)，查询结果可切换回表格形式。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >-   若执行结果中无数值列，则无法进行图形化。  

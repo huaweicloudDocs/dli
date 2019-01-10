@@ -20,7 +20,6 @@ DLI SQL跨源连接可用于访问CloudTable，DWS，RDS等其他数据源。具
 <tbody><tr id="row46758327132"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="p16413434141957"><a name="p16413434141957"></a><a name="p16413434141957"></a>连接名称</p>
 </td>
 <td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><p id="p54419740141957"><a name="p54419740141957"></a><a name="p54419740141957"></a>所创建的跨源连接名称。</p>
-<a name="ul109681518191720"></a><a name="ul109681518191720"></a><ul id="ul109681518191720"><li>名称只能包含数字、英文字母、下划线和中划线。不能为空。</li><li>输入长度不能超过64个字符。</li></ul>
 </td>
 </tr>
 <tr id="row32873162171713"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="p45480448171713"><a name="p45480448171713"></a><a name="p45480448171713"></a>连接状态</p>
@@ -37,8 +36,8 @@ DLI SQL跨源连接可用于访问CloudTable，DWS，RDS等其他数据源。具
 </tr>
 <tr id="row36301606171658"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="p14394959151048"><a name="p14394959151048"></a><a name="p14394959151048"></a>连接地址</p>
 </td>
-<td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><p id="p1483474582618"><a name="p1483474582618"></a><a name="p1483474582618"></a>使用DLI访问其他数据源的地址。</p>
-<div class="note" id="note79771723317"><a name="note79771723317"></a><a name="note79771723317"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul18891815103110"></a><a name="ul18891815103110"></a><ul id="ul18891815103110"><li>跨源链接创建成功后显示连接地址。</li><li>创建CloudTable关联表时，指定连接地址或目的地址均可。</li><li>创建DWS或RD关联表时，只能指定连接地址。</li></ul>
+<td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><p id="p1483474582618"><a name="p1483474582618"></a><a name="p1483474582618"></a>跨源连接创建成功后将显示连接地址，可用于DLI访问其他数据源。</p>
+<div class="note" id="note79771723317"><a name="note79771723317"></a><a name="note79771723317"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul18891815103110"></a><a name="ul18891815103110"></a><ul id="ul18891815103110"><li>创建CloudTable关联表时，指定连接地址或目的地址均可。</li><li>创建DWS或RDS关联表时，只能指定连接地址。</li></ul>
 </div></div>
 </td>
 </tr>
@@ -123,7 +122,7 @@ DLI SQL跨源连接可用于访问CloudTable，DWS，RDS等其他数据源。具
     </tr>
     <tr id="row135261748155213"><td class="cellrowborder" valign="top" width="15.920000000000002%" headers="mcps1.2.3.1.1 "><p id="p2052610483527"><a name="p2052610483527"></a><a name="p2052610483527"></a>目的地址</p>
     </td>
-    <td class="cellrowborder" valign="top" width="84.08%" headers="mcps1.2.3.1.2 "><p id="p6526144817523"><a name="p6526144817523"></a><a name="p6526144817523"></a>连接其他数据源的地址。不同服务的地址略有不同。请参考<a href="#fig87571359173616">图3</a>。</p>
+    <td class="cellrowborder" valign="top" width="84.08%" headers="mcps1.2.3.1.2 "><p id="p6526144817523"><a name="p6526144817523"></a><a name="p6526144817523"></a>连接其他数据源的地址。不同服务的地址略有不同。此处仅以CloudTable服务为例，请参考<a href="#fig87571359173616">图3</a>。</p>
     <a name="ul9527124812520"></a><a name="ul9527124812520"></a><ul id="ul9527124812520"><li>表格存储服务 CloudTable：ZK链接地址</li><li>数据仓库服务 DWS：内网IP：端口</li><li>关系型数据库 RDS：内网地址：数据库端口</li></ul>
     </td>
     </tr>

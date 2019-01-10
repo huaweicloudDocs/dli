@@ -114,7 +114,7 @@ DLI支持13种数据类型，每一种类型都可以映射成一种JDBC类型�
 ## 操作步骤<a name="section51761783175346"></a>
 
 1.  在使用JDBC的机器中安装JDK，JDK版本为1.7或以上版本，并配置环境变量。
-2.  参考[下载JDBC或ODBC驱动包](下载JDBC或ODBC驱动包.md)章节DLI JDBC驱动包，并将获取的驱动包“huaweicloud-dli-jdbc-<version\>.zip”解压，获得“huaweicloud-dli-jdbc-<version\>-jar-with-dependencies.jar”。
+2.  参考[下载JDBC或ODBC驱动包](下载JDBC或ODBC驱动包.md)章节，获取DLI JDBC驱动包“huaweicloud-dli-jdbc-<version\>.zip”，解压，获得“huaweicloud-dli-jdbc-<version\>-jar-with-dependencies.jar”。
 3.  在使用JDBC的机器中，将“huaweicloud-dli-jdbc-1.1.1-jar-with-dependencies.jar”添加至Java工程的“classpath“路径下。
 4.  DLI JDBC提供两种身份认证模式连接到DLI服务，即Token和AK/SK。获取Token和AK/SK的方法请参见[认证](认证.md)。
 5.  使用Class.forName（）加载DLI JDBC驱动程序。

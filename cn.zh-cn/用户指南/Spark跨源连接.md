@@ -37,9 +37,7 @@ DLI Spark跨源连接可用于访问CloudTable，DWS，RDS等其他数据源。�
 </tr>
 <tr id="zh-cn_topic_0142697328_row36301606171658"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0142697328_p14394959151048"><a name="zh-cn_topic_0142697328_p14394959151048"></a><a name="zh-cn_topic_0142697328_p14394959151048"></a>连接地址</p>
 </td>
-<td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0142697328_p1483474582618"><a name="zh-cn_topic_0142697328_p1483474582618"></a><a name="zh-cn_topic_0142697328_p1483474582618"></a>使用DLI访问其他数据源的地址。</p>
-<div class="note" id="zh-cn_topic_0142697328_note79771723317"><a name="zh-cn_topic_0142697328_note79771723317"></a><a name="zh-cn_topic_0142697328_note79771723317"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p558515021813"><a name="p558515021813"></a><a name="p558515021813"></a>跨源链接创建成功后显示连接地址。</p>
-</div></div>
+<td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0142697328_p1483474582618"><a name="zh-cn_topic_0142697328_p1483474582618"></a><a name="zh-cn_topic_0142697328_p1483474582618"></a>跨源连接创建成功后将显示连接地址，可用于DLI访问其他数据源。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0142697328_row6424839516213"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0142697328_p50569641162134"><a name="zh-cn_topic_0142697328_p50569641162134"></a><a name="zh-cn_topic_0142697328_p50569641162134"></a>目的地址</p>
