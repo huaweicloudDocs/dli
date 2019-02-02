@@ -257,7 +257,30 @@
 </th>
 </tr>
 </thead>
-<tbody><tr id="row18672125216112"><td class="cellrowborder" rowspan="6" valign="top" width="15%" headers="mcps1.2.3.1.1 "><p id="p5672752512"><a name="p5672752512"></a><a name="p5672752512"></a>HG38</p>
+<tbody><tr id="row156401219145620"><td class="cellrowborder" rowspan="7" valign="top" width="15%" headers="mcps1.2.3.1.1 "><p id="p176401191567"><a name="p176401191567"></a><a name="p176401191567"></a>HG19</p>
+</td>
+<td class="cellrowborder" valign="top" width="85%" headers="mcps1.2.3.1.2 "><p id="p29871058972"><a name="p29871058972"></a><a name="p29871058972"></a>1000g_phase1.indels.hg19.sites.vcf</p>
+</td>
+</tr>
+<tr id="row546216511718"><td class="cellrowborder" valign="top" headers="mcps1.2.3.1.1 "><p id="p174639510713"><a name="p174639510713"></a><a name="p174639510713"></a>dbsnp_138.hg19.vcf</p>
+</td>
+</tr>
+<tr id="row4189171911812"><td class="cellrowborder" valign="top" headers="mcps1.2.3.1.1 "><p id="p10189219983"><a name="p10189219983"></a><a name="p10189219983"></a>1000g_omni2.5.hg19.sites.vcf</p>
+</td>
+</tr>
+<tr id="row1719114269817"><td class="cellrowborder" valign="top" headers="mcps1.2.3.1.1 "><p id="p17191162611817"><a name="p17191162611817"></a><a name="p17191162611817"></a>1000g_phase1.snps.high_confidence.hg19.sites.vcf</p>
+</td>
+</tr>
+<tr id="row2019117261981"><td class="cellrowborder" valign="top" headers="mcps1.2.3.1.1 "><p id="p1619182610812"><a name="p1619182610812"></a><a name="p1619182610812"></a>mills_and_1000g_gold_standard.indels.hg19.sites.vcf</p>
+</td>
+</tr>
+<tr id="row93998494814"><td class="cellrowborder" valign="top" headers="mcps1.2.3.1.1 "><p id="p1539984917814"><a name="p1539984917814"></a><a name="p1539984917814"></a>hapmap_3.3.hg19.sites.vcf</p>
+</td>
+</tr>
+<tr id="row20129161812"><td class="cellrowborder" valign="top" headers="mcps1.2.3.1.1 "><p id="p21291564811"><a name="p21291564811"></a><a name="p21291564811"></a>ncbi.hg19_dbsnp147.vcf</p>
+</td>
+</tr>
+<tr id="row18672125216112"><td class="cellrowborder" rowspan="6" valign="top" width="15%" headers="mcps1.2.3.1.1 "><p id="p5672752512"><a name="p5672752512"></a><a name="p5672752512"></a>HG38</p>
 </td>
 <td class="cellrowborder" valign="top" width="85%" headers="mcps1.2.3.1.2 "><p id="p668092019216"><a name="p668092019216"></a><a name="p668092019216"></a>1000g_omni2.5.hg38.vcf</p>
 </td>
@@ -336,9 +359,9 @@
 </th>
 <th class="cellrowborder" valign="top" width="8.080808080808081%" id="mcps1.2.5.1.2"><p id="p104892054987"><a name="p104892054987"></a><a name="p104892054987"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="15.151515151515152%" id="mcps1.2.5.1.3"><p id="p34911354487"><a name="p34911354487"></a><a name="p34911354487"></a>参数类型</p>
+<th class="cellrowborder" valign="top" width="13.030303030303031%" id="mcps1.2.5.1.3"><p id="p34911354487"><a name="p34911354487"></a><a name="p34911354487"></a>参数类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="62.62626262626263%" id="mcps1.2.5.1.4"><p id="p44911854883"><a name="p44911854883"></a><a name="p44911854883"></a>说明</p>
+<th class="cellrowborder" valign="top" width="64.74747474747475%" id="mcps1.2.5.1.4"><p id="p44911854883"><a name="p44911854883"></a><a name="p44911854883"></a>说明</p>
 </th>
 </tr>
 </thead>
@@ -346,18 +369,18 @@
 </td>
 <td class="cellrowborder" valign="top" width="8.080808080808081%" headers="mcps1.2.5.1.2 "><p id="p049512541980"><a name="p049512541980"></a><a name="p049512541980"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.151515151515152%" headers="mcps1.2.5.1.3 "><p id="p1949618541685"><a name="p1949618541685"></a><a name="p1949618541685"></a>String</p>
+<td class="cellrowborder" valign="top" width="13.030303030303031%" headers="mcps1.2.5.1.3 "><p id="p1949618541685"><a name="p1949618541685"></a><a name="p1949618541685"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="62.62626262626263%" headers="mcps1.2.5.1.4 "><p id="p17207123717190"><a name="p17207123717190"></a><a name="p17207123717190"></a>样本类型。仅支持 tumor 和 normal 两种类型。</p>
+<td class="cellrowborder" valign="top" width="64.74747474747475%" headers="mcps1.2.5.1.4 "><p id="p17207123717190"><a name="p17207123717190"></a><a name="p17207123717190"></a>样本类型。仅支持 tumor 和 normal 两种类型。</p>
 </td>
 </tr>
 <tr id="row549635412811"><td class="cellrowborder" valign="top" width="14.141414141414144%" headers="mcps1.2.5.1.1 "><p id="p1549715417817"><a name="p1549715417817"></a><a name="p1549715417817"></a>sample_inputs</p>
 </td>
 <td class="cellrowborder" valign="top" width="8.080808080808081%" headers="mcps1.2.5.1.2 "><p id="p749917544814"><a name="p749917544814"></a><a name="p749917544814"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.151515151515152%" headers="mcps1.2.5.1.3 "><p id="p10499754485"><a name="p10499754485"></a><a name="p10499754485"></a>Array[String]</p>
+<td class="cellrowborder" valign="top" width="13.030303030303031%" headers="mcps1.2.5.1.3 "><p id="p10499754485"><a name="p10499754485"></a><a name="p10499754485"></a>Array[String]</p>
 </td>
-<td class="cellrowborder" valign="top" width="62.62626262626263%" headers="mcps1.2.5.1.4 "><a name="ul941712599472"></a><a name="ul941712599472"></a><ul id="ul941712599472"><li>当输入文件类型为FASTQ时，必须有两个输入文件。<div class="note" id="note1080012315201"><a name="note1080012315201"></a><a name="note1080012315201"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p118011631132019"><a name="p118011631132019"></a><a name="p118011631132019"></a>FASTQ类型的文件后缀必须为“.fastq”，“.fq”，“.fastq.gz”和“.fq.gz”这四种中的一种。</p>
+<td class="cellrowborder" valign="top" width="64.74747474747475%" headers="mcps1.2.5.1.4 "><a name="ul941712599472"></a><a name="ul941712599472"></a><ul id="ul941712599472"><li>当输入文件类型为FASTQ时，必须有两个输入文件。<div class="note" id="note1080012315201"><a name="note1080012315201"></a><a name="note1080012315201"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p118011631132019"><a name="p118011631132019"></a><a name="p118011631132019"></a>FASTQ类型的文件后缀必须为“.fastq”，“.fq”，“.fastq.gz”和“.fq.gz”这四种中的一种。</p>
 </div></div>
 </li><li>当输入文件类型为BAM时，只能有一个输入文件。<div class="note" id="note1699419591189"><a name="note1699419591189"></a><a name="note1699419591189"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p5994135961818"><a name="p5994135961818"></a><a name="p5994135961818"></a>文件类型为BAM时，必须提供BQSR比对之后的BAM文件。</p>
 </div></div>

@@ -49,19 +49,19 @@
     **表 2**  响应参数
 
     <a name="table192695719914"></a>
-    <table><thead align="left"><tr id="row82696574918"><th class="cellrowborder" valign="top" width="15.120000000000001%" id="mcps1.2.4.1.1"><p id="p102691857892"><a name="p102691857892"></a><a name="p102691857892"></a>参数名</p>
+    <table><thead align="left"><tr id="row82696574918"><th class="cellrowborder" valign="top" width="9.520000000000001%" id="mcps1.2.4.1.1"><p id="p102691857892"><a name="p102691857892"></a><a name="p102691857892"></a>参数名</p>
     </th>
-    <th class="cellrowborder" valign="top" width="12.790000000000001%" id="mcps1.2.4.1.2"><p id="p12269185711914"><a name="p12269185711914"></a><a name="p12269185711914"></a>参数类型</p>
+    <th class="cellrowborder" valign="top" width="8.72%" id="mcps1.2.4.1.2"><p id="p12269185711914"><a name="p12269185711914"></a><a name="p12269185711914"></a>参数类型</p>
     </th>
-    <th class="cellrowborder" valign="top" width="72.09%" id="mcps1.2.4.1.3"><p id="p192698571294"><a name="p192698571294"></a><a name="p192698571294"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="81.76%" id="mcps1.2.4.1.3"><p id="p192698571294"><a name="p192698571294"></a><a name="p192698571294"></a>说明</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row5269257198"><td class="cellrowborder" valign="top" width="15.120000000000001%" headers="mcps1.2.4.1.1 "><p id="p39381452101113"><a name="p39381452101113"></a><a name="p39381452101113"></a>message</p>
+    <tbody><tr id="row5269257198"><td class="cellrowborder" valign="top" width="9.520000000000001%" headers="mcps1.2.4.1.1 "><p id="p39381452101113"><a name="p39381452101113"></a><a name="p39381452101113"></a>message</p>
     </td>
-    <td class="cellrowborder" valign="top" width="12.790000000000001%" headers="mcps1.2.4.1.2 "><p id="p17938105271117"><a name="p17938105271117"></a><a name="p17938105271117"></a>String</p>
+    <td class="cellrowborder" valign="top" width="8.72%" headers="mcps1.2.4.1.2 "><p id="p17938105271117"><a name="p17938105271117"></a><a name="p17938105271117"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="72.09%" headers="mcps1.2.4.1.3 "><p id="p494085212113"><a name="p494085212113"></a><a name="p494085212113"></a>若作业当前状态为完成（FINISHED）、失败（FAILED）、取消（CANCELLED）、取消中（CANCELING）时，则该作业无法取消。</p>
+    <td class="cellrowborder" valign="top" width="81.76%" headers="mcps1.2.4.1.3 "><p id="p494085212113"><a name="p494085212113"></a><a name="p494085212113"></a>若作业当前状态为完成（FINISHED）、失败（FAILED）、取消（CANCELLED）、取消中（CANCELING）时，则该作业无法取消。</p>
     </td>
     </tr>
     </tbody>

@@ -16,7 +16,7 @@
 -   [取消作业（推荐）](取消作业（推荐）.md)
 
 >![](public_sys-resources/icon-note.gif) **说明：**   
->-   该API当响应消息中“job\_type“为“DCL“时，为同步操作。  
+>该API当响应消息中“job\_type“为“DCL“时，为同步操作。  
 
 ## URI<a name="s807a09edd221483999c7c51233072a4a"></a>
 
@@ -149,69 +149,69 @@
 **表 4**  响应参数
 
 <a name="zh-cn_topic_0069077806_table43107464"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0069077806_row12322941"><th class="cellrowborder" valign="top" width="12%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0069077806_p17344522714"><a name="zh-cn_topic_0069077806_p17344522714"></a><a name="zh-cn_topic_0069077806_p17344522714"></a>名称</p>
+<table><thead align="left"><tr id="zh-cn_topic_0069077806_row12322941"><th class="cellrowborder" valign="top" width="10.81%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0069077806_p17344522714"><a name="zh-cn_topic_0069077806_p17344522714"></a><a name="zh-cn_topic_0069077806_p17344522714"></a>名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="9%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0069077806_p3324582718"><a name="zh-cn_topic_0069077806_p3324582718"></a><a name="zh-cn_topic_0069077806_p3324582718"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="8.540000000000001%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0069077806_p3324582718"><a name="zh-cn_topic_0069077806_p3324582718"></a><a name="zh-cn_topic_0069077806_p3324582718"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="11%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0069077806_p1633452272"><a name="zh-cn_topic_0069077806_p1633452272"></a><a name="zh-cn_topic_0069077806_p1633452272"></a>参数类型</p>
+<th class="cellrowborder" valign="top" width="10.549999999999999%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0069077806_p1633452272"><a name="zh-cn_topic_0069077806_p1633452272"></a><a name="zh-cn_topic_0069077806_p1633452272"></a>参数类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="68%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0069077806_p18354562712"><a name="zh-cn_topic_0069077806_p18354562712"></a><a name="zh-cn_topic_0069077806_p18354562712"></a>说明</p>
+<th class="cellrowborder" valign="top" width="70.1%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0069077806_p18354562712"><a name="zh-cn_topic_0069077806_p18354562712"></a><a name="zh-cn_topic_0069077806_p18354562712"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="zh-cn_topic_0069077806_row42891778"><td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077806_p51681963"><a name="zh-cn_topic_0069077806_p51681963"></a><a name="zh-cn_topic_0069077806_p51681963"></a>is_success</p>
+<tbody><tr id="zh-cn_topic_0069077806_row42891778"><td class="cellrowborder" valign="top" width="10.81%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077806_p51681963"><a name="zh-cn_topic_0069077806_p51681963"></a><a name="zh-cn_topic_0069077806_p51681963"></a>is_success</p>
 </td>
-<td class="cellrowborder" valign="top" width="9%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0069077806_p25489436"><a name="zh-cn_topic_0069077806_p25489436"></a><a name="zh-cn_topic_0069077806_p25489436"></a>是</p>
+<td class="cellrowborder" valign="top" width="8.540000000000001%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0069077806_p25489436"><a name="zh-cn_topic_0069077806_p25489436"></a><a name="zh-cn_topic_0069077806_p25489436"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="11%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077806_p51378430"><a name="zh-cn_topic_0069077806_p51378430"></a><a name="zh-cn_topic_0069077806_p51378430"></a>Boolean</p>
+<td class="cellrowborder" valign="top" width="10.549999999999999%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077806_p51378430"><a name="zh-cn_topic_0069077806_p51378430"></a><a name="zh-cn_topic_0069077806_p51378430"></a>Boolean</p>
 </td>
-<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.5.1.4 "><p id="p4367201211150"><a name="p4367201211150"></a><a name="p4367201211150"></a>当<span class="parmname" id="parmname20849116111318"><a name="parmname20849116111318"></a><a name="parmname20849116111318"></a>“job_type”</span>为<span class="parmvalue" id="parmvalue2347564101624"><a name="parmvalue2347564101624"></a><a name="parmvalue2347564101624"></a>“DCL”</span>时，为请求执行是否成功。<span class="parmvalue" id="parmvalue218731155923"><a name="parmvalue218731155923"></a><a name="parmvalue218731155923"></a>“true”</span>表示请求执行成功。</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0069077806_row8129598"><td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077806_p54517712"><a name="zh-cn_topic_0069077806_p54517712"></a><a name="zh-cn_topic_0069077806_p54517712"></a>message</p>
-</td>
-<td class="cellrowborder" valign="top" width="9%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0069077806_p53858575"><a name="zh-cn_topic_0069077806_p53858575"></a><a name="zh-cn_topic_0069077806_p53858575"></a>是</p>
-</td>
-<td class="cellrowborder" valign="top" width="11%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077806_p468450"><a name="zh-cn_topic_0069077806_p468450"></a><a name="zh-cn_topic_0069077806_p468450"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.5.1.4 "><p id="a4fa277540d3e42e48cec2027a36ca6bc"><a name="a4fa277540d3e42e48cec2027a36ca6bc"></a><a name="a4fa277540d3e42e48cec2027a36ca6bc"></a>系统提示信息，执行成功时，信息可能为空。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.5.1.4 "><p id="p4367201211150"><a name="p4367201211150"></a><a name="p4367201211150"></a>当<span class="parmname" id="parmname20849116111318"><a name="parmname20849116111318"></a><a name="parmname20849116111318"></a>“job_type”</span>为<span class="parmvalue" id="parmvalue2347564101624"><a name="parmvalue2347564101624"></a><a name="parmvalue2347564101624"></a>“DCL”</span>时，为请求执行是否成功。<span class="parmvalue" id="parmvalue218731155923"><a name="parmvalue218731155923"></a><a name="parmvalue218731155923"></a>“true”</span>表示请求执行成功。</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0069077806_row5956164"><td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077806_p12687257"><a name="zh-cn_topic_0069077806_p12687257"></a><a name="zh-cn_topic_0069077806_p12687257"></a>job_id</p>
+<tr id="zh-cn_topic_0069077806_row8129598"><td class="cellrowborder" valign="top" width="10.81%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077806_p54517712"><a name="zh-cn_topic_0069077806_p54517712"></a><a name="zh-cn_topic_0069077806_p54517712"></a>message</p>
 </td>
-<td class="cellrowborder" valign="top" width="9%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0069077806_p21034911"><a name="zh-cn_topic_0069077806_p21034911"></a><a name="zh-cn_topic_0069077806_p21034911"></a>是</p>
+<td class="cellrowborder" valign="top" width="8.540000000000001%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0069077806_p53858575"><a name="zh-cn_topic_0069077806_p53858575"></a><a name="zh-cn_topic_0069077806_p53858575"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="11%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077806_p26106237"><a name="zh-cn_topic_0069077806_p26106237"></a><a name="zh-cn_topic_0069077806_p26106237"></a>String</p>
+<td class="cellrowborder" valign="top" width="10.549999999999999%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077806_p468450"><a name="zh-cn_topic_0069077806_p468450"></a><a name="zh-cn_topic_0069077806_p468450"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0069077806_p34230492"><a name="zh-cn_topic_0069077806_p34230492"></a><a name="zh-cn_topic_0069077806_p34230492"></a>此SQL语句将生成并提交一个新作业，返回此作业的ID，可用于获取作业状态和作业结果。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.5.1.4 "><p id="a4fa277540d3e42e48cec2027a36ca6bc"><a name="a4fa277540d3e42e48cec2027a36ca6bc"></a><a name="a4fa277540d3e42e48cec2027a36ca6bc"></a>系统提示信息，执行成功时，信息可能为空。</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0069077806_row39638980"><td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077806_p56640774"><a name="zh-cn_topic_0069077806_p56640774"></a><a name="zh-cn_topic_0069077806_p56640774"></a>job_type</p>
+<tr id="zh-cn_topic_0069077806_row5956164"><td class="cellrowborder" valign="top" width="10.81%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077806_p12687257"><a name="zh-cn_topic_0069077806_p12687257"></a><a name="zh-cn_topic_0069077806_p12687257"></a>job_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="9%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0069077806_p24499997"><a name="zh-cn_topic_0069077806_p24499997"></a><a name="zh-cn_topic_0069077806_p24499997"></a>是</p>
+<td class="cellrowborder" valign="top" width="8.540000000000001%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0069077806_p21034911"><a name="zh-cn_topic_0069077806_p21034911"></a><a name="zh-cn_topic_0069077806_p21034911"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="11%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077806_p38342769"><a name="zh-cn_topic_0069077806_p38342769"></a><a name="zh-cn_topic_0069077806_p38342769"></a>String</p>
+<td class="cellrowborder" valign="top" width="10.549999999999999%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077806_p26106237"><a name="zh-cn_topic_0069077806_p26106237"></a><a name="zh-cn_topic_0069077806_p26106237"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0069077806_p18756585"><a name="zh-cn_topic_0069077806_p18756585"></a><a name="zh-cn_topic_0069077806_p18756585"></a>作业类型。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0069077806_p34230492"><a name="zh-cn_topic_0069077806_p34230492"></a><a name="zh-cn_topic_0069077806_p34230492"></a>此SQL语句将生成并提交一个新作业，返回此作业的ID，可用于获取作业状态和作业结果。</p>
+</td>
+</tr>
+<tr id="zh-cn_topic_0069077806_row39638980"><td class="cellrowborder" valign="top" width="10.81%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077806_p56640774"><a name="zh-cn_topic_0069077806_p56640774"></a><a name="zh-cn_topic_0069077806_p56640774"></a>job_type</p>
+</td>
+<td class="cellrowborder" valign="top" width="8.540000000000001%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0069077806_p24499997"><a name="zh-cn_topic_0069077806_p24499997"></a><a name="zh-cn_topic_0069077806_p24499997"></a>是</p>
+</td>
+<td class="cellrowborder" valign="top" width="10.549999999999999%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077806_p38342769"><a name="zh-cn_topic_0069077806_p38342769"></a><a name="zh-cn_topic_0069077806_p38342769"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0069077806_p18756585"><a name="zh-cn_topic_0069077806_p18756585"></a><a name="zh-cn_topic_0069077806_p18756585"></a>作业类型。</p>
 <a name="ud0cff9a09ee641b3a42e353020764dc1"></a><a name="ud0cff9a09ee641b3a42e353020764dc1"></a><ul id="ud0cff9a09ee641b3a42e353020764dc1"><li>DDL</li><li>DCL</li><li>IMPORT</li><li>EXPORT</li><li>QUERY</li><li>INSERT</li></ul>
 </td>
 </tr>
-<tr id="row1822483371311"><td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.5.1.1 "><p id="p18224933171318"><a name="p18224933171318"></a><a name="p18224933171318"></a>schema</p>
+<tr id="row1822483371311"><td class="cellrowborder" valign="top" width="10.81%" headers="mcps1.2.5.1.1 "><p id="p18224933171318"><a name="p18224933171318"></a><a name="p18224933171318"></a>schema</p>
 </td>
-<td class="cellrowborder" valign="top" width="9%" headers="mcps1.2.5.1.2 "><p id="p92257338139"><a name="p92257338139"></a><a name="p92257338139"></a>否</p>
+<td class="cellrowborder" valign="top" width="8.540000000000001%" headers="mcps1.2.5.1.2 "><p id="p92257338139"><a name="p92257338139"></a><a name="p92257338139"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="11%" headers="mcps1.2.5.1.3 "><p id="p1822514331138"><a name="p1822514331138"></a><a name="p1822514331138"></a>Array</p>
+<td class="cellrowborder" valign="top" width="10.549999999999999%" headers="mcps1.2.5.1.3 "><p id="p1822514331138"><a name="p1822514331138"></a><a name="p1822514331138"></a>Array</p>
 </td>
-<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.5.1.4 "><p id="p152251533161319"><a name="p152251533161319"></a><a name="p152251533161319"></a>当语句类型为DDL时，返回其结果的列名称及类型。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.5.1.4 "><p id="p152251533161319"><a name="p152251533161319"></a><a name="p152251533161319"></a>当语句类型为DDL时，返回其结果的列名称及类型。</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0069077806_row34591542"><td class="cellrowborder" valign="top" width="12%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077806_p50451552"><a name="zh-cn_topic_0069077806_p50451552"></a><a name="zh-cn_topic_0069077806_p50451552"></a>rows</p>
+<tr id="zh-cn_topic_0069077806_row34591542"><td class="cellrowborder" valign="top" width="10.81%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077806_p50451552"><a name="zh-cn_topic_0069077806_p50451552"></a><a name="zh-cn_topic_0069077806_p50451552"></a>rows</p>
 </td>
-<td class="cellrowborder" valign="top" width="9%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0069077806_p60043939"><a name="zh-cn_topic_0069077806_p60043939"></a><a name="zh-cn_topic_0069077806_p60043939"></a>否</p>
+<td class="cellrowborder" valign="top" width="8.540000000000001%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0069077806_p60043939"><a name="zh-cn_topic_0069077806_p60043939"></a><a name="zh-cn_topic_0069077806_p60043939"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="11%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077806_p31720870"><a name="zh-cn_topic_0069077806_p31720870"></a><a name="zh-cn_topic_0069077806_p31720870"></a>Array</p>
+<td class="cellrowborder" valign="top" width="10.549999999999999%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077806_p31720870"><a name="zh-cn_topic_0069077806_p31720870"></a><a name="zh-cn_topic_0069077806_p31720870"></a>Array</p>
 </td>
-<td class="cellrowborder" valign="top" width="68%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0069077806_p19253649"><a name="zh-cn_topic_0069077806_p19253649"></a><a name="zh-cn_topic_0069077806_p19253649"></a>当语句类型为DDL时，直接返回其执行结果。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0069077806_p19253649"><a name="zh-cn_topic_0069077806_p19253649"></a><a name="zh-cn_topic_0069077806_p19253649"></a>当语句类型为DDL时，直接返回其执行结果。</p>
 </td>
 </tr>
 </tbody>
