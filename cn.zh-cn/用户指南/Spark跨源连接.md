@@ -2,7 +2,7 @@
 
 ## 操作场景<a name="zh-cn_topic_0142697328_section31579140143928"></a>
 
-DLI Spark跨源连接可用于访问CloudTable，DWS，RDS等其他数据源。具体功能介绍请参考[使用DLI跨源能力](使用DLI跨源能力.md)。
+DLI Spark跨源连接可用于访问CloudTable，DWS，RDS，CSS数据源。
 
 ## 连接列表<a name="zh-cn_topic_0142697328_section1616314111518"></a>
 
@@ -31,8 +31,8 @@ DLI Spark跨源连接可用于访问CloudTable，DWS，RDS等其他数据源。�
 </tr>
 <tr id="zh-cn_topic_0142697328_row31011923151038"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0142697328_p10671857151038"><a name="zh-cn_topic_0142697328_p10671857151038"></a><a name="zh-cn_topic_0142697328_p10671857151038"></a>服务类型</p>
 </td>
-<td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0142697328_p122801954164819"><a name="zh-cn_topic_0142697328_p122801954164819"></a><a name="zh-cn_topic_0142697328_p122801954164819"></a>目前支持访问三种类型数据源。</p>
-<a name="zh-cn_topic_0142697328_ul127459715563"></a><a name="zh-cn_topic_0142697328_ul127459715563"></a><ul id="zh-cn_topic_0142697328_ul127459715563"><li>表格存储服务 CloudTable</li><li>数据仓库服务 DWS</li><li>关系型数据库 RDS</li></ul>
+<td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0142697328_p122801954164819"><a name="zh-cn_topic_0142697328_p122801954164819"></a><a name="zh-cn_topic_0142697328_p122801954164819"></a>目前支持访问四种类型数据源。</p>
+<a name="zh-cn_topic_0142697328_ul127459715563"></a><a name="zh-cn_topic_0142697328_ul127459715563"></a><ul id="zh-cn_topic_0142697328_ul127459715563"><li>表格存储服务 CloudTable</li><li>数据仓库服务 DWS</li><li>云数据库（关系型数据库） RDS</li><li>云搜索服务 CSS</li></ul>
 </td>
 </tr>
 <tr id="zh-cn_topic_0142697328_row36301606171658"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0142697328_p14394959151048"><a name="zh-cn_topic_0142697328_p14394959151048"></a><a name="zh-cn_topic_0142697328_p14394959151048"></a>连接地址</p>
@@ -45,7 +45,7 @@ DLI Spark跨源连接可用于访问CloudTable，DWS，RDS等其他数据源。�
 <td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0142697328_p18910361162145"><a name="zh-cn_topic_0142697328_p18910361162145"></a><a name="zh-cn_topic_0142697328_p18910361162145"></a>连接其他数据源的地址。不同服务的地址略有不同。</p>
 <a name="zh-cn_topic_0142697328_ul67221730122312"></a><a name="zh-cn_topic_0142697328_ul67221730122312"></a><ul id="zh-cn_topic_0142697328_ul67221730122312"><li>表格存储服务 CloudTable：ZK链接地址</li><li>数据仓库服务 DWS：内网IP：端口<div class="note" id="note41513398539"><a name="note41513398539"></a><a name="note41513398539"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1215193905319"><a name="p1215193905319"></a><a name="p1215193905319"></a>DWS有两个内网IP，不能同时使用两个内网IP，任意选择其中一个即可。</p>
 </div></div>
-</li><li>关系型数据库 RDS：内网地址：数据库端口</li></ul>
+</li><li>云数据库（关系型数据库） RDS：内网地址：数据库端口</li><li>云搜索服务 CSS：内网地址：端口</li></ul>
 </td>
 </tr>
 <tr id="zh-cn_topic_0142697328_row2449114254419"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0142697328_p1845010423449"><a name="zh-cn_topic_0142697328_p1845010423449"></a><a name="zh-cn_topic_0142697328_p1845010423449"></a>创建时间</p>
@@ -76,7 +76,7 @@ DLI Spark跨源连接可用于访问CloudTable，DWS，RDS等其他数据源。�
     如果已有可用集群，可不用重新购买。
 
 2.  在Spark作业的顶部菜单栏中，选择“跨源连接“。
-3.  在“跨源连接“页面，单击![](figures/icon-创建连接.png)创建连接。
+3.  在“跨源连接“页面，单击![](figures/icon-创建连接.png)。
 
     输入连接名称，选择服务类型，安全组，虚拟私有云，子网，输入目的地址，详细参数介绍请参见[表2](#zh-cn_topic_0142697328_table24931148155220)。
 
@@ -105,8 +105,8 @@ DLI Spark跨源连接可用于访问CloudTable，DWS，RDS等其他数据源。�
     </tr>
     <tr id="zh-cn_topic_0142697328_row105181748125210"><td class="cellrowborder" valign="top" width="15.24%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0142697328_p15181748105215"><a name="zh-cn_topic_0142697328_p15181748105215"></a><a name="zh-cn_topic_0142697328_p15181748105215"></a>服务类型</p>
     </td>
-    <td class="cellrowborder" valign="top" width="84.76%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0142697328_p2051984815523"><a name="zh-cn_topic_0142697328_p2051984815523"></a><a name="zh-cn_topic_0142697328_p2051984815523"></a>目前支持访问三种类型数据源。</p>
-    <a name="zh-cn_topic_0142697328_ul25191248185210"></a><a name="zh-cn_topic_0142697328_ul25191248185210"></a><ul id="zh-cn_topic_0142697328_ul25191248185210"><li>表格存储服务 CloudTable</li><li>数据仓库服务 DWS</li><li>关系型数据库 RDS</li></ul>
+    <td class="cellrowborder" valign="top" width="84.76%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0142697328_p2051984815523"><a name="zh-cn_topic_0142697328_p2051984815523"></a><a name="zh-cn_topic_0142697328_p2051984815523"></a>目前支持访问四种类型数据源。</p>
+    <a name="zh-cn_topic_0142697328_ul25191248185210"></a><a name="zh-cn_topic_0142697328_ul25191248185210"></a><ul id="zh-cn_topic_0142697328_ul25191248185210"><li>表格存储服务 CloudTable</li><li>数据仓库服务 DWS</li><li>云数据库（关系型数据库） RDS</li><li>云搜索服务 CSS</li></ul>
     </td>
     </tr>
     <tr id="zh-cn_topic_0142697328_row85241748185212"><td class="cellrowborder" valign="top" width="15.24%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0142697328_p352404835217"><a name="zh-cn_topic_0142697328_p352404835217"></a><a name="zh-cn_topic_0142697328_p352404835217"></a>安全组</p>
@@ -127,7 +127,7 @@ DLI Spark跨源连接可用于访问CloudTable，DWS，RDS等其他数据源。�
     <tr id="zh-cn_topic_0142697328_row135261748155213"><td class="cellrowborder" valign="top" width="15.24%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0142697328_p2052610483527"><a name="zh-cn_topic_0142697328_p2052610483527"></a><a name="zh-cn_topic_0142697328_p2052610483527"></a>目的地址</p>
     </td>
     <td class="cellrowborder" valign="top" width="84.76%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0142697328_p6526144817523"><a name="zh-cn_topic_0142697328_p6526144817523"></a><a name="zh-cn_topic_0142697328_p6526144817523"></a>连接其他数据源的地址。不同服务的地址略有不同。请参考<a href="#zh-cn_topic_0142697328_fig87571359173616">图3</a>。</p>
-    <a name="zh-cn_topic_0142697328_ul9527124812520"></a><a name="zh-cn_topic_0142697328_ul9527124812520"></a><ul id="zh-cn_topic_0142697328_ul9527124812520"><li>表格存储服务 CloudTable：ZK链接地址</li><li>数据仓库服务 DWS：内网IP：端口</li><li>关系型数据库 RDS：内网地址：数据库端口</li></ul>
+    <a name="zh-cn_topic_0142697328_ul9527124812520"></a><a name="zh-cn_topic_0142697328_ul9527124812520"></a><ul id="zh-cn_topic_0142697328_ul9527124812520"><li>表格存储服务 CloudTable：ZK链接地址</li><li>数据仓库服务 DWS：内网IP：端口</li><li>云数据库（关系型数据库） RDS：内网地址：数据库端口</li><li>云搜索服务 CSS：内网地址：端口</li></ul>
     </td>
     </tr>
     </tbody>

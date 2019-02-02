@@ -7,7 +7,7 @@
 -   导入数据时只能指定一个路径，路径中不能包含逗号。
 -   当OBS的目录下有同名文件夹和文件时，数据导入指向该路径会优先指向文件而非文件夹。
 -   不建议对同一张表并发导入数据，因为有一定概率发生并发冲突，导致导入失败。
--   导入文件支持CSV，Parquet，ORC和JSON四种格式，且文本格式仅支持UTF-8。
+-   导入文件支持CSV，Parquet，ORC，JSON格式，且文本格式仅支持UTF-8。
 
 ## 前提条件<a name="section46923850144935"></a>
 
@@ -51,7 +51,7 @@
     </tr>
     <tr id="row21841419112331"><td class="cellrowborder" valign="top" width="14.000000000000002%" headers="mcps1.2.4.1.1 "><p id="p6532867112340"><a name="p6532867112340"></a><a name="p6532867112340"></a>文件格式</p>
     </td>
-    <td class="cellrowborder" valign="top" width="70.5%" headers="mcps1.2.4.1.2 "><p id="p59400238112340"><a name="p59400238112340"></a><a name="p59400238112340"></a>导入数据源的文件格式。导入支持CSV，Parquet，ORC和JSON四种格式。</p>
+    <td class="cellrowborder" valign="top" width="70.5%" headers="mcps1.2.4.1.2 "><p id="p59400238112340"><a name="p59400238112340"></a><a name="p59400238112340"></a>导入数据源的文件格式。导入支持CSV，Parquet，ORC，JSON格式。</p>
     </td>
     <td class="cellrowborder" valign="top" width="15.5%" headers="mcps1.2.4.1.3 "><p id="p46689986112340"><a name="p46689986112340"></a><a name="p46689986112340"></a>CSV</p>
     </td>
