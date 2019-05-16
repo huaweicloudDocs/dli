@@ -4,7 +4,7 @@
 
 -   **[Spark作业编辑器](Spark作业编辑器.md)**  
 
--   **[Spark集群管理](Spark集群管理.md)**  
+-   **[Spark队列管理](Spark队列管理.md)**  
 
 -   **[Spark程序包管理](Spark程序包管理.md)**  
 

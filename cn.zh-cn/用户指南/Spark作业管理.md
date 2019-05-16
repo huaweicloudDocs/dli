@@ -36,9 +36,9 @@ Spark作业为在Spark作业编辑窗口中提交的作业。
 <a name="zh-cn_topic_0122090417_ul32930526154023"></a><a name="zh-cn_topic_0122090417_ul32930526154023"></a><ul id="zh-cn_topic_0122090417_ul32930526154023"><li>启动中：正在启动</li><li>运行中：正在执行任务</li><li>已失败：session已退出</li><li>已成功：session运行成功</li><li>恢复中：正在恢复任务</li></ul>
 </td>
 </tr>
-<tr id="zh-cn_topic_0122090417_row36301606171658"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0122090417_p14394959151048"><a name="zh-cn_topic_0122090417_p14394959151048"></a><a name="zh-cn_topic_0122090417_p14394959151048"></a>所属集群</p>
+<tr id="zh-cn_topic_0122090417_row36301606171658"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0122090417_p14394959151048"><a name="zh-cn_topic_0122090417_p14394959151048"></a><a name="zh-cn_topic_0122090417_p14394959151048"></a>所属队列</p>
 </td>
-<td class="cellrowborder" valign="top" width="83.93%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0122090417_p51238775151048"><a name="zh-cn_topic_0122090417_p51238775151048"></a><a name="zh-cn_topic_0122090417_p51238775151048"></a>所提交Spark作业所在的集群。</p>
+<td class="cellrowborder" valign="top" width="83.93%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0122090417_p51238775151048"><a name="zh-cn_topic_0122090417_p51238775151048"></a><a name="zh-cn_topic_0122090417_p51238775151048"></a>所提交Spark作业所在的队列。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0122090417_row6424839516213"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0122090417_p50569641162134"><a name="zh-cn_topic_0122090417_p50569641162134"></a><a name="zh-cn_topic_0122090417_p50569641162134"></a>创建时间</p>
@@ -63,7 +63,7 @@ Spark作业为在Spark作业编辑窗口中提交的作业。
 ## 查找作业<a name="section9242154518244"></a>
 
 1.  在DLI管理控制台的顶部菜单栏中，选择“作业管理“。
-2.  在“作业管理“页面，选择“状态”和“所属集群”。
+2.  在“作业管理“页面，选择“状态”和“所属队列”。
 
     系统将根据设置的过滤条件，在作业列表显示符合对应条件的作业。
 

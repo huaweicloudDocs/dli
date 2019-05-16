@@ -11,31 +11,31 @@
 **表 1**  模板列表参数
 
 <a name="table3950169215120"></a>
-<table><thead align="left"><tr id="row2555468715120"><th class="cellrowborder" valign="top" width="14.09%" id="mcps1.2.3.1.1"><p id="p4021197415120"><a name="p4021197415120"></a><a name="p4021197415120"></a>参数</p>
+<table><thead align="left"><tr id="row2555468715120"><th class="cellrowborder" valign="top" width="8.959999999999999%" id="mcps1.2.3.1.1"><p id="p4021197415120"><a name="p4021197415120"></a><a name="p4021197415120"></a>参数</p>
 </th>
-<th class="cellrowborder" valign="top" width="85.91%" id="mcps1.2.3.1.2"><p id="p3594448915120"><a name="p3594448915120"></a><a name="p3594448915120"></a>参数说明</p>
+<th class="cellrowborder" valign="top" width="91.03999999999999%" id="mcps1.2.3.1.2"><p id="p3594448915120"><a name="p3594448915120"></a><a name="p3594448915120"></a>参数说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row46758327132"><td class="cellrowborder" valign="top" width="14.09%" headers="mcps1.2.3.1.1 "><p id="p16413434141957"><a name="p16413434141957"></a><a name="p16413434141957"></a>名称</p>
+<tbody><tr id="row46758327132"><td class="cellrowborder" valign="top" width="8.959999999999999%" headers="mcps1.2.3.1.1 "><p id="p16413434141957"><a name="p16413434141957"></a><a name="p16413434141957"></a>名称</p>
 </td>
-<td class="cellrowborder" valign="top" width="85.91%" headers="mcps1.2.3.1.2 "><p id="p3967018201720"><a name="p3967018201720"></a><a name="p3967018201720"></a>模板名称。</p>
+<td class="cellrowborder" valign="top" width="91.03999999999999%" headers="mcps1.2.3.1.2 "><p id="p3967018201720"><a name="p3967018201720"></a><a name="p3967018201720"></a>模板名称。</p>
 <a name="ul109681518191720"></a><a name="ul109681518191720"></a><ul id="ul109681518191720"><li>模板名称只能包含数字、英文字母和下划线，但不能是纯数字，不能以下划线开头，且不能为空。</li><li>输入长度不能超过50个字符。</li></ul>
 </td>
 </tr>
-<tr id="row32873162171713"><td class="cellrowborder" valign="top" width="14.09%" headers="mcps1.2.3.1.1 "><p id="p207117291176"><a name="p207117291176"></a><a name="p207117291176"></a>描述</p>
+<tr id="row32873162171713"><td class="cellrowborder" valign="top" width="8.959999999999999%" headers="mcps1.2.3.1.1 "><p id="p207117291176"><a name="p207117291176"></a><a name="p207117291176"></a>描述</p>
 </td>
-<td class="cellrowborder" valign="top" width="85.91%" headers="mcps1.2.3.1.2 "><p id="p9714102981715"><a name="p9714102981715"></a><a name="p9714102981715"></a>所创建模板的相应描述。</p>
-</td>
-</tr>
-<tr id="row31011923151038"><td class="cellrowborder" valign="top" width="14.09%" headers="mcps1.2.3.1.1 "><p id="p10671857151038"><a name="p10671857151038"></a><a name="p10671857151038"></a>语句</p>
-</td>
-<td class="cellrowborder" valign="top" width="85.91%" headers="mcps1.2.3.1.2 "><p id="p89431923510"><a name="p89431923510"></a><a name="p89431923510"></a>创建为模板的SQL语句。</p>
+<td class="cellrowborder" valign="top" width="91.03999999999999%" headers="mcps1.2.3.1.2 "><p id="p9714102981715"><a name="p9714102981715"></a><a name="p9714102981715"></a>所创建模板的相应描述。</p>
 </td>
 </tr>
-<tr id="row1662880815250"><td class="cellrowborder" valign="top" width="14.09%" headers="mcps1.2.3.1.1 "><p id="p475621615250"><a name="p475621615250"></a><a name="p475621615250"></a>操作</p>
+<tr id="row31011923151038"><td class="cellrowborder" valign="top" width="8.959999999999999%" headers="mcps1.2.3.1.1 "><p id="p10671857151038"><a name="p10671857151038"></a><a name="p10671857151038"></a>语句</p>
 </td>
-<td class="cellrowborder" valign="top" width="85.91%" headers="mcps1.2.3.1.2 "><a name="ul15800707615"></a><a name="ul15800707615"></a><ul id="ul15800707615"><li>执行：单击“执行”将跳转至作业编辑器页面，可根据需要进行修改或直接执行操作。具体请参考<a href="#section1936164995213">执行模板</a>。</li><li>修改：单击“修改”可在弹出的<span class="wintitle" id="wintitle1112873217225"><a name="wintitle1112873217225"></a><a name="wintitle1112873217225"></a>“修改模板”</span>对话框中，根据需要修改模板的信息。具体请参考<a href="#section08698165316">修改模板</a>。</li></ul>
+<td class="cellrowborder" valign="top" width="91.03999999999999%" headers="mcps1.2.3.1.2 "><p id="p89431923510"><a name="p89431923510"></a><a name="p89431923510"></a>创建为模板的SQL语句。</p>
+</td>
+</tr>
+<tr id="row1662880815250"><td class="cellrowborder" valign="top" width="8.959999999999999%" headers="mcps1.2.3.1.1 "><p id="p475621615250"><a name="p475621615250"></a><a name="p475621615250"></a>操作</p>
+</td>
+<td class="cellrowborder" valign="top" width="91.03999999999999%" headers="mcps1.2.3.1.2 "><a name="ul15800707615"></a><a name="ul15800707615"></a><ul id="ul15800707615"><li>执行：单击“执行”将跳转至作业编辑器页面，可根据需要进行修改或直接执行操作。具体请参考<a href="#section1936164995213">执行模板</a>。</li><li>修改：单击“修改”可在弹出的<span class="wintitle" id="wintitle1112873217225"><a name="wintitle1112873217225"></a><a name="wintitle1112873217225"></a>“修改模板”</span>对话框中，根据需要修改模板的信息。具体请参考<a href="#section08698165316">修改模板</a>。</li></ul>
 </td>
 </tr>
 </tbody>
@@ -57,21 +57,21 @@
         **表 2**  参数说明
 
         <a name="table8760202135313"></a>
-        <table><thead align="left"><tr id="row1175916216534"><th class="cellrowborder" valign="top" width="21%" id="mcps1.2.3.1.1"><p id="p11759202116537"><a name="p11759202116537"></a><a name="p11759202116537"></a>参数名称</p>
+        <table><thead align="left"><tr id="row1175916216534"><th class="cellrowborder" valign="top" width="10.83%" id="mcps1.2.3.1.1"><p id="p11759202116537"><a name="p11759202116537"></a><a name="p11759202116537"></a>参数名称</p>
         </th>
-        <th class="cellrowborder" valign="top" width="79%" id="mcps1.2.3.1.2"><p id="p1575912112538"><a name="p1575912112538"></a><a name="p1575912112538"></a>描述</p>
+        <th class="cellrowborder" valign="top" width="89.17%" id="mcps1.2.3.1.2"><p id="p1575912112538"><a name="p1575912112538"></a><a name="p1575912112538"></a>描述</p>
         </th>
         </tr>
         </thead>
-        <tbody><tr id="row1776092113537"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.3.1.1 "><p id="p14760132114535"><a name="p14760132114535"></a><a name="p14760132114535"></a>名称</p>
+        <tbody><tr id="row1776092113537"><td class="cellrowborder" valign="top" width="10.83%" headers="mcps1.2.3.1.1 "><p id="p14760132114535"><a name="p14760132114535"></a><a name="p14760132114535"></a>名称</p>
         </td>
-        <td class="cellrowborder" valign="top" width="79%" headers="mcps1.2.3.1.2 "><p id="p14760162111532"><a name="p14760162111532"></a><a name="p14760162111532"></a>模板名称。</p>
+        <td class="cellrowborder" valign="top" width="89.17%" headers="mcps1.2.3.1.2 "><p id="p14760162111532"><a name="p14760162111532"></a><a name="p14760162111532"></a>模板名称。</p>
         <a name="ul176014214537"></a><a name="ul176014214537"></a><ul id="ul176014214537"><li>模板名称只能包含数字、英文字母和下划线，但不能是纯数字，不能以下划线开头，且不能为空。</li><li>输入长度不能超过50个字符。</li></ul>
         </td>
         </tr>
-        <tr id="row8760122115310"><td class="cellrowborder" valign="top" width="21%" headers="mcps1.2.3.1.1 "><p id="p6760162175317"><a name="p6760162175317"></a><a name="p6760162175317"></a>描述</p>
+        <tr id="row8760122115310"><td class="cellrowborder" valign="top" width="10.83%" headers="mcps1.2.3.1.1 "><p id="p6760162175317"><a name="p6760162175317"></a><a name="p6760162175317"></a>描述</p>
         </td>
-        <td class="cellrowborder" valign="top" width="79%" headers="mcps1.2.3.1.2 "><p id="p13760102118531"><a name="p13760102118531"></a><a name="p13760102118531"></a>该模板的相应描述。</p>
+        <td class="cellrowborder" valign="top" width="89.17%" headers="mcps1.2.3.1.2 "><p id="p13760102118531"><a name="p13760102118531"></a><a name="p13760102118531"></a>该模板的相应描述。</p>
         </td>
         </tr>
         </tbody>

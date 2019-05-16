@@ -12,56 +12,56 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 **表 1**  页面区域说明
 
 <a name="zh-cn_topic_0093946815_table1655084216587"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0093946815_row3857138316587"><th class="cellrowborder" valign="top" width="4.88%" id="mcps1.2.4.1.1"><p id="p482781611353"><a name="p482781611353"></a><a name="p482781611353"></a>序号</p>
+<table><thead align="left"><tr id="zh-cn_topic_0093946815_row3857138316587"><th class="cellrowborder" valign="top" width="6.854680767724247%" id="mcps1.2.4.1.1"><p id="p482781611353"><a name="p482781611353"></a><a name="p482781611353"></a>序号</p>
 </th>
-<th class="cellrowborder" valign="top" width="17.9%" id="mcps1.2.4.1.2"><p id="zh-cn_topic_0093946815_p4139822116594"><a name="zh-cn_topic_0093946815_p4139822116594"></a><a name="zh-cn_topic_0093946815_p4139822116594"></a>区域</p>
+<th class="cellrowborder" valign="top" width="17.528397963180574%" id="mcps1.2.4.1.2"><p id="zh-cn_topic_0093946815_p4139822116594"><a name="zh-cn_topic_0093946815_p4139822116594"></a><a name="zh-cn_topic_0093946815_p4139822116594"></a>区域</p>
 </th>
-<th class="cellrowborder" valign="top" width="77.22%" id="mcps1.2.4.1.3"><p id="zh-cn_topic_0093946815_p6492161016594"><a name="zh-cn_topic_0093946815_p6492161016594"></a><a name="zh-cn_topic_0093946815_p6492161016594"></a>描述</p>
+<th class="cellrowborder" valign="top" width="75.6169212690952%" id="mcps1.2.4.1.3"><p id="zh-cn_topic_0093946815_p6492161016594"><a name="zh-cn_topic_0093946815_p6492161016594"></a><a name="zh-cn_topic_0093946815_p6492161016594"></a>描述</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="zh-cn_topic_0093946815_row1198630416587"><td class="cellrowborder" valign="top" width="4.88%" headers="mcps1.2.4.1.1 "><p id="p20829131613356"><a name="p20829131613356"></a><a name="p20829131613356"></a>1</p>
+<tbody><tr id="zh-cn_topic_0093946815_row1198630416587"><td class="cellrowborder" valign="top" width="6.854680767724247%" headers="mcps1.2.4.1.1 "><p id="p20829131613356"><a name="p20829131613356"></a><a name="p20829131613356"></a>1</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.9%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0093946815_p1072813016594"><a name="zh-cn_topic_0093946815_p1072813016594"></a><a name="zh-cn_topic_0093946815_p1072813016594"></a>菜单栏</p>
+<td class="cellrowborder" valign="top" width="17.528397963180574%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0093946815_p1072813016594"><a name="zh-cn_topic_0093946815_p1072813016594"></a><a name="zh-cn_topic_0093946815_p1072813016594"></a>菜单栏</p>
 </td>
-<td class="cellrowborder" valign="top" width="77.22%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0093946815_p6367220516594"><a name="zh-cn_topic_0093946815_p6367220516594"></a><a name="zh-cn_topic_0093946815_p6367220516594"></a>SQL作业的菜单栏，包括总览、作业编辑器、数据管理、队列管理、模板管理、作业管理和跨源。</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0093946815_row4924339316587"><td class="cellrowborder" valign="top" width="4.88%" headers="mcps1.2.4.1.1 "><p id="p882981673514"><a name="p882981673514"></a><a name="p882981673514"></a>2</p>
-</td>
-<td class="cellrowborder" valign="top" width="17.9%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0093946815_p2929191216587"><a name="zh-cn_topic_0093946815_p2929191216587"></a><a name="zh-cn_topic_0093946815_p2929191216587"></a>导航栏</p>
-</td>
-<td class="cellrowborder" valign="top" width="77.22%" headers="mcps1.2.4.1.3 "><p id="p166261736104613"><a name="p166261736104613"></a><a name="p166261736104613"></a>左侧导航栏，包括队列、数据库和数据库中的表。</p>
+<td class="cellrowborder" valign="top" width="75.6169212690952%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0093946815_p6367220516594"><a name="zh-cn_topic_0093946815_p6367220516594"></a><a name="zh-cn_topic_0093946815_p6367220516594"></a>SQL作业的菜单栏，包括总览、作业编辑器、数据管理、队列管理、模板管理、作业管理和跨源。</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0093946815_row1318571216587"><td class="cellrowborder" valign="top" width="4.88%" headers="mcps1.2.4.1.1 "><p id="p982911620358"><a name="p982911620358"></a><a name="p982911620358"></a>3</p>
+<tr id="zh-cn_topic_0093946815_row4924339316587"><td class="cellrowborder" valign="top" width="6.854680767724247%" headers="mcps1.2.4.1.1 "><p id="p882981673514"><a name="p882981673514"></a><a name="p882981673514"></a>2</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.9%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0093946815_p6140975316587"><a name="zh-cn_topic_0093946815_p6140975316587"></a><a name="zh-cn_topic_0093946815_p6140975316587"></a>作业编辑窗口</p>
+<td class="cellrowborder" valign="top" width="17.528397963180574%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0093946815_p2929191216587"><a name="zh-cn_topic_0093946815_p2929191216587"></a><a name="zh-cn_topic_0093946815_p2929191216587"></a>导航栏</p>
 </td>
-<td class="cellrowborder" valign="top" width="77.22%" headers="mcps1.2.4.1.3 "><p id="p4649185713370"><a name="p4649185713370"></a><a name="p4649185713370"></a>作业编辑窗口中可输入并执行SQL语句。</p>
+<td class="cellrowborder" valign="top" width="75.6169212690952%" headers="mcps1.2.4.1.3 "><p id="p166261736104613"><a name="p166261736104613"></a><a name="p166261736104613"></a>左侧导航栏，包括队列、数据库和数据库中的表。</p>
 </td>
 </tr>
-<tr id="row1146182415594"><td class="cellrowborder" valign="top" width="4.88%" headers="mcps1.2.4.1.1 "><p id="p7829316193510"><a name="p7829316193510"></a><a name="p7829316193510"></a>4</p>
+<tr id="zh-cn_topic_0093946815_row1318571216587"><td class="cellrowborder" valign="top" width="6.854680767724247%" headers="mcps1.2.4.1.1 "><p id="p982911620358"><a name="p982911620358"></a><a name="p982911620358"></a>3</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.9%" headers="mcps1.2.4.1.2 "><p id="p129191956144716"><a name="p129191956144716"></a><a name="p129191956144716"></a>增加作业编辑窗口</p>
+<td class="cellrowborder" valign="top" width="17.528397963180574%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0093946815_p6140975316587"><a name="zh-cn_topic_0093946815_p6140975316587"></a><a name="zh-cn_topic_0093946815_p6140975316587"></a>作业编辑窗口</p>
 </td>
-<td class="cellrowborder" valign="top" width="77.22%" headers="mcps1.2.4.1.3 "><p id="p39191556154710"><a name="p39191556154710"></a><a name="p39191556154710"></a>增加SQL作业编辑窗口。</p>
+<td class="cellrowborder" valign="top" width="75.6169212690952%" headers="mcps1.2.4.1.3 "><p id="p4649185713370"><a name="p4649185713370"></a><a name="p4649185713370"></a>作业编辑窗口中可输入并执行SQL语句。</p>
+</td>
+</tr>
+<tr id="row1146182415594"><td class="cellrowborder" valign="top" width="6.854680767724247%" headers="mcps1.2.4.1.1 "><p id="p7829316193510"><a name="p7829316193510"></a><a name="p7829316193510"></a>4</p>
+</td>
+<td class="cellrowborder" valign="top" width="17.528397963180574%" headers="mcps1.2.4.1.2 "><p id="p129191956144716"><a name="p129191956144716"></a><a name="p129191956144716"></a>增加作业编辑窗口</p>
+</td>
+<td class="cellrowborder" valign="top" width="75.6169212690952%" headers="mcps1.2.4.1.3 "><p id="p39191556154710"><a name="p39191556154710"></a><a name="p39191556154710"></a>增加SQL作业编辑窗口。</p>
 <div class="note" id="note1939391324020"><a name="note1939391324020"></a><a name="note1939391324020"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p20395413184013"><a name="p20395413184013"></a><a name="p20395413184013"></a>最多可同时开启10个作业编辑窗口。</p>
 </div></div>
 </td>
 </tr>
-<tr id="row10930163551711"><td class="cellrowborder" valign="top" width="4.88%" headers="mcps1.2.4.1.1 "><p id="p1493120356172"><a name="p1493120356172"></a><a name="p1493120356172"></a>5</p>
+<tr id="row10930163551711"><td class="cellrowborder" valign="top" width="6.854680767724247%" headers="mcps1.2.4.1.1 "><p id="p1493120356172"><a name="p1493120356172"></a><a name="p1493120356172"></a>5</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.9%" headers="mcps1.2.4.1.2 "><p id="p1893203561719"><a name="p1893203561719"></a><a name="p1893203561719"></a>购买CU时套餐包</p>
+<td class="cellrowborder" valign="top" width="17.528397963180574%" headers="mcps1.2.4.1.2 "><p id="p1893203561719"><a name="p1893203561719"></a><a name="p1893203561719"></a>购买CU时套餐包</p>
 </td>
-<td class="cellrowborder" valign="top" width="77.22%" headers="mcps1.2.4.1.3 "><p id="p4932153541713"><a name="p4932153541713"></a><a name="p4932153541713"></a>根据需要购买CU时套餐包。如果不购买，则按需计费。计费详情请参考<a href="https://support.huaweicloud.com/price-dli/dli_06_0001.html" target="_blank" rel="noopener noreferrer">《数据湖探索价格说明》</a>。</p>
+<td class="cellrowborder" valign="top" width="75.6169212690952%" headers="mcps1.2.4.1.3 "><p id="p4932153541713"><a name="p4932153541713"></a><a name="p4932153541713"></a>根据需要购买CU时套餐包。如果不购买，则按需计费。计费详情请参考<a href="https://support.huaweicloud.com/price-dli/dli_06_0001.html" target="_blank" rel="noopener noreferrer">《数据湖探索价格说明》</a>。</p>
 </td>
 </tr>
-<tr id="row1441425852013"><td class="cellrowborder" valign="top" width="4.88%" headers="mcps1.2.4.1.1 "><p id="p441516587201"><a name="p441516587201"></a><a name="p441516587201"></a>23</p>
+<tr id="row1441425852013"><td class="cellrowborder" valign="top" width="6.854680767724247%" headers="mcps1.2.4.1.1 "><p id="p441516587201"><a name="p441516587201"></a><a name="p441516587201"></a>23</p>
 </td>
-<td class="cellrowborder" valign="top" width="17.9%" headers="mcps1.2.4.1.2 "><p id="p174151158192017"><a name="p174151158192017"></a><a name="p174151158192017"></a>执行历史</p>
+<td class="cellrowborder" valign="top" width="17.528397963180574%" headers="mcps1.2.4.1.2 "><p id="p174151158192017"><a name="p174151158192017"></a><a name="p174151158192017"></a>执行历史</p>
 </td>
-<td class="cellrowborder" valign="top" width="77.22%" headers="mcps1.2.4.1.3 "><p id="p1241513584200"><a name="p1241513584200"></a><a name="p1241513584200"></a>显示已提交的作业状态。</p>
+<td class="cellrowborder" valign="top" width="75.6169212690952%" headers="mcps1.2.4.1.3 "><p id="p1241513584200"><a name="p1241513584200"></a><a name="p1241513584200"></a>显示已提交的作业状态。</p>
 </td>
 </tr>
 </tbody>
@@ -293,7 +293,7 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
     >当作业编辑窗口没有输入SQL语句时，![](figures/icon-执行.png)和![](figures/icon-格式化.png)两个按钮不可用。  
 
 5.  单击![](figures/icon-更多.png)中的“语法校验“，确认SQL语句书写是否正确。
-    1.  若语法校验失败，请参考[《数据湖探索SQL语法参考》](https://support.huaweicloud.com/sqlreference-dli/dli_08_0001.html)，检查SQL语句准确性。
+    1.  若语法校验失败，请参考[《数据湖探索SQL语法参考》](https://support.huaweicloud.com/sqlreference-dli/dli_08_0002.html)，检查SQL语句准确性。
     2.  若语法校验通过，单击![](figures/icon-执行.png)，执行SQL语句。
     3.  SQL语句执行成功后，在SQL作业编辑窗口下方会显示执行结果。
 

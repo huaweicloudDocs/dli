@@ -63,10 +63,10 @@
     <td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><a name="ul194291955145519"></a><a name="ul194291955145519"></a><ul id="ul194291955145519"><li>直接输入OBS路径或单击<a name="image07131523648"></a><a name="image07131523648"></a><span><img id="image07131523648" src="figures/icon-浏览.png"></span>选择OBS的路径。路径须以<span class="parmname" id="parmname64912034172226"><a name="parmname64912034172226"></a><a name="parmname64912034172226"></a>“s3a://”</span>开头。</li><li>导出路径必须为OBS桶中不存在的文件夹，即用户需在OBS目标路径后创建一个新文件夹。</li><li>文件夹名称不能包含下列特殊字符：\ / : * ? " &lt; &gt; |，并且不能以“.”开头和结尾。</li></ul>
     </td>
     </tr>
-    <tr id="row48430784114641"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p30579455114641"><a name="p30579455114641"></a><a name="p30579455114641"></a>覆盖类型</p>
+    <tr id="row48430784114641"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p30579455114641"><a name="p30579455114641"></a><a name="p30579455114641"></a>导出方式</p>
     </td>
     <td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p61016786114641"><a name="p61016786114641"></a><a name="p61016786114641"></a>导出数据的保存方式。</p>
-    <a name="ul625034191496"></a><a name="ul625034191496"></a><ul id="ul625034191496"><li>覆盖：在指定目录下新建文件，会删除已有文件。</li><li>存在即报错：指定的导出目录必须不存在，如果指定目录已经存在，系统将返回错误信息，无法执行导出操作。</li></ul>
+    <a name="ul625034191496"></a><a name="ul625034191496"></a><ul id="ul625034191496"><li>导出到已有OBS目录：在指定目录下新建文件，会删除已有文件。</li><li>随导出自建OBS目录：指定的导出目录必须不存在，如果指定目录已经存在，系统将返回错误信息，无法执行导出操作。</li></ul>
     </td>
     </tr>
     <tr id="row1218154413337"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p44720296144515"><a name="p44720296144515"></a><a name="p44720296144515"></a>表头</p>

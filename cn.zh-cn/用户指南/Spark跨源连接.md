@@ -2,7 +2,7 @@
 
 ## 操作场景<a name="zh-cn_topic_0142697328_section31579140143928"></a>
 
-DLI Spark跨源连接可用于访问CloudTable，DWS，RDS，CSS数据源。
+DLI Spark跨源连接可用于访问CloudTable，DWS，RDS，CSS数据源。具体功能介绍请参考《数据湖探索开发指南》\>[《使用DLI跨源能力》](https://support.huaweicloud.com/devg-dli/dli_09_0020.html)。
 
 ## 连接列表<a name="zh-cn_topic_0142697328_section1616314111518"></a>
 
@@ -71,7 +71,7 @@ DLI Spark跨源连接可用于访问CloudTable，DWS，RDS，CSS数据源。
 1.  创建需要访问的数据源。例如，需要访问CloudTable数据源，请先在CloudTable服务中购买集群。
 
     **图 1**  CloudTable购买集群<a name="zh-cn_topic_0142697328_fig1866711408220"></a>  
-    ![](figures/CloudTable购买集群-0.png "CloudTable购买集群-0")
+    ![](figures/CloudTable购买集群-1.png "CloudTable购买集群-1")
 
     如果已有可用集群，可不用重新购买。
 
@@ -98,9 +98,9 @@ DLI Spark跨源连接可用于访问CloudTable，DWS，RDS，CSS数据源。
     <a name="zh-cn_topic_0142697328_ul185072486523"></a><a name="zh-cn_topic_0142697328_ul185072486523"></a><ul id="zh-cn_topic_0142697328_ul185072486523"><li>名称只能包含数字、英文字母、下划线和中划线。不能为空。</li><li>输入长度不能超过64个字符。</li></ul>
     </td>
     </tr>
-    <tr id="row791816590583"><td class="cellrowborder" valign="top" width="15.24%" headers="mcps1.2.3.1.1 "><p id="p119191259175816"><a name="p119191259175816"></a><a name="p119191259175816"></a>集群</p>
+    <tr id="row791816590583"><td class="cellrowborder" valign="top" width="15.24%" headers="mcps1.2.3.1.1 "><p id="p119191259175816"><a name="p119191259175816"></a><a name="p119191259175816"></a>队列</p>
     </td>
-    <td class="cellrowborder" valign="top" width="84.76%" headers="mcps1.2.3.1.2 "><p id="p891920595585"><a name="p891920595585"></a><a name="p891920595585"></a>提交Spark作业所在的集群。</p>
+    <td class="cellrowborder" valign="top" width="84.76%" headers="mcps1.2.3.1.2 "><p id="p891920595585"><a name="p891920595585"></a><a name="p891920595585"></a>提交Spark作业所在的队列。</p>
     </td>
     </tr>
     <tr id="zh-cn_topic_0142697328_row105181748125210"><td class="cellrowborder" valign="top" width="15.24%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0142697328_p15181748105215"><a name="zh-cn_topic_0142697328_p15181748105215"></a><a name="zh-cn_topic_0142697328_p15181748105215"></a>服务类型</p>
@@ -134,7 +134,7 @@ DLI Spark跨源连接可用于访问CloudTable，DWS，RDS，CSS数据源。
     </table>
 
     **图 3**  CloudTable集群信息<a name="zh-cn_topic_0142697328_fig87571359173616"></a>  
-    ![](figures/CloudTable集群信息-1.png "CloudTable集群信息-1")
+    ![](figures/CloudTable集群信息-2.png "CloudTable集群信息-2")
 
 4.  单击“确定“，完成连接创建。
 

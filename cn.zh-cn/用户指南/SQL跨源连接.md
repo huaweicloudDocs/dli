@@ -2,7 +2,7 @@
 
 ## 操作场景<a name="section31579140143928"></a>
 
-DLI SQL跨源连接可用于访问CloudTable，DWS，RDS，CSS数据源。具体的SQL语法参考请参考[CloudTable表](https://support.huaweicloud.com/sqlreference-dli/dli_08_0119.html)，[DWS表](https://support.huaweicloud.com/sqlreference-dli/dli_08_0192.html)，[RDS表](https://support.huaweicloud.com/sqlreference-dli/dli_08_0196.html)和[CSS表](https://support.huaweicloud.com/sqlreference-dli/dli_08_0201.html)。
+DLI SQL跨源连接可用于访问CloudTable，DWS，RDS，CSS数据源。具体的SQL语法请参考[CloudTable表](https://support.huaweicloud.com/sqlreference-dli/dli_08_0119.html)，[DWS表](https://support.huaweicloud.com/sqlreference-dli/dli_08_0193.html)，[RDS表](https://support.huaweicloud.com/sqlreference-dli/dli_08_0197.html)和[CSS表](https://support.huaweicloud.com/sqlreference-dli/dli_08_0201.html)。
 
 ## 连接列表<a name="section1616314111518"></a>
 
