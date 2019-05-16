@@ -2,7 +2,7 @@
 
 ## 功能介绍<a name="s51df1f9bf4784cf4a56c09b3973a2adc"></a>
 
-该API用于通过执行SQL语句的方式向集群提交作业。
+该API用于通过执行SQL语句的方式向队列提交作业。
 
 作业包含以下类型：DDL、DCL、IMPORT、EXPORT、QUERY和INSERT。其中，IMPORT和EXPORT分别与[导入数据](导入数据.md)和与[导出数据](导出数据.md)的功能一致，区别仅在于实现方式不同。
 

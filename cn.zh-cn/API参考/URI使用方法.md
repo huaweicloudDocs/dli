@@ -19,12 +19,12 @@ URI中的参数说明如[表1](#t1797260c744a4e1a85d354f259cae55a)所示。
 </thead>
 <tbody><tr id="row106982018513"><td class="cellrowborder" valign="top" width="15.17%" headers="mcps1.2.3.1.1 "><p id="p136991001517"><a name="p136991001517"></a><a name="p136991001517"></a>URI-scheme</p>
 </td>
-<td class="cellrowborder" valign="top" width="84.83000000000001%" headers="mcps1.2.3.1.2 "><p id="p56992017520"><a name="p56992017520"></a><a name="p56992017520"></a>表示用于传输请求的协议。GES的API都必须采用https。</p>
+<td class="cellrowborder" valign="top" width="84.83000000000001%" headers="mcps1.2.3.1.2 "><p id="p56992017520"><a name="p56992017520"></a><a name="p56992017520"></a>表示用于传输请求的协议。DLI的API都必须采用https。</p>
 </td>
 </tr>
 <tr id="rb217758afff146a1b40b0dcbb28a4ae1"><td class="cellrowborder" valign="top" width="15.17%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0035614179_p480227019422"><a name="zh-cn_topic_0035614179_p480227019422"></a><a name="zh-cn_topic_0035614179_p480227019422"></a>Endpoint</p>
 </td>
-<td class="cellrowborder" valign="top" width="84.83000000000001%" headers="mcps1.2.3.1.2 "><p id="ad82b3484a1be43ddadf436efbe15285e"><a name="ad82b3484a1be43ddadf436efbe15285e"></a><a name="ad82b3484a1be43ddadf436efbe15285e"></a>指定承载REST服务端点的服务器域名或IP，从<a href="https://developer.huaweicloud.com/endpoint" target="_blank" rel="noopener noreferrer">地区和终端节点</a>中获取。</p>
+<td class="cellrowborder" valign="top" width="84.83000000000001%" headers="mcps1.2.3.1.2 "><p id="ad82b3484a1be43ddadf436efbe15285e"><a name="ad82b3484a1be43ddadf436efbe15285e"></a><a name="ad82b3484a1be43ddadf436efbe15285e"></a>指定承载REST服务端点的服务器域名或IP，从<a href="https://developer.huaweicloud.com/endpoint?DLI" target="_blank" rel="noopener noreferrer">地区和终端节点</a>中获取。</p>
 </td>
 </tr>
 <tr id="refeed61892004ea682639be281a1a707"><td class="cellrowborder" valign="top" width="15.17%" headers="mcps1.2.3.1.1 "><p id="p1797614317513"><a name="p1797614317513"></a><a name="p1797614317513"></a>resource-path</p>
