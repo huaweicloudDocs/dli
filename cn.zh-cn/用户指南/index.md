@@ -82,6 +82,14 @@
 -   [DLI客户端工具操作指导](DLI客户端工具操作指导.md)
     -   [使用Beeline提交作业](使用Beeline提交作业.md)
     -   [使用Spark-submit提交作业](使用Spark-submit提交作业.md)
+    -   [使用JDBC或ODBC提交作业](使用JDBC或ODBC提交作业.md)
+        -   [获取服务端连接地址](获取服务端连接地址.md)
+        -   [下载JDBC或ODBC驱动包](下载JDBC或ODBC驱动包.md)
+        -   [认证](认证.md)
+        -   [使用JDBC提交作业](使用JDBC提交作业.md)
+        -   [使用ODBC提交作业](使用ODBC提交作业.md)
+        -   [JDBC API参考](JDBC-API参考.md)
+
 
 -   [DLI使用UDF操作指导](DLI使用UDF操作指导.md)
 -   [云审计服务支持的DLI操作列表说明](云审计服务支持的DLI操作列表说明.md)
