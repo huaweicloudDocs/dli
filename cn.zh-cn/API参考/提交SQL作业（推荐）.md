@@ -136,6 +136,11 @@
 <td class="cellrowborder" valign="top" width="67.05%" headers="mcps1.2.3.1.2 "><p id="p2230145383612"><a name="p2230145383612"></a><a name="p2230145383612"></a>INSERT类型作业执行过程中的bad records的存储目录。设置该配置项后，bad records不会插入到目标表。</p>
 </td>
 </tr>
+<tr id="row162741046223"><td class="cellrowborder" valign="top" width="32.95%" headers="mcps1.2.3.1.1 "><p id="p182751545225"><a name="p182751545225"></a><a name="p182751545225"></a>dli.sql.sqlasync.enabled</p>
+</td>
+<td class="cellrowborder" valign="top" width="67.05%" headers="mcps1.2.3.1.2 "><p id="p1527644152210"><a name="p1527644152210"></a><a name="p1527644152210"></a>DDL和DCL语句是否异步执行，值为<span class="parmvalue" id="parmvalue1941719505227"><a name="parmvalue1941719505227"></a><a name="parmvalue1941719505227"></a>“true”</span>时启用异步执行。</p>
+</td>
+</tr>
 </tbody>
 </table>
 
