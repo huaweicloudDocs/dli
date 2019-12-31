@@ -78,6 +78,8 @@
     -   [访问CSS](访问CSS.md)
     -   [访问MRS HBase](访问MRS-HBase.md)
     -   [访问MRS OpenTSDB](访问MRS-OpenTSDB.md)
+    -   [访问DCS Redis](访问DCS-Redis.md)
+    -   [访问DDS Mongo](访问DDS-Mongo.md)
 
 -   [DLI客户端工具操作指导](DLI客户端工具操作指导.md)
     -   [使用Beeline提交作业](使用Beeline提交作业.md)
