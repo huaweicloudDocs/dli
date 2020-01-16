@@ -13,7 +13,7 @@ SQL作业管理主要包括如下功能：
 
 ## 作业管理页面<a name="section1616314111518"></a>
 
-作业管理页面显示所有SQL作业，作业数量较多时，系统分页显示，可根据需要跳转至指定页面。您可以查看任何状态下的作业。作业列表默认按创建时间降序排列，创建时间最近的作业显示在最前端。
+在总览页面单击“SQL作业”简介，可进入SQL作业管理页面。SQL作业管理页面显示所有SQL作业，作业数量较多时，系统分页显示，可根据需要跳转至指定页面。您可以查看任何状态下的作业。作业列表默认按创建时间降序排列，创建时间最近的作业显示在最前端。
 
 **表 1**  作业管理参数
 
@@ -83,7 +83,7 @@ SQL作业管理主要包括如下功能：
 
 ## 查看作业详情<a name="section1960402414173"></a>
 
-在“作业管理“页面，选中一条作业，单击该作业对应的![](figures/icon-展开-0.png)，可查看该条作业的详细信息。
+在“作业管理“页面，选中一条作业，单击该作业对应的![](figures/icon-展开.png)，可查看该条作业的详细信息。
 
 不同类型的作业，显示的作业详情不同。以导入数据作业，建表作业和查询作业为例说明。
 
@@ -100,7 +100,7 @@ SQL作业管理主要包括如下功能：
 导出结果的操作入口有两个，分别在“作业管理“和“作业编辑器“页面。
 
 -   在“作业管理“页面，可单击“操作”列“更多”中的“导出结果“，可导出执行查询后的结果。
--   在“作业编辑器“页面，查询语句执行成功后，在“查看结果“窗口右侧，单击![](figures/zh-cn_image_0198742291.png)，可导出执行查询后的结果。
+-   在“作业编辑器“页面，查询语句执行成功后，在“查看结果“窗口右侧，单击![](figures/zh-cn_image_0206789837.png)，可导出执行查询后的结果。
 
 **图 1**  导出结果<a name="fig914972320541"></a>  
 ![](figures/导出结果.png "导出结果")
@@ -132,7 +132,7 @@ SQL作业管理主要包括如下功能：
 </tr>
 <tr id="row6367025143659"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p3346061614541"><a name="p3346061614541"></a><a name="p3346061614541"></a>导出路径</p>
 </td>
-<td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p595910502214"><a name="p595910502214"></a><a name="p595910502214"></a>直接输入OBS路径或单击<a name="image12169112618295"></a><a name="image12169112618295"></a><span><img id="image12169112618295" src="figures/icon-浏览-1.png"></span>选择OBS的路径。路径须以<span class="parmname" id="parmname64912034172226"><a name="parmname64912034172226"></a><a name="parmname64912034172226"></a>“s3a://”</span>开头。</p>
+<td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p595910502214"><a name="p595910502214"></a><a name="p595910502214"></a>直接输入OBS路径或单击<a name="image07131523648"></a><a name="image07131523648"></a><span><img id="image07131523648" src="figures/icon-浏览.png"></span>选择OBS的路径。路径须以<span class="parmname" id="parmname64912034172226"><a name="parmname64912034172226"></a><a name="parmname64912034172226"></a>“s3a://”</span>开头。</p>
 <div class="note" id="note248113592220"><a name="note248113592220"></a><a name="note248113592220"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul2932240315"></a><a name="ul2932240315"></a><ul id="ul2932240315"><li>选择OBS桶后，请在文本框中定义文件夹名称，若该文件夹不存在，则会在OBS中创建。</li><li>文件夹名称不能包含下列特殊字符：\ / : * ? " &lt; &gt; |，并且不能以“.”开头和结尾。</li></ul>
 </div></div>
 </td>

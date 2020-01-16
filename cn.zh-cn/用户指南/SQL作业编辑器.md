@@ -2,71 +2,16 @@
 
 SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003，兼容SparkSQL，详细语法描述请参见[《数据湖探索SQL语法参考》](https://support.huaweicloud.com/sqlreference-dli/dli_08_0001.html)。
 
+在总览页面单击SQL作业右上角![](figures/icon-创建作业-4.png)，可进入SQL作业“作业编辑器”页面。
+
 ## 界面说明<a name="zh-cn_topic_0093946815_section56922894165137"></a>
 
 介绍“作业编辑器“页面中的区域和按键功能。
 
-**图 1**  SQL作业编辑器页面<a name="fig57971753191816"></a>  
-![](figures/SQL作业编辑器页面.png "SQL作业编辑器页面")
-
-**表 1**  页面区域说明
-
-<a name="zh-cn_topic_0093946815_table1655084216587"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0093946815_row3857138316587"><th class="cellrowborder" valign="top" width="10.311398354876617%" id="mcps1.2.4.1.1"><p id="p482781611353"><a name="p482781611353"></a><a name="p482781611353"></a>序号</p>
-</th>
-<th class="cellrowborder" valign="top" width="20.48570309439875%" id="mcps1.2.4.1.2"><p id="zh-cn_topic_0093946815_p4139822116594"><a name="zh-cn_topic_0093946815_p4139822116594"></a><a name="zh-cn_topic_0093946815_p4139822116594"></a>区域</p>
-</th>
-<th class="cellrowborder" valign="top" width="69.20289855072464%" id="mcps1.2.4.1.3"><p id="zh-cn_topic_0093946815_p6492161016594"><a name="zh-cn_topic_0093946815_p6492161016594"></a><a name="zh-cn_topic_0093946815_p6492161016594"></a>描述</p>
-</th>
-</tr>
-</thead>
-<tbody><tr id="zh-cn_topic_0093946815_row1198630416587"><td class="cellrowborder" valign="top" width="10.311398354876617%" headers="mcps1.2.4.1.1 "><p id="p20829131613356"><a name="p20829131613356"></a><a name="p20829131613356"></a>1</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.48570309439875%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0093946815_p1072813016594"><a name="zh-cn_topic_0093946815_p1072813016594"></a><a name="zh-cn_topic_0093946815_p1072813016594"></a>菜单栏</p>
-</td>
-<td class="cellrowborder" valign="top" width="69.20289855072464%" headers="mcps1.2.4.1.3 "><p id="zh-cn_topic_0093946815_p6367220516594"><a name="zh-cn_topic_0093946815_p6367220516594"></a><a name="zh-cn_topic_0093946815_p6367220516594"></a>SQL作业的菜单栏，包括总览、作业编辑器、数据管理、队列管理、模板管理、作业管理和跨源连接。</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0093946815_row4924339316587"><td class="cellrowborder" valign="top" width="10.311398354876617%" headers="mcps1.2.4.1.1 "><p id="p882981673514"><a name="p882981673514"></a><a name="p882981673514"></a>2</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.48570309439875%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0093946815_p2929191216587"><a name="zh-cn_topic_0093946815_p2929191216587"></a><a name="zh-cn_topic_0093946815_p2929191216587"></a>导航栏</p>
-</td>
-<td class="cellrowborder" valign="top" width="69.20289855072464%" headers="mcps1.2.4.1.3 "><p id="p166261736104613"><a name="p166261736104613"></a><a name="p166261736104613"></a>左侧导航栏，包括队列、数据库和数据库中的表。</p>
-</td>
-</tr>
-<tr id="zh-cn_topic_0093946815_row1318571216587"><td class="cellrowborder" valign="top" width="10.311398354876617%" headers="mcps1.2.4.1.1 "><p id="p982911620358"><a name="p982911620358"></a><a name="p982911620358"></a>3</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.48570309439875%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0093946815_p6140975316587"><a name="zh-cn_topic_0093946815_p6140975316587"></a><a name="zh-cn_topic_0093946815_p6140975316587"></a>作业编辑窗口</p>
-</td>
-<td class="cellrowborder" valign="top" width="69.20289855072464%" headers="mcps1.2.4.1.3 "><p id="p4649185713370"><a name="p4649185713370"></a><a name="p4649185713370"></a>作业编辑窗口中可输入并执行SQL语句。</p>
-</td>
-</tr>
-<tr id="row1146182415594"><td class="cellrowborder" valign="top" width="10.311398354876617%" headers="mcps1.2.4.1.1 "><p id="p7829316193510"><a name="p7829316193510"></a><a name="p7829316193510"></a>4</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.48570309439875%" headers="mcps1.2.4.1.2 "><p id="p129191956144716"><a name="p129191956144716"></a><a name="p129191956144716"></a>执行历史（最近一周）/查看结果</p>
-</td>
-<td class="cellrowborder" valign="top" width="69.20289855072464%" headers="mcps1.2.4.1.3 "><a name="ul16113338132215"></a><a name="ul16113338132215"></a><ul id="ul16113338132215"><li>执行历史（最近一周）：显示最近一周提交的作业的信息。包括：<a name="ul12167481224"></a><a name="ul12167481224"></a><ul id="ul12167481224"><li>队列名称</li><li>创建时间</li><li>状态</li><li>执行语句</li><li>操作：重新执行/终止/SparkUI/下载到本地</li></ul>
-<p id="p13505711195516"><a name="p13505711195516"></a><a name="p13505711195516"></a>可以通过以下方式筛选执行历史：</p>
-<a name="ul15968254558"></a><a name="ul15968254558"></a><ul id="ul15968254558"><li>在右上角选择队列名称或输入执行语句</li><li>在列表中选择创建时间顺序/倒序排列</li><li>在列表中选择作业状态</li></ul>
-</li></ul>
-<a name="ul7380142682418"></a><a name="ul7380142682418"></a><ul id="ul7380142682418"><li>查看结果<p id="p54191038102614"><a name="p54191038102614"></a><a name="p54191038102614"></a>显示当前执行的SQL作业结果。</p>
-</li></ul>
-</td>
-</tr>
-<tr id="row10930163551711"><td class="cellrowborder" valign="top" width="10.311398354876617%" headers="mcps1.2.4.1.1 "><p id="p1493120356172"><a name="p1493120356172"></a><a name="p1493120356172"></a>5</p>
-</td>
-<td class="cellrowborder" valign="top" width="20.48570309439875%" headers="mcps1.2.4.1.2 "><p id="p1893203561719"><a name="p1893203561719"></a><a name="p1893203561719"></a>购买计算资源</p>
-</td>
-<td class="cellrowborder" valign="top" width="69.20289855072464%" headers="mcps1.2.4.1.3 "><p id="p4932153541713"><a name="p4932153541713"></a><a name="p4932153541713"></a>根据需要购买队列。可选择“包年/包月”或“按需计费”。计费详情请参考<a href="https://support.huaweicloud.com/price-dli/dli_06_0000.html" target="_blank" rel="noopener noreferrer">《数据湖探索价格说明》</a>。</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-**图 2**  SQL作业导航栏<a name="fig452563612140"></a>  
+**图 1**  SQL作业导航栏<a name="fig452563612140"></a>  
 ![](figures/SQL作业导航栏.png "SQL作业导航栏")
 
-**表 2**  导航栏按键说明
+**表 1**  导航栏按键说明
 
 <a name="table1357419814715"></a>
 <table><thead align="left"><tr id="row105761087712"><th class="cellrowborder" valign="top" width="5.75%" id="mcps1.2.4.1.1"><p id="p1545152013421"><a name="p1545152013421"></a><a name="p1545152013421"></a>序号</p>
@@ -117,10 +62,10 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 </tbody>
 </table>
 
-**图 3**  SQL作业编辑窗口<a name="fig12259471592"></a>  
+**图 2**  SQL作业编辑窗口<a name="fig12259471592"></a>  
 ![](figures/SQL作业编辑窗口.png "SQL作业编辑窗口")
 
-**表 3**  作业编辑窗口说明
+**表 2**  作业编辑窗口说明
 
 <a name="table18913103220552"></a>
 <table><thead align="left"><tr id="row169141932105516"><th class="cellrowborder" valign="top" width="6.297029702970297%" id="mcps1.2.4.1.1"><p id="p233145451119"><a name="p233145451119"></a><a name="p233145451119"></a>序号</p>
@@ -196,13 +141,13 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 </td>
 <td class="cellrowborder" valign="top" width="11.306930693069306%" headers="mcps1.2.4.1.2 "><p id="p414053541419"><a name="p414053541419"></a><a name="p414053541419"></a>快捷键</p>
 </td>
-<td class="cellrowborder" valign="top" width="82.3960396039604%" headers="mcps1.2.4.1.3 "><p id="p142031189146"><a name="p142031189146"></a><a name="p142031189146"></a>快捷键介绍具体请参考<a href="#table209301155311">表4</a>。</p>
+<td class="cellrowborder" valign="top" width="82.3960396039604%" headers="mcps1.2.4.1.3 "><p id="p142031189146"><a name="p142031189146"></a><a name="p142031189146"></a>快捷键介绍具体请参考<a href="#table209301155311">表3</a>。</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-**表 4**  快捷键说明
+**表 3**  快捷键说明
 
 <a name="table209301155311"></a>
 <table><thead align="left"><tr id="row3931151518319"><th class="cellrowborder" valign="top" width="22.759999999999998%" id="mcps1.2.3.1.1"><p id="p49315151839"><a name="p49315151839"></a><a name="p49315151839"></a>快捷键</p>
@@ -246,10 +191,10 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 </tbody>
 </table>
 
-**图 4**  SQL语句执行结果窗口<a name="fig20565174552915"></a>  
+**图 3**  SQL语句执行结果窗口<a name="fig20565174552915"></a>  
 ![](figures/SQL语句执行结果窗口.png "SQL语句执行结果窗口")
 
-**表 5**  SQL语句执行结果窗口说明
+**表 4**  SQL语句执行结果窗口说明
 
 <a name="table191717406376"></a>
 <table><thead align="left"><tr id="row1517115405378"><th class="cellrowborder" valign="top" width="7.5200000000000005%" id="mcps1.2.4.1.1"><p id="p1395619720284"><a name="p1395619720284"></a><a name="p1395619720284"></a>序号</p>
@@ -277,10 +222,34 @@ SQL作业编辑器支持使用SQL语句执行数据查询操作。支持SQL2003�
 </tbody>
 </table>
 
+**表 5**  SQL语句执行历史窗口说明
+
+<a name="table1326105014228"></a>
+<table><thead align="left"><tr id="row72623501226"><th class="cellrowborder" valign="top" width="10.311398354876617%" id="mcps1.2.4.1.1"><p id="p7262950192211"><a name="p7262950192211"></a><a name="p7262950192211"></a>序号</p>
+</th>
+<th class="cellrowborder" valign="top" width="20.48570309439875%" id="mcps1.2.4.1.2"><p id="p14262750172213"><a name="p14262750172213"></a><a name="p14262750172213"></a>区域</p>
+</th>
+<th class="cellrowborder" valign="top" width="69.20289855072464%" id="mcps1.2.4.1.3"><p id="p72631250142216"><a name="p72631250142216"></a><a name="p72631250142216"></a>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row182641050102219"><td class="cellrowborder" valign="top" width="10.311398354876617%" headers="mcps1.2.4.1.1 "><p id="p3264550132212"><a name="p3264550132212"></a><a name="p3264550132212"></a>22</p>
+</td>
+<td class="cellrowborder" valign="top" width="20.48570309439875%" headers="mcps1.2.4.1.2 "><p id="p22643505228"><a name="p22643505228"></a><a name="p22643505228"></a>执行历史（最近一周）</p>
+</td>
+<td class="cellrowborder" valign="top" width="69.20289855072464%" headers="mcps1.2.4.1.3 "><a name="ul2264125020229"></a><a name="ul2264125020229"></a><ul id="ul2264125020229"><li>执行历史（最近一周）：显示最近一周提交的作业的信息。包括：<a name="ul18264135092218"></a><a name="ul18264135092218"></a><ul id="ul18264135092218"><li>队列名称</li><li>创建时间</li><li>状态</li><li>执行语句</li><li>操作：重新执行/终止/SparkUI/下载到本地</li></ul>
+<p id="p62655503226"><a name="p62655503226"></a><a name="p62655503226"></a>可以通过以下方式筛选执行历史：</p>
+<a name="ul1126535015221"></a><a name="ul1126535015221"></a><ul id="ul1126535015221"><li>在右上角选择队列名称或输入执行语句</li><li>在列表中选择创建时间顺序/倒序排列</li><li>在列表中选择作业状态</li></ul>
+</li></ul>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## 操作步骤<a name="zh-cn_topic_0093946815_section6030699152035"></a>
 
 1.  登录数据湖探索管理控制台，选择SQL作业，单击“创建作业”，进入“作业编辑器“页面。
-2.  在当前SQL作业编辑窗口右上方的“队列”列表中选择所使用的队列，默认选择“default“。创建队列操作步骤请参见[SQL创建队列](SQL创建队列.md)。
+2.  在当前SQL作业编辑窗口右上方的“队列”列表中选择所使用的队列，默认选择“default“。创建队列操作步骤请参见[创建队列](创建队列.md)。
 3.  在“数据库”列表中选择所使用的数据库和表，例如选择数据库“qw“和表“qw“。创建数据库和表操作步骤请参见[创建数据库和表](创建数据库和表.md)。
 4.  在SQL作业编辑窗口输入SQL查询语句：
 
