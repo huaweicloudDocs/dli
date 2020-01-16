@@ -22,7 +22,11 @@ DLI Beeline是一个用于连接DLI服务的客户端命令行交互工具，该
 
 1.  下载并解压工具包“huaweicloud-dli-clientkit-<version\>-bin.tar.gz”，其中version为版本号，以实际版本号为准。
 2.  进入解压目录，里面有三个子目录bin、conf、lib，分别存放了Beeline相关的执行脚本、配置文件和依赖包。
-3.  进入配置文件conf目录，将“connection.properties.template”重命名成“connection.properties”，并配置连接参数（具体连接参数请参考《数据湖探索SDK参考》\>[使用JDBC连接服务端](https://support.huaweicloud.com/sdkreference-dli/dli_04_0066.html)中的“表2-数据库连接参数”和“表3-属性项”）。
+3.  进入配置文件conf目录，将“connection.properties.template”重命名成“connection.properties”，并配置连接参数）。
+
+    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >具体连接参数请参考“[使用JDBC提交作业](使用JDBC提交作业.md)”中的“表2-数据库连接参数”和“表3-属性项”。  
+
 4.  进入执行脚本bin目录，启动beeline脚本，执行连接命令即可执行SQL语句，如下所示：
 
     ```
