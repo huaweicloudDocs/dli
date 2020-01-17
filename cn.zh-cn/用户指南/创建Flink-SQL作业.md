@@ -156,7 +156,6 @@
     </td>
     <td class="cellrowborder" valign="top" width="77.81%" headers="mcps1.2.3.1.2 "><p id="p98321338147"><a name="p98321338147"></a><a name="p98321338147"></a>当作业所属集群选择独享集群时，该参数有效。在选择UDF Jar之前需要将对应的jar包上传至OBS桶中，并在<span class="menucascade" id="menucascade132601332513"><a name="menucascade132601332513"></a><a name="menucascade132601332513"></a>“<span class="uicontrol" id="uicontrol13260930514"><a name="uicontrol13260930514"></a><a name="uicontrol13260930514"></a>数据管理&gt;程序包管理</span>”</span>中创建程序包，具体操作请参考<a href="创建程序包.md">创建程序包</a>。</p>
     <p id="p85110151218"><a name="p85110151218"></a><a name="p85110151218"></a>用户可以在SQL中调用插入Jar包中的自定义函数。</p>
-    <p id="p4151757171810"><a name="p4151757171810"></a><a name="p4151757171810"></a>关于自定义函数的详细内容，请参见《<a href="https://support.huaweicloud.com/sqlreference-dli/dli_08_0099.html" target="_blank" rel="noopener noreferrer">数据湖探索SQL语法参考</a>》。</p>
     </td>
     </tr>
     </tbody>
