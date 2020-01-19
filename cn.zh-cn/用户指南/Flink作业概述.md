@@ -5,17 +5,11 @@
 在Flink作业管理页面可提交Flink作业。目前有以下作业类型：
 
 -   Flink SQL作业：使用SQL语句定义作业，可以提交到任意队列上。
--   Flink SQL边缘作业（公测）：通过SQL对边缘设备数据进行分析，可部署到边缘节点上。
-
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >开通Flink SQL边缘作业公测后可见。  
-
 -   Flink自定义作业：基于Flink API的自定义Jar包作业，可以运行在独享队列上。
 
 Flink作业管理主要包括如下功能：
 
 -   [创建Flink SQL作业](创建Flink-SQL作业.md)
--   [创建Flink SQL边缘作业](创建Flink-SQL边缘作业.md)
 -   [创建Flink自定义作业](创建Flink自定义作业.md)
 -   [调试作业](调试作业.md)
 -   [可视化编辑器](可视化编辑器.md)
@@ -53,7 +47,7 @@ Flink作业管理主要包括如下功能：
 <tr id="row3289513151315"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="p102901113161318"><a name="p102901113161318"></a><a name="p102901113161318"></a>作业类型</p>
 </td>
 <td class="cellrowborder" valign="top" width="83.93%" headers="mcps1.2.3.1.2 "><p id="p1029001315135"><a name="p1029001315135"></a><a name="p1029001315135"></a>所提交Flink作业的类型。包括：</p>
-<a name="ul864114454138"></a><a name="ul864114454138"></a><ul id="ul864114454138"><li>Flink SQL作业</li><li>Flink SQL边缘作业</li><li>Flink自定义作业</li></ul>
+<a name="ul864114454138"></a><a name="ul864114454138"></a><ul id="ul864114454138"><li>Flink SQL作业</li><li>Flink自定义作业</li></ul>
 </td>
 </tr>
 <tr id="zh-cn_topic_0122090417_row31011923151038"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0122090417_p10671857151038"><a name="zh-cn_topic_0122090417_p10671857151038"></a><a name="zh-cn_topic_0122090417_p10671857151038"></a>作业状态</p>

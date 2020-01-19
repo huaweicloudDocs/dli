@@ -23,7 +23,6 @@
         -   [Flink作业概述](Flink作业概述.md)
         -   [准备数据](准备数据.md)
         -   [创建Flink SQL作业](创建Flink-SQL作业.md)
-        -   [创建Flink SQL边缘作业](创建Flink-SQL边缘作业.md)
         -   [创建Flink自定义作业](创建Flink自定义作业.md)
         -   [调试作业](调试作业.md)
         -   [可视化编辑器](可视化编辑器.md)
