@@ -29,6 +29,13 @@
 <td class="cellrowborder" valign="top" width="33.333333333333336%" headers="mcps1.2.4.1.3 "><p id="p991313489316"><a name="p991313489316"></a><a name="p991313489316"></a>dropDatabase</p>
 </td>
 </tr>
+<tr id="row165981513136"><td class="cellrowborder" valign="top" width="33.62626262626263%" headers="mcps1.2.4.1.1 "><p id="p1159918131035"><a name="p1159918131035"></a><a name="p1159918131035"></a>修改数据库所有者</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.04040404040404%" headers="mcps1.2.4.1.2 "><p id="p259912132318"><a name="p259912132318"></a><a name="p259912132318"></a>database</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.333333333333336%" headers="mcps1.2.4.1.3 "><p id="p175999131238"><a name="p175999131238"></a><a name="p175999131238"></a>alterDatabaseOwner</p>
+</td>
+</tr>
 <tr id="row10610143117308"><td class="cellrowborder" valign="top" width="33.62626262626263%" headers="mcps1.2.4.1.1 "><p id="p4919104883115"><a name="p4919104883115"></a><a name="p4919104883115"></a>创建表</p>
 </td>
 <td class="cellrowborder" valign="top" width="33.04040404040404%" headers="mcps1.2.4.1.2 "><p id="p892024811319"><a name="p892024811319"></a><a name="p892024811319"></a>table</p>
@@ -90,6 +97,13 @@
 <td class="cellrowborder" valign="top" width="33.04040404040404%" headers="mcps1.2.4.1.2 "><p id="p2086661617"><a name="p2086661617"></a><a name="p2086661617"></a>queue</p>
 </td>
 <td class="cellrowborder" valign="top" width="33.333333333333336%" headers="mcps1.2.4.1.3 "><p id="p1867616118"><a name="p1867616118"></a><a name="p1867616118"></a>shareQueue</p>
+</td>
+</tr>
+<tr id="row1560410188718"><td class="cellrowborder" valign="top" width="33.62626262626263%" headers="mcps1.2.4.1.1 "><p id="p10605131818714"><a name="p10605131818714"></a><a name="p10605131818714"></a>更新队列</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.04040404040404%" headers="mcps1.2.4.1.2 "><p id="p0605718577"><a name="p0605718577"></a><a name="p0605718577"></a>queue</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.333333333333336%" headers="mcps1.2.4.1.3 "><p id="p6605201810719"><a name="p6605201810719"></a><a name="p6605201810719"></a>updateQueue</p>
 </td>
 </tr>
 <tr id="row23816498017"><td class="cellrowborder" valign="top" width="33.62626262626263%" headers="mcps1.2.4.1.1 "><p id="p188703111119"><a name="p188703111119"></a><a name="p188703111119"></a>取消作业</p>
@@ -218,6 +232,13 @@
 <td class="cellrowborder" valign="top" width="33.333333333333336%" headers="mcps1.2.4.1.3 "><p id="p371034216711"><a name="p371034216711"></a><a name="p371034216711"></a>orderQueue</p>
 </td>
 </tr>
+<tr id="row686612562515"><td class="cellrowborder" valign="top" width="33.62626262626263%" headers="mcps1.2.4.1.1 "><p id="p11866155614514"><a name="p11866155614514"></a><a name="p11866155614514"></a>创建跨源连接</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.04040404040404%" headers="mcps1.2.4.1.2 "><p id="p1986615562517"><a name="p1986615562517"></a><a name="p1986615562517"></a>datasource</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.333333333333336%" headers="mcps1.2.4.1.3 "><p id="p48667561852"><a name="p48667561852"></a><a name="p48667561852"></a>createConn</p>
+</td>
+</tr>
 <tr id="row165301288407"><td class="cellrowborder" valign="top" width="33.62626262626263%" headers="mcps1.2.4.1.1 "><p id="p5531285409"><a name="p5531285409"></a><a name="p5531285409"></a>查询跨源连接</p>
 </td>
 <td class="cellrowborder" valign="top" width="33.04040404040404%" headers="mcps1.2.4.1.2 "><p id="p85311789407"><a name="p85311789407"></a><a name="p85311789407"></a>datasource</p>
@@ -258,6 +279,13 @@
 <td class="cellrowborder" valign="top" width="33.04040404040404%" headers="mcps1.2.4.1.2 "><p id="p81571352185513"><a name="p81571352185513"></a><a name="p81571352185513"></a>batch</p>
 </td>
 <td class="cellrowborder" valign="top" width="33.333333333333336%" headers="mcps1.2.4.1.3 "><p id="p715765225517"><a name="p715765225517"></a><a name="p715765225517"></a>deleteBatch</p>
+</td>
+</tr>
+<tr id="row4441237840"><td class="cellrowborder" valign="top" width="33.62626262626263%" headers="mcps1.2.4.1.1 "><p id="p544193718411"><a name="p544193718411"></a><a name="p544193718411"></a>取消批处理作业</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.04040404040404%" headers="mcps1.2.4.1.2 "><p id="p14411371244"><a name="p14411371244"></a><a name="p14411371244"></a>batch</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.333333333333336%" headers="mcps1.2.4.1.3 "><p id="p84411377415"><a name="p84411377415"></a><a name="p84411377415"></a>cancelBatch</p>
 </td>
 </tr>
 <tr id="row3847110325"><td class="cellrowborder" valign="top" width="33.62626262626263%" headers="mcps1.2.4.1.1 "><p id="p184819101124"><a name="p184819101124"></a><a name="p184819101124"></a>创建会话</p>
