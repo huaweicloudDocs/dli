@@ -136,7 +136,7 @@
 <td class="cellrowborder" valign="top" width="67.05%" headers="mcps1.2.3.1.2 "><p id="p2230145383612"><a name="p2230145383612"></a><a name="p2230145383612"></a>INSERT类型作业执行过程中的bad records的存储目录。设置该配置项后，bad records不会插入到目标表。</p>
 </td>
 </tr>
-<tr id="row162741046223"><td class="cellrowborder" valign="top" width="32.95%" headers="mcps1.2.3.1.1 "><p id="p182751545225"><a name="p182751545225"></a><a name="p182751545225"></a>dli.sql.sqlasync.enabled</p>
+<tr id="row181231180241"><td class="cellrowborder" valign="top" width="32.95%" headers="mcps1.2.3.1.1 "><p id="p182751545225"><a name="p182751545225"></a><a name="p182751545225"></a>dli.sql.sqlasync.enabled</p>
 </td>
 <td class="cellrowborder" valign="top" width="67.05%" headers="mcps1.2.3.1.2 "><p id="p1527644152210"><a name="p1527644152210"></a><a name="p1527644152210"></a>DDL和DCL语句是否异步执行，值为<span class="parmvalue" id="parmvalue1941719505227"><a name="parmvalue1941719505227"></a><a name="parmvalue1941719505227"></a>“true”</span>时启用异步执行。</p>
 </td>
@@ -214,6 +214,16 @@
 <td class="cellrowborder" valign="top" width="61.35%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0069077806_p19253649"><a name="zh-cn_topic_0069077806_p19253649"></a><a name="zh-cn_topic_0069077806_p19253649"></a>当语句类型为DDL时，直接返回其执行结果。</p>
 </td>
 </tr>
+<tr id="row0688520181920"><td class="cellrowborder" valign="top" width="12.11%" headers="mcps1.2.5.1.1 "><p id="p222905218240"><a name="p222905218240"></a><a name="p222905218240"></a>job_mode</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.66%" headers="mcps1.2.5.1.2 "><p id="p3229125212417"><a name="p3229125212417"></a><a name="p3229125212417"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.88%" headers="mcps1.2.5.1.3 "><p id="p922911524243"><a name="p922911524243"></a><a name="p922911524243"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="61.35%" headers="mcps1.2.5.1.4 "><p id="p4229105292420"><a name="p4229105292420"></a><a name="p4229105292420"></a>作业执行模式：</p>
+<a name="ul194411241202517"></a><a name="ul194411241202517"></a><ul id="ul194411241202517"><li>async：异步</li><li>sync：同步</li></ul>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -236,10 +246,11 @@
 
     ```
     {
-      "is_success": false,
+      "is_success": true,
       "message": "{""}",
       "job_id": "8ecb0777-9c70-4529-9935-29ea0946039c",
       "job_type": "DDL",
+      "job_mode":sync,
       "schema": [
         {
           "col_name": "string"
