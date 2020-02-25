@@ -15,19 +15,19 @@
     **表 1**  URI 参数
 
     <a name="zh-cn_topic_0069077896_table12850938"></a>
-    <table><thead align="left"><tr id="zh-cn_topic_0069077896_row26986831"><th class="cellrowborder" valign="top" width="12.120000000000001%" id="mcps1.2.4.1.1"><p id="ac4350eeb47b04ac3842d18c867bd44eb"><a name="ac4350eeb47b04ac3842d18c867bd44eb"></a><a name="ac4350eeb47b04ac3842d18c867bd44eb"></a>名称</p>
+    <table><thead align="left"><tr id="zh-cn_topic_0069077896_row26986831"><th class="cellrowborder" valign="top" width="18.41%" id="mcps1.2.4.1.1"><p id="ac4350eeb47b04ac3842d18c867bd44eb"><a name="ac4350eeb47b04ac3842d18c867bd44eb"></a><a name="ac4350eeb47b04ac3842d18c867bd44eb"></a>名称</p>
     </th>
-    <th class="cellrowborder" valign="top" width="10%" id="mcps1.2.4.1.2"><p id="a9c7aa8e702fe45d598376fcd31c9f5ce"><a name="a9c7aa8e702fe45d598376fcd31c9f5ce"></a><a name="a9c7aa8e702fe45d598376fcd31c9f5ce"></a>是否必选</p>
+    <th class="cellrowborder" valign="top" width="14.31%" id="mcps1.2.4.1.2"><p id="a9c7aa8e702fe45d598376fcd31c9f5ce"><a name="a9c7aa8e702fe45d598376fcd31c9f5ce"></a><a name="a9c7aa8e702fe45d598376fcd31c9f5ce"></a>是否必选</p>
     </th>
-    <th class="cellrowborder" valign="top" width="77.88000000000001%" id="mcps1.2.4.1.3"><p id="a319b72a499674bd8befd20b6a9358879"><a name="a319b72a499674bd8befd20b6a9358879"></a><a name="a319b72a499674bd8befd20b6a9358879"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="67.28%" id="mcps1.2.4.1.3"><p id="a319b72a499674bd8befd20b6a9358879"><a name="a319b72a499674bd8befd20b6a9358879"></a><a name="a319b72a499674bd8befd20b6a9358879"></a>说明</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row134331617104113"><td class="cellrowborder" valign="top" width="12.120000000000001%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0069077803_p43412436"><a name="zh-cn_topic_0069077803_p43412436"></a><a name="zh-cn_topic_0069077803_p43412436"></a>project_id</p>
+    <tbody><tr id="row134331617104113"><td class="cellrowborder" valign="top" width="18.41%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0069077803_p43412436"><a name="zh-cn_topic_0069077803_p43412436"></a><a name="zh-cn_topic_0069077803_p43412436"></a>project_id</p>
     </td>
-    <td class="cellrowborder" valign="top" width="10%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0069077803_p26746391"><a name="zh-cn_topic_0069077803_p26746391"></a><a name="zh-cn_topic_0069077803_p26746391"></a>是</p>
+    <td class="cellrowborder" valign="top" width="14.31%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0069077803_p26746391"><a name="zh-cn_topic_0069077803_p26746391"></a><a name="zh-cn_topic_0069077803_p26746391"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="77.88000000000001%" headers="mcps1.2.4.1.3 "><p id="p1310472724012"><a name="p1310472724012"></a><a name="p1310472724012"></a>项目编号，用于资源隔离。获取方式请参考<a href="获取项目ID.md">获取项目ID</a>。</p>
+    <td class="cellrowborder" valign="top" width="67.28%" headers="mcps1.2.4.1.3 "><p id="p1310472724012"><a name="p1310472724012"></a><a name="p1310472724012"></a>项目编号，用于资源隔离。获取方式请参考<a href="获取项目ID.md">获取项目ID</a>。</p>
     </td>
     </tr>
     </tbody>
@@ -77,32 +77,41 @@
 **表 3**  响应参数
 
 <a name="zh-cn_topic_0069077896_table33203075"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0069077896_row35922485"><th class="cellrowborder" valign="top" width="11.87%" id="mcps1.2.5.1.1"><p id="a5212f67c295f4ae7a136c5eb4d263e47"><a name="a5212f67c295f4ae7a136c5eb4d263e47"></a><a name="a5212f67c295f4ae7a136c5eb4d263e47"></a>参数</p>
+<table><thead align="left"><tr id="zh-cn_topic_0069077896_row35922485"><th class="cellrowborder" valign="top" width="13.820000000000002%" id="mcps1.2.5.1.1"><p id="a5212f67c295f4ae7a136c5eb4d263e47"><a name="a5212f67c295f4ae7a136c5eb4d263e47"></a><a name="a5212f67c295f4ae7a136c5eb4d263e47"></a>参数</p>
 </th>
-<th class="cellrowborder" valign="top" width="9.24%" id="mcps1.2.5.1.2"><p id="p6901173019816"><a name="p6901173019816"></a><a name="p6901173019816"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="12.420000000000002%" id="mcps1.2.5.1.2"><p id="p6901173019816"><a name="p6901173019816"></a><a name="p6901173019816"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="11.41%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0069077896_p944819142913"><a name="zh-cn_topic_0069077896_p944819142913"></a><a name="zh-cn_topic_0069077896_p944819142913"></a>参数类型</p>
+<th class="cellrowborder" valign="top" width="12.930000000000003%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0069077896_p944819142913"><a name="zh-cn_topic_0069077896_p944819142913"></a><a name="zh-cn_topic_0069077896_p944819142913"></a>参数类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="67.47999999999999%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0069077896_p944851413912"><a name="zh-cn_topic_0069077896_p944851413912"></a><a name="zh-cn_topic_0069077896_p944851413912"></a>说明</p>
+<th class="cellrowborder" valign="top" width="60.830000000000005%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0069077896_p944851413912"><a name="zh-cn_topic_0069077896_p944851413912"></a><a name="zh-cn_topic_0069077896_p944851413912"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="zh-cn_topic_0069077896_row12898672"><td class="cellrowborder" valign="top" width="11.87%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077896_p38159543"><a name="zh-cn_topic_0069077896_p38159543"></a><a name="zh-cn_topic_0069077896_p38159543"></a>is_success</p>
+<tbody><tr id="zh-cn_topic_0069077896_row12898672"><td class="cellrowborder" valign="top" width="13.820000000000002%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077896_p38159543"><a name="zh-cn_topic_0069077896_p38159543"></a><a name="zh-cn_topic_0069077896_p38159543"></a>is_success</p>
 </td>
-<td class="cellrowborder" valign="top" width="9.24%" headers="mcps1.2.5.1.2 "><p id="p1690110300812"><a name="p1690110300812"></a><a name="p1690110300812"></a>否</p>
+<td class="cellrowborder" valign="top" width="12.420000000000002%" headers="mcps1.2.5.1.2 "><p id="p1690110300812"><a name="p1690110300812"></a><a name="p1690110300812"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="11.41%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077896_p48699120"><a name="zh-cn_topic_0069077896_p48699120"></a><a name="zh-cn_topic_0069077896_p48699120"></a>Boolean</p>
+<td class="cellrowborder" valign="top" width="12.930000000000003%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077896_p48699120"><a name="zh-cn_topic_0069077896_p48699120"></a><a name="zh-cn_topic_0069077896_p48699120"></a>Boolean</p>
 </td>
-<td class="cellrowborder" valign="top" width="67.47999999999999%" headers="mcps1.2.5.1.4 "><p id="p1216075194811"><a name="p1216075194811"></a><a name="p1216075194811"></a>执行请求是否成功。<span class="parmvalue" id="parmvalue2253974916747"><a name="parmvalue2253974916747"></a><a name="parmvalue2253974916747"></a>“true”</span>表示请求执行成功。</p>
+<td class="cellrowborder" valign="top" width="60.830000000000005%" headers="mcps1.2.5.1.4 "><p id="p1216075194811"><a name="p1216075194811"></a><a name="p1216075194811"></a>执行请求是否成功。<span class="parmvalue" id="parmvalue2253974916747"><a name="parmvalue2253974916747"></a><a name="parmvalue2253974916747"></a>“true”</span>表示请求执行成功。</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0069077896_row1070040"><td class="cellrowborder" valign="top" width="11.87%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077896_p19564417"><a name="zh-cn_topic_0069077896_p19564417"></a><a name="zh-cn_topic_0069077896_p19564417"></a>message</p>
+<tr id="zh-cn_topic_0069077896_row1070040"><td class="cellrowborder" valign="top" width="13.820000000000002%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077896_p19564417"><a name="zh-cn_topic_0069077896_p19564417"></a><a name="zh-cn_topic_0069077896_p19564417"></a>message</p>
 </td>
-<td class="cellrowborder" valign="top" width="9.24%" headers="mcps1.2.5.1.2 "><p id="p199017301087"><a name="p199017301087"></a><a name="p199017301087"></a>否</p>
+<td class="cellrowborder" valign="top" width="12.420000000000002%" headers="mcps1.2.5.1.2 "><p id="p199017301087"><a name="p199017301087"></a><a name="p199017301087"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="11.41%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077896_p49998030"><a name="zh-cn_topic_0069077896_p49998030"></a><a name="zh-cn_topic_0069077896_p49998030"></a>String</p>
+<td class="cellrowborder" valign="top" width="12.930000000000003%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077896_p49998030"><a name="zh-cn_topic_0069077896_p49998030"></a><a name="zh-cn_topic_0069077896_p49998030"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="67.47999999999999%" headers="mcps1.2.5.1.4 "><p id="a4fa277540d3e42e48cec2027a36ca6bc"><a name="a4fa277540d3e42e48cec2027a36ca6bc"></a><a name="a4fa277540d3e42e48cec2027a36ca6bc"></a>系统提示信息，执行成功时，信息可能为空。</p>
+<td class="cellrowborder" valign="top" width="60.830000000000005%" headers="mcps1.2.5.1.4 "><p id="a4fa277540d3e42e48cec2027a36ca6bc"><a name="a4fa277540d3e42e48cec2027a36ca6bc"></a><a name="a4fa277540d3e42e48cec2027a36ca6bc"></a>系统提示信息，执行成功时，信息可能为空。</p>
+</td>
+</tr>
+<tr id="row6356115711103"><td class="cellrowborder" valign="top" width="13.820000000000002%" headers="mcps1.2.5.1.1 "><p id="p2035713573103"><a name="p2035713573103"></a><a name="p2035713573103"></a>job_type</p>
+</td>
+<td class="cellrowborder" valign="top" width="12.420000000000002%" headers="mcps1.2.5.1.2 "><p id="p1535785721016"><a name="p1535785721016"></a><a name="p1535785721016"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="12.930000000000003%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077810_p33533331"><a name="zh-cn_topic_0069077810_p33533331"></a><a name="zh-cn_topic_0069077810_p33533331"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60.830000000000005%" headers="mcps1.2.5.1.4 "><p id="a2b151253b7da4442994ace501caef7ea"><a name="a2b151253b7da4442994ace501caef7ea"></a><a name="a2b151253b7da4442994ace501caef7ea"></a>作业类型。包含DDL、DCL、IMPORT、EXPORT、QUERY、INSERT。</p>
 </td>
 </tr>
 </tbody>
@@ -124,7 +133,8 @@
     ```
     {
       "is_success": true,
-      "message": ""
+      "message": "the sql is ok",
+      "job_type":QUERY
     }
     ```
 

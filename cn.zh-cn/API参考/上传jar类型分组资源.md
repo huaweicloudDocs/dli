@@ -82,77 +82,77 @@
 **表 3**  响应参数说明
 
 <a name="zh-cn_topic_0103345069_zh-cn_topic_0102902530_zh-cn_topic_0069077927_table56638444"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0103345069_zh-cn_topic_0102902530_zh-cn_topic_0069077927_row48911609"><th class="cellrowborder" valign="top" width="14.44%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0103345069_zh-cn_topic_0102902530_ae076f6b3f1bf463b9cc087fc566253d5"><a name="zh-cn_topic_0103345069_zh-cn_topic_0102902530_ae076f6b3f1bf463b9cc087fc566253d5"></a><a name="zh-cn_topic_0103345069_zh-cn_topic_0102902530_ae076f6b3f1bf463b9cc087fc566253d5"></a>参数</p>
+<table><thead align="left"><tr id="zh-cn_topic_0103345069_zh-cn_topic_0102902530_zh-cn_topic_0069077927_row48911609"><th class="cellrowborder" valign="top" width="20.380000000000003%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0103345069_zh-cn_topic_0102902530_ae076f6b3f1bf463b9cc087fc566253d5"><a name="zh-cn_topic_0103345069_zh-cn_topic_0102902530_ae076f6b3f1bf463b9cc087fc566253d5"></a><a name="zh-cn_topic_0103345069_zh-cn_topic_0102902530_ae076f6b3f1bf463b9cc087fc566253d5"></a>参数</p>
 </th>
-<th class="cellrowborder" valign="top" width="10.92%" id="mcps1.2.5.1.2"><p id="p4502101174312"><a name="p4502101174312"></a><a name="p4502101174312"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="14.530000000000001%" id="mcps1.2.5.1.2"><p id="p4502101174312"><a name="p4502101174312"></a><a name="p4502101174312"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="16.76%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0103345069_zh-cn_topic_0102902530_a59685f4525af4d82a623288ff8ccb0f4"><a name="zh-cn_topic_0103345069_zh-cn_topic_0102902530_a59685f4525af4d82a623288ff8ccb0f4"></a><a name="zh-cn_topic_0103345069_zh-cn_topic_0102902530_a59685f4525af4d82a623288ff8ccb0f4"></a>参数类型</p>
+<th class="cellrowborder" valign="top" width="14.62%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0103345069_zh-cn_topic_0102902530_a59685f4525af4d82a623288ff8ccb0f4"><a name="zh-cn_topic_0103345069_zh-cn_topic_0102902530_a59685f4525af4d82a623288ff8ccb0f4"></a><a name="zh-cn_topic_0103345069_zh-cn_topic_0102902530_a59685f4525af4d82a623288ff8ccb0f4"></a>参数类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="57.879999999999995%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0103345069_zh-cn_topic_0102902530_zh-cn_topic_0069077927_p632718127368"><a name="zh-cn_topic_0103345069_zh-cn_topic_0102902530_zh-cn_topic_0069077927_p632718127368"></a><a name="zh-cn_topic_0103345069_zh-cn_topic_0102902530_zh-cn_topic_0069077927_p632718127368"></a>说明</p>
+<th class="cellrowborder" valign="top" width="50.470000000000006%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0103345069_zh-cn_topic_0102902530_zh-cn_topic_0069077927_p632718127368"><a name="zh-cn_topic_0103345069_zh-cn_topic_0102902530_zh-cn_topic_0069077927_p632718127368"></a><a name="zh-cn_topic_0103345069_zh-cn_topic_0102902530_zh-cn_topic_0069077927_p632718127368"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="zh-cn_topic_0103345069_zh-cn_topic_0102902530_row1458133461718"><td class="cellrowborder" valign="top" width="14.44%" headers="mcps1.2.5.1.1 "><p id="p9109112219199"><a name="p9109112219199"></a><a name="p9109112219199"></a>module_name</p>
+<tbody><tr id="zh-cn_topic_0103345069_zh-cn_topic_0102902530_row1458133461718"><td class="cellrowborder" valign="top" width="20.380000000000003%" headers="mcps1.2.5.1.1 "><p id="p9109112219199"><a name="p9109112219199"></a><a name="p9109112219199"></a>module_name</p>
 </td>
-<td class="cellrowborder" valign="top" width="10.92%" headers="mcps1.2.5.1.2 "><p id="p12502101112439"><a name="p12502101112439"></a><a name="p12502101112439"></a>否</p>
+<td class="cellrowborder" valign="top" width="14.530000000000001%" headers="mcps1.2.5.1.2 "><p id="p12502101112439"><a name="p12502101112439"></a><a name="p12502101112439"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.76%" headers="mcps1.2.5.1.3 "><p id="p151091122131920"><a name="p151091122131920"></a><a name="p151091122131920"></a>String</p>
+<td class="cellrowborder" valign="top" width="14.62%" headers="mcps1.2.5.1.3 "><p id="p151091122131920"><a name="p151091122131920"></a><a name="p151091122131920"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.879999999999995%" headers="mcps1.2.5.1.4 "><p id="p61091722101915"><a name="p61091722101915"></a><a name="p61091722101915"></a>资源模块名。</p>
-</td>
-</tr>
-<tr id="row29122021590"><td class="cellrowborder" valign="top" width="14.44%" headers="mcps1.2.5.1.1 "><p id="p45091837186"><a name="p45091837186"></a><a name="p45091837186"></a>module_type</p>
-</td>
-<td class="cellrowborder" valign="top" width="10.92%" headers="mcps1.2.5.1.2 "><p id="p19502141134317"><a name="p19502141134317"></a><a name="p19502141134317"></a>否</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.76%" headers="mcps1.2.5.1.3 "><p id="p1850911310189"><a name="p1850911310189"></a><a name="p1850911310189"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="57.879999999999995%" headers="mcps1.2.5.1.4 "><p id="p050933161816"><a name="p050933161816"></a><a name="p050933161816"></a>资源模块类型，具体可参考<a href="#zh-cn_topic_0103345069_table399612265336">表4</a>。</p>
+<td class="cellrowborder" valign="top" width="50.470000000000006%" headers="mcps1.2.5.1.4 "><p id="p61091722101915"><a name="p61091722101915"></a><a name="p61091722101915"></a>资源模块名。</p>
 </td>
 </tr>
-<tr id="row1230416516598"><td class="cellrowborder" valign="top" width="14.44%" headers="mcps1.2.5.1.1 "><p id="p12915652134"><a name="p12915652134"></a><a name="p12915652134"></a>status</p>
+<tr id="row29122021590"><td class="cellrowborder" valign="top" width="20.380000000000003%" headers="mcps1.2.5.1.1 "><p id="p45091837186"><a name="p45091837186"></a><a name="p45091837186"></a>module_type</p>
 </td>
-<td class="cellrowborder" valign="top" width="10.92%" headers="mcps1.2.5.1.2 "><p id="p2502101119438"><a name="p2502101119438"></a><a name="p2502101119438"></a>否</p>
+<td class="cellrowborder" valign="top" width="14.530000000000001%" headers="mcps1.2.5.1.2 "><p id="p19502141134317"><a name="p19502141134317"></a><a name="p19502141134317"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.76%" headers="mcps1.2.5.1.3 "><p id="p159161556136"><a name="p159161556136"></a><a name="p159161556136"></a>String</p>
+<td class="cellrowborder" valign="top" width="14.62%" headers="mcps1.2.5.1.3 "><p id="p1850911310189"><a name="p1850911310189"></a><a name="p1850911310189"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.879999999999995%" headers="mcps1.2.5.1.4 "><a name="ul1754314462443"></a><a name="ul1754314462443"></a><ul id="ul1754314462443"><li>"UPLOADING"表示正在上传。</li><li>"READY"表示模块包已上传。</li><li>"FAILED"表示模块包上传失败。</li></ul>
-</td>
-</tr>
-<tr id="row390811715915"><td class="cellrowborder" valign="top" width="14.44%" headers="mcps1.2.5.1.1 "><p id="p13504224111511"><a name="p13504224111511"></a><a name="p13504224111511"></a>description</p>
-</td>
-<td class="cellrowborder" valign="top" width="10.92%" headers="mcps1.2.5.1.2 "><p id="p1750215115430"><a name="p1750215115430"></a><a name="p1750215115430"></a>否</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.76%" headers="mcps1.2.5.1.3 "><p id="p65041124111515"><a name="p65041124111515"></a><a name="p65041124111515"></a>String</p>
-</td>
-<td class="cellrowborder" valign="top" width="57.879999999999995%" headers="mcps1.2.5.1.4 "><p id="p9504724161510"><a name="p9504724161510"></a><a name="p9504724161510"></a>资源模块描述。</p>
+<td class="cellrowborder" valign="top" width="50.470000000000006%" headers="mcps1.2.5.1.4 "><p id="p050933161816"><a name="p050933161816"></a><a name="p050933161816"></a>资源模块类型，具体可参考<a href="#zh-cn_topic_0103345069_table399612265336">表4</a>。</p>
 </td>
 </tr>
-<tr id="row4201110145912"><td class="cellrowborder" valign="top" width="14.44%" headers="mcps1.2.5.1.1 "><p id="p125238157159"><a name="p125238157159"></a><a name="p125238157159"></a>resources</p>
+<tr id="row1230416516598"><td class="cellrowborder" valign="top" width="20.380000000000003%" headers="mcps1.2.5.1.1 "><p id="p12915652134"><a name="p12915652134"></a><a name="p12915652134"></a>status</p>
 </td>
-<td class="cellrowborder" valign="top" width="10.92%" headers="mcps1.2.5.1.2 "><p id="p150220117437"><a name="p150220117437"></a><a name="p150220117437"></a>否</p>
+<td class="cellrowborder" valign="top" width="14.530000000000001%" headers="mcps1.2.5.1.2 "><p id="p2502101119438"><a name="p2502101119438"></a><a name="p2502101119438"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.76%" headers="mcps1.2.5.1.3 "><p id="p752331519152"><a name="p752331519152"></a><a name="p752331519152"></a>Array of strings</p>
+<td class="cellrowborder" valign="top" width="14.62%" headers="mcps1.2.5.1.3 "><p id="p159161556136"><a name="p159161556136"></a><a name="p159161556136"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.879999999999995%" headers="mcps1.2.5.1.4 "><p id="p75238153159"><a name="p75238153159"></a><a name="p75238153159"></a>该资源模块包含的资源包名列表。</p>
-</td>
-</tr>
-<tr id="row122231213105910"><td class="cellrowborder" valign="top" width="14.44%" headers="mcps1.2.5.1.1 "><p id="p1890011591314"><a name="p1890011591314"></a><a name="p1890011591314"></a>create_time</p>
-</td>
-<td class="cellrowborder" valign="top" width="10.92%" headers="mcps1.2.5.1.2 "><p id="p1750231118437"><a name="p1750231118437"></a><a name="p1750231118437"></a>否</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.76%" headers="mcps1.2.5.1.3 "><p id="p0902551133"><a name="p0902551133"></a><a name="p0902551133"></a>Long</p>
-</td>
-<td class="cellrowborder" valign="top" width="57.879999999999995%" headers="mcps1.2.5.1.4 "><p id="p139033591313"><a name="p139033591313"></a><a name="p139033591313"></a>资源模块上传的unix时间戳。</p>
+<td class="cellrowborder" valign="top" width="50.470000000000006%" headers="mcps1.2.5.1.4 "><a name="ul1754314462443"></a><a name="ul1754314462443"></a><ul id="ul1754314462443"><li>"UPLOADING"表示正在上传。</li><li>"READY"表示模块包已上传。</li><li>"FAILED"表示模块包上传失败。</li></ul>
 </td>
 </tr>
-<tr id="row1159917159594"><td class="cellrowborder" valign="top" width="14.44%" headers="mcps1.2.5.1.1 "><p id="p1790420571316"><a name="p1790420571316"></a><a name="p1790420571316"></a>update_time</p>
+<tr id="row390811715915"><td class="cellrowborder" valign="top" width="20.380000000000003%" headers="mcps1.2.5.1.1 "><p id="p13504224111511"><a name="p13504224111511"></a><a name="p13504224111511"></a>description</p>
 </td>
-<td class="cellrowborder" valign="top" width="10.92%" headers="mcps1.2.5.1.2 "><p id="p11502411154315"><a name="p11502411154315"></a><a name="p11502411154315"></a>否</p>
+<td class="cellrowborder" valign="top" width="14.530000000000001%" headers="mcps1.2.5.1.2 "><p id="p1750215115430"><a name="p1750215115430"></a><a name="p1750215115430"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.76%" headers="mcps1.2.5.1.3 "><p id="p1690519581315"><a name="p1690519581315"></a><a name="p1690519581315"></a>Long</p>
+<td class="cellrowborder" valign="top" width="14.62%" headers="mcps1.2.5.1.3 "><p id="p65041124111515"><a name="p65041124111515"></a><a name="p65041124111515"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="57.879999999999995%" headers="mcps1.2.5.1.4 "><p id="p199061756134"><a name="p199061756134"></a><a name="p199061756134"></a>资源模块更新的unix时间戳。</p>
+<td class="cellrowborder" valign="top" width="50.470000000000006%" headers="mcps1.2.5.1.4 "><p id="p9504724161510"><a name="p9504724161510"></a><a name="p9504724161510"></a>资源模块描述。</p>
+</td>
+</tr>
+<tr id="row4201110145912"><td class="cellrowborder" valign="top" width="20.380000000000003%" headers="mcps1.2.5.1.1 "><p id="p125238157159"><a name="p125238157159"></a><a name="p125238157159"></a>resources</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.530000000000001%" headers="mcps1.2.5.1.2 "><p id="p150220117437"><a name="p150220117437"></a><a name="p150220117437"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.62%" headers="mcps1.2.5.1.3 "><p id="p752331519152"><a name="p752331519152"></a><a name="p752331519152"></a>Array of strings</p>
+</td>
+<td class="cellrowborder" valign="top" width="50.470000000000006%" headers="mcps1.2.5.1.4 "><p id="p75238153159"><a name="p75238153159"></a><a name="p75238153159"></a>该资源模块包含的资源包名列表。</p>
+</td>
+</tr>
+<tr id="row122231213105910"><td class="cellrowborder" valign="top" width="20.380000000000003%" headers="mcps1.2.5.1.1 "><p id="p1890011591314"><a name="p1890011591314"></a><a name="p1890011591314"></a>create_time</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.530000000000001%" headers="mcps1.2.5.1.2 "><p id="p1750231118437"><a name="p1750231118437"></a><a name="p1750231118437"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.62%" headers="mcps1.2.5.1.3 "><p id="p0902551133"><a name="p0902551133"></a><a name="p0902551133"></a>Long</p>
+</td>
+<td class="cellrowborder" valign="top" width="50.470000000000006%" headers="mcps1.2.5.1.4 "><p id="p139033591313"><a name="p139033591313"></a><a name="p139033591313"></a>资源模块上传的unix时间戳。</p>
+</td>
+</tr>
+<tr id="row1159917159594"><td class="cellrowborder" valign="top" width="20.380000000000003%" headers="mcps1.2.5.1.1 "><p id="p1790420571316"><a name="p1790420571316"></a><a name="p1790420571316"></a>update_time</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.530000000000001%" headers="mcps1.2.5.1.2 "><p id="p11502411154315"><a name="p11502411154315"></a><a name="p11502411154315"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="14.62%" headers="mcps1.2.5.1.3 "><p id="p1690519581315"><a name="p1690519581315"></a><a name="p1690519581315"></a>Long</p>
+</td>
+<td class="cellrowborder" valign="top" width="50.470000000000006%" headers="mcps1.2.5.1.4 "><p id="p199061756134"><a name="p199061756134"></a><a name="p199061756134"></a>资源模块更新的unix时间戳。</p>
 </td>
 </tr>
 </tbody>
