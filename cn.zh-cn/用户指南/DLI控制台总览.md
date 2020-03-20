@@ -41,21 +41,21 @@
 </td>
 <td class="cellrowborder" valign="top" width="16.366336633663366%" headers="mcps1.2.4.1.2 "><p id="p9994471160"><a name="p9994471160"></a><a name="p9994471160"></a>SQL作业简介</p>
 </td>
-<td class="cellrowborder" valign="top" width="77.64356435643565%" headers="mcps1.2.4.1.3 "><a name="ul109031859184112"></a><a name="ul109031859184112"></a><ul id="ul109031859184112"><li>单击本区域或右上角<a name="image735517449463"></a><a name="image735517449463"></a><span><img id="image735517449463" src="figures/icon-创建作业.png"></span>，可进入SQL作业“作业编辑器”页面。详细介绍请参考<a href="SQL作业编辑器.md">SQL作业编辑器</a>。</li><li>鼠标移至该区域，可在区域10显示创建SQL作业步骤。</li></ul>
+<td class="cellrowborder" valign="top" width="77.64356435643565%" headers="mcps1.2.4.1.3 "><a name="ul109031859184112"></a><a name="ul109031859184112"></a><ul id="ul109031859184112"><li>单击本区域右上角<a name="image735517449463"></a><a name="image735517449463"></a><span><img id="image735517449463" src="figures/icon-创建作业.png"></span>，可进入“SQL编辑器”页面。详细介绍请参考<a href="SQL作业编辑器.md">SQL作业编辑器</a>。</li><li>鼠标移至该区域，可在区域10显示创建SQL作业步骤。</li></ul>
 </td>
 </tr>
 <tr id="row8464152220348"><td class="cellrowborder" valign="top" width="5.99009900990099%" headers="mcps1.2.4.1.1 "><p id="p1525520416406"><a name="p1525520416406"></a><a name="p1525520416406"></a>5</p>
 </td>
 <td class="cellrowborder" valign="top" width="16.366336633663366%" headers="mcps1.2.4.1.2 "><p id="p9255144119401"><a name="p9255144119401"></a><a name="p9255144119401"></a>Flink作业简介</p>
 </td>
-<td class="cellrowborder" valign="top" width="77.64356435643565%" headers="mcps1.2.4.1.3 "><a name="ul13278183874519"></a><a name="ul13278183874519"></a><ul id="ul13278183874519"><li>单击本区域或右上角<a name="image42781638174518"></a><a name="image42781638174518"></a><span><img id="image42781638174518" src="figures/icon-创建作业-3.png"></span>，可进入Flink作业“作业管理”页面。详细介绍请参考<a href="Flink作业管理.md">Flink作业管理</a>。</li></ul>
+<td class="cellrowborder" valign="top" width="77.64356435643565%" headers="mcps1.2.4.1.3 "><a name="ul13278183874519"></a><a name="ul13278183874519"></a><ul id="ul13278183874519"><li>单击本区域右上角<a name="image42781638174518"></a><a name="image42781638174518"></a><span><img id="image42781638174518" src="figures/icon-创建作业-0.png"></span>，可进入Flink作业“作业管理”页面。详细介绍请参考<a href="Flink作业管理.md">Flink作业管理</a>。</li></ul>
 </td>
 </tr>
 <tr id="row127891135877"><td class="cellrowborder" valign="top" width="5.99009900990099%" headers="mcps1.2.4.1.1 "><p id="p1151444025710"><a name="p1151444025710"></a><a name="p1151444025710"></a>6</p>
 </td>
 <td class="cellrowborder" valign="top" width="16.366336633663366%" headers="mcps1.2.4.1.2 "><p id="p19789635772"><a name="p19789635772"></a><a name="p19789635772"></a>Spark作业简介</p>
 </td>
-<td class="cellrowborder" valign="top" width="77.64356435643565%" headers="mcps1.2.4.1.3 "><a name="ul209511121144218"></a><a name="ul209511121144218"></a><ul id="ul209511121144218"><li>单击本区域或右上角<a name="image15119571466"></a><a name="image15119571466"></a><span><img id="image15119571466" src="figures/icon-创建作业.png"></span>，可进入Spark作业“作业编辑器”页面。详细介绍请参考<a href="创建Spark作业.md">创建Spark作业</a>。</li><li>鼠标移至该区域，可在区域10显示创建Spark作业步骤。</li></ul>
+<td class="cellrowborder" valign="top" width="77.64356435643565%" headers="mcps1.2.4.1.3 "><a name="ul209511121144218"></a><a name="ul209511121144218"></a><ul id="ul209511121144218"><li>单击本区域右上角<a name="image15119571466"></a><a name="image15119571466"></a><span><img id="image15119571466" src="figures/icon-创建作业.png"></span>，可进入Spark作业“作业编辑”页面。详细介绍请参考<a href="创建Spark作业.md">创建Spark作业</a>。</li><li>鼠标移至该区域，可在区域10显示创建Spark作业步骤。</li></ul>
 </td>
 </tr>
 <tr id="row14509172216521"><td class="cellrowborder" valign="top" width="5.99009900990099%" headers="mcps1.2.4.1.1 "><p id="p14510162212528"><a name="p14510162212528"></a><a name="p14510162212528"></a>7</p>

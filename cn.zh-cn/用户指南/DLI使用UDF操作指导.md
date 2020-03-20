@@ -23,7 +23,7 @@ DLI支持用户使用Hive UDF（User Defined Function，用户定义函数）进
 
     在对应的路径下会生成一个TestUDF.jar，根据[图2](#fig149751056131613)，此处的路径为：udfDemo\\target\\artifacts\\TestUDF。
 
-3.  上传TestUDF.jar至OBS上。上传数据至OBS可参考[提交SQL作业](提交SQL作业.md)中[步骤2：上传数据至OBS](提交SQL作业.md#section61379418181550)。
+3.  上传TestUDF.jar至OBS上。上传数据至OBS可参考[提交SQL作业](https://support.huaweicloud.com/usermanual-dli/dli_01_0002.html)中“步骤2：上传数据至OBS”。
 4.  <a name="li9516133616203"></a>创建Function。
 
     在DLI Console上输入下列命令创建Function:

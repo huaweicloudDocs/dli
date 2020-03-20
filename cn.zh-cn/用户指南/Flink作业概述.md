@@ -47,7 +47,7 @@ Flink作业管理主要包括如下功能：
 <tr id="row3289513151315"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="p102901113161318"><a name="p102901113161318"></a><a name="p102901113161318"></a>作业类型</p>
 </td>
 <td class="cellrowborder" valign="top" width="83.93%" headers="mcps1.2.3.1.2 "><p id="p1029001315135"><a name="p1029001315135"></a><a name="p1029001315135"></a>所提交Flink作业的类型。包括：</p>
-<a name="ul864114454138"></a><a name="ul864114454138"></a><ul id="ul864114454138"><li>Flink SQL作业</li><li>Flink自定义作业</li></ul>
+<a name="ul864114454138"></a><a name="ul864114454138"></a><ul id="ul864114454138"><li>Flink SQL：Flink SQL作业</li><li>Flink Jar：Flink自定义作业</li></ul>
 </td>
 </tr>
 <tr id="zh-cn_topic_0122090417_row31011923151038"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0122090417_p10671857151038"><a name="zh-cn_topic_0122090417_p10671857151038"></a><a name="zh-cn_topic_0122090417_p10671857151038"></a>作业状态</p>
@@ -83,11 +83,12 @@ Flink作业管理主要包括如下功能：
 </tr>
 <tr id="zh-cn_topic_0122090417_row1662880815250"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0122090417_p475621615250"><a name="zh-cn_topic_0122090417_p475621615250"></a><a name="zh-cn_topic_0122090417_p475621615250"></a>操作</p>
 </td>
-<td class="cellrowborder" valign="top" width="83.93%" headers="mcps1.2.3.1.2 "><a name="zh-cn_topic_0122090417_ul181927155164"></a><a name="zh-cn_topic_0122090417_ul181927155164"></a><ul id="zh-cn_topic_0122090417_ul181927155164"><li>编辑：编辑已经创建好的作业。具体请参见<a href="操作作业.md#section1950210297542">编辑作业</a>。</li><li>启动：启动作业并运行。具体请参见<a href="操作作业.md#section20957159163012">启动作业</a>。</li><li>停止：停止“提交中”或“运行中”的作业。</li><li>删除：删除作业。<div class="note" id="note386711433506"><a name="note386711433506"></a><a name="note386711433506"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p16867104316506"><a name="p16867104316506"></a><a name="p16867104316506"></a>作业删除后不可恢复，请谨慎操作。</p>
+<td class="cellrowborder" valign="top" width="83.93%" headers="mcps1.2.3.1.2 "><a name="zh-cn_topic_0122090417_ul181927155164"></a><a name="zh-cn_topic_0122090417_ul181927155164"></a><ul id="zh-cn_topic_0122090417_ul181927155164"><li>编辑：编辑已经创建好的作业。具体请参见<a href="操作作业.md#section1950210297542">编辑作业</a>。</li><li>更多<a name="ul2162826144010"></a><a name="ul2162826144010"></a><ul id="ul2162826144010"><li>启动：启动作业并运行。具体请参见<a href="操作作业.md#section20957159163012">启动作业</a>。</li><li>停止：停止“提交中”或“运行中”的作业。</li><li>删除：删除作业。<div class="note" id="note386711433506"><a name="note386711433506"></a><a name="note386711433506"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p16867104316506"><a name="p16867104316506"></a><a name="p16867104316506"></a>作业删除后不可恢复，请谨慎操作。</p>
 </div></div>
 </li><li>Sink可视化：将Sink流中的数字类型的数据以图表方式实时展示。<div class="note" id="note1372459391"><a name="note1372459391"></a><a name="note1372459391"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1748114516397"><a name="p1748114516397"></a><a name="p1748114516397"></a>只有“运行中”的Flink SQL作业并可查看Sink可视化信息。</p>
 </div></div>
 </li><li>名称和描述修改：修改作业名称和描述。</li></ul>
+</li></ul>
 </td>
 </tr>
 </tbody>

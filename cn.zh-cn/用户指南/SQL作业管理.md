@@ -37,7 +37,7 @@ SQL作业管理主要包括如下功能：
 <tr id="row32873162171713"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="p45480448171713"><a name="p45480448171713"></a><a name="p45480448171713"></a>作业类型</p>
 </td>
 <td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><p id="p60037708171713"><a name="p60037708171713"></a><a name="p60037708171713"></a>作业的类型，包括如下。</p>
-<a name="ul29348869174358"></a><a name="ul29348869174358"></a><ul id="ul29348869174358"><li>IMPORT：导入数据到DLI的作业。</li><li>EXPORT：从DLI导出数据的作业。</li><li>DCL：包括传统DCL，以及队列权限相关的操作。</li><li>DDL：与传统DDL操作一致，即创建和删除数据库，创建和删除表的作业。</li><li>QUERY：执行SQL查询数据的作业。</li><li>INSERT：执行SQL插入数据的作业。</li></ul>
+<a name="ul29348869174358"></a><a name="ul29348869174358"></a><ul id="ul29348869174358"><li>IMPORT：导入数据到DLI的作业。</li><li>EXPORT：从DLI导出数据的作业。</li><li>DCL：包括传统DCL，以及队列权限相关的操作。</li><li>DDL：与传统DDL操作一致，即创建和删除数据库，创建和删除表的作业。</li><li>QUERY：执行SQL查询数据的作业。</li><li>INSERT：执行SQL插入数据的作业。</li><li>UPDATE：更新数据。</li><li>DELETE：删除SQL作业。</li><li>DATA_MIGRATION：数据迁移。</li><li>RESTART_QUEUE：重启队列。</li></ul>
 </td>
 </tr>
 <tr id="row31011923151038"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="p10671857151038"><a name="p10671857151038"></a><a name="p10671857151038"></a>状态</p>
@@ -61,7 +61,7 @@ SQL作业管理主要包括如下功能：
 </td>
 <td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><a name="ul181927155164"></a><a name="ul181927155164"></a><ul id="ul181927155164"><li>终止。<a name="ul968854181713"></a><a name="ul968854181713"></a><ul id="ul968854181713"><li>当作业状态在<span class="parmname" id="parmname1819151571614"><a name="parmname1819151571614"></a><a name="parmname1819151571614"></a>“提交中”</span>和<span class="parmname" id="parmname17191181517165"><a name="parmname17191181517165"></a><a name="parmname17191181517165"></a>“运行中”</span>时，<span class="uicontrol" id="uicontrol1319121521618"><a name="uicontrol1319121521618"></a><a name="uicontrol1319121521618"></a>“终止”</span>按钮才生效。</li><li>当作业状态为<span class="parmvalue" id="parmvalue101910157167"><a name="parmvalue101910157167"></a><a name="parmvalue101910157167"></a>“已成功”</span>、<span class="parmvalue" id="parmvalue19191131541612"><a name="parmvalue19191131541612"></a><a name="parmvalue19191131541612"></a>“已失败”</span>、<span class="parmvalue" id="parmvalue5191515141610"><a name="parmvalue5191515141610"></a><a name="parmvalue5191515141610"></a>“已取消”</span>的作业不能终止。</li><li>当<span class="uicontrol" id="uicontrol1319291521614"><a name="uicontrol1319291521614"></a><a name="uicontrol1319291521614"></a>“终止”</span>按钮为灰色时，表示无法执行终止操作。</li></ul>
 </li></ul>
-<a name="ul1875134719182"></a><a name="ul1875134719182"></a><ul id="ul1875134719182"><li>SparkUI：单击后，将跳转至Spark任务运行情况界面。</li><li>QUERY作业除上述操作外，还包括：<a name="ul19484104413614"></a><a name="ul19484104413614"></a><ul id="ul19484104413614"><li>下载到本地</li><li>更多：查看结果、导出结果</li></ul>
+<a name="ul1875134719182"></a><a name="ul1875134719182"></a><ul id="ul1875134719182"><li>SparkUI：单击后，将跳转至Spark任务运行情况界面。</li><li>QUERY作业除上述操作外，还包括：<a name="ul19484104413614"></a><a name="ul19484104413614"></a><ul id="ul19484104413614"><li>下载到本地</li><li>更多：查看结果、导出结果、导出日志</li></ul>
 </li><li>EXPORT作业除上述操作外，还包括：<a name="ul5161951101019"></a><a name="ul5161951101019"></a><ul id="ul5161951101019"><li>立即下载</li></ul>
 </li></ul>
 </td>
@@ -71,7 +71,7 @@ SQL作业管理主要包括如下功能：
 
 ## 查找作业<a name="section71552447166"></a>
 
-在“作业管理“页面，可以通过以下方式对作业进行过滤筛选，在页面中显示符合对应条件的作业。
+在“SQL作业“页面，可以通过以下方式对作业进行过滤筛选，在页面中显示符合对应条件的作业。
 
 -   选择队列名称
 -   设置日期范围
@@ -83,7 +83,7 @@ SQL作业管理主要包括如下功能：
 
 ## 查看作业详情<a name="section1960402414173"></a>
 
-在“作业管理“页面，选中一条作业，单击该作业对应的![](figures/icon-展开.png)，可查看该条作业的详细信息。
+在“SQL作业“页面，选中一条作业，单击该作业对应的![](figures/icon-展开.png)，可查看该条作业的详细信息。
 
 不同类型的作业，显示的作业详情不同。以导入数据作业，建表作业和查询作业为例说明。
 
@@ -93,14 +93,14 @@ SQL作业管理主要包括如下功能：
 
 ## 终止作业<a name="section8647175812179"></a>
 
-在“作业管理“页面，可单击“操作”列的“终止“，终止“提交中”或“运行中”的作业。
+在“SQL作业“页面，可单击“操作”列的“终止“，终止“提交中”或“运行中”的作业。
 
 ## 导出结果<a name="section1152211221244"></a>
 
-导出结果的操作入口有两个，分别在“作业管理“和“作业编辑器“页面。
+导出结果的操作入口有两个，分别在“SQL作业“和“SQL编辑器“页面。
 
--   在“作业管理“页面，可单击“操作”列“更多”中的“导出结果“，可导出执行查询后的结果。
--   在“作业编辑器“页面，查询语句执行成功后，在“查看结果“窗口右侧，单击![](figures/zh-cn_image_0206789837.png)，可导出执行查询后的结果。
+-   在“SQL作业“页面，可单击对应作业“操作”列“更多”中的“导出结果“，可导出执行查询后的结果。
+-   在“SQL编辑器“页面，查询语句执行成功后，在“查看结果“窗口右侧，单击![](figures/zh-cn_image_0206789837.png)，可导出执行查询后的结果。
 
 **图 1**  导出结果<a name="fig914972320541"></a>  
 ![](figures/导出结果.png "导出结果")
@@ -143,10 +143,10 @@ SQL作业管理主要包括如下功能：
 <a name="ul625034191496"></a><a name="ul625034191496"></a><ul id="ul625034191496"><li>随导出创建指定路径：指定的导出目录必须不存在，如果指定目录已经存在，系统将返回错误信息，无法执行导出操作。</li><li>覆盖指定路径：在指定目录下新建文件，会删除已有文件。</li></ul>
 </td>
 </tr>
-<tr id="row1218154413337"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p44720296144515"><a name="p44720296144515"></a><a name="p44720296144515"></a>表头</p>
+<tr id="row1218154413337"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p44720296144515"><a name="p44720296144515"></a><a name="p44720296144515"></a>表头:无/有</p>
 </td>
-<td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p1262888185911"><a name="p1262888185911"></a><a name="p1262888185911"></a>当<span class="parmname" id="parmname3628138105919"><a name="parmname3628138105919"></a><a name="parmname3628138105919"></a>“导出格式”</span>为<span class="parmvalue" id="parmvalue146286818592"><a name="parmvalue146286818592"></a><a name="parmvalue146286818592"></a>“csv”</span>时该参数有效。当前只支持csv格式。</p>
-<p id="p37255200172441"><a name="p37255200172441"></a><a name="p37255200172441"></a>设置导出数据是否含表头。选中<span class="parmvalue" id="parmvalue51149381152733"><a name="parmvalue51149381152733"></a><a name="parmvalue51149381152733"></a>“高级选项”</span>，勾选表头前的方框表示有表头，去勾选表示无表头。</p>
+<td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p756611517549"><a name="p756611517549"></a><a name="p756611517549"></a>当<span class="parmname" id="parmname45661651135412"><a name="parmname45661651135412"></a><a name="parmname45661651135412"></a>“导出格式”</span>为<span class="parmvalue" id="parmvalue75661651195411"><a name="parmvalue75661651195411"></a><a name="parmvalue75661651195411"></a>“csv”</span>时该参数有效。当前只支持csv格式。设置导出数据是否含表头。</p>
+<p id="p1262888185911"><a name="p1262888185911"></a><a name="p1262888185911"></a>选中<span class="parmname" id="parmname15361161464715"><a name="parmname15361161464715"></a><a name="parmname15361161464715"></a>“高级选项”</span>，勾选<span class="parmname" id="parmname1353042144718"><a name="parmname1353042144718"></a><a name="parmname1353042144718"></a>“表头:无”</span>前的方框，<span class="parmname" id="parmname063982314814"><a name="parmname063982314814"></a><a name="parmname063982314814"></a>“表头:无”</span>显示为<span class="parmname" id="parmname1790112818475"><a name="parmname1790112818475"></a><a name="parmname1790112818475"></a>“表头:有”</span>，表示有表头；去勾选即为<span class="parmname" id="parmname171354719481"><a name="parmname171354719481"></a><a name="parmname171354719481"></a>“表头:无”</span>，表示无表头。</p>
 </td>
 </tr>
 </tbody>

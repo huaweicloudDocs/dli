@@ -12,11 +12,11 @@
 **图 1**  给用户授权DLI权限流程<a name="fig4118155455715"></a>  
 ![](figures/给用户授权DLI权限流程.jpg "给用户授权DLI权限流程")
 
-1.  <a name="li79820451378"></a>[创建用户组并授权](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0046611269.html)
+1.  <a name="li79820451378"></a>[创建用户组并授权](https://support.huaweicloud.com/usermanual-iam/iam_03_0001.html)
 
     在IAM控制台创建用户组，并授予DLI服务普通用户权限“DLI ReadOnlyAccess”。
 
-2.  [创建用户并加入用户组](https://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0046611303.html)
+2.  [创建用户并加入用户组](https://support.huaweicloud.com/usermanual-iam/iam_02_0001.html)
 
     在IAM控制台创建用户，并将其加入[1](#li79820451378)中创建的用户组。
 

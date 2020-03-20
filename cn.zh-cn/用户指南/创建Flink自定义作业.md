@@ -64,14 +64,14 @@
     </thead>
     <tbody><tr id="row15461316185210"><td class="cellrowborder" valign="top" width="18.67%" headers="mcps1.2.3.1.1 "><p id="p14741695211"><a name="p14741695211"></a><a name="p14741695211"></a>应用程序</p>
     </td>
-    <td class="cellrowborder" valign="top" width="81.33%" headers="mcps1.2.3.1.2 "><p id="p24731635217"><a name="p24731635217"></a><a name="p24731635217"></a>用户自定义的程序包。在选择程序包之前需要将对应的jar包上传至OBS桶中，并在<span class="menucascade" id="menucascade132601332513"><a name="menucascade132601332513"></a><a name="menucascade132601332513"></a>“<span class="uicontrol" id="uicontrol13260930514"><a name="uicontrol13260930514"></a><a name="uicontrol13260930514"></a>数据管理&gt;程序包管理</span>”</span>中创建程序包，具体操作请参考<a href="创建程序包.md">创建程序包</a>。</p>
+    <td class="cellrowborder" valign="top" width="81.33%" headers="mcps1.2.3.1.2 "><p id="p24731635217"><a name="p24731635217"></a><a name="p24731635217"></a>用户自定义的程序包。在选择程序包之前需要将对应的Jar包上传至OBS桶中，并在<span class="menucascade" id="menucascade132601332513"><a name="menucascade132601332513"></a><a name="menucascade132601332513"></a>“<span class="uicontrol" id="uicontrol13260930514"><a name="uicontrol13260930514"></a><a name="uicontrol13260930514"></a>数据管理&gt;程序包管理</span>”</span>中创建程序包，具体操作请参考<a href="创建程序包.md">创建程序包</a>。</p>
     </td>
     </tr>
     <tr id="row192231446165220"><td class="cellrowborder" valign="top" width="18.67%" headers="mcps1.2.3.1.1 "><p id="p1280117155318"><a name="p1280117155318"></a><a name="p1280117155318"></a>Main Class</p>
     </td>
     <td class="cellrowborder" valign="top" width="81.33%" headers="mcps1.2.3.1.2 "><p id="p6801101155316"><a name="p6801101155316"></a><a name="p6801101155316"></a>指定加载的Jar包类名，如KafkaMessageStreaming。</p>
     <a name="ul5801313537"></a><a name="ul5801313537"></a><ul id="ul5801313537"><li>默认：根据Jar包文件的Manifest文件指定。</li><li>指定：需要输入类名并确定类参数列表（参数间用空格分隔）。</li></ul>
-    <div class="note" id="note18029155315"><a name="note18029155315"></a><a name="note18029155315"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p198025115318"><a name="p198025115318"></a><a name="p198025115318"></a>当类属于某个包时，需携带包路径，例如：packagePath.KafkaMessageStreaming。</p>
+    <div class="note" id="note18029155315"><a name="note18029155315"></a><a name="note18029155315"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p198025115318"><a name="p198025115318"></a><a name="p198025115318"></a>当类属于某个包时，需携带包路径，例如：packagePath.KafkaMessageStreaming</p>
     </div></div>
     </td>
     </tr>
@@ -82,7 +82,7 @@
     </tr>
     <tr id="row12301623195314"><td class="cellrowborder" valign="top" width="18.67%" headers="mcps1.2.3.1.1 "><p id="p12301182335313"><a name="p12301182335313"></a><a name="p12301182335313"></a>依赖jar包</p>
     </td>
-    <td class="cellrowborder" valign="top" width="81.33%" headers="mcps1.2.3.1.2 "><p id="p53012235531"><a name="p53012235531"></a><a name="p53012235531"></a>用户自定义的依赖程序包。在选择程序包之前需要将对应的jar包上传至OBS桶中，并在<span class="menucascade" id="menucascade1481791545210"><a name="menucascade1481791545210"></a><a name="menucascade1481791545210"></a>“<span class="uicontrol" id="uicontrol11817191545218"><a name="uicontrol11817191545218"></a><a name="uicontrol11817191545218"></a>数据管理&gt;程序包管理</span>”</span>中创建程序包，具体操作请参考<a href="创建程序包.md">创建程序包</a>。</p>
+    <td class="cellrowborder" valign="top" width="81.33%" headers="mcps1.2.3.1.2 "><p id="p53012235531"><a name="p53012235531"></a><a name="p53012235531"></a>用户自定义的依赖程序包。在选择程序包之前需要将对应的Jar包上传至OBS桶中，并在<span class="menucascade" id="menucascade1481791545210"><a name="menucascade1481791545210"></a><a name="menucascade1481791545210"></a>“<span class="uicontrol" id="uicontrol11817191545218"><a name="uicontrol11817191545218"></a><a name="uicontrol11817191545218"></a>数据管理&gt;程序包管理</span>”</span>中创建程序包，具体操作请参考<a href="创建程序包.md">创建程序包</a>。</p>
     </td>
     </tr>
     </tbody>
@@ -153,6 +153,6 @@
 
     提交作业后，系统将自动跳转到“作业管理“页面，新创建的作业将显示在作业列表中，在“状态“列中可以查看作业状态。作业提交成功后，状态将由“提交中“变为“运行中“。运行完成后显示“已完成”。
 
-    如果作业状态为“提交失败“或“运行异常“，表示作业提交或运行失败。用户可以在作业列表中的“状态“列中，将鼠标移动到状态图标上查看错误信息，单击![](figures/icon-cs-copy-6.png)可以复制错误信息。根据错误信息解决故障后，重新提交。
+    如果作业状态为“提交失败“或“运行异常“，表示作业提交或运行失败。用户可以在作业列表中的“状态“列中，将鼠标移动到状态图标上查看错误信息，单击![](figures/icon-cs-copy-2.png)可以复制错误信息。根据错误信息解决故障后，重新提交。
 
 
