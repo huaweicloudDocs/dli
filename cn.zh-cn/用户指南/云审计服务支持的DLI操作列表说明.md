@@ -347,7 +347,7 @@
 </tbody>
 </table>
 
-关于如何开通云审计服务以及如何查看追踪事件，请参考《[云审计服务快速入门](https://support.huaweicloud.com/qs-cts/zh-cn_topic_0030598498.html)》中的相关章节。
+关于如何开通云审计服务以及如何查看追踪事件，请参考《[云审计服务快速入门](https://support.huaweicloud.com/qs-cts/cts_02_0001.html)》中的相关章节。
 
-关于云审计服务事件结构的关键字段详解，请参见《云审计服务用户指南》中的[事件结构](https://support.huaweicloud.com/usermanual-cts/zh-cn_topic_0030598500.html)和[事件样例](https://support.huaweicloud.com/usermanual-cts/zh-cn_topic_0044019595.html)。
+关于云审计服务事件结构的关键字段详解，请参见《云审计服务用户指南》中的[事件结构](https://support.huaweicloud.com/usermanual-cts/cts_03_0010.html)和[事件样例](https://support.huaweicloud.com/usermanual-cts/cts_03_0011.html)。
 

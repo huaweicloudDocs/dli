@@ -22,7 +22,7 @@ DLI Beeline是一个用于连接DLI服务的客户端命令行交互工具，该
 
 1.  下载并解压工具包“huaweicloud-dli-clientkit-<version\>-bin.tar.gz”，其中version为版本号，以实际版本号为准。
 2.  进入解压目录，里面有三个子目录bin、conf、lib，分别存放了Beeline相关的执行脚本、配置文件和依赖包。
-3.  进入配置文件conf目录，将“connection.properties.template”重命名成“connection.properties”，并配置连接参数）。
+3.  进入配置文件conf目录，将“connection.properties.template”重命名成“connection.properties”，并配置连接参数。
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >具体连接参数请参考“[使用JDBC提交作业](使用JDBC提交作业.md)”中的“表2-数据库连接参数”和“表3-属性项”。  
@@ -74,7 +74,7 @@ DLI Beeline是一个用于连接DLI服务的客户端命令行交互工具，该
 
 ## DLI Beeline支持的命令<a name="section3583203214220"></a>
 
-DLI Beeline支持一系列命令，每个命令以 ！ 这个符号开始，例如!connect。具体请参考[表1](#table18133261151627)。
+DLI Beeline支持一系列命令，每个命令以 “!”这个符号开始，例如!connect。具体请参考[表1](#table18133261151627)。
 
 **表 1**  DLI Beeline支持的命令
 
