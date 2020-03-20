@@ -250,7 +250,7 @@
       "message": "{""}",
       "job_id": "8ecb0777-9c70-4529-9935-29ea0946039c",
       "job_type": "DDL",
-      "job_mode":sync,
+      "job_mode":"sync",
       "schema": [
         {
           "col_name": "string"
