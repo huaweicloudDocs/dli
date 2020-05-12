@@ -1,25 +1,24 @@
 # 将DLI数据导出至OBS<a name="dli_01_0010"></a>
 
-## 操作场景<a name="section10579446195716"></a>
-
-支持将数据从DLI表导出到OBS服务，导出操作将在OBS服务新建文件夹，或覆盖已有文件夹中的内容。
+支持将数据从DLI表中导出到OBS服务中，导出操作将在OBS服务新建文件夹，或覆盖已有文件夹中的内容。
 
 ## 注意事项<a name="section181111466568"></a>
 
-支持导出CSV格式的文件，且文本格式仅支持UTF-8。
+-   支持导出CSV格式的文件，且文本格式仅支持UTF-8。
+-   只支持将DLI表（表类型为“Managed”）中的数据导出到OBS桶中。
 
-## 操作步骤<a name="section42958999144515"></a>
+## 导出数据步骤<a name="section42958999144515"></a>
 
 1.  导出数据的入口有两个，分别在“数据管理“和“SQL编辑器“页面。
     -   在“数据管理“页面导入数据。
         1.  在管理控制台左侧，单击“数据管理“\>“库表管理“。
         2.  单击需导出数据的表对应的数据库，进入该数据的“表管理”页面。
-        3.  选中对应表（DLI表），在“操作”栏中选择“更多”中的“导出”，弹出“导出数据“页面。
+        3.  在对应表（DLI表）的“操作”栏中选择“更多”中的“导出”，弹出“导出数据“页面。
 
     -   在“SQL编辑器“页面导出数据。
         1.  在管理控制台左侧，单击“SQL编辑器“。
-        2.  在左侧导航栏单击![](figures/icon-数据库-10.png)选择“数据库”，鼠标左键单击需要导出数据的表对应的数据库名，进入“表”区域。
-        3.  鼠标右键单击需要导出数据的表名（Managed表，即DLI表），或者鼠标左键单击对应表右侧的![](figures/zh-cn_image_0206789751.png)，在列表菜单中选择“导出”，选择弹出“导出数据“页面。
+        2.  在左侧导航栏选择“库表”页签，鼠标左键单击需要导出数据的表对应的数据库名，进入“表”区域。
+        3.  鼠标左键单击需要导出数据的表（Managed表，即DLI表）右侧的![](figures/zh-cn_image_0237994910.png)，在列表菜单中选择“导出”，选择弹出“导出数据“页面。
 
 2.  在“导出数据“对话框，参考[表1](#table7742063143659)填写导出数据相关信息。
 
@@ -37,12 +36,12 @@
     </thead>
     <tbody><tr id="row55162434145333"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p21307823145337"><a name="p21307823145337"></a><a name="p21307823145337"></a>数据库名称</p>
     </td>
-    <td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p48212085145337"><a name="p48212085145337"></a><a name="p48212085145337"></a>当前表所在的数据库，该值不可修改。</p>
+    <td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p48212085145337"><a name="p48212085145337"></a><a name="p48212085145337"></a>当前表所在的数据库。</p>
     </td>
     </tr>
     <tr id="row54786783145255"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p5670283814532"><a name="p5670283814532"></a><a name="p5670283814532"></a>表名</p>
     </td>
-    <td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p2952718314532"><a name="p2952718314532"></a><a name="p2952718314532"></a>当前表名称，该值不可修改。</p>
+    <td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p2952718314532"><a name="p2952718314532"></a><a name="p2952718314532"></a>当前表名称。</p>
     </td>
     </tr>
     <tr id="row59287839143659"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p37585653143659"><a name="p37585653143659"></a><a name="p37585653143659"></a>导出格式</p>
@@ -63,7 +62,7 @@
     </tr>
     <tr id="row6367025143659"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p3346061614541"><a name="p3346061614541"></a><a name="p3346061614541"></a>导出路径</p>
     </td>
-    <td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><a name="ul194291955145519"></a><a name="ul194291955145519"></a><ul id="ul194291955145519"><li>直接输入OBS路径或单击<a name="image07131523648"></a><a name="image07131523648"></a><span><img id="image07131523648" src="figures/icon-浏览-11.png"></span>选择OBS的路径。路径须以<span class="parmname" id="parmname64912034172226"><a name="parmname64912034172226"></a><a name="parmname64912034172226"></a>“s3a://”</span>开头。</li><li>导出路径必须为OBS桶中不存在的文件夹，即用户需在OBS目标路径后创建一个新文件夹。</li><li>文件夹名称不能包含下列特殊字符：\ / : * ? " &lt; &gt; |，并且不能以“.”开头和结尾。</li></ul>
+    <td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><a name="ul194291955145519"></a><a name="ul194291955145519"></a><ul id="ul194291955145519"><li>输入或选择OBS路径。路径须以<span class="parmname" id="parmname64912034172226"><a name="parmname64912034172226"></a><a name="parmname64912034172226"></a>“s3a://”</span>开头。</li><li>导出路径必须为OBS桶中不存在的文件夹，即用户需在OBS目标路径后创建一个新文件夹。</li><li>文件夹名称不能包含下列特殊字符：\ / : * ? " &lt; &gt; |，并且不能以“.”开头和结尾。</li></ul>
     </td>
     </tr>
     <tr id="row48430784114641"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p30579455114641"><a name="p30579455114641"></a><a name="p30579455114641"></a>导出方式</p>
@@ -82,8 +81,8 @@
     </table>
 
 3.  单击“确定“即可导出数据。
-4.  （可选）您可以在“作业管理“查看导出作业的“作业状态“、“执行语句“等信息。
+4.  （可选）您可以在“作业管理“\>“SQL作业”页面查看导出作业的“作业状态“、“执行语句“等信息。
     1.  在“作业类型“中选择“EXPORT“，输入导出数据的时间段，即可查询出对应条件下的作业列表。
-    2.  单击导出作业的![](figures/icon-展开.png)，可查看导出作业的详细信息。
+    2.  单击导出作业名称前的![](figures/icon-展开.png)，可查看导出作业的详细信息。
 
 
