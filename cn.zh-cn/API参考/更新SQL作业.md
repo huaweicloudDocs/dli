@@ -2,7 +2,7 @@
 
 ## 功能介绍<a name="s89ff8bc59cba4c3b94dc17e85c8fa1ea"></a>
 
-Stream SQL的语法扩展了Apache Flink SQL，具体详情请参考《数据湖探索SQL语法参考》。
+修改Flink SQL作业。
 
 ## URI<a name="sef21e3efc2a44a84a03adad33a1ae006"></a>
 
@@ -55,17 +55,16 @@ Stream SQL的语法扩展了Apache Flink SQL，具体详情请参考《数据湖
         "cu_number": 4,
         "parallel_number": 4,
         "checkpoint_enabled": false,
-        "checkpoint_mode": 1,
+        "checkpoint_mode": "exactly_once",
         "checkpoint_interval": 10,
         "obs_bucket": "",
         "log_enabled": false,
         "smn_topic": "",
         "restart_when_exception": false,
         "idle_state_retention": 3600,
-        "edge_group_ids": [
-            "62de1e1c-066e-48a8-a79d-f461a31b2ee1",
-            "2eb00f85-99f2-4144-bcb7-d39ff47f9002"
-        ],
+     
+     
+      
         "dirty_data_strategy": "0",
         "udf_jar_url": "group/test.jar"
     }
@@ -101,7 +100,7 @@ Stream SQL的语法扩展了Apache Flink SQL，具体详情请参考《数据湖
     </td>
     <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="ad6a32cc0ba694cea9fe5f132dd482a0b"><a name="ad6a32cc0ba694cea9fe5f132dd482a0b"></a><a name="ad6a32cc0ba694cea9fe5f132dd482a0b"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="a6311275524c844f4aa133f8f5818d0c0"><a name="a6311275524c844f4aa133f8f5818d0c0"></a><a name="a6311275524c844f4aa133f8f5818d0c0"></a>作业描述。长度限制：0-2048个字符。</p>
+    <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="a6311275524c844f4aa133f8f5818d0c0"><a name="a6311275524c844f4aa133f8f5818d0c0"></a><a name="a6311275524c844f4aa133f8f5818d0c0"></a>作业描述。长度限制：0-512个字符。</p>
     </td>
     </tr>
     <tr id="row15798193244110"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p17928153443914"><a name="p17928153443914"></a><a name="p17928153443914"></a>queue_name</p>
@@ -129,7 +128,7 @@ Stream SQL的语法扩展了Apache Flink SQL，具体详情请参考《数据湖
     <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="a1c9f0e6238ad4ce69be9eafbb38d73d9"><a name="a1c9f0e6238ad4ce69be9eafbb38d73d9"></a><a name="a1c9f0e6238ad4ce69be9eafbb38d73d9"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p79611213113"><a name="p79611213113"></a><a name="p79611213113"></a>作业运行模式：</p>
-    <a name="ul15289751193715"></a><a name="ul15289751193715"></a><ul id="ul15289751193715"><li>shared_cluster：共享。</li><li>exclusive_cluster：独享。</li><li>edge_node：边缘节点。</li></ul>
+    <a name="ul15289751193715"></a><a name="ul15289751193715"></a><ul id="ul15289751193715"><li>shared_cluster：共享。</li><li>exclusive_cluster：独享。</li></ul>
     <p id="p12234112771417"><a name="p12234112771417"></a><a name="p12234112771417"></a>默认值为<span class="parmvalue" id="parmvalue10216234151415"><a name="parmvalue10216234151415"></a><a name="parmvalue10216234151415"></a>“shared_cluster”</span>。</p>
     </td>
     </tr>
@@ -165,11 +164,11 @@ Stream SQL的语法扩展了Apache Flink SQL，具体详情请参考《数据湖
     </td>
     <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.2 "><p id="ac3897cc29eb1495b9bbee471c304e326"><a name="ac3897cc29eb1495b9bbee471c304e326"></a><a name="ac3897cc29eb1495b9bbee471c304e326"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="af4e810f37b724bb4860e63e51fc32e05"><a name="af4e810f37b724bb4860e63e51fc32e05"></a><a name="af4e810f37b724bb4860e63e51fc32e05"></a>Integer</p>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="af4e810f37b724bb4860e63e51fc32e05"><a name="af4e810f37b724bb4860e63e51fc32e05"></a><a name="af4e810f37b724bb4860e63e51fc32e05"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p41471755171312"><a name="p41471755171312"></a><a name="p41471755171312"></a>快照模式：</p>
-    <a name="ul146238631611"></a><a name="ul146238631611"></a><ul id="ul146238631611"><li>1：ExactlyOnce，数据只被消费一次。</li><li>2：AtLeastOnce，数据至少被消费一次。</li></ul>
-    <p id="p2059914599156"><a name="p2059914599156"></a><a name="p2059914599156"></a>默认值为<span class="parmvalue" id="parmvalue41311056111811"><a name="parmvalue41311056111811"></a><a name="parmvalue41311056111811"></a>“1”</span>。</p>
+    <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p228619524239"><a name="p228619524239"></a><a name="p228619524239"></a>快照模式,。两种可选：</p>
+    <a name="ul133371056182314"></a><a name="ul133371056182314"></a><ul id="ul133371056182314"><li>exactly_once：数据只被消费一次。</li><li>at_least_once：数据至少被消费一次。</li></ul>
+    <p id="p1972956121218"><a name="p1972956121218"></a><a name="p1972956121218"></a>默认值为<span class="parmvalue" id="parmvalue17711380134"><a name="parmvalue17711380134"></a><a name="parmvalue17711380134"></a>“exactly_once”</span>。</p>
     </td>
     </tr>
     <tr id="rbdbc4a1a7b9d41b0873a21b5c8c515a4"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p13880183918268"><a name="p13880183918268"></a><a name="p13880183918268"></a>checkpoint_interval</p>
@@ -227,15 +226,6 @@ Stream SQL的语法扩展了Apache Flink SQL，具体详情请参考《数据湖
     <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p15193856757"><a name="p15193856757"></a><a name="p15193856757"></a>空闲状态过期周期，单位为秒，默认值为<span class="parmvalue" id="parmvalue321164543410"><a name="parmvalue321164543410"></a><a name="parmvalue321164543410"></a>“3600”</span>。</p>
     </td>
     </tr>
-    <tr id="row240012396412"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p12217143121118"><a name="p12217143121118"></a><a name="p12217143121118"></a>edge_group_ids</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.2 "><p id="p1721753113116"><a name="p1721753113116"></a><a name="p1721753113116"></a>否</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p1921773141113"><a name="p1921773141113"></a><a name="p1921773141113"></a>String</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p19919221166"><a name="p19919221166"></a><a name="p19919221166"></a>边缘计算组ID列表, 多个ID以逗号分隔。</p>
-    </td>
-    </tr>
     <tr id="row61241615163812"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1842823984611"><a name="p1842823984611"></a><a name="p1842823984611"></a><span>dirty_data_strategy</span></p>
     </td>
     <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.2 "><p id="p164285395469"><a name="p164285395469"></a><a name="p164285395469"></a>否</p>
@@ -254,6 +244,33 @@ Stream SQL的语法扩展了Apache Flink SQL，具体详情请参考《数据湖
     <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p1894820241519"><a name="p1894820241519"></a><a name="p1894820241519"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p894882416512"><a name="p894882416512"></a><a name="p894882416512"></a>用户已上传到DLI资源管理系统的资源包名，用户sql作业的udf jar通过该参数传入。</p>
+    </td>
+    </tr>
+    <tr id="row1665234414101"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1841414505107"><a name="p1841414505107"></a><a name="p1841414505107"></a>manager_cu_number</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.2 "><p id="p1441435061018"><a name="p1441435061018"></a><a name="p1441435061018"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p141575071016"><a name="p141575071016"></a><a name="p141575071016"></a>Integer</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p9415145081017"><a name="p9415145081017"></a><a name="p9415145081017"></a>用户为作业选择的管理单元（jobmanager）CU数量，默认值为“1”。</p>
+    </td>
+    </tr>
+    <tr id="row1016815010417"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p62741531828"><a name="p62741531828"></a><a name="p62741531828"></a>tm_cus</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.2 "><p id="p1827415533218"><a name="p1827415533218"></a><a name="p1827415533218"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p132740531925"><a name="p132740531925"></a><a name="p132740531925"></a>Integer</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p9274165315217"><a name="p9274165315217"></a><a name="p9274165315217"></a>每个taskmanager的CU数，默认值为“1”。</p>
+    </td>
+    </tr>
+    <tr id="row101673018413"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p122748531625"><a name="p122748531625"></a><a name="p122748531625"></a>tm_slot_num</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.2 "><p id="p1274125315210"><a name="p1274125315210"></a><a name="p1274125315210"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p1327455313218"><a name="p1327455313218"></a><a name="p1327455313218"></a>Integer</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p4275145317210"><a name="p4275145317210"></a><a name="p4275145317210"></a>每个taskmanager的slot数，默认值为“(parallel_number*tm_cus)/(cu_number-manager_cu_number)”。</p>
     </td>
     </tr>
     </tbody>

@@ -165,7 +165,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="16.88%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077806_p51378430"><a name="zh-cn_topic_0069077806_p51378430"></a><a name="zh-cn_topic_0069077806_p51378430"></a>Boolean</p>
 </td>
-<td class="cellrowborder" valign="top" width="61.35%" headers="mcps1.2.5.1.4 "><p id="p4367201211150"><a name="p4367201211150"></a><a name="p4367201211150"></a>当<span class="parmname" id="parmname20849116111318"><a name="parmname20849116111318"></a><a name="parmname20849116111318"></a>“job_type”</span>为<span class="parmvalue" id="parmvalue2347564101624"><a name="parmvalue2347564101624"></a><a name="parmvalue2347564101624"></a>“DCL”</span>时，为请求执行是否成功。<span class="parmvalue" id="parmvalue218731155923"><a name="parmvalue218731155923"></a><a name="parmvalue218731155923"></a>“true”</span>表示请求执行成功。</p>
+<td class="cellrowborder" valign="top" width="61.35%" headers="mcps1.2.5.1.4 "><p id="p4367201211150"><a name="p4367201211150"></a><a name="p4367201211150"></a>请求发送是否成功。<span class="parmvalue" id="parmvalue3175800916327"><a name="parmvalue3175800916327"></a><a name="parmvalue3175800916327"></a>“true”</span>表示请求发送成功。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0069077806_row8129598"><td class="cellrowborder" valign="top" width="12.11%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077806_p54517712"><a name="zh-cn_topic_0069077806_p54517712"></a><a name="zh-cn_topic_0069077806_p54517712"></a>message</p>

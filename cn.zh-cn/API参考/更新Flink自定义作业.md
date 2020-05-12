@@ -101,7 +101,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="11.360000000000001%" headers="mcps1.2.5.1.3 "><p id="p134186214816"><a name="p134186214816"></a><a name="p134186214816"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="55.54%" headers="mcps1.2.5.1.4 "><p id="p207341827192110"><a name="p207341827192110"></a><a name="p207341827192110"></a>作业描述。长度限制：0-2048个字符。</p>
+    <td class="cellrowborder" valign="top" width="55.54%" headers="mcps1.2.5.1.4 "><p id="p207341827192110"><a name="p207341827192110"></a><a name="p207341827192110"></a>作业描述。长度限制：0-512个字符。</p>
     </td>
     </tr>
     <tr id="row16658203116445"><td class="cellrowborder" valign="top" width="21.21%" headers="mcps1.2.5.1.1 "><p id="p621523961515"><a name="p621523961515"></a><a name="p621523961515"></a>queue_name</p>
@@ -183,7 +183,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="11.360000000000001%" headers="mcps1.2.5.1.3 "><p id="p1696618119384"><a name="p1696618119384"></a><a name="p1696618119384"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="55.54%" headers="mcps1.2.5.1.4 "><p id="p1367814923518"><a name="p1367814923518"></a><a name="p1367814923518"></a>作业入口类参数。</p>
+    <td class="cellrowborder" valign="top" width="55.54%" headers="mcps1.2.5.1.4 "><p id="p1367814923518"><a name="p1367814923518"></a><a name="p1367814923518"></a>作业入口类参数，多个参数之间空格分隔。</p>
     </td>
     </tr>
     <tr id="row0400711104617"><td class="cellrowborder" valign="top" width="21.21%" headers="mcps1.2.5.1.1 "><p id="p8559173762410"><a name="p8559173762410"></a><a name="p8559173762410"></a>restart_when_exception</p>
@@ -201,7 +201,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="11.360000000000001%" headers="mcps1.2.5.1.3 "><p id="p49487710511"><a name="p49487710511"></a><a name="p49487710511"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="55.54%" headers="mcps1.2.5.1.4 "><p id="p14948375511"><a name="p14948375511"></a><a name="p14948375511"></a>用户已上传到DLI资源管理系统的资源包名，用户自定义作业主类所在的jar包。</p>
+    <td class="cellrowborder" valign="top" width="55.54%" headers="mcps1.2.5.1.4 "><p id="p14948375511"><a name="p14948375511"></a><a name="p14948375511"></a>用户已上传到DLI资源管理系统的程序包名，用户自定义作业主类所在的jar包。</p>
     </td>
     </tr>
     <tr id="row11904133882719"><td class="cellrowborder" valign="top" width="21.21%" headers="mcps1.2.5.1.1 "><p id="p7233155624618"><a name="p7233155624618"></a><a name="p7233155624618"></a>dependency_jars</p>
@@ -210,7 +210,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="11.360000000000001%" headers="mcps1.2.5.1.3 "><p id="p9233155654619"><a name="p9233155654619"></a><a name="p9233155654619"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="55.54%" headers="mcps1.2.5.1.4 "><p id="p8233135664619"><a name="p8233135664619"></a><a name="p8233135664619"></a>用户已上传到DLI资源管理系统的资源包名，用户自定义作业的其他依赖包。</p>
+    <td class="cellrowborder" valign="top" width="55.54%" headers="mcps1.2.5.1.4 "><p id="p8233135664619"><a name="p8233135664619"></a><a name="p8233135664619"></a>用户已上传到DLI资源管理系统的程序包名，用户自定义作业的其他依赖包。</p>
     <p id="p19536182203415"><a name="p19536182203415"></a><a name="p19536182203415"></a>示例“myGroup/test.jar,myGroup/test1.jar”。</p>
     </td>
     </tr>
@@ -222,6 +222,24 @@
     </td>
     <td class="cellrowborder" valign="top" width="55.54%" headers="mcps1.2.5.1.4 "><p id="p12748153919317"><a name="p12748153919317"></a><a name="p12748153919317"></a>用户已上传到DLI资源管理系统的资源包名，用户自定义作业的依赖文件。</p>
     <p id="p948945412308"><a name="p948945412308"></a><a name="p948945412308"></a>示例："myGroup/test.cvs,myGroup/test1.csv"</p>
+    </td>
+    </tr>
+    <tr id="row92590405160"><td class="cellrowborder" valign="top" width="21.21%" headers="mcps1.2.5.1.1 "><p id="p62741531828"><a name="p62741531828"></a><a name="p62741531828"></a>tm_cus</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="11.89%" headers="mcps1.2.5.1.2 "><p id="p1827415533218"><a name="p1827415533218"></a><a name="p1827415533218"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="11.360000000000001%" headers="mcps1.2.5.1.3 "><p id="p132740531925"><a name="p132740531925"></a><a name="p132740531925"></a>Integer</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="55.54%" headers="mcps1.2.5.1.4 "><p id="p9274165315217"><a name="p9274165315217"></a><a name="p9274165315217"></a>每个taskmanager的CU数，默认值为“1”。</p>
+    </td>
+    </tr>
+    <tr id="row1257340101614"><td class="cellrowborder" valign="top" width="21.21%" headers="mcps1.2.5.1.1 "><p id="p122748531625"><a name="p122748531625"></a><a name="p122748531625"></a>tm_slot_num</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="11.89%" headers="mcps1.2.5.1.2 "><p id="p1274125315210"><a name="p1274125315210"></a><a name="p1274125315210"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="11.360000000000001%" headers="mcps1.2.5.1.3 "><p id="p1327455313218"><a name="p1327455313218"></a><a name="p1327455313218"></a>Integer</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="55.54%" headers="mcps1.2.5.1.4 "><p id="p4275145317210"><a name="p4275145317210"></a><a name="p4275145317210"></a>每个taskmanager的slot数，默认值为“(parallel_number*tm_cus)/(cu_number-manager_cu_number)”。</p>
     </td>
     </tr>
     </tbody>
