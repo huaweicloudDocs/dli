@@ -1,19 +1,17 @@
 # Spark作业管理概述<a name="dli_01_0385"></a>
 
-## 操作场景<a name="zh-cn_topic_0093946892_section31579140143928"></a>
-
-Spark作业为在Spark作业编辑窗口中提交的作业。
-
 Spark作业管理主要包括如下功能：
 
+-   [创建Spark作业](创建Spark作业.md)
 -   [重新执行作业](#section168728364416)
 -   [查找作业](#section9242154518244)
--   [查看作业详情](#zh-cn_topic_0122090417_section15292102065813)
--   [删除作业](#zh-cn_topic_0122090417_section3753111385816)
+-   [终止作业](#zh-cn_topic_0122090417_section3753111385816)
+
+以及查看“使用指南”和“使用视频”。
 
 ## 作业管理页面<a name="section12526165519235"></a>
 
-在总览页面单击“Spark作业”简介，可进入Spark作业管理页面。Spark作业管理页面显示所有的Spark作业，作业数量较多时，系统分页显示，您可以查看任何状态下的作业。
+在总览页面单击“Spark作业”简介，或在左侧导航栏单击“作业管理”\>“Spark作业”，可进入Spark作业管理页面。Spark作业管理页面显示所有的Spark作业，作业数量较多时，系统分页显示，您可以查看任何状态下的作业。
 
 >![](public_sys-resources/icon-note.gif) **说明：**   
 >作业执行成功后，作业记录只保存6小时。  
@@ -35,6 +33,11 @@ Spark作业管理主要包括如下功能：
 <tr id="zh-cn_topic_0122090417_row32873162171713"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0122090417_p45480448171713"><a name="zh-cn_topic_0122090417_p45480448171713"></a><a name="zh-cn_topic_0122090417_p45480448171713"></a>作业名称</p>
 </td>
 <td class="cellrowborder" valign="top" width="83.93%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0122090417_p18579134217227"><a name="zh-cn_topic_0122090417_p18579134217227"></a><a name="zh-cn_topic_0122090417_p18579134217227"></a>所提交Spark作业的名称。</p>
+</td>
+</tr>
+<tr id="row12510758185710"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="p85117586575"><a name="p85117586575"></a><a name="p85117586575"></a>执行用户</p>
+</td>
+<td class="cellrowborder" valign="top" width="83.93%" headers="mcps1.2.3.1.2 "><p id="p4511205825713"><a name="p4511205825713"></a><a name="p4511205825713"></a>执行Spark作业的用户名称。</p>
 </td>
 </tr>
 <tr id="zh-cn_topic_0122090417_row31011923151038"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0122090417_p10671857151038"><a name="zh-cn_topic_0122090417_p10671857151038"></a><a name="zh-cn_topic_0122090417_p10671857151038"></a>作业状态</p>
@@ -70,17 +73,13 @@ Spark作业管理主要包括如下功能：
 
 ## 重新执行作业<a name="section168728364416"></a>
 
-在“Spark作业“页面，单击对应作业“操作”列的“重新执行“，跳转至“Spark作业编辑”页面，可根据需要修改参数，执行作业。
+在“Spark作业“页面，单击对应作业“操作”列中的“编辑“，跳转至“Spark作业编辑”页面，可根据需要修改参数，执行作业。
 
 ## 查找作业<a name="section9242154518244"></a>
 
-在“Spark作业“页面，选择“状态”和“所属队列”。系统将根据设置的过滤条件，在作业列表显示符合对应条件的作业。
+在“Spark作业“页面，选择“作业状态”或“所属队列”。系统将根据设置的过滤条件，在作业列表显示符合对应条件的作业。
 
-## 查看作业详情<a name="zh-cn_topic_0122090417_section15292102065813"></a>
+## 终止作业<a name="zh-cn_topic_0122090417_section3753111385816"></a>
 
-在“Spark作业“页面，选中一条作业，单击该作业ID左侧的![](figures/icon-展开.png)或在“操作”列中单击“日志详情”，可查看该条作业的相关日志。
-
-## 删除作业<a name="zh-cn_topic_0122090417_section3753111385816"></a>
-
-在“Spark作业“页面，单击“操作”列的“删除“，删除作业。
+在“Spark作业“页面，单击对应作业“操作”列中的“更多”\>“终止作业“，可停止运行该作业。
 
