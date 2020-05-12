@@ -42,6 +42,13 @@
 <td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p142214112719"><a name="p142214112719"></a><a name="p142214112719"></a>包括队列赋权、查看队列的使用者、数据赋权、查看数据库的使用者、查看表的使用者和查看表的用户权限。</p>
 </td>
 </tr>
+<tr id="row181621174496"><td class="cellrowborder" valign="top" width="18.98%" headers="mcps1.2.4.1.1 "><p id="p4320142815498"><a name="p4320142815498"></a><a name="p4320142815498"></a>流作业相关API</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.18%" headers="mcps1.2.4.1.2 "><p id="p173201528144919"><a name="p173201528144919"></a><a name="p173201528144919"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="64.84%" headers="mcps1.2.4.1.3 "><p id="p1320202812495"><a name="p1320202812495"></a><a name="p1320202812495"></a>包括OBS授权给DLI服务、新建SQL作业、更新SQL作业、新建Flink自定义作业、更新Flink自定义作业、批量运行作业、查询作业列表、查询作业详情、查询作业执行计划、查询作业监控信息、查询作业APIG网关服务访问地址、批量停止作业、删除作业和批量删除作业。</p>
+</td>
+</tr>
 <tr id="row18579133720020"><td class="cellrowborder" rowspan="5" valign="top" width="18.98%" headers="mcps1.2.4.1.1 "><p id="p65781737203"><a name="p65781737203"></a><a name="p65781737203"></a>Spark作业相关API</p>
 </td>
 <td class="cellrowborder" valign="top" width="16.18%" headers="mcps1.2.4.1.2 "><p id="p1857963715013"><a name="p1857963715013"></a><a name="p1857963715013"></a>会话相关API</p>
@@ -81,13 +88,6 @@
 <td class="cellrowborder" valign="top" width="16.18%" headers="mcps1.2.4.1.2 "><p id="p12271655132410"><a name="p12271655132410"></a><a name="p12271655132410"></a>-</p>
 </td>
 <td class="cellrowborder" valign="top" width="64.84%" headers="mcps1.2.4.1.3 "><p id="p13271555162413"><a name="p13271555162413"></a><a name="p13271555162413"></a>包括创建增强型跨源连接、删除增强型跨源连接、查询增强型跨源连接、查询增强型跨源连接列表、绑定队列和解绑队列。</p>
-</td>
-</tr>
-<tr id="row17858151623"><td class="cellrowborder" valign="top" width="18.98%" headers="mcps1.2.4.1.1 "><p id="p1684720110220"><a name="p1684720110220"></a><a name="p1684720110220"></a>流作业相关API</p>
-</td>
-<td class="cellrowborder" valign="top" width="16.18%" headers="mcps1.2.4.1.2 "><p id="p48483113217"><a name="p48483113217"></a><a name="p48483113217"></a>-</p>
-</td>
-<td class="cellrowborder" valign="top" width="64.84%" headers="mcps1.2.4.1.3 "><p id="p1284881528"><a name="p1284881528"></a><a name="p1284881528"></a>包括OBS授权给DLI服务、新建SQL作业、更新SQL作业、新建Flink自定义作业、更新Flink自定义作业、批量运行作业、查询作业列表、查询作业详情、查询作业执行计划、查询作业监控信息、查询作业APIG网关服务访问地址、批量停止作业、删除作业和批量删除作业。</p>
 </td>
 </tr>
 <tr id="row11857171322"><td class="cellrowborder" valign="top" width="18.98%" headers="mcps1.2.4.1.1 "><p id="p1384851128"><a name="p1384851128"></a><a name="p1384851128"></a>流作业模板相关API</p>
