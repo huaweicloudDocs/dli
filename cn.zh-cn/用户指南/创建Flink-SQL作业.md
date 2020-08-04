@@ -27,7 +27,7 @@
     </thead>
     <tbody><tr id="row16360958134110"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p173601258144118"><a name="p173601258144118"></a><a name="p173601258144118"></a>类型</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p236016585419"><a name="p236016585419"></a><a name="p236016585419"></a>选择“Flink SQL”：用户采用编辑SQL语句来启动作业。</p>
+    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p236016585419"><a name="p236016585419"></a><a name="p236016585419"></a>选择“Flink SQL”：用户通过编辑SQL语句来启动作业。</p>
     </td>
     </tr>
     <tr id="row18361135814119"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p113601858194116"><a name="p113601858194116"></a><a name="p113601858194116"></a>名称</p>
@@ -59,10 +59,7 @@
 4.  单击“确定“，进入作业“编辑“页面。
 5.  编辑SQL作业。
 
-    **图 2**  SQL作业编辑<a name="fig3464194555517"></a>  
-    ![](figures/SQL作业编辑.png "SQL作业编辑")
-
-    在SQL语句编辑区域，输入详细的SQL语句。相关SQL语句请参考[《数据湖探索SQL语法参考》](https://support.huaweicloud.com/sqlreference-dli/dli_08_0219.html)。
+    在SQL语句编辑区域，输入详细的SQL语句。相关SQL语句请参考[《数据湖探索SQL语法参考》](https://support.huaweicloud.com/sqlreference-dli/dli_08_0275.html)。
 
 6.  单击“语义校验“，确保语义校验成功。
     -   只有语义校验成功后，才可以执行“调试“或“启动“作业的操作。
@@ -71,7 +68,7 @@
 
 7.  设置作业运行参数。
 
-    **图 3**  设置Flink SQL作业运行参数<a name="fig329324084817"></a>  
+    **图 2**  设置Flink SQL作业运行参数<a name="fig329324084817"></a>  
     ![](figures/设置Flink-SQL作业运行参数.png "设置Flink-SQL作业运行参数")
 
     **表 2**  作业运行参数说明
@@ -154,6 +151,11 @@
     </div></div>
     </td>
     </tr>
+    <tr id="row79692568382"><td class="cellrowborder" valign="top" width="22.189999999999998%" headers="mcps1.2.3.1.1 "><p id="p1997065619384"><a name="p1997065619384"></a><a name="p1997065619384"></a>脏数据转储地址</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="77.81%" headers="mcps1.2.3.1.2 "><p id="p88151240184213"><a name="p88151240184213"></a><a name="p88151240184213"></a><span class="parmname" id="parmname19815134044220"><a name="parmname19815134044220"></a><a name="parmname19815134044220"></a>“脏数据策略”</span>选择<span class="parmvalue" id="parmvalue1081514019423"><a name="parmvalue1081514019423"></a><a name="parmvalue1081514019423"></a>“保存”</span>时，配置该参数。单击地址框选择保存脏数据的OBS路径。</p>
+    </td>
+    </tr>
     <tr id="row1922816108200"><td class="cellrowborder" valign="top" width="22.189999999999998%" headers="mcps1.2.3.1.1 "><p id="p12291910132014"><a name="p12291910132014"></a><a name="p12291910132014"></a>所属队列</p>
     </td>
     <td class="cellrowborder" valign="top" width="77.81%" headers="mcps1.2.3.1.2 "><p id="p72291810132012"><a name="p72291810132012"></a><a name="p72291810132012"></a>默认选择<span class="parmvalue" id="parmvalue12292103206"><a name="parmvalue12292103206"></a><a name="parmvalue12292103206"></a>“共享队列”</span>，用户也可以选择自定义的独享队列。</p>
@@ -161,7 +163,13 @@
     <p id="p4254159125611"><a name="p4254159125611"></a><a name="p4254159125611"></a><span class="parmname" id="parmname150893115714"><a name="parmname150893115714"></a><a name="parmname150893115714"></a>“UDF Jar”</span>：在选择UDF Jar之前需要将对应的jar包上传至OBS桶中，并在<span class="menucascade" id="menucascade132601332513"><a name="menucascade132601332513"></a><a name="menucascade132601332513"></a>“<span class="uicontrol" id="uicontrol13260930514"><a name="uicontrol13260930514"></a><a name="uicontrol13260930514"></a>数据管理&gt;程序包管理</span>”</span>中创建程序包，具体操作请参考<a href="创建程序包.md">创建程序包</a>。</p>
     <p id="p85110151218"><a name="p85110151218"></a><a name="p85110151218"></a>用户可以在SQL中调用插入Jar包中的自定义函数。</p>
     <div class="note" id="note126945231017"><a name="note126945231017"></a><a name="note126945231017"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p11408165613126"><a name="p11408165613126"></a><a name="p11408165613126"></a>当子用户在创建作业时，子用户只能选择已经被分配的队列。</p>
+    <p id="p1926474342520"><a name="p1926474342520"></a><a name="p1926474342520"></a>当所选择队列的剩余容量不能满足作业需求时，系统会自动扩容，将按照增加的容量计费。当队列空闲时，系统也会自动缩容。</p>
     </div></div>
+    </td>
+    </tr>
+    <tr id="row1084519084310"><td class="cellrowborder" valign="top" width="22.189999999999998%" headers="mcps1.2.3.1.1 "><p id="p14565124425411"><a name="p14565124425411"></a><a name="p14565124425411"></a>UDF Jar</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="77.81%" headers="mcps1.2.3.1.2 "><p id="p4565154465417"><a name="p4565154465417"></a><a name="p4565154465417"></a>用户自定义UDF文件，可通过“程序包管理”功能上传到数据湖探索服务使用。</p>
     </td>
     </tr>
     </tbody>
@@ -174,13 +182,13 @@
 
     如果作业状态为“提交失败“或“运行异常“，表示作业提交或运行失败。用户可以在作业列表中的“状态“列中，将鼠标移动到状态图标上查看错误信息，单击![](figures/icon-cs-copy.png)可以复制错误信息。根据错误信息解决故障后，重新提交。
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >其他功能按钮说明如下：  
-    >-   另存为：将新建作业另存为一个新作业。  
-    >-   调试：对作业进行调试。具体操作请参见[调试作业](调试作业.md)。  
-    >-   格式化：对SQL语句进行格式化。  
-    >-   设为模板：将新创建的作业设置为作业模板。  
-    >-   主题设置：设置页面主题，可以设置字体大小，自动换行和页面风格。  
-    >-   帮助：跳转至帮助中心，为用户提供SQL语法参考。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >其他功能按钮说明如下：
+    >-   另存为：将新建作业另存为一个新作业。
+    >-   调试：对作业进行调试。具体操作请参见[调试作业](调试作业.md)。
+    >-   格式化：对SQL语句进行格式化。
+    >-   设为模板：将新创建的作业设置为作业模板。
+    >-   主题设置：设置页面主题，可以设置字体大小，自动换行和页面风格。
+    >-   帮助：跳转至帮助中心，为用户提供SQL语法参考。
 
 
