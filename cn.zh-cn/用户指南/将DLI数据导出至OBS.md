@@ -4,8 +4,9 @@
 
 ## 注意事项<a name="section181111466568"></a>
 
--   支持导出CSV格式的文件，且文本格式仅支持UTF-8。
--   只支持将DLI表（表类型为“Managed”）中的数据导出到OBS桶中。
+-   支持导出json格式的文件，且文本格式仅支持UTF-8。
+-   只支持将DLI表（表类型为“Managed”）中的数据导出到OBS桶中，且导出的路径必须指定到文件夹级别。
+-   支持跨账号导出数据，即，如果B账户对A账户授权后，A账户拥有B账户OBS桶的元数据信息和权限信息的读取权限，以及路径的读写权限，则A账户可将数据导出至B账户的OBS路径中。
 
 ## 导出数据步骤<a name="section42958999144515"></a>
 
@@ -46,7 +47,7 @@
     </tr>
     <tr id="row59287839143659"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p37585653143659"><a name="p37585653143659"></a><a name="p37585653143659"></a>导出格式</p>
     </td>
-    <td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p24539023143659"><a name="p24539023143659"></a><a name="p24539023143659"></a>导出数据的文件格式。当前只支持csv格式。</p>
+    <td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p24539023143659"><a name="p24539023143659"></a><a name="p24539023143659"></a>导出数据的文件格式。当前只支持json格式。</p>
     </td>
     </tr>
     <tr id="row33984858114535"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p1310090114535"><a name="p1310090114535"></a><a name="p1310090114535"></a>队列</p>
@@ -62,7 +63,7 @@
     </tr>
     <tr id="row6367025143659"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p3346061614541"><a name="p3346061614541"></a><a name="p3346061614541"></a>导出路径</p>
     </td>
-    <td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><a name="ul194291955145519"></a><a name="ul194291955145519"></a><ul id="ul194291955145519"><li>输入或选择OBS路径。路径须以<span class="parmname" id="parmname64912034172226"><a name="parmname64912034172226"></a><a name="parmname64912034172226"></a>“s3a://”</span>开头。</li><li>导出路径必须为OBS桶中不存在的文件夹，即用户需在OBS目标路径后创建一个新文件夹。</li><li>文件夹名称不能包含下列特殊字符：\ / : * ? " &lt; &gt; |，并且不能以“.”开头和结尾。</li></ul>
+    <td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><a name="ul194291955145519"></a><a name="ul194291955145519"></a><ul id="ul194291955145519"><li>输入或选择OBS路径。</li><li>导出路径必须为OBS桶中不存在的文件夹，即用户需在OBS目标路径后创建一个新文件夹。</li><li>文件夹名称不能包含下列特殊字符：\ / : * ? " &lt; &gt; |，并且不能以“.”开头和结尾。</li></ul>
     </td>
     </tr>
     <tr id="row48430784114641"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p30579455114641"><a name="p30579455114641"></a><a name="p30579455114641"></a>导出方式</p>
@@ -73,7 +74,7 @@
     </tr>
     <tr id="row1218154413337"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p44720296144515"><a name="p44720296144515"></a><a name="p44720296144515"></a>表头:无/有</p>
     </td>
-    <td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p15245155210525"><a name="p15245155210525"></a><a name="p15245155210525"></a>当<span class="parmname" id="parmname9245195235214"><a name="parmname9245195235214"></a><a name="parmname9245195235214"></a>“导出格式”</span>为<span class="parmvalue" id="parmvalue112459522522"><a name="parmvalue112459522522"></a><a name="parmvalue112459522522"></a>“CSV”</span>时该参数有效。当前只支持CSV格式。设置导出数据是否含表头。</p>
+    <td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p15245155210525"><a name="p15245155210525"></a><a name="p15245155210525"></a>当<span class="parmname" id="parmname9245195235214"><a name="parmname9245195235214"></a><a name="parmname9245195235214"></a>“导出格式”</span>为<span class="parmvalue" id="parmvalue112459522522"><a name="parmvalue112459522522"></a><a name="parmvalue112459522522"></a>“json”</span>时该参数有效。当前只支持json格式。设置导出数据是否含表头。</p>
     <p id="p1262888185911"><a name="p1262888185911"></a><a name="p1262888185911"></a>选中<span class="parmname" id="parmname15361161464715"><a name="parmname15361161464715"></a><a name="parmname15361161464715"></a>“高级选项”</span>，勾选<span class="parmname" id="parmname1353042144718"><a name="parmname1353042144718"></a><a name="parmname1353042144718"></a>“表头:无”</span>前的方框，<span class="parmname" id="parmname063982314814"><a name="parmname063982314814"></a><a name="parmname063982314814"></a>“表头:无”</span>显示为<span class="parmname" id="parmname1790112818475"><a name="parmname1790112818475"></a><a name="parmname1790112818475"></a>“表头:有”</span>，表示有表头；去勾选即为<span class="parmname" id="parmname171354719481"><a name="parmname171354719481"></a><a name="parmname171354719481"></a>“表头:无”</span>，表示无表头。</p>
     </td>
     </tr>
