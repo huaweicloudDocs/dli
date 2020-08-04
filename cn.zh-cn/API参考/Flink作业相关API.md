@@ -32,4 +32,12 @@
 
 -   **[导入Flink作业](导入Flink作业.md)**  
 
+-   **[创建IEF消息通道](创建IEF消息通道.md)**  
+
+-   **[边缘Flink作业状态上报](边缘Flink作业状态上报.md)**  
+
+-   **[边缘Flink作业Action回调](边缘Flink作业Action回调.md)**  
+
+-   **[IEF系统事件上报](IEF系统事件上报.md)**  
+
 

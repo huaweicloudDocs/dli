@@ -67,6 +67,8 @@
     <td class="cellrowborder" valign="top" width="12.83%" headers="mcps1.2.5.1.3 "><p id="p14210736184920"><a name="p14210736184920"></a><a name="p14210736184920"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="59.77%" headers="mcps1.2.5.1.4 "><p id="p14949172263716"><a name="p14949172263716"></a><a name="p14949172263716"></a>从OBS上导入的作业zip文件路径，支持填写文件夹，导入文件夹下的所有zip文件。</p>
+    <div class="note" id="note109341806417"><a name="note109341806417"></a><a name="note109341806417"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p15935301743"><a name="p15935301743"></a><a name="p15935301743"></a>文件夹中只能包含zip文件。</p>
+    </div></div>
     </td>
     </tr>
     <tr id="row68519283358"><td class="cellrowborder" valign="top" width="15.58%" headers="mcps1.2.5.1.1 "><p id="p58539281359"><a name="p58539281359"></a><a name="p58539281359"></a><span>is_cover</span></p>

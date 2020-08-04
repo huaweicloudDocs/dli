@@ -83,7 +83,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="11.82%" headers="mcps1.2.5.1.2 "><p id="p1638583313358"><a name="p1638583313358"></a><a name="p1638583313358"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="12.83%" headers="mcps1.2.5.1.3 "><p id="p438663353517"><a name="p438663353517"></a><a name="p438663353517"></a>[Long]</p>
+    <td class="cellrowborder" valign="top" width="12.83%" headers="mcps1.2.5.1.3 "><p id="p438663353517"><a name="p438663353517"></a><a name="p438663353517"></a>Array of Long</p>
     </td>
     <td class="cellrowborder" valign="top" width="59.77%" headers="mcps1.2.5.1.4 "><p id="p1976111153391"><a name="p1976111153391"></a><a name="p1976111153391"></a>当<span class="parmname" id="parmname14960133320395"><a name="parmname14960133320395"></a><a name="parmname14960133320395"></a>“is_selected”</span>为<span class="parmvalue" id="parmvalue1270884343920"><a name="parmvalue1270884343920"></a><a name="parmvalue1270884343920"></a>“true”</span>时，该参数是待导出作业的ID集合。</p>
     <div class="note" id="note7829151619401"><a name="note7829151619401"></a><a name="note7829151619401"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p78401116184010"><a name="p78401116184010"></a><a name="p78401116184010"></a>当<span class="parmname" id="parmname168173232401"><a name="parmname168173232401"></a><a name="parmname168173232401"></a>“is_selected”</span>为<span class="parmvalue" id="parmvalue98181223134016"><a name="parmvalue98181223134016"></a><a name="parmvalue98181223134016"></a>“true”</span>时，该参数为必选。</p>
@@ -115,9 +115,9 @@
     </th>
     <th class="cellrowborder" valign="top" width="12.47%" id="mcps1.2.5.1.2"><p id="abcfbd3a651704d539626f3a41cc744f5"><a name="abcfbd3a651704d539626f3a41cc744f5"></a><a name="abcfbd3a651704d539626f3a41cc744f5"></a>是否必选</p>
     </th>
-    <th class="cellrowborder" valign="top" width="11.51%" id="mcps1.2.5.1.3"><p id="a2351d8d266444ad3ad1c09540d6d81cc"><a name="a2351d8d266444ad3ad1c09540d6d81cc"></a><a name="a2351d8d266444ad3ad1c09540d6d81cc"></a>参数类型</p>
+    <th class="cellrowborder" valign="top" width="13.11%" id="mcps1.2.5.1.3"><p id="a2351d8d266444ad3ad1c09540d6d81cc"><a name="a2351d8d266444ad3ad1c09540d6d81cc"></a><a name="a2351d8d266444ad3ad1c09540d6d81cc"></a>参数类型</p>
     </th>
-    <th class="cellrowborder" valign="top" width="61.18%" id="mcps1.2.5.1.4"><p id="af7ea6a3f59844bdf99d51e90d570be4c"><a name="af7ea6a3f59844bdf99d51e90d570be4c"></a><a name="af7ea6a3f59844bdf99d51e90d570be4c"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="59.58%" id="mcps1.2.5.1.4"><p id="af7ea6a3f59844bdf99d51e90d570be4c"><a name="af7ea6a3f59844bdf99d51e90d570be4c"></a><a name="af7ea6a3f59844bdf99d51e90d570be4c"></a>说明</p>
     </th>
     </tr>
     </thead>
@@ -125,27 +125,27 @@
     </td>
     <td class="cellrowborder" valign="top" width="12.47%" headers="mcps1.2.5.1.2 "><p id="p15453131112419"><a name="p15453131112419"></a><a name="p15453131112419"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="11.51%" headers="mcps1.2.5.1.3 "><p id="p6453411132414"><a name="p6453411132414"></a><a name="p6453411132414"></a>Boolean</p>
+    <td class="cellrowborder" valign="top" width="13.11%" headers="mcps1.2.5.1.3 "><p id="p6453411132414"><a name="p6453411132414"></a><a name="p6453411132414"></a>Boolean</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61.18%" headers="mcps1.2.5.1.4 "><p id="p05081222182420"><a name="p05081222182420"></a><a name="p05081222182420"></a>执行请求是否成功。“true”表示请求执行成功。</p>
+    <td class="cellrowborder" valign="top" width="59.58%" headers="mcps1.2.5.1.4 "><p id="p05081222182420"><a name="p05081222182420"></a><a name="p05081222182420"></a>执行请求是否成功。“true”表示请求执行成功。</p>
     </td>
     </tr>
     <tr id="r3900d023a26e45dea9a0ad9dd60d8ab1"><td class="cellrowborder" valign="top" width="14.84%" headers="mcps1.2.5.1.1 "><p id="p645351113242"><a name="p645351113242"></a><a name="p645351113242"></a>message</p>
     </td>
     <td class="cellrowborder" valign="top" width="12.47%" headers="mcps1.2.5.1.2 "><p id="p1445410112249"><a name="p1445410112249"></a><a name="p1445410112249"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="11.51%" headers="mcps1.2.5.1.3 "><p id="p1845441117241"><a name="p1845441117241"></a><a name="p1845441117241"></a>String</p>
+    <td class="cellrowborder" valign="top" width="13.11%" headers="mcps1.2.5.1.3 "><p id="p1845441117241"><a name="p1845441117241"></a><a name="p1845441117241"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61.18%" headers="mcps1.2.5.1.4 "><p id="p1573323415243"><a name="p1573323415243"></a><a name="p1573323415243"></a>系统提示信息，执行成功时，信息可能为空。</p>
+    <td class="cellrowborder" valign="top" width="59.58%" headers="mcps1.2.5.1.4 "><p id="p1573323415243"><a name="p1573323415243"></a><a name="p1573323415243"></a>系统提示信息，执行成功时，信息可能为空。</p>
     </td>
     </tr>
     <tr id="row21031568411"><td class="cellrowborder" valign="top" width="14.84%" headers="mcps1.2.5.1.1 "><p id="p81041556174120"><a name="p81041556174120"></a><a name="p81041556174120"></a><span>zip_files</span></p>
     </td>
     <td class="cellrowborder" valign="top" width="12.47%" headers="mcps1.2.5.1.2 "><p id="p2010413566417"><a name="p2010413566417"></a><a name="p2010413566417"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="11.51%" headers="mcps1.2.5.1.3 "><p id="p1410420561419"><a name="p1410420561419"></a><a name="p1410420561419"></a>[String]</p>
+    <td class="cellrowborder" valign="top" width="13.11%" headers="mcps1.2.5.1.3 "><p id="p1410420561419"><a name="p1410420561419"></a><a name="p1410420561419"></a>Array of String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="61.18%" headers="mcps1.2.5.1.4 "><p id="p10807332204210"><a name="p10807332204210"></a><a name="p10807332204210"></a>导出的作业zip包文件名，保存在OBS上。</p>
+    <td class="cellrowborder" valign="top" width="59.58%" headers="mcps1.2.5.1.4 "><p id="p10807332204210"><a name="p10807332204210"></a><a name="p10807332204210"></a>导出的作业zip包文件名，保存在OBS上。</p>
     </td>
     </tr>
     </tbody>

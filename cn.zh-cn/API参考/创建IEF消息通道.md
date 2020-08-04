@@ -1,14 +1,14 @@
-# OBS授权给DLI服务<a name="dli_02_0225"></a>
+# 创建IEF消息通道<a name="dli_02_0286"></a>
 
 ## 功能介绍<a name="s9b3bf6d5478e4f40809183a8e4c945c8"></a>
 
-用户主动授权OBS桶的操作权限给DLI服务, 用于保存用户作业的checkpoint、作业的运行日志等。
+该API用于创建IEF消息通道。
 
 ## URI<a name="s6a7bbfd0e1f9428cb2a117c6209d3ecc"></a>
 
 -   URI格式
 
-    POST /v1.0/\{project\_id\}/dli/obs-authorize
+    POST /v1/\{project\_id\}/edgesrv/message-channel
 
 -   参数说明
 
@@ -37,37 +37,47 @@
 ## 请求消息<a name="s90a833072d73410195d15a24ded71831"></a>
 
 -   请求样例
+    -   **描述:**
 
-    ```
-    {
-        "obs_buckets": [
-            "bucket1"
-        ]
-    }
-    ```
+        在ID为48cc2c48765f481480c7db940d6409d1的项目下，为node\_id为e0c2b85a-2ff7-4cbc-accd-2418dca14fa8的边缘节点创建IEF消息通道。
+
+    -   **示例URL:**
+
+        ```
+        POST https://{endpoint}/v1/48cc2c48765f481480c7db940d6409d1/edgesrv/message_channel
+        ```
+
+    -   **值:**
+
+        ```
+        {
+            "node_id": "e0c2b85a-2ff7-4cbc-accd-2418dca14fa8"
+        }
+        ```
+
 
 -   参数说明
 
     **表 2**  请求参数说明
 
     <a name="t3c2a16bb2526480f9ae1cfcc5bd53cd9"></a>
-    <table><thead align="left"><tr id="rb6596f648dee4d66b67623a5a840bc08"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="a50ff33b347ac4474b6c7e31bff2ea607"><a name="a50ff33b347ac4474b6c7e31bff2ea607"></a><a name="a50ff33b347ac4474b6c7e31bff2ea607"></a>参数名</p>
+    <table><thead align="left"><tr id="rb6596f648dee4d66b67623a5a840bc08"><th class="cellrowborder" valign="top" width="13.04%" id="mcps1.2.5.1.1"><p id="a50ff33b347ac4474b6c7e31bff2ea607"><a name="a50ff33b347ac4474b6c7e31bff2ea607"></a><a name="a50ff33b347ac4474b6c7e31bff2ea607"></a>参数名</p>
     </th>
-    <th class="cellrowborder" valign="top" width="15%" id="mcps1.2.5.1.2"><p id="a464d26a0587d4b39af84eee1ff9edc54"><a name="a464d26a0587d4b39af84eee1ff9edc54"></a><a name="a464d26a0587d4b39af84eee1ff9edc54"></a>是否必选</p>
+    <th class="cellrowborder" valign="top" width="9.35%" id="mcps1.2.5.1.2"><p id="a464d26a0587d4b39af84eee1ff9edc54"><a name="a464d26a0587d4b39af84eee1ff9edc54"></a><a name="a464d26a0587d4b39af84eee1ff9edc54"></a>是否必选</p>
     </th>
-    <th class="cellrowborder" valign="top" width="15%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0064335565_p748325710328"><a name="zh-cn_topic_0064335565_p748325710328"></a><a name="zh-cn_topic_0064335565_p748325710328"></a>参数类型</p>
+    <th class="cellrowborder" valign="top" width="10.81%" id="mcps1.2.5.1.3"><p id="zh-cn_topic_0064335565_p748325710328"><a name="zh-cn_topic_0064335565_p748325710328"></a><a name="zh-cn_topic_0064335565_p748325710328"></a>参数类型</p>
     </th>
-    <th class="cellrowborder" valign="top" width="45%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0064335565_p216409810328"><a name="zh-cn_topic_0064335565_p216409810328"></a><a name="zh-cn_topic_0064335565_p216409810328"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="66.8%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0064335565_p216409810328"><a name="zh-cn_topic_0064335565_p216409810328"></a><a name="zh-cn_topic_0064335565_p216409810328"></a>说明</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="rf2382b882efa4356b7c44ae02a200e9f"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1626317114212"><a name="p1626317114212"></a><a name="p1626317114212"></a>obs_buckets</p>
+    <tbody><tr id="row35041951134414"><td class="cellrowborder" valign="top" width="13.04%" headers="mcps1.2.5.1.1 "><p id="p931811596437"><a name="p931811596437"></a><a name="p931811596437"></a>node_id</p>
     </td>
-    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.2 "><p id="p26642427151446"><a name="p26642427151446"></a><a name="p26642427151446"></a>是</p>
+    <td class="cellrowborder" valign="top" width="9.35%" headers="mcps1.2.5.1.2 "><p id="p11318059124311"><a name="p11318059124311"></a><a name="p11318059124311"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p25392734151446"><a name="p25392734151446"></a><a name="p25392734151446"></a>String</p>
+    <td class="cellrowborder" valign="top" width="10.81%" headers="mcps1.2.5.1.3 "><p id="p61211912184415"><a name="p61211912184415"></a><a name="p61211912184415"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p144408974115"><a name="p144408974115"></a><a name="p144408974115"></a>OBS桶名列表。</p>
+    <td class="cellrowborder" valign="top" width="66.8%" headers="mcps1.2.5.1.4 "><p id="p20154152212440"><a name="p20154152212440"></a><a name="p20154152212440"></a>创建IEF消息通道指定的边缘节点ID，uuid格式。</p>
     </td>
     </tr>
     </tbody>
@@ -81,7 +91,7 @@
     ```
     {
         "is_success": "true",
-        "message": "以下OBS桶授权成功, bucket1"
+        "message": "创建IEF消息通道成功"
     }
     ```
 
@@ -90,30 +100,30 @@
     **表 3**  响应参数说明
 
     <a name="t0d27d7cf309a4b078789fdce81be4b36"></a>
-    <table><thead align="left"><tr id="rb20a976e281f4bb7bf0c3d7458d6ddf7"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0064335565_p42893210328"><a name="zh-cn_topic_0064335565_p42893210328"></a><a name="zh-cn_topic_0064335565_p42893210328"></a>参数名</p>
+    <table><thead align="left"><tr id="rb20a976e281f4bb7bf0c3d7458d6ddf7"><th class="cellrowborder" valign="top" width="21.15%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0064335565_p42893210328"><a name="zh-cn_topic_0064335565_p42893210328"></a><a name="zh-cn_topic_0064335565_p42893210328"></a>参数名</p>
     </th>
-    <th class="cellrowborder" valign="top" width="15%" id="mcps1.2.5.1.2"><p id="aa5a1673b8e9149d09001628e9caa78d9"><a name="aa5a1673b8e9149d09001628e9caa78d9"></a><a name="aa5a1673b8e9149d09001628e9caa78d9"></a>是否必选</p>
+    <th class="cellrowborder" valign="top" width="11.31%" id="mcps1.2.5.1.2"><p id="aa5a1673b8e9149d09001628e9caa78d9"><a name="aa5a1673b8e9149d09001628e9caa78d9"></a><a name="aa5a1673b8e9149d09001628e9caa78d9"></a>是否必选</p>
     </th>
-    <th class="cellrowborder" valign="top" width="15%" id="mcps1.2.5.1.3"><p id="afd1d2e67cf4b4a3e8d2a5a02c7d145f1"><a name="afd1d2e67cf4b4a3e8d2a5a02c7d145f1"></a><a name="afd1d2e67cf4b4a3e8d2a5a02c7d145f1"></a>参数类型</p>
+    <th class="cellrowborder" valign="top" width="22.54%" id="mcps1.2.5.1.3"><p id="afd1d2e67cf4b4a3e8d2a5a02c7d145f1"><a name="afd1d2e67cf4b4a3e8d2a5a02c7d145f1"></a><a name="afd1d2e67cf4b4a3e8d2a5a02c7d145f1"></a>参数类型</p>
     </th>
     <th class="cellrowborder" valign="top" width="45%" id="mcps1.2.5.1.4"><p id="a82881821f59f40c0b0bb4b6b34d6ea76"><a name="a82881821f59f40c0b0bb4b6b34d6ea76"></a><a name="a82881821f59f40c0b0bb4b6b34d6ea76"></a>说明</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="raf7543ddbbd7434680507661da53b6f6"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p19731617125720"><a name="p19731617125720"></a><a name="p19731617125720"></a>is_success</p>
+    <tbody><tr id="raf7543ddbbd7434680507661da53b6f6"><td class="cellrowborder" valign="top" width="21.15%" headers="mcps1.2.5.1.1 "><p id="p19731617125720"><a name="p19731617125720"></a><a name="p19731617125720"></a>is_success</p>
     </td>
-    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.2 "><p id="p1497341705714"><a name="p1497341705714"></a><a name="p1497341705714"></a>否</p>
+    <td class="cellrowborder" valign="top" width="11.31%" headers="mcps1.2.5.1.2 "><p id="p1497341705714"><a name="p1497341705714"></a><a name="p1497341705714"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p1297214176578"><a name="p1297214176578"></a><a name="p1297214176578"></a>Boolean</p>
+    <td class="cellrowborder" valign="top" width="22.54%" headers="mcps1.2.5.1.3 "><p id="p1297214176578"><a name="p1297214176578"></a><a name="p1297214176578"></a>Boolean</p>
     </td>
     <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p109711817125720"><a name="p109711817125720"></a><a name="p109711817125720"></a>执行请求是否成功。<span class="parmvalue" id="parmvalue1801866516843"><a name="parmvalue1801866516843"></a><a name="parmvalue1801866516843"></a>“true”</span>表示请求执行成功。</p>
     </td>
     </tr>
-    <tr id="row146054616226"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p166111464229"><a name="p166111464229"></a><a name="p166111464229"></a>message</p>
+    <tr id="row146054616226"><td class="cellrowborder" valign="top" width="21.15%" headers="mcps1.2.5.1.1 "><p id="p166111464229"><a name="p166111464229"></a><a name="p166111464229"></a>message</p>
     </td>
-    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.2 "><p id="p146224619228"><a name="p146224619228"></a><a name="p146224619228"></a>否</p>
+    <td class="cellrowborder" valign="top" width="11.31%" headers="mcps1.2.5.1.2 "><p id="p146224619228"><a name="p146224619228"></a><a name="p146224619228"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p12625467227"><a name="p12625467227"></a><a name="p12625467227"></a>String</p>
+    <td class="cellrowborder" valign="top" width="22.54%" headers="mcps1.2.5.1.3 "><p id="p12625467227"><a name="p12625467227"></a><a name="p12625467227"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p1162144612211"><a name="p1162144612211"></a><a name="p1162144612211"></a>消息内容。</p>
     </td>
@@ -137,7 +147,7 @@
 </thead>
 <tbody><tr id="r211ad4eb571d4d938e5579998723174e"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="a3153e07b3a9749adba92599fe6628fbf"><a name="a3153e07b3a9749adba92599fe6628fbf"></a><a name="a3153e07b3a9749adba92599fe6628fbf"></a>200</p>
 </td>
-<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p10675142010516"><a name="p10675142010516"></a><a name="p10675142010516"></a>授权成功。</p>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p104431642124811"><a name="p104431642124811"></a><a name="p104431642124811"></a>创建IEF消息通道成功。</p>
 </td>
 </tr>
 <tr id="row44937531727"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p184941532219"><a name="p184941532219"></a><a name="p184941532219"></a>400</p>
@@ -161,9 +171,9 @@
 </th>
 </tr>
 </thead>
-<tbody><tr id="row1047920308387"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p15479173003814"><a name="p15479173003814"></a><a name="p15479173003814"></a>DLI.19005</p>
+<tbody><tr id="row1047920308387"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p091385017493"><a name="p091385017493"></a><a name="p091385017493"></a>DLI.28202</p>
 </td>
-<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p11479173017382"><a name="p11479173017382"></a><a name="p11479173017382"></a>请求中包含已授权的OBS桶，请首先过滤掉已经授权的OBS桶。</p>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p262114124507"><a name="p262114124507"></a><a name="p262114124507"></a>创建IEF消息通道失败。</p>
 </td>
 </tr>
 </tbody>
