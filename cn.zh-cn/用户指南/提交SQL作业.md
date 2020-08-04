@@ -1,6 +1,6 @@
 # 提交SQL作业<a name="dli_01_0002"></a>
 
-帮助用户快速开始使用DLI提交SQL作业查询数据。基本流程如下：
+使用DLI提交SQL作业查询数据。基本流程如下：
 
 [步骤1：登录华为云](#section3751181910618)
 
@@ -25,24 +25,26 @@
 
 ## 步骤2：上传数据至OBS<a name="section61379418181550"></a>
 
-DLI可以查询来自OBS的数据，查询数据前，需要在OBS中上传数据文件。
+DLI可以查询存储在OBS中的数据，查询数据前，需要将数据文件上传至OBS中。
 
 1.  在华为云页面的上方导航栏中，选择“产品“。
 2.  在基础服务列表中，单击“存储”中的“对象存储服务OBS”。
 3.  在OBS服务产品页，单击“管理控制台“，进入OBS管理控制台页面。
 4.  创建一个桶，桶名全局唯一，这里以桶名“obs1”为例。
-    1.  单击“创建桶“。
+    1.  单击页面右上角“创建桶“。
     2.  进入“创建桶”页面，选择“区域”，输入“桶名称”。
 
-        >![](public_sys-resources/icon-note.gif) **说明：**   
-        >创建OBS桶时，需要选择与DLI管理控制台相同的区域，不可跨区域执行操作。  
+        >![](public_sys-resources/icon-note.gif) **说明：** 
+        >创建OBS桶时，需要选择与DLI管理控制台相同的区域，不可跨区域执行操作。
 
     3.  单击“立即创建”。
 
 5.  单击所建桶“obs1”，进入“概览”页面。
 6.  单击左侧列表中的“对象”，选择“上传对象”，将需要上传的文件“sampledata.csv“上传到指定目录，单击“上传“。
 
-    文件上传成功后，待分析的文件路径为“s3a://obs1/sampledata.csv“。
+    文件上传成功后，待分析的文件路径为“obs://obs1/sampledata.csv“。
+
+    关于OBS更多操作请参考《[对象存储服务控制台指南](https://support.huaweicloud.com/usermanual-obs/obs_03_0054.html)》。
 
 
 ## 步骤3：进入DLI SQL作业编辑器<a name="section19012773105034"></a>
@@ -50,7 +52,7 @@ DLI可以查询来自OBS的数据，查询数据前，需要在OBS中上传数�
 使用DLI进行数据查询，需要先进入SQL作业编辑器。
 
 1.  在华为云页面的上方导航栏中，选择“产品“。
-2.  在“EI企业智能“列表中，单击“大数据“\>“大数据计算“中的“数据湖探索 DLI“。
+2.  在“EI企业智能“列表中，选择“大数据“\>“大数据计算“中的“数据湖探索 DLI“。
 3.  在DLI服务产品页，单击“进入控制台“，进入DLI管理控制台页面。第一次进入数据湖探索管理控制台需要进行授权，以获取访问OBS的权限。
 4.  单击总览页面“SQL作业”右侧的“创建作业”，可进入SQL作业“SQL编辑器”页面。
 
@@ -68,26 +70,30 @@ DLI可以查询来自OBS的数据，查询数据前，需要在OBS中上传数�
 
 在进行数据查询之前还需要创建一个数据库，例如db1。
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->“default”为内置数据库，不能创建名为“default”的数据库。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>“default”为内置数据库，不能创建名为“default”的数据库。
 
 在“SQL编辑器”页面右侧的编辑窗口中，输入如下SQL语句，单击“执行”。阅读并同意隐私协议，单击“确定”。
 
-**create database db1;**
+```
+create database db1;
+```
 
 数据库创建成功后，新建的数据库db1会在左侧“数据库“列表中出现。
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->在DLI管理控制台第一次单击“执行”操作时，需要阅读隐私协议，确认同意后才能执行作业，且后续“执行”操作将不会再提示阅读隐私协议。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>在DLI管理控制台第一次单击“执行”操作时，需要阅读隐私协议，确认同意后才能执行作业，且后续“执行”操作将不会再提示阅读隐私协议。
 
 ## 步骤6：创建表<a name="section21590507141153"></a>
 
-数据库创建完成后，需要在数据库db1中基于OBS上的样本数据“s3a://obs1/sampledata.csv“创建一个表，例如table1。
+数据库创建完成后，需要在数据库db1中基于OBS上的样本数据“obs://obs1/sampledata.csv“创建一个表，例如table1。
 
 1.  在“SQL编辑器“页面右侧的编辑窗口上方，选择队列“default”和数据库“db1”。
 2.  在编辑窗口中，输入如下SQL语句，单击“执行”。
 
-    **create table table1 \(id int, name string\) using csv options \(path 's3a://obs1/sampledata.csv'\);**
+    ```
+    create table table1 (id int, name string) using csv options (path 'obs://obs1/sampledata.csv');
+    ```
 
     表table1创建成功后，单击左侧“库表”页签，再单击db1，新创建的表table1会在“表“区域下方显示。
 
@@ -98,7 +104,9 @@ DLI可以查询来自OBS的数据，查询数据前，需要在OBS中上传数�
 
 1.  在“SQL编辑器“页面左侧的“表“区域，选择新创建的表table1，双击表，在右侧编辑窗口中，自动输入SQL查询语句，例如查询table1表的1000条数据：
 
-    **select \* from db1.table1 limit 1000;**
+    ```
+    select * from db1.table1 limit 1000;
+    ```
 
 2.  单击“执行”，系统开始查询。
 
