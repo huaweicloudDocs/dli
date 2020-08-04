@@ -46,6 +46,8 @@
         "manager_cu_number": 1,
         "cu_number": 2,
         "parallel_number": 1,
+        "tm_cus": 1,
+        "tm_slot_num": 1
         "log_enabled": true,
         "obs_bucket": "bucketName",
         "smn_topic": "topic",
@@ -389,7 +391,7 @@
 </thead>
 <tbody><tr id="zh-cn_topic_0207595520_row1047920308387"><td class="cellrowborder" valign="top" width="14.299999999999999%" headers="mcps1.2.3.1.1 "><p id="p107741513162217"><a name="p107741513162217"></a><a name="p107741513162217"></a>DLI.11016</p>
 </td>
-<td class="cellrowborder" valign="top" width="85.7%" headers="mcps1.2.3.1.2 "><p id="p193367595245"><a name="p193367595245"></a><a name="p193367595245"></a>作业请求中传入的的obs_bucket是未授权给数据湖探索服务的OBS桶请授权该OBS桶给数据湖探索服务</p>
+<td class="cellrowborder" valign="top" width="85.7%" headers="mcps1.2.3.1.2 "><p id="p193367595245"><a name="p193367595245"></a><a name="p193367595245"></a>作业请求中传入的的obs_bucket是未授权给数据湖探索服务的OBS桶，请授权该OBS桶给数据湖探索服务。</p>
 </td>
 </tr>
 </tbody>

@@ -56,10 +56,10 @@
         "restart_when_exception": false,
         "idle_state_retention": 3600,
         "job_type": "flink_sql_job",
-        
-     
-     
-     
+        "edge_group_ids": [
+            "62de1e1c-066e-48a8-a79d-f461a31b2ee1",
+            "2eb00f85-99f2-4144-bcb7-d39ff47f9002"
+        ],
         "dirty_data_strategy": "0",
         "udf_jar_url": "group/test.jar"
     }
@@ -104,7 +104,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="11.64%" headers="mcps1.2.5.1.3 "><p id="ad6a32cc0ba694cea9fe5f132dd482a0b"><a name="ad6a32cc0ba694cea9fe5f132dd482a0b"></a><a name="ad6a32cc0ba694cea9fe5f132dd482a0b"></a>Integer</p>
     </td>
-    <td class="cellrowborder" valign="top" width="55.38999999999999%" headers="mcps1.2.5.1.4 "><p id="a6311275524c844f4aa133f8f5818d0c0"><a name="a6311275524c844f4aa133f8f5818d0c0"></a><a name="a6311275524c844f4aa133f8f5818d0c0"></a>模板Id。</p>
+    <td class="cellrowborder" valign="top" width="55.38999999999999%" headers="mcps1.2.5.1.4 "><p id="a6311275524c844f4aa133f8f5818d0c0"><a name="a6311275524c844f4aa133f8f5818d0c0"></a><a name="a6311275524c844f4aa133f8f5818d0c0"></a>模板ID。</p>
     <p id="p1438412141206"><a name="p1438412141206"></a><a name="p1438412141206"></a>如果<span class="parmname" id="parmname3795113375013"><a name="parmname3795113375013"></a><a name="parmname3795113375013"></a>“template_id”</span>和<span class="parmname" id="parmname113041406507"><a name="parmname113041406507"></a><a name="parmname113041406507"></a>“sql_body”</span>都不为空，优先选择<span class="parmname" id="parmname178092114519"><a name="parmname178092114519"></a><a name="parmname178092114519"></a>“sql_body”</span>的内容；如果<span class="parmname" id="parmname1583133812519"><a name="parmname1583133812519"></a><a name="parmname1583133812519"></a>“template_id”</span>不为空，<span class="parmname" id="parmname85051251185116"><a name="parmname85051251185116"></a><a name="parmname85051251185116"></a>“sql_body”</span>为空，选择<span class="parmname" id="parmname1095861165211"><a name="parmname1095861165211"></a><a name="parmname1095861165211"></a>“template_id”</span>的内容填充<span class="parmname" id="parmname6520142215522"><a name="parmname6520142215522"></a><a name="parmname6520142215522"></a>“sql_body”</span>。</p>
     </td>
     </tr>
@@ -133,7 +133,7 @@
     <td class="cellrowborder" valign="top" width="11.64%" headers="mcps1.2.5.1.3 "><p id="a1c9f0e6238ad4ce69be9eafbb38d73d9"><a name="a1c9f0e6238ad4ce69be9eafbb38d73d9"></a><a name="a1c9f0e6238ad4ce69be9eafbb38d73d9"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="55.38999999999999%" headers="mcps1.2.5.1.4 "><p id="p79611213113"><a name="p79611213113"></a><a name="p79611213113"></a>作业运行模式：</p>
-    <a name="ul15289751193715"></a><a name="ul15289751193715"></a><ul id="ul15289751193715"><li>shared_cluster：共享。</li><li>exclusive_cluster：独享。</li></ul>
+    <a name="ul15289751193715"></a><a name="ul15289751193715"></a><ul id="ul15289751193715"><li>shared_cluster：共享。</li><li>exclusive_cluster：独享。</li><li>edge_node：边缘节点。</li></ul>
     <p id="p19772114195416"><a name="p19772114195416"></a><a name="p19772114195416"></a>默认值为“shared_cluster”。</p>
     </td>
     </tr>
@@ -182,7 +182,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="11.64%" headers="mcps1.2.5.1.3 "><p id="p1664216614270"><a name="p1664216614270"></a><a name="p1664216614270"></a>Integer</p>
     </td>
-    <td class="cellrowborder" valign="top" width="55.38999999999999%" headers="mcps1.2.5.1.4 "><p id="p5880113952617"><a name="p5880113952617"></a><a name="p5880113952617"></a>快照时间间隔, 单位为秒，默认值为<span class="parmvalue" id="parmvalue137215497343"><a name="parmvalue137215497343"></a><a name="parmvalue137215497343"></a>“10”</span>。</p>
+    <td class="cellrowborder" valign="top" width="55.38999999999999%" headers="mcps1.2.5.1.4 "><p id="p5880113952617"><a name="p5880113952617"></a><a name="p5880113952617"></a>快照时间间隔。单位为秒，默认值为<span class="parmvalue" id="parmvalue137215497343"><a name="parmvalue137215497343"></a><a name="parmvalue137215497343"></a>“10”</span>。</p>
     </td>
     </tr>
     <tr id="rbdbc4a1a7b9d41b0873a21b5c8c515a4"><td class="cellrowborder" valign="top" width="20.849999999999998%" headers="mcps1.2.5.1.1 "><p id="p32635548151439"><a name="p32635548151439"></a><a name="p32635548151439"></a>obs_bucket</p>
@@ -226,9 +226,9 @@
     </td>
     <td class="cellrowborder" valign="top" width="12.120000000000001%" headers="mcps1.2.5.1.2 "><p id="p21931256755"><a name="p21931256755"></a><a name="p21931256755"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="11.64%" headers="mcps1.2.5.1.3 "><p id="p1119385615510"><a name="p1119385615510"></a><a name="p1119385615510"></a>Int</p>
+    <td class="cellrowborder" valign="top" width="11.64%" headers="mcps1.2.5.1.3 "><p id="p1119385615510"><a name="p1119385615510"></a><a name="p1119385615510"></a>Integer</p>
     </td>
-    <td class="cellrowborder" valign="top" width="55.38999999999999%" headers="mcps1.2.5.1.4 "><p id="p15193856757"><a name="p15193856757"></a><a name="p15193856757"></a>空闲状态过期周期，单位为秒，默认值为<span class="parmvalue" id="parmvalue321164543410"><a name="parmvalue321164543410"></a><a name="parmvalue321164543410"></a>“3600”</span>。</p>
+    <td class="cellrowborder" valign="top" width="55.38999999999999%" headers="mcps1.2.5.1.4 "><p id="p15193856757"><a name="p15193856757"></a><a name="p15193856757"></a>空闲状态过期周期。单位为秒，默认值为<span class="parmvalue" id="parmvalue321164543410"><a name="parmvalue321164543410"></a><a name="parmvalue321164543410"></a>“3600”</span>。</p>
     </td>
     </tr>
     <tr id="row1321714314112"><td class="cellrowborder" valign="top" width="20.849999999999998%" headers="mcps1.2.5.1.1 "><p id="p1921793115118"><a name="p1921793115118"></a><a name="p1921793115118"></a>job_type</p>
@@ -241,15 +241,24 @@
     <a name="ul14520163841811"></a><a name="ul14520163841811"></a><ul id="ul14520163841811"><li><span class="parmname" id="parmname1748418271424"><a name="parmname1748418271424"></a><a name="parmname1748418271424"></a>“run_mode”</span>为<span class="parmvalue" id="parmvalue15545194114212"><a name="parmvalue15545194114212"></a><a name="parmvalue15545194114212"></a>“edge_node”</span>时，作业类型须为<span class="parmvalue" id="parmvalue13231105016210"><a name="parmvalue13231105016210"></a><a name="parmvalue13231105016210"></a>“flink_sql_edge_job”</span>。</li><li><span class="parmname" id="parmname161164111317"><a name="parmname161164111317"></a><a name="parmname161164111317"></a>“run_mode”</span>为<span class="parmvalue" id="parmvalue107543111135"><a name="parmvalue107543111135"></a><a name="parmvalue107543111135"></a>“shared_cluster”</span>和<span class="parmvalue" id="parmvalue9376163016313"><a name="parmvalue9376163016313"></a><a name="parmvalue9376163016313"></a>“exclusive_cluster”</span>时，作业类型须为<span class="parmvalue" id="parmvalue896194012318"><a name="parmvalue896194012318"></a><a name="parmvalue896194012318"></a>“flink_sql_job”</span>。</li><li>默认值：<span class="parmvalue" id="parmvalue1468113274417"><a name="parmvalue1468113274417"></a><a name="parmvalue1468113274417"></a>“flink_sql_job”</span>。</li></ul>
     </td>
     </tr>
-    <tr id="row1977812466369"><td class="cellrowborder" valign="top" width="20.849999999999998%" headers="mcps1.2.5.1.1 "><p id="p1842823984611"><a name="p1842823984611"></a><a name="p1842823984611"></a><span>dirty_data_strategy</span></p>
+    <tr id="row2021718314119"><td class="cellrowborder" valign="top" width="20.849999999999998%" headers="mcps1.2.5.1.1 "><p id="p12217143121118"><a name="p12217143121118"></a><a name="p12217143121118"></a>edge_group_ids</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="12.120000000000001%" headers="mcps1.2.5.1.2 "><p id="p1721753113116"><a name="p1721753113116"></a><a name="p1721753113116"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="11.64%" headers="mcps1.2.5.1.3 "><p id="p1921773141113"><a name="p1921773141113"></a><a name="p1921773141113"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="55.38999999999999%" headers="mcps1.2.5.1.4 "><p id="p19919221166"><a name="p19919221166"></a><a name="p19919221166"></a>边缘计算组ID列表, 多个ID以逗号分隔。</p>
+    </td>
+    </tr>
+    <tr id="row1977812466369"><td class="cellrowborder" valign="top" width="20.849999999999998%" headers="mcps1.2.5.1.1 "><p id="p1842823984611"><a name="p1842823984611"></a><a name="p1842823984611"></a>dirty_data_strategy</p>
     </td>
     <td class="cellrowborder" valign="top" width="12.120000000000001%" headers="mcps1.2.5.1.2 "><p id="p164285395469"><a name="p164285395469"></a><a name="p164285395469"></a>否</p>
     </td>
     <td class="cellrowborder" valign="top" width="11.64%" headers="mcps1.2.5.1.3 "><p id="p94281539184614"><a name="p94281539184614"></a><a name="p94281539184614"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="55.38999999999999%" headers="mcps1.2.5.1.4 "><p id="p1842883912463"><a name="p1842883912463"></a><a name="p1842883912463"></a>作业脏数据策略。</p>
-    <a name="ul14821163115417"></a><a name="ul14821163115417"></a><ul id="ul14821163115417"><li>“<span>2:obs-wan-wulan3/jobs</span>”：保存</li><li>“1”：抛出异常</li><li>“0”：忽略</li></ul>
-    <p id="p17304143102218"><a name="p17304143102218"></a><a name="p17304143102218"></a>默认值为“0”。</p>
+    <a name="ul14821163115417"></a><a name="ul14821163115417"></a><ul id="ul14821163115417"><li>“2:obsDir”：保存，obsDir表示脏数据存储路径。</li><li>“1”：抛出异常。</li><li>“0”：忽略。</li></ul>
+    <p id="p17304143102218"><a name="p17304143102218"></a><a name="p17304143102218"></a>默认值为““0””。</p>
     </td>
     </tr>
     <tr id="row16141247203911"><td class="cellrowborder" valign="top" width="20.849999999999998%" headers="mcps1.2.5.1.1 "><p id="p19470241751"><a name="p19470241751"></a><a name="p19470241751"></a>udf_jar_url</p>
@@ -258,7 +267,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="11.64%" headers="mcps1.2.5.1.3 "><p id="p1894820241519"><a name="p1894820241519"></a><a name="p1894820241519"></a>String</p>
     </td>
-    <td class="cellrowborder" valign="top" width="55.38999999999999%" headers="mcps1.2.5.1.4 "><p id="p894882416512"><a name="p894882416512"></a><a name="p894882416512"></a>用户已上传到DLI资源管理系统的资源包名，用户sql作业的udf jar通过该参数传入。</p>
+    <td class="cellrowborder" valign="top" width="55.38999999999999%" headers="mcps1.2.5.1.4 "><p id="p894882416512"><a name="p894882416512"></a><a name="p894882416512"></a>用户已上传到DLI资源管理系统的资源包名，用户sql作业的udf jar包通过该参数传入。</p>
     </td>
     </tr>
     <tr id="row21601724348"><td class="cellrowborder" valign="top" width="20.849999999999998%" headers="mcps1.2.5.1.1 "><p id="p3942456173617"><a name="p3942456173617"></a><a name="p3942456173617"></a>manager_cu_number</p>

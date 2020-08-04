@@ -62,9 +62,10 @@
         "smn_topic": "",
         "restart_when_exception": false,
         "idle_state_retention": 3600,
-     
-     
-      
+        "edge_group_ids": [
+            "62de1e1c-066e-48a8-a79d-f461a31b2ee1",
+            "2eb00f85-99f2-4144-bcb7-d39ff47f9002"
+        ],
         "dirty_data_strategy": "0",
         "udf_jar_url": "group/test.jar"
     }
@@ -128,7 +129,7 @@
     <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="a1c9f0e6238ad4ce69be9eafbb38d73d9"><a name="a1c9f0e6238ad4ce69be9eafbb38d73d9"></a><a name="a1c9f0e6238ad4ce69be9eafbb38d73d9"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p79611213113"><a name="p79611213113"></a><a name="p79611213113"></a>作业运行模式：</p>
-    <a name="ul15289751193715"></a><a name="ul15289751193715"></a><ul id="ul15289751193715"><li>shared_cluster：共享。</li><li>exclusive_cluster：独享。</li></ul>
+    <a name="ul15289751193715"></a><a name="ul15289751193715"></a><ul id="ul15289751193715"><li>shared_cluster：共享。</li><li>exclusive_cluster：独享。</li><li>edge_node：边缘节点。</li></ul>
     <p id="p12234112771417"><a name="p12234112771417"></a><a name="p12234112771417"></a>默认值为<span class="parmvalue" id="parmvalue10216234151415"><a name="parmvalue10216234151415"></a><a name="parmvalue10216234151415"></a>“shared_cluster”</span>。</p>
     </td>
     </tr>
@@ -177,7 +178,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p1664216614270"><a name="p1664216614270"></a><a name="p1664216614270"></a>Integer</p>
     </td>
-    <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p5880113952617"><a name="p5880113952617"></a><a name="p5880113952617"></a>快照时间间隔, 单位为秒，默认值为<span class="parmvalue" id="parmvalue992093518194"><a name="parmvalue992093518194"></a><a name="parmvalue992093518194"></a>“10”</span>。</p>
+    <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p5880113952617"><a name="p5880113952617"></a><a name="p5880113952617"></a>快照时间间隔。单位为秒，默认值为<span class="parmvalue" id="parmvalue992093518194"><a name="parmvalue992093518194"></a><a name="parmvalue992093518194"></a>“10”</span>。</p>
     </td>
     </tr>
     <tr id="r7c856f9629304e7bb100c8794d29caf1"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p32635548151439"><a name="p32635548151439"></a><a name="p32635548151439"></a>obs_bucket</p>
@@ -221,9 +222,18 @@
     </td>
     <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.2 "><p id="p21931256755"><a name="p21931256755"></a><a name="p21931256755"></a>否</p>
     </td>
-    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p1119385615510"><a name="p1119385615510"></a><a name="p1119385615510"></a>Int</p>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p1119385615510"><a name="p1119385615510"></a><a name="p1119385615510"></a>Integer</p>
     </td>
     <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p15193856757"><a name="p15193856757"></a><a name="p15193856757"></a>空闲状态过期周期，单位为秒，默认值为<span class="parmvalue" id="parmvalue321164543410"><a name="parmvalue321164543410"></a><a name="parmvalue321164543410"></a>“3600”</span>。</p>
+    </td>
+    </tr>
+    <tr id="row240012396412"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p12217143121118"><a name="p12217143121118"></a><a name="p12217143121118"></a>edge_group_ids</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.2 "><p id="p1721753113116"><a name="p1721753113116"></a><a name="p1721753113116"></a>否</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p1921773141113"><a name="p1921773141113"></a><a name="p1921773141113"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p19919221166"><a name="p19919221166"></a><a name="p19919221166"></a>边缘计算组ID列表, 多个ID以逗号分隔。</p>
     </td>
     </tr>
     <tr id="row61241615163812"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1842823984611"><a name="p1842823984611"></a><a name="p1842823984611"></a><span>dirty_data_strategy</span></p>
@@ -233,7 +243,7 @@
     <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.3 "><p id="p94281539184614"><a name="p94281539184614"></a><a name="p94281539184614"></a>String</p>
     </td>
     <td class="cellrowborder" valign="top" width="45%" headers="mcps1.2.5.1.4 "><p id="p1842883912463"><a name="p1842883912463"></a><a name="p1842883912463"></a>作业脏数据策略。</p>
-    <a name="ul14821163115417"></a><a name="ul14821163115417"></a><ul id="ul14821163115417"><li>“<span>2:obs-wan-wulan3/jobs</span>”：保存</li><li>“1”：抛出异常</li><li>“0”：忽略</li></ul>
+    <a name="ul14821163115417"></a><a name="ul14821163115417"></a><ul id="ul14821163115417"><li>“2:obsDir”：保存，obsDir表示脏数据存储路径。</li><li>“1”：抛出异常。</li><li>“0”：忽略。</li></ul>
     <p id="p17304143102218"><a name="p17304143102218"></a><a name="p17304143102218"></a>默认值为“0”。</p>
     </td>
     </tr>

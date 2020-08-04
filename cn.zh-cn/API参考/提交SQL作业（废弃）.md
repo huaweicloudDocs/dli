@@ -15,9 +15,9 @@
 -   [查询所有作业](查询所有作业.md)
 -   [取消作业（废弃）](取消作业（废弃）.md)
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->-   该API当响应消息中“job\_type“为“DCL“时，为同步操作。  
->-   本章节介绍的API已过时，推荐使用[提交SQL作业（推荐）](提交SQL作业（推荐）.md)介绍的API。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>-   该API当响应消息中“job\_type“为“DCL“时，为同步操作。
+>-   本章节介绍的API已过时，推荐使用[提交SQL作业（推荐）](提交SQL作业（推荐）.md)介绍的API。
 
 ## URI<a name="s807a09edd221483999c7c51233072a4a"></a>
 
@@ -223,7 +223,7 @@
     }
     ```
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >调用API出错后，将不会返回上述结果，而是返回错误码和错误信息，详细介绍请参见[错误码](错误码.md)。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >调用API出错后，将不会返回上述结果，而是返回错误码和错误信息，详细介绍请参见[错误码](错误码.md)。
 
 

@@ -4,8 +4,8 @@
 
 该API用于在project下上传file类型模块。
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->上传同名file模块时，新模块将会覆盖旧模块。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>上传同名file模块时，新模块将会覆盖旧模块。
 
 ## URI<a name="zh-cn_topic_0142813187_zh-cn_topic_0103345073_zh-cn_topic_0102902533_s9e1b8ec5b57c422a942b19835da7d66e"></a>
 

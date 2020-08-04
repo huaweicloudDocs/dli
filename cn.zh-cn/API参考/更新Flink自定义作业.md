@@ -2,7 +2,7 @@
 
 ## 功能介绍<a name="s89ff8bc59cba4c3b94dc17e85c8fa1ea"></a>
 
-更新用户自定义作业，目前仅支持Jar格式, 运行在独享队列中。
+更新用户自定义作业，目前仅支持Jar格式，运行在独享队列中。
 
 ## URI<a name="sef21e3efc2a44a84a03adad33a1ae006"></a>
 
@@ -324,7 +324,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="12.57%" headers="mcps1.2.5.1.3 "><p id="p4901103344"><a name="p4901103344"></a><a name="p4901103344"></a>Long</p>
     </td>
-    <td class="cellrowborder" valign="top" width="47.43%" headers="mcps1.2.5.1.4 "><p id="p59012101344"><a name="p59012101344"></a><a name="p59012101344"></a>作业更新时间，毫秒数。</p>
+    <td class="cellrowborder" valign="top" width="47.43%" headers="mcps1.2.5.1.4 "><p id="p59012101344"><a name="p59012101344"></a><a name="p59012101344"></a>作业更新时间，单位为毫秒。</p>
     </td>
     </tr>
     </tbody>
@@ -364,15 +364,15 @@
 **表 6**  错误码
 
 <a name="zh-cn_topic_0207595520_table847819307387"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0207595520_row2479163016383"><th class="cellrowborder" valign="top" width="19.97%" id="mcps1.2.3.1.1"><p id="zh-cn_topic_0207595520_p114796309389"><a name="zh-cn_topic_0207595520_p114796309389"></a><a name="zh-cn_topic_0207595520_p114796309389"></a>错误码</p>
+<table><thead align="left"><tr id="zh-cn_topic_0207595520_row2479163016383"><th class="cellrowborder" valign="top" width="11.92%" id="mcps1.2.3.1.1"><p id="zh-cn_topic_0207595520_p114796309389"><a name="zh-cn_topic_0207595520_p114796309389"></a><a name="zh-cn_topic_0207595520_p114796309389"></a>错误码</p>
 </th>
-<th class="cellrowborder" valign="top" width="80.03%" id="mcps1.2.3.1.2"><p id="zh-cn_topic_0207595520_p1647973053817"><a name="zh-cn_topic_0207595520_p1647973053817"></a><a name="zh-cn_topic_0207595520_p1647973053817"></a>错误信息</p>
+<th class="cellrowborder" valign="top" width="88.08%" id="mcps1.2.3.1.2"><p id="zh-cn_topic_0207595520_p1647973053817"><a name="zh-cn_topic_0207595520_p1647973053817"></a><a name="zh-cn_topic_0207595520_p1647973053817"></a>错误信息</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="zh-cn_topic_0207595520_row1047920308387"><td class="cellrowborder" valign="top" width="19.97%" headers="mcps1.2.3.1.1 "><p id="p94465671312"><a name="p94465671312"></a><a name="p94465671312"></a>DLI.12002</p>
+<tbody><tr id="zh-cn_topic_0207595520_row1047920308387"><td class="cellrowborder" valign="top" width="11.92%" headers="mcps1.2.3.1.1 "><p id="p94465671312"><a name="p94465671312"></a><a name="p94465671312"></a>DLI.12002</p>
 </td>
-<td class="cellrowborder" valign="top" width="80.03%" headers="mcps1.2.3.1.2 "><p id="p92581516121513"><a name="p92581516121513"></a><a name="p92581516121513"></a>作业更新失败,错误原因:invalid resource /FemaleInfoCollec.jar, cannot find resource FemaleInfoCollec.jar请检查后重试</p>
+<td class="cellrowborder" valign="top" width="88.08%" headers="mcps1.2.3.1.2 "><p id="p92581516121513"><a name="p92581516121513"></a><a name="p92581516121513"></a>作业更新失败，错误原因:invalid resource /FemaleInfoCollec.jar, cannot find resource FemaleInfoCollec.jar，请检查后重试。</p>
 </td>
 </tr>
 </tbody>

@@ -15,8 +15,8 @@
 -   [查询所有作业](查询所有作业.md)
 -   [取消作业（推荐）](取消作业（推荐）.md)
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->该API当响应消息中“job\_type“为“DCL“时，为同步操作。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>该API当响应消息中“job\_type“为“DCL“时，为同步操作。
 
 ## URI<a name="s807a09edd221483999c7c51233072a4a"></a>
 
@@ -96,7 +96,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="16.3%" headers="mcps1.2.5.1.3 "><p id="p64596322143542"><a name="p64596322143542"></a><a name="p64596322143542"></a>Array of objects</p>
 </td>
-<td class="cellrowborder" valign="top" width="58.36%" headers="mcps1.2.5.1.4 "><p id="p23997108143542"><a name="p23997108143542"></a><a name="p23997108143542"></a>用户以“key/value”的形式设置用于此作业的配置参数。目前支持的配置项请参考<a href="#table0995047105710">表3</a>。</p>
+<td class="cellrowborder" valign="top" width="58.36%" headers="mcps1.2.5.1.4 "><p id="p23997108143542"><a name="p23997108143542"></a><a name="p23997108143542"></a>用户以“key/value”的形式设置用于此作业的配置参数。目前支持的配置项请参考<a href="#table334825142314">表3</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -104,41 +104,57 @@
 
 **表 3**  conf参数说明
 
-<a name="table0995047105710"></a>
-<table><thead align="left"><tr id="row1899634735718"><th class="cellrowborder" valign="top" width="32.95%" id="mcps1.2.3.1.1"><p id="p499615477576"><a name="p499615477576"></a><a name="p499615477576"></a>参数</p>
+<a name="table334825142314"></a>
+<table><thead align="left"><tr id="row66396519230"><th class="cellrowborder" valign="top" width="29.43%" id="mcps1.2.4.1.1"><p id="p463913514234"><a name="p463913514234"></a><a name="p463913514234"></a>名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="67.05%" id="mcps1.2.3.1.2"><p id="p1599618476576"><a name="p1599618476576"></a><a name="p1599618476576"></a>说明</p>
+<th class="cellrowborder" valign="top" width="15.85%" id="mcps1.2.4.1.2"><p id="p2639158232"><a name="p2639158232"></a><a name="p2639158232"></a>默认值</p>
+</th>
+<th class="cellrowborder" valign="top" width="54.72%" id="mcps1.2.4.1.3"><p id="p1963920542313"><a name="p1963920542313"></a><a name="p1963920542313"></a>描述</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row4996647165719"><td class="cellrowborder" valign="top" width="32.95%" headers="mcps1.2.3.1.1 "><p id="p599684745716"><a name="p599684745716"></a><a name="p599684745716"></a>dli.sql.autoBroadcastJoinThreshold</p>
+<tbody><tr id="row1363935122313"><td class="cellrowborder" valign="top" width="29.43%" headers="mcps1.2.4.1.1 "><p id="p56404542316"><a name="p56404542316"></a><a name="p56404542316"></a>spark.sql.files.maxRecordsPerFile</p>
 </td>
-<td class="cellrowborder" valign="top" width="67.05%" headers="mcps1.2.3.1.2 "><p id="p1999664775720"><a name="p1999664775720"></a><a name="p1999664775720"></a>自动使用BroadcastJoin的数据量阈值。</p>
+<td class="cellrowborder" valign="top" width="15.85%" headers="mcps1.2.4.1.2 "><p id="p1864016519235"><a name="p1864016519235"></a><a name="p1864016519235"></a>0</p>
 </td>
-</tr>
-<tr id="row1399694719578"><td class="cellrowborder" valign="top" width="32.95%" headers="mcps1.2.3.1.1 "><p id="p13996347135720"><a name="p13996347135720"></a><a name="p13996347135720"></a>dli.sql.shuffle.partitions</p>
-</td>
-<td class="cellrowborder" valign="top" width="67.05%" headers="mcps1.2.3.1.2 "><p id="p1699684710571"><a name="p1699684710571"></a><a name="p1699684710571"></a>指定Shuffle过程中Partition的个数。</p>
+<td class="cellrowborder" valign="top" width="54.72%" headers="mcps1.2.4.1.3 "><p id="p186405592312"><a name="p186405592312"></a><a name="p186405592312"></a>要写入单个文件的最大记录数。如果该值为零或为负，则没有限制。</p>
 </td>
 </tr>
-<tr id="row20996647105715"><td class="cellrowborder" valign="top" width="32.95%" headers="mcps1.2.3.1.1 "><p id="p204131117801"><a name="p204131117801"></a><a name="p204131117801"></a>dli.sql.dynamicPartitionOverwrite.enabled</p>
+<tr id="row8640135142317"><td class="cellrowborder" valign="top" width="29.43%" headers="mcps1.2.4.1.1 "><p id="p664017510239"><a name="p664017510239"></a><a name="p664017510239"></a>spark.sql.autoBroadcastJoinThreshold</p>
 </td>
-<td class="cellrowborder" valign="top" width="67.05%" headers="mcps1.2.3.1.2 "><p id="p03876172011"><a name="p03876172011"></a><a name="p03876172011"></a>在动态分区模式时，只会重写查询中的数据涉及的分区，未涉及的分区不删除。</p>
+<td class="cellrowborder" valign="top" width="15.85%" headers="mcps1.2.4.1.2 "><p id="p1664018542314"><a name="p1664018542314"></a><a name="p1664018542314"></a>209715200</p>
 </td>
-</tr>
-<tr id="row79568586212"><td class="cellrowborder" valign="top" width="32.95%" headers="mcps1.2.3.1.1 "><p id="p199565584216"><a name="p199565584216"></a><a name="p199565584216"></a>dli.sql.files.maxPartitionBytes</p>
-</td>
-<td class="cellrowborder" valign="top" width="67.05%" headers="mcps1.2.3.1.2 "><p id="p895616583219"><a name="p895616583219"></a><a name="p895616583219"></a>最大分区字节数。设置一个分区可以处理的最大字节数，当一个文件或分区大小大于这个值时会被拆分到多个分区。</p>
-</td>
-</tr>
-<tr id="row3229125343618"><td class="cellrowborder" valign="top" width="32.95%" headers="mcps1.2.3.1.1 "><p id="p523012535362"><a name="p523012535362"></a><a name="p523012535362"></a>dli.sql.badRecordsPath</p>
-</td>
-<td class="cellrowborder" valign="top" width="67.05%" headers="mcps1.2.3.1.2 "><p id="p2230145383612"><a name="p2230145383612"></a><a name="p2230145383612"></a>INSERT类型作业执行过程中的bad records的存储目录。设置该配置项后，bad records不会插入到目标表。</p>
+<td class="cellrowborder" valign="top" width="54.72%" headers="mcps1.2.4.1.3 "><p id="p15640157231"><a name="p15640157231"></a><a name="p15640157231"></a>配置执行连接时显示所有工作节点的表的最大字节大小。通过将此值设置为<span class="parmvalue" id="parmvalue10816165872414"><a name="parmvalue10816165872414"></a><a name="parmvalue10816165872414"></a>“-1”</span>，可以禁用显示。</p>
+<div class="note" id="note1562136162513"><a name="note1562136162513"></a><a name="note1562136162513"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p166418366254"><a name="p166418366254"></a><a name="p166418366254"></a>当前仅支持运行命令<b><span class="cmdname" id="cmdname86941634172615"><a name="cmdname86941634172615"></a><a name="cmdname86941634172615"></a>ANALYZE TABLE COMPUTE statistics noscan</span></b>的配置单元元存储表，和直接根据数据文件计算统计信息的基于文件的数据源表。</p>
+</div></div>
 </td>
 </tr>
-<tr id="row181231180241"><td class="cellrowborder" valign="top" width="32.95%" headers="mcps1.2.3.1.1 "><p id="p182751545225"><a name="p182751545225"></a><a name="p182751545225"></a>dli.sql.sqlasync.enabled</p>
+<tr id="row364020522314"><td class="cellrowborder" valign="top" width="29.43%" headers="mcps1.2.4.1.1 "><p id="p146401254236"><a name="p146401254236"></a><a name="p146401254236"></a>spark.sql.shuffle.partitions</p>
 </td>
-<td class="cellrowborder" valign="top" width="67.05%" headers="mcps1.2.3.1.2 "><p id="p1527644152210"><a name="p1527644152210"></a><a name="p1527644152210"></a>DDL和DCL语句是否异步执行，值为<span class="parmvalue" id="parmvalue1941719505227"><a name="parmvalue1941719505227"></a><a name="parmvalue1941719505227"></a>“true”</span>时启用异步执行。</p>
+<td class="cellrowborder" valign="top" width="15.85%" headers="mcps1.2.4.1.2 "><p id="p176409516238"><a name="p176409516238"></a><a name="p176409516238"></a>4096</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.72%" headers="mcps1.2.4.1.3 "><p id="p186400514233"><a name="p186400514233"></a><a name="p186400514233"></a>为连接或聚合过滤数据时使用的默认分区数。</p>
+</td>
+</tr>
+<tr id="row1664018513237"><td class="cellrowborder" valign="top" width="29.43%" headers="mcps1.2.4.1.1 "><p id="p464005132313"><a name="p464005132313"></a><a name="p464005132313"></a>spark.sql.dynamicPartitionOverwrite.enabled</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.85%" headers="mcps1.2.4.1.2 "><p id="p4640185132312"><a name="p4640185132312"></a><a name="p4640185132312"></a>false</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.72%" headers="mcps1.2.4.1.3 "><p id="p96408511235"><a name="p96408511235"></a><a name="p96408511235"></a>在动态模式下，Spark不会删除前面的分区，只覆盖那些运行时没有写入数据的分区。</p>
+</td>
+</tr>
+<tr id="row56403510234"><td class="cellrowborder" valign="top" width="29.43%" headers="mcps1.2.4.1.1 "><p id="p106403522310"><a name="p106403522310"></a><a name="p106403522310"></a>spark.sql.files.maxPartitionBytes</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.85%" headers="mcps1.2.4.1.2 "><p id="p9640175112311"><a name="p9640175112311"></a><a name="p9640175112311"></a>134217728</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.72%" headers="mcps1.2.4.1.3 "><p id="p6640759237"><a name="p6640759237"></a><a name="p6640759237"></a>读取文件时要打包到单个分区中的最大字节数。</p>
+</td>
+</tr>
+<tr id="row1364118532316"><td class="cellrowborder" valign="top" width="29.43%" headers="mcps1.2.4.1.1 "><p id="p1641751235"><a name="p1641751235"></a><a name="p1641751235"></a>spark.sql.badRecordsPath</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.85%" headers="mcps1.2.4.1.2 "><p id="p206411656232"><a name="p206411656232"></a><a name="p206411656232"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.72%" headers="mcps1.2.4.1.3 "><p id="p46411552315"><a name="p46411552315"></a><a name="p46411552315"></a>Bad Records的路径。</p>
 </td>
 </tr>
 </tbody>
@@ -277,7 +293,7 @@
     }
     ```
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >调用API出错后，将不会返回上述结果，而是返回错误码和错误信息，详细介绍请参见[错误码](错误码.md)。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >调用API出错后，将不会返回上述结果，而是返回错误码和错误信息，详细介绍请参见[错误码](错误码.md)。
 
 
