@@ -59,13 +59,12 @@ SQL作业管理主要包括如下功能：
 </tr>
 <tr id="row1662880815250"><td class="cellrowborder" valign="top" width="21.18%" headers="mcps1.2.3.1.1 "><p id="p475621615250"><a name="p475621615250"></a><a name="p475621615250"></a>操作</p>
 </td>
-<td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><a name="ul181927155164"></a><a name="ul181927155164"></a><ul id="ul181927155164"><li>终止。<a name="ul968854181713"></a><a name="ul968854181713"></a><ul id="ul968854181713"><li>当作业状态在<span class="parmname" id="parmname1819151571614"><a name="parmname1819151571614"></a><a name="parmname1819151571614"></a>“提交中”</span>和<span class="parmname" id="parmname17191181517165"><a name="parmname17191181517165"></a><a name="parmname17191181517165"></a>“运行中”</span>时，<span class="uicontrol" id="uicontrol1319121521618"><a name="uicontrol1319121521618"></a><a name="uicontrol1319121521618"></a>“终止”</span>按钮才生效。</li><li>当作业状态为<span class="parmvalue" id="parmvalue101910157167"><a name="parmvalue101910157167"></a><a name="parmvalue101910157167"></a>“已成功”</span>、<span class="parmvalue" id="parmvalue19191131541612"><a name="parmvalue19191131541612"></a><a name="parmvalue19191131541612"></a>“已失败”</span>、<span class="parmvalue" id="parmvalue5191515141610"><a name="parmvalue5191515141610"></a><a name="parmvalue5191515141610"></a>“已取消”</span>的作业不能终止。</li><li>当<span class="uicontrol" id="uicontrol1319291521614"><a name="uicontrol1319291521614"></a><a name="uicontrol1319291521614"></a>“终止”</span>按钮为灰色时，表示无法执行终止操作。</li></ul>
+<td class="cellrowborder" valign="top" width="78.82000000000001%" headers="mcps1.2.3.1.2 "><a name="ul181927155164"></a><a name="ul181927155164"></a><ul id="ul181927155164"><li>终止：<a name="ul968854181713"></a><a name="ul968854181713"></a><ul id="ul968854181713"><li>当作业状态在<span class="parmname" id="parmname1819151571614"><a name="parmname1819151571614"></a><a name="parmname1819151571614"></a>“提交中”</span>和<span class="parmname" id="parmname17191181517165"><a name="parmname17191181517165"></a><a name="parmname17191181517165"></a>“运行中”</span>时，<span class="uicontrol" id="uicontrol1319121521618"><a name="uicontrol1319121521618"></a><a name="uicontrol1319121521618"></a>“终止”</span>按钮才生效。</li><li>当作业状态为<span class="parmvalue" id="parmvalue101910157167"><a name="parmvalue101910157167"></a><a name="parmvalue101910157167"></a>“已成功”</span>、<span class="parmvalue" id="parmvalue19191131541612"><a name="parmvalue19191131541612"></a><a name="parmvalue19191131541612"></a>“已失败”</span>、<span class="parmvalue" id="parmvalue5191515141610"><a name="parmvalue5191515141610"></a><a name="parmvalue5191515141610"></a>“已取消”</span>的作业不能终止。</li><li>当<span class="uicontrol" id="uicontrol1319291521614"><a name="uicontrol1319291521614"></a><a name="uicontrol1319291521614"></a>“终止”</span>按钮为灰色时，表示无法执行终止操作。</li></ul>
 </li></ul>
-<a name="ul1875134719182"></a><a name="ul1875134719182"></a><ul id="ul1875134719182"><li>SparkUI：单击后，将跳转至Spark任务运行情况界面。</li><li>QUERY作业和异步DDL作业除上述操作外，还包括：<a name="ul14392109145620"></a><a name="ul14392109145620"></a><ul id="ul14392109145620"><li>下载到本地<div class="note" id="note9951439175515"><a name="note9951439175515"></a><a name="note9951439175515"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p29975685513"><a name="p29975685513"></a><a name="p29975685513"></a>异步DDL和QUERY语句支持将结果下载到本地。操作如下：</p>
-<p id="p159623945518"><a name="p159623945518"></a><a name="p159623945518"></a>单击执行成功的异步DDL或QUERY语句“操作”列中的“下载到本地”，在提示窗口单击“确认”。此时，“操作”列中的“下载到本地”将变为“立即下载”。单击“立即下载”将对应结果下载到本地</p>
+<a name="ul1875134719182"></a><a name="ul1875134719182"></a><ul id="ul1875134719182"><li>SparkUI：单击后，将跳转至Spark任务运行情况界面。</li><li>QUERY作业和异步DDL作业除上述操作外，还包括：<a name="ul14392109145620"></a><a name="ul14392109145620"></a><ul id="ul14392109145620"><li>下载到本地：异步DDL和QUERY语句支持将结果下载到本地。具体操作请见<a href="#section1024752595416">下载到本地</a>。</li><li>查看结果：查看作业运行结果。</li><li>导出结果：将作业运行结果导出至用户创建的OBS桶中。具体操作请见<a href="#section1152211221244">导出结果</a>。</li></ul>
+</li><li>EXPORT作业除上述操作外，还包括：<a name="ul1384275714169"></a><a name="ul1384275714169"></a><ul id="ul1384275714169"><li>立即下载</li></ul>
+</li><li>归档日志：将作业日志保存到系统创建的DLI临时OBS数据桶中。</li><li>导出日志：将日志导出至用户创建的OBS桶中进行查看。当作业状态在“运行中”时，不能导出日志。<div class="note" id="note9317379552"><a name="note9317379552"></a><a name="note9317379552"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1633103716553"><a name="p1633103716553"></a><a name="p1633103716553"></a>用户需要具有创建OBS桶的权限。</p>
 </div></div>
-</li><li>更多：查看结果、导出结果、导出日志</li></ul>
-</li><li>EXPORT作业除上述操作外，还包括：<a name="ul5161951101019"></a><a name="ul5161951101019"></a><ul id="ul5161951101019"><li>立即下载</li></ul>
 </li></ul>
 </td>
 </tr>
@@ -98,6 +97,13 @@ SQL作业管理主要包括如下功能：
 
 在“SQL作业“页面，可单击“操作”列的“终止“，终止“提交中”或“运行中”的作业。
 
+## 下载到本地<a name="section1024752595416"></a>
+
+异步DDL和QUERY语句支持将结果下载到本地。操作如下：
+
+1.  单击执行成功的异步DDL或QUERY语句“操作”列中的“下载到本地”，在提示窗口单击“确认”。此时，“操作”列中的“下载到本地”将变为“立即下载”。
+2.  单击“立即下载”将对应结果下载到本地。
+
 ## 导出结果<a name="section1152211221244"></a>
 
 导出结果的操作入口有两个，分别在“SQL作业“和“SQL编辑器“页面。
@@ -105,8 +111,8 @@ SQL作业管理主要包括如下功能：
 -   在“作业管理”\>“SQL作业“页面，可单击对应作业“操作”列“更多”中的“导出结果“，可导出执行查询后的结果。
 -   在“SQL编辑器“页面，查询语句执行成功后，在“查看结果“页签右侧，单击“导出结果”，可导出执行查询后的结果。
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->若执行结果中无数值列，则无法导出结果。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>若执行结果中无数值列，则无法导出结果。
 
 **图 1**  导出结果<a name="fig914972320541"></a>  
 ![](figures/导出结果.png "导出结果")
@@ -122,7 +128,7 @@ SQL作业管理主要包括如下功能：
 </thead>
 <tbody><tr id="row55162434145333"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p21307823145337"><a name="p21307823145337"></a><a name="p21307823145337"></a>数据源格式</p>
 </td>
-<td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p48212085145337"><a name="p48212085145337"></a><a name="p48212085145337"></a>导出数据的文件格式。当前只支持csv格式。</p>
+<td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p48212085145337"><a name="p48212085145337"></a><a name="p48212085145337"></a>导出数据的文件格式。当前只支持json格式。</p>
 </td>
 </tr>
 <tr id="row33984858114535"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p1310090114535"><a name="p1310090114535"></a><a name="p1310090114535"></a>队列</p>
@@ -138,7 +144,7 @@ SQL作业管理主要包括如下功能：
 </tr>
 <tr id="row6367025143659"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p3346061614541"><a name="p3346061614541"></a><a name="p3346061614541"></a>存储路径</p>
 </td>
-<td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p595910502214"><a name="p595910502214"></a><a name="p595910502214"></a>输入或选择OBS的路径。路径须以<span class="parmname" id="parmname64912034172226"><a name="parmname64912034172226"></a><a name="parmname64912034172226"></a>“s3a://”</span>开头。</p>
+<td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p595910502214"><a name="p595910502214"></a><a name="p595910502214"></a>输入或选择OBS的路径。</p>
 <div class="note" id="note248113592220"><a name="note248113592220"></a><a name="note248113592220"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul2932240315"></a><a name="ul2932240315"></a><ul id="ul2932240315"><li>选择OBS桶后，请在文本框中定义文件夹名称，若该文件夹不存在，则会在OBS中创建。</li><li>文件夹名称不能包含下列特殊字符：\ / : * ? " &lt; &gt; |，并且不能以“.”开头和结尾。</li></ul>
 </div></div>
 </td>
@@ -152,7 +158,7 @@ SQL作业管理主要包括如下功能：
 <tr id="row1218154413337"><td class="cellrowborder" valign="top" width="13.8%" headers="mcps1.2.3.1.1 "><p id="p44720296144515"><a name="p44720296144515"></a><a name="p44720296144515"></a>高级选项</p>
 </td>
 <td class="cellrowborder" valign="top" width="86.2%" headers="mcps1.2.3.1.2 "><p id="p3371134919382"><a name="p3371134919382"></a><a name="p3371134919382"></a>表头：无/有</p>
-<p id="p1066994820411"><a name="p1066994820411"></a><a name="p1066994820411"></a>设置导出数据是否含表头。当<span class="parmname" id="parmname45661651135412"><a name="parmname45661651135412"></a><a name="parmname45661651135412"></a>“导出格式”</span>为<span class="parmvalue" id="parmvalue75661651195411"><a name="parmvalue75661651195411"></a><a name="parmvalue75661651195411"></a>“csv”</span>时该参数有效。当前只支持csv格式。</p>
+<p id="p1066994820411"><a name="p1066994820411"></a><a name="p1066994820411"></a>设置导出数据是否含表头。当<span class="parmname" id="parmname45661651135412"><a name="parmname45661651135412"></a><a name="parmname45661651135412"></a>“导出格式”</span>为<span class="parmvalue" id="parmvalue75661651195411"><a name="parmvalue75661651195411"></a><a name="parmvalue75661651195411"></a>“json”</span>时该参数有效。当前只支持json格式。</p>
 <p id="p1262888185911"><a name="p1262888185911"></a><a name="p1262888185911"></a>选中<span class="parmname" id="parmname15361161464715"><a name="parmname15361161464715"></a><a name="parmname15361161464715"></a>“高级选项”</span>，勾选<span class="parmname" id="parmname1353042144718"><a name="parmname1353042144718"></a><a name="parmname1353042144718"></a>“表头:无”</span>前的方框，<span class="parmname" id="parmname063982314814"><a name="parmname063982314814"></a><a name="parmname063982314814"></a>“表头:无”</span>显示为<span class="parmname" id="parmname1790112818475"><a name="parmname1790112818475"></a><a name="parmname1790112818475"></a>“表头:有”</span>，表示有表头；去勾选即为<span class="parmname" id="parmname171354719481"><a name="parmname171354719481"></a><a name="parmname171354719481"></a>“表头:无”</span>，表示无表头。</p>
 </td>
 </tr>

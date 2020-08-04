@@ -42,6 +42,28 @@ Flink模板管理主要包括如下功能：
 </tbody>
 </table>
 
+当前已有的样例模板包括如下场景：
+
+-   NGINX访问日志实时ETL入库
+-   套牌车辆检测
+-   电子围栏告警
+-   车辆偏航告警
+-   车辆超速告警
+-   流式随机森林异常检测
+-   CloudTable-DLI Flink-CloudTable
+-   DIS-DLI Flink-CSS\(Elasticsearch\)
+-   DIS-DLI Flink-CloudTable\(OpenTSDB\)
+-   DIS-DLI Flink-CloudTable
+-   DIS-DLI Flink-DCS
+-   DIS-DLI Flink-DDS\(MongoDB\)
+-   DIS-DLI Flink-DIS
+-   DIS-DLI Flink-OBS-DWS
+-   DIS-DLI Flink-SMN
+-   Kafka-DLI Flink-Kafka
+-   OBS-DLI Flink-RDS
+-   Stream-Join-Table\(DCS\)
+-   Stream-Join-Table\(RDS\)
+
 ## 自定义模板<a name="section4777152184911"></a>
 
 自定义模板列表显示所有的自定义作业模板，自定义模板列表参数说明如[表 1](#table17778105244916)所示。

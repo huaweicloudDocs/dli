@@ -4,12 +4,14 @@
 
 -   Flink SQL作业：使用SQL语句定义作业，可以提交到任意队列上。
 -   Flink自定义作业：基于Flink API的自定义Jar包作业，可以运行在独享队列上。
+-   Flink SQL边缘作业（公测）：通过SQL对边缘设备数据进行分析，可部署到边缘节点上。
 
 Flink作业管理主要包括如下功能：
 
 -   [Flink作业权限管理](Flink作业权限管理.md)
 -   [创建Flink SQL作业](创建Flink-SQL作业.md)
 -   [创建Flink自定义作业](创建Flink自定义作业.md)
+-   [创建Flink SQL边缘作业](创建Flink-SQL边缘作业.md)
 -   [调试作业](调试作业.md)
 -   [编辑作业](操作作业.md#section1950210297542)
 -   [启动作业](操作作业.md#section20957159163012)
@@ -23,6 +25,33 @@ Flink作业管理主要包括如下功能：
 -   [作业详情](作业详情.md)
 
 以及查看“使用指南”和“使用视频”。
+
+## 委托权限设置<a name="section12518143518488"></a>
+
+DLI执行Flink作业需要进行委托授权，可在第一次登录管理控制台时进行设置，也可在“全局配置”\>“[服务授权](服务授权.md)”中进行修改。
+
+具体权限如下：
+
+-   Tenant Administrator\(全局服务\)：DLI Flink作业访问和使用OBS或者DWS数据源、日志转储（包括桶授权）、开启checkpoint、作业导入导出等，需要获得访问和使用OBS（对象存储服务）的Tenant Administrator权限。
+
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >由于云服务缓存需要时间，该权限60分钟左右才能生效。
+
+-   DIS Administrator：DLI Flink作业访问和使用DIS数据源，需要获得访问和使用DIS（数据接入服务）的DIS Administrator权限。
+
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >由于云服务缓存需要时间，该权限30分钟左右才能生效。
+
+-   CloudTable Administrator：DLI Flink作业访问和使用CloudTable数据源，需要获得访问和使用CloudTable（表格存储服务）的CloudTable Administrator限。
+
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >由于云服务缓存需要时间，该权限3分钟左右才能生效。
+
+-   Tenant Administrator\(项目级\)：DLI 边缘Flink作业执行需要使用IEF（智能边缘平台）服务，IEF服务必须具有Tenant Administrator权限才能运行。使用其他必须具有Tenant Administrator权限才能运行的服务也需要获得该权限。
+
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >由于云服务缓存需要时间，该权限3分钟左右才能生效。
+
 
 ## 作业管理页面<a name="section12526165519235"></a>
 
@@ -56,7 +85,7 @@ Flink作业管理主要包括如下功能：
 <tr id="zh-cn_topic_0122090417_row31011923151038"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0122090417_p10671857151038"><a name="zh-cn_topic_0122090417_p10671857151038"></a><a name="zh-cn_topic_0122090417_p10671857151038"></a>状态</p>
 </td>
 <td class="cellrowborder" valign="top" width="83.93%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0122090417_p59114099151038"><a name="zh-cn_topic_0122090417_p59114099151038"></a><a name="zh-cn_topic_0122090417_p59114099151038"></a>作业的状态信息，包括：</p>
-<a name="zh-cn_topic_0122090417_ul32930526154023"></a><a name="zh-cn_topic_0122090417_ul32930526154023"></a><ul id="zh-cn_topic_0122090417_ul32930526154023"><li>草稿</li><li>运行中</li><li>空闲</li><li>已完成</li><li>已停止</li><li>提交中</li><li>提交失败</li><li>运行异常</li><li>停止中</li><li>停止失败</li><li>因欠费被停止</li><li>欠费作业恢复中</li><li>保存点创建中</li></ul>
+<a name="zh-cn_topic_0122090417_ul32930526154023"></a><a name="zh-cn_topic_0122090417_ul32930526154023"></a><ul id="zh-cn_topic_0122090417_ul32930526154023"><li>草稿</li><li>提交中</li><li>提交失败</li><li>运行中（开始计费，提交作业后，返回正常结果）</li><li>运行异常（停止计费。作业发生运行时异常，停止运行作业）</li><li>停止中</li><li>已停止</li><li>停止失败</li><li>保存点创建中</li><li>因欠费被停止（结束计费。用户账户欠费，作业停止）</li><li>欠费作业恢复中（用户账户欠费，账户充值，作业恢复中）</li><li>已完成</li></ul>
 </td>
 </tr>
 <tr id="zh-cn_topic_0122090417_row36301606171658"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0122090417_p14394959151048"><a name="zh-cn_topic_0122090417_p14394959151048"></a><a name="zh-cn_topic_0122090417_p14394959151048"></a>描述</p>

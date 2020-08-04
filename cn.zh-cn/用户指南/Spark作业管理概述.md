@@ -13,8 +13,8 @@ Spark作业管理主要包括如下功能：
 
 在总览页面单击“Spark作业”简介，或在左侧导航栏单击“作业管理”\>“Spark作业”，可进入Spark作业管理页面。Spark作业管理页面显示所有的Spark作业，作业数量较多时，系统分页显示，您可以查看任何状态下的作业。
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->作业执行成功后，作业记录只保存6小时。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>作业执行成功后，作业记录只保存6小时。
 
 **表 1**  作业管理参数
 
@@ -65,7 +65,9 @@ Spark作业管理主要包括如下功能：
 </td>
 <td class="cellrowborder" valign="top" width="83.93%" headers="mcps1.2.3.1.2 "><a name="zh-cn_topic_0122090417_ul181927155164"></a><a name="zh-cn_topic_0122090417_ul181927155164"></a><ul id="zh-cn_topic_0122090417_ul181927155164"><li>编辑：可修改当前作业配置，重新执行作业。</li><li>SparkUI：单击后，将跳转至Spark任务运行情况界面。<div class="note" id="note1149352315379"><a name="note1149352315379"></a><a name="note1149352315379"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p44941523123719"><a name="p44941523123719"></a><a name="p44941523123719"></a>状态为“启动中”的作业不能查看SparkUI界面。</p>
 </div></div>
-</li><li>终止作业：取消当前作业。</li><li>提交日志：查看提交作业的日志。</li><li>运行日志：查看运行作业的日志。</li><li>导出日志：将日志导出至OBS桶中。当作业状态在“运行中”时，不能导出日志。</li></ul>
+</li><li>终止作业：取消当前作业。</li><li>提交日志：查看提交作业的日志。</li><li>Driver日志：查看运行作业的日志。</li><li>归档日志：将作业日志保存到系统创建的DLI临时数据桶中。</li><li>导出日志：将日志导出至用户创建的OBS桶中进行查看。当作业状态在“运行中”时，不能导出日志。<div class="note" id="note9317379552"><a name="note9317379552"></a><a name="note9317379552"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1633103716553"><a name="p1633103716553"></a><a name="p1633103716553"></a>用户需要具有创建OBS桶的权限。</p>
+</div></div>
+</li></ul>
 </td>
 </tr>
 </tbody>
