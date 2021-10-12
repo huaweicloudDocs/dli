@@ -49,7 +49,7 @@
 </tr>
 <tr id="row11996916275"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p99961416375"><a name="p99961416375"></a><a name="p99961416375"></a>作业相关API</p>
 </td>
-<td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p169961916475"><a name="p169961916475"></a><a name="p169961916475"></a>包括导入数据、导出数据、提交SQL作业、取消作业、查询所有作业、查询作业结果、查询作业状态、查询作业详细信息、检查SQL语法和导出查询结果。</p>
+<td class="cellrowborder" valign="top" headers="mcps1.2.4.1.2 "><p id="p169961916475"><a name="p169961916475"></a><a name="p169961916475"></a>包括导入数据、导出数据、提交SQL作业、取消作业、查询所有作业、预览作业结果、查询作业状态、查询作业详细信息、检查SQL语法和导出查询结果。</p>
 </td>
 </tr>
 <tr id="row123631363115"><td class="cellrowborder" valign="top" headers="mcps1.2.4.1.1 "><p id="p14363123614119"><a name="p14363123614119"></a><a name="p14363123614119"></a>上传数据相关API</p>
@@ -61,7 +61,7 @@
 </td>
 <td class="cellrowborder" valign="top" width="15.22%" headers="mcps1.2.4.1.2 "><p id="p173201528144919"><a name="p173201528144919"></a><a name="p173201528144919"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="65.8%" headers="mcps1.2.4.1.3 "><p id="p1320202812495"><a name="p1320202812495"></a><a name="p1320202812495"></a>包括OBS授权给DLI服务、新建SQL作业、更新SQL作业、新建Flink自定义作业、更新Flink自定义作业、批量运行作业、查询作业列表、查询作业详情、查询作业执行计划、查询作业监控信息、查询作业APIG网关服务访问地址、批量停止作业、删除作业、批量删除作业、导出Flink作业、导入Flink作业、创建IEF消息通道、边缘Flink作业状态上报、边缘Flink作业Action回调、IEF系统事件上报。</p>
+<td class="cellrowborder" valign="top" width="65.8%" headers="mcps1.2.4.1.3 "><p id="p1320202812495"><a name="p1320202812495"></a><a name="p1320202812495"></a>包括OBS授权给DLI服务、新建SQL作业、更新SQL作业、新建Flink自定义作业、更新Flink自定义作业、批量运行作业、查询作业列表、查询作业详情、查询作业执行计划、查询作业监控信息、批量停止作业、删除作业、批量删除作业、导出Flink作业、导入Flink作业、创建IEF消息通道、边缘Flink作业状态上报、边缘Flink作业Action回调、IEF系统事件上报。</p>
 </td>
 </tr>
 <tr id="row18579133720020"><td class="cellrowborder" rowspan="3" valign="top" width="18.98%" headers="mcps1.2.4.1.1 "><p id="p65781737203"><a name="p65781737203"></a><a name="p65781737203"></a>Spark作业相关API</p>
