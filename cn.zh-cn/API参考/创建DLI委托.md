@@ -4,6 +4,10 @@
 
 该API用于创建DLI用户委托。
 
+## 调试<a name="section556523314214"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DLI&api=ShowDliAgency)中调试该接口。
+
 ## URI<a name="s9e1b8ec5b57c422a942b19835da7d66e"></a>
 
 -   URI格式：
@@ -15,19 +19,23 @@
     **表 1**  URI参数
 
     <a name="zh-cn_topic_0069077803_table60779388"></a>
-    <table><thead align="left"><tr id="zh-cn_topic_0069077803_row61411666"><th class="cellrowborder" valign="top" width="15.03%" id="mcps1.2.4.1.1"><p id="a420a62a594f9410eaea229ffc8037a61"><a name="a420a62a594f9410eaea229ffc8037a61"></a><a name="a420a62a594f9410eaea229ffc8037a61"></a>名称</p>
+    <table><thead align="left"><tr id="zh-cn_topic_0069077803_row61411666"><th class="cellrowborder" valign="top" width="13.900000000000002%" id="mcps1.2.5.1.1"><p id="a420a62a594f9410eaea229ffc8037a61"><a name="a420a62a594f9410eaea229ffc8037a61"></a><a name="a420a62a594f9410eaea229ffc8037a61"></a>参数名称</p>
     </th>
-    <th class="cellrowborder" valign="top" width="11.27%" id="mcps1.2.4.1.2"><p id="zh-cn_topic_0069077803_p873025824211"><a name="zh-cn_topic_0069077803_p873025824211"></a><a name="zh-cn_topic_0069077803_p873025824211"></a>是否必选</p>
+    <th class="cellrowborder" valign="top" width="10.42%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0069077803_p873025824211"><a name="zh-cn_topic_0069077803_p873025824211"></a><a name="zh-cn_topic_0069077803_p873025824211"></a>是否必选</p>
     </th>
-    <th class="cellrowborder" valign="top" width="73.7%" id="mcps1.2.4.1.3"><p id="a692d3cd97b464aed90ba6d841900a4a5"><a name="a692d3cd97b464aed90ba6d841900a4a5"></a><a name="a692d3cd97b464aed90ba6d841900a4a5"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="11.03%" id="mcps1.2.5.1.3"><p id="p7982123815147"><a name="p7982123815147"></a><a name="p7982123815147"></a>参数类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="64.64999999999999%" id="mcps1.2.5.1.4"><p id="a692d3cd97b464aed90ba6d841900a4a5"><a name="a692d3cd97b464aed90ba6d841900a4a5"></a><a name="a692d3cd97b464aed90ba6d841900a4a5"></a>说明</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="zh-cn_topic_0069077803_row48589216"><td class="cellrowborder" valign="top" width="15.03%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0069077803_p43412436"><a name="zh-cn_topic_0069077803_p43412436"></a><a name="zh-cn_topic_0069077803_p43412436"></a>project_id</p>
+    <tbody><tr id="zh-cn_topic_0069077803_row48589216"><td class="cellrowborder" valign="top" width="13.900000000000002%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077803_p43412436"><a name="zh-cn_topic_0069077803_p43412436"></a><a name="zh-cn_topic_0069077803_p43412436"></a>project_id</p>
     </td>
-    <td class="cellrowborder" valign="top" width="11.27%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0069077803_p26746391"><a name="zh-cn_topic_0069077803_p26746391"></a><a name="zh-cn_topic_0069077803_p26746391"></a>是</p>
+    <td class="cellrowborder" valign="top" width="10.42%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0069077803_p26746391"><a name="zh-cn_topic_0069077803_p26746391"></a><a name="zh-cn_topic_0069077803_p26746391"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="73.7%" headers="mcps1.2.4.1.3 "><p id="p1310472724012"><a name="p1310472724012"></a><a name="p1310472724012"></a>项目编号，用于资源隔离。获取方式请参考<a href="获取项目ID.md">获取项目ID</a>。</p>
+    <td class="cellrowborder" valign="top" width="11.03%" headers="mcps1.2.5.1.3 "><p id="p79838386148"><a name="p79838386148"></a><a name="p79838386148"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="64.64999999999999%" headers="mcps1.2.5.1.4 "><p id="p1310472724012"><a name="p1310472724012"></a><a name="p1310472724012"></a>项目编号，用于资源隔离。获取方式请参考<a href="获取项目ID.md">获取项目ID</a>。</p>
     </td>
     </tr>
     </tbody>
@@ -39,23 +47,23 @@
 **表 2**  请求参数
 
 <a name="table127313925813"></a>
-<table><thead align="left"><tr id="row137326917589"><th class="cellrowborder" valign="top" width="8.74%" id="mcps1.2.5.1.1"><p id="p12732995582"><a name="p12732995582"></a><a name="p12732995582"></a>名称</p>
+<table><thead align="left"><tr id="row137326917589"><th class="cellrowborder" valign="top" width="10.94%" id="mcps1.2.5.1.1"><p id="p12732995582"><a name="p12732995582"></a><a name="p12732995582"></a>参数名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="9.49%" id="mcps1.2.5.1.2"><p id="p1573239185818"><a name="p1573239185818"></a><a name="p1573239185818"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="11.53%" id="mcps1.2.5.1.2"><p id="p1573239185818"><a name="p1573239185818"></a><a name="p1573239185818"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="13.139999999999999%" id="mcps1.2.5.1.3"><p id="p144204427586"><a name="p144204427586"></a><a name="p144204427586"></a>参数类型</p>
+<th class="cellrowborder" valign="top" width="15.49%" id="mcps1.2.5.1.3"><p id="p144204427586"><a name="p144204427586"></a><a name="p144204427586"></a>参数类型</p>
 </th>
-<th class="cellrowborder" valign="top" width="68.63%" id="mcps1.2.5.1.4"><p id="p1473219916588"><a name="p1473219916588"></a><a name="p1473219916588"></a>说明</p>
+<th class="cellrowborder" valign="top" width="62.03999999999999%" id="mcps1.2.5.1.4"><p id="p1473219916588"><a name="p1473219916588"></a><a name="p1473219916588"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row273218965810"><td class="cellrowborder" valign="top" width="8.74%" headers="mcps1.2.5.1.1 "><p id="p1144183305813"><a name="p1144183305813"></a><a name="p1144183305813"></a>roles</p>
+<tbody><tr id="row273218965810"><td class="cellrowborder" valign="top" width="10.94%" headers="mcps1.2.5.1.1 "><p id="p1144183305813"><a name="p1144183305813"></a><a name="p1144183305813"></a>roles</p>
 </td>
-<td class="cellrowborder" valign="top" width="9.49%" headers="mcps1.2.5.1.2 "><p id="p1144633185817"><a name="p1144633185817"></a><a name="p1144633185817"></a>是</p>
+<td class="cellrowborder" valign="top" width="11.53%" headers="mcps1.2.5.1.2 "><p id="p1144633185817"><a name="p1144633185817"></a><a name="p1144633185817"></a>是</p>
 </td>
-<td class="cellrowborder" valign="top" width="13.139999999999999%" headers="mcps1.2.5.1.3 "><p id="p184201442105819"><a name="p184201442105819"></a><a name="p184201442105819"></a>Array of String</p>
+<td class="cellrowborder" valign="top" width="15.49%" headers="mcps1.2.5.1.3 "><p id="p184201442105819"><a name="p184201442105819"></a><a name="p184201442105819"></a>Array of Strings</p>
 </td>
-<td class="cellrowborder" valign="top" width="68.63%" headers="mcps1.2.5.1.4 "><p id="p193112404590"><a name="p193112404590"></a><a name="p193112404590"></a>角色。目前只支持：obs_adm、dis_adm、ctable_adm、vpc_netadm、smn_adm、te_admin。</p>
+<td class="cellrowborder" valign="top" width="62.03999999999999%" headers="mcps1.2.5.1.4 "><p id="p193112404590"><a name="p193112404590"></a><a name="p193112404590"></a>角色。目前只支持：obs_adm、dis_adm、ctable_adm、vpc_netadm、smn_adm、te_admin。</p>
 </td>
 </tr>
 </tbody>
@@ -66,30 +74,30 @@
 **表 3**  响应参数
 
 <a name="zh-cn_topic_0069077927_table56638444"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0069077927_row48911609"><th class="cellrowborder" valign="top" width="19.79%" id="mcps1.2.5.1.1"><p id="ae076f6b3f1bf463b9cc087fc566253d5"><a name="ae076f6b3f1bf463b9cc087fc566253d5"></a><a name="ae076f6b3f1bf463b9cc087fc566253d5"></a>参数</p>
+<table><thead align="left"><tr id="zh-cn_topic_0069077927_row48911609"><th class="cellrowborder" valign="top" width="16.88%" id="mcps1.2.5.1.1"><p id="ae076f6b3f1bf463b9cc087fc566253d5"><a name="ae076f6b3f1bf463b9cc087fc566253d5"></a><a name="ae076f6b3f1bf463b9cc087fc566253d5"></a>参数名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="9.43%" id="mcps1.2.5.1.2"><p id="p12583123083811"><a name="p12583123083811"></a><a name="p12583123083811"></a>是否必选</p>
+<th class="cellrowborder" valign="top" width="10.83%" id="mcps1.2.5.1.2"><p id="p12583123083811"><a name="p12583123083811"></a><a name="p12583123083811"></a>是否必选</p>
 </th>
-<th class="cellrowborder" valign="top" width="9.9%" id="mcps1.2.5.1.3"><p id="a59685f4525af4d82a623288ff8ccb0f4"><a name="a59685f4525af4d82a623288ff8ccb0f4"></a><a name="a59685f4525af4d82a623288ff8ccb0f4"></a>参数类型</p>
+<th class="cellrowborder" valign="top" width="11.41%" id="mcps1.2.5.1.3"><p id="a59685f4525af4d82a623288ff8ccb0f4"><a name="a59685f4525af4d82a623288ff8ccb0f4"></a><a name="a59685f4525af4d82a623288ff8ccb0f4"></a>参数类型</p>
 </th>
 <th class="cellrowborder" valign="top" width="60.88%" id="mcps1.2.5.1.4"><p id="zh-cn_topic_0069077927_p632718127368"><a name="zh-cn_topic_0069077927_p632718127368"></a><a name="zh-cn_topic_0069077927_p632718127368"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="zh-cn_topic_0069077927_row27919264"><td class="cellrowborder" valign="top" width="19.79%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077927_p46867877"><a name="zh-cn_topic_0069077927_p46867877"></a><a name="zh-cn_topic_0069077927_p46867877"></a>is_success</p>
+<tbody><tr id="zh-cn_topic_0069077927_row27919264"><td class="cellrowborder" valign="top" width="16.88%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077927_p46867877"><a name="zh-cn_topic_0069077927_p46867877"></a><a name="zh-cn_topic_0069077927_p46867877"></a>is_success</p>
 </td>
-<td class="cellrowborder" valign="top" width="9.43%" headers="mcps1.2.5.1.2 "><p id="p9584230133817"><a name="p9584230133817"></a><a name="p9584230133817"></a>否</p>
+<td class="cellrowborder" valign="top" width="10.83%" headers="mcps1.2.5.1.2 "><p id="p9584230133817"><a name="p9584230133817"></a><a name="p9584230133817"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="9.9%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077927_p7327597"><a name="zh-cn_topic_0069077927_p7327597"></a><a name="zh-cn_topic_0069077927_p7327597"></a>Boolean</p>
+<td class="cellrowborder" valign="top" width="11.41%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077927_p7327597"><a name="zh-cn_topic_0069077927_p7327597"></a><a name="zh-cn_topic_0069077927_p7327597"></a>Boolean</p>
 </td>
 <td class="cellrowborder" valign="top" width="60.88%" headers="mcps1.2.5.1.4 "><p id="zh-cn_topic_0069077927_p56664447"><a name="zh-cn_topic_0069077927_p56664447"></a><a name="zh-cn_topic_0069077927_p56664447"></a>请求执行是否成功。<span class="parmvalue" id="parmvalue15544115155755"><a name="parmvalue15544115155755"></a><a name="parmvalue15544115155755"></a>“true”</span>表示请求执行成功。</p>
 </td>
 </tr>
-<tr id="zh-cn_topic_0069077927_row40217981"><td class="cellrowborder" valign="top" width="19.79%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077927_p36431005"><a name="zh-cn_topic_0069077927_p36431005"></a><a name="zh-cn_topic_0069077927_p36431005"></a>message</p>
+<tr id="zh-cn_topic_0069077927_row40217981"><td class="cellrowborder" valign="top" width="16.88%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077927_p36431005"><a name="zh-cn_topic_0069077927_p36431005"></a><a name="zh-cn_topic_0069077927_p36431005"></a>message</p>
 </td>
-<td class="cellrowborder" valign="top" width="9.43%" headers="mcps1.2.5.1.2 "><p id="p95842301382"><a name="p95842301382"></a><a name="p95842301382"></a>否</p>
+<td class="cellrowborder" valign="top" width="10.83%" headers="mcps1.2.5.1.2 "><p id="p95842301382"><a name="p95842301382"></a><a name="p95842301382"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="9.9%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077927_p49163111"><a name="zh-cn_topic_0069077927_p49163111"></a><a name="zh-cn_topic_0069077927_p49163111"></a>String</p>
+<td class="cellrowborder" valign="top" width="11.41%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0069077927_p49163111"><a name="zh-cn_topic_0069077927_p49163111"></a><a name="zh-cn_topic_0069077927_p49163111"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="60.88%" headers="mcps1.2.5.1.4 "><p id="a4fa277540d3e42e48cec2027a36ca6bc"><a name="a4fa277540d3e42e48cec2027a36ca6bc"></a><a name="a4fa277540d3e42e48cec2027a36ca6bc"></a>系统提示信息，执行成功时，信息可能为空。</p>
 </td>
@@ -100,28 +108,18 @@
 ## 示例<a name="section17446171164041"></a>
 
 -   请求样例：
-    -   **描述:**
 
-        创建DLI用户委托。
-
-    -   **示例URL:**
-
-        POST https://dli.cn-north-1.myhuaweicloud.com/v2/330e068af1334c9782f4226acc00a2e2/agency
-
-    -   **值:**
-
-        ```
-        {
-            "roles": [
-                "ctable_adm",
-                "vpc_netadm",
-                "dis_adm",
-                "smn_adm",
-                "obs_adm"
-            ]
-        }
-        ```
-
+    ```
+    {
+        "roles": [
+            "ctable_adm",
+            "vpc_netadm",
+            "dis_adm",
+            "smn_adm",
+            "obs_adm"
+        ]
+    }
+    ```
 
 -   成功响应样例：
 
