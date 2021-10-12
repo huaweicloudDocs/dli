@@ -10,13 +10,17 @@
 
 -   [查询作业状态](查询作业状态.md)
 -   [查询作业详细信息](查询作业详细信息.md)
--   [查询作业结果（推荐）](查询作业结果（推荐）.md)
+-   [查询作业结果-方式二（废弃）](查询作业结果-方式二（废弃）.md)
 -   [导出查询结果](导出查询结果.md)
 -   [查询所有作业](查询所有作业.md)
 -   [取消作业（推荐）](取消作业（推荐）.md)
 
 >![](public_sys-resources/icon-note.gif) **说明：** 
 >该API当响应消息中“job\_type“为“DCL“时，为同步操作。
+
+## 调试<a name="section556523314214"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DLI&api=RunJob)中调试该接口。
 
 ## URI<a name="s807a09edd221483999c7c51233072a4a"></a>
 
@@ -29,19 +33,23 @@
     **表 1**  URI参数
 
     <a name="zh-cn_topic_0069077806_table9770605"></a>
-    <table><thead align="left"><tr id="zh-cn_topic_0069077806_row35653836"><th class="cellrowborder" valign="top" width="11.881188118811881%" id="mcps1.2.4.1.1"><p id="zh-cn_topic_0069077806_p14983541266"><a name="zh-cn_topic_0069077806_p14983541266"></a><a name="zh-cn_topic_0069077806_p14983541266"></a>名称</p>
+    <table><thead align="left"><tr id="zh-cn_topic_0069077806_row35653836"><th class="cellrowborder" valign="top" width="14.27%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0069077806_p14983541266"><a name="zh-cn_topic_0069077806_p14983541266"></a><a name="zh-cn_topic_0069077806_p14983541266"></a>参数名称</p>
     </th>
-    <th class="cellrowborder" valign="top" width="13.8019801980198%" id="mcps1.2.4.1.2"><p id="zh-cn_topic_0069077806_p9981547619"><a name="zh-cn_topic_0069077806_p9981547619"></a><a name="zh-cn_topic_0069077806_p9981547619"></a>是否必选</p>
+    <th class="cellrowborder" valign="top" width="11.16%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0069077806_p9981547619"><a name="zh-cn_topic_0069077806_p9981547619"></a><a name="zh-cn_topic_0069077806_p9981547619"></a>是否必选</p>
     </th>
-    <th class="cellrowborder" valign="top" width="74.31683168316832%" id="mcps1.2.4.1.3"><p id="a9de737854caf4be3a07db76909948f18"><a name="a9de737854caf4be3a07db76909948f18"></a><a name="a9de737854caf4be3a07db76909948f18"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="11.3%" id="mcps1.2.5.1.3"><p id="p15306165714487"><a name="p15306165714487"></a><a name="p15306165714487"></a>参数类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="63.27%" id="mcps1.2.5.1.4"><p id="a9de737854caf4be3a07db76909948f18"><a name="a9de737854caf4be3a07db76909948f18"></a><a name="a9de737854caf4be3a07db76909948f18"></a>说明</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row5320171434012"><td class="cellrowborder" valign="top" width="11.881188118811881%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0069077803_p43412436"><a name="zh-cn_topic_0069077803_p43412436"></a><a name="zh-cn_topic_0069077803_p43412436"></a>project_id</p>
+    <tbody><tr id="row5320171434012"><td class="cellrowborder" valign="top" width="14.27%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077803_p43412436"><a name="zh-cn_topic_0069077803_p43412436"></a><a name="zh-cn_topic_0069077803_p43412436"></a>project_id</p>
     </td>
-    <td class="cellrowborder" valign="top" width="13.8019801980198%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0069077803_p26746391"><a name="zh-cn_topic_0069077803_p26746391"></a><a name="zh-cn_topic_0069077803_p26746391"></a>是</p>
+    <td class="cellrowborder" valign="top" width="11.16%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0069077803_p26746391"><a name="zh-cn_topic_0069077803_p26746391"></a><a name="zh-cn_topic_0069077803_p26746391"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="74.31683168316832%" headers="mcps1.2.4.1.3 "><p id="p1310472724012"><a name="p1310472724012"></a><a name="p1310472724012"></a>项目编号，用于资源隔离。获取方式请参考<a href="获取项目ID.md">获取项目ID</a>。</p>
+    <td class="cellrowborder" valign="top" width="11.3%" headers="mcps1.2.5.1.3 "><p id="p1930695754816"><a name="p1930695754816"></a><a name="p1930695754816"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="63.27%" headers="mcps1.2.5.1.4 "><p id="p1310472724012"><a name="p1310472724012"></a><a name="p1310472724012"></a>项目编号，用于资源隔离。获取方式请参考<a href="获取项目ID.md">获取项目ID</a>。</p>
     </td>
     </tr>
     </tbody>
@@ -53,7 +61,7 @@
 **表 2**  请求参数
 
 <a name="table6376584143542"></a>
-<table><thead align="left"><tr id="row19110893143542"><th class="cellrowborder" valign="top" width="14.549999999999999%" id="mcps1.2.5.1.1"><p id="p42934984143542"><a name="p42934984143542"></a><a name="p42934984143542"></a>参数</p>
+<table><thead align="left"><tr id="row19110893143542"><th class="cellrowborder" valign="top" width="14.549999999999999%" id="mcps1.2.5.1.1"><p id="p42934984143542"><a name="p42934984143542"></a><a name="p42934984143542"></a>参数名称</p>
 </th>
 <th class="cellrowborder" valign="top" width="10.79%" id="mcps1.2.5.1.2"><p id="p55181642143542"><a name="p55181642143542"></a><a name="p55181642143542"></a>是否必选</p>
 </th>
@@ -94,9 +102,18 @@
 </td>
 <td class="cellrowborder" valign="top" width="10.79%" headers="mcps1.2.5.1.2 "><p id="p23167106143542"><a name="p23167106143542"></a><a name="p23167106143542"></a>否</p>
 </td>
-<td class="cellrowborder" valign="top" width="16.3%" headers="mcps1.2.5.1.3 "><p id="p64596322143542"><a name="p64596322143542"></a><a name="p64596322143542"></a>Array of objects</p>
+<td class="cellrowborder" valign="top" width="16.3%" headers="mcps1.2.5.1.3 "><p id="p64596322143542"><a name="p64596322143542"></a><a name="p64596322143542"></a>Array of Strings</p>
 </td>
 <td class="cellrowborder" valign="top" width="58.36%" headers="mcps1.2.5.1.4 "><p id="p23997108143542"><a name="p23997108143542"></a><a name="p23997108143542"></a>用户以“key/value”的形式设置用于此作业的配置参数。目前支持的配置项请参考<a href="#table334825142314">表3</a>。</p>
+</td>
+</tr>
+<tr id="row12919491403"><td class="cellrowborder" valign="top" width="14.549999999999999%" headers="mcps1.2.5.1.1 "><p id="p49794914011"><a name="p49794914011"></a><a name="p49794914011"></a>tags</p>
+</td>
+<td class="cellrowborder" valign="top" width="10.79%" headers="mcps1.2.5.1.2 "><p id="p597149114018"><a name="p597149114018"></a><a name="p597149114018"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.3%" headers="mcps1.2.5.1.3 "><p id="p451066135816"><a name="p451066135816"></a><a name="p451066135816"></a>Array of Objects</p>
+</td>
+<td class="cellrowborder" valign="top" width="58.36%" headers="mcps1.2.5.1.4 "><p id="p55101469587"><a name="p55101469587"></a><a name="p55101469587"></a>作业的标签。具体请参考<a href="#table9391124139">表4</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -105,56 +122,104 @@
 **表 3**  conf参数说明
 
 <a name="table334825142314"></a>
-<table><thead align="left"><tr id="row66396519230"><th class="cellrowborder" valign="top" width="29.43%" id="mcps1.2.4.1.1"><p id="p463913514234"><a name="p463913514234"></a><a name="p463913514234"></a>名称</p>
+<table><thead align="left"><tr id="row66396519230"><th class="cellrowborder" valign="top" width="29.43%" id="mcps1.2.4.1.1"><p id="p463913514234"><a name="p463913514234"></a><a name="p463913514234"></a>参数名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="15.85%" id="mcps1.2.4.1.2"><p id="p2639158232"><a name="p2639158232"></a><a name="p2639158232"></a>默认值</p>
+<th class="cellrowborder" valign="top" width="15.83%" id="mcps1.2.4.1.2"><p id="p2639158232"><a name="p2639158232"></a><a name="p2639158232"></a>默认值</p>
 </th>
-<th class="cellrowborder" valign="top" width="54.72%" id="mcps1.2.4.1.3"><p id="p1963920542313"><a name="p1963920542313"></a><a name="p1963920542313"></a>描述</p>
+<th class="cellrowborder" valign="top" width="54.74%" id="mcps1.2.4.1.3"><p id="p1963920542313"><a name="p1963920542313"></a><a name="p1963920542313"></a>描述</p>
 </th>
 </tr>
 </thead>
 <tbody><tr id="row1363935122313"><td class="cellrowborder" valign="top" width="29.43%" headers="mcps1.2.4.1.1 "><p id="p56404542316"><a name="p56404542316"></a><a name="p56404542316"></a>spark.sql.files.maxRecordsPerFile</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.85%" headers="mcps1.2.4.1.2 "><p id="p1864016519235"><a name="p1864016519235"></a><a name="p1864016519235"></a>0</p>
+<td class="cellrowborder" valign="top" width="15.83%" headers="mcps1.2.4.1.2 "><p id="p1864016519235"><a name="p1864016519235"></a><a name="p1864016519235"></a>0</p>
 </td>
-<td class="cellrowborder" valign="top" width="54.72%" headers="mcps1.2.4.1.3 "><p id="p186405592312"><a name="p186405592312"></a><a name="p186405592312"></a>要写入单个文件的最大记录数。如果该值为零或为负，则没有限制。</p>
+<td class="cellrowborder" valign="top" width="54.74%" headers="mcps1.2.4.1.3 "><p id="p186405592312"><a name="p186405592312"></a><a name="p186405592312"></a>要写入单个文件的最大记录数。如果该值为零或为负，则没有限制。</p>
 </td>
 </tr>
 <tr id="row8640135142317"><td class="cellrowborder" valign="top" width="29.43%" headers="mcps1.2.4.1.1 "><p id="p664017510239"><a name="p664017510239"></a><a name="p664017510239"></a>spark.sql.autoBroadcastJoinThreshold</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.85%" headers="mcps1.2.4.1.2 "><p id="p1664018542314"><a name="p1664018542314"></a><a name="p1664018542314"></a>209715200</p>
+<td class="cellrowborder" valign="top" width="15.83%" headers="mcps1.2.4.1.2 "><p id="p1664018542314"><a name="p1664018542314"></a><a name="p1664018542314"></a>209715200</p>
 </td>
-<td class="cellrowborder" valign="top" width="54.72%" headers="mcps1.2.4.1.3 "><p id="p15640157231"><a name="p15640157231"></a><a name="p15640157231"></a>配置执行连接时显示所有工作节点的表的最大字节大小。通过将此值设置为<span class="parmvalue" id="parmvalue10816165872414"><a name="parmvalue10816165872414"></a><a name="parmvalue10816165872414"></a>“-1”</span>，可以禁用显示。</p>
+<td class="cellrowborder" valign="top" width="54.74%" headers="mcps1.2.4.1.3 "><p id="p15640157231"><a name="p15640157231"></a><a name="p15640157231"></a>配置执行连接时显示所有工作节点的表的最大字节大小。通过将此值设置为<span class="parmvalue" id="parmvalue10816165872414"><a name="parmvalue10816165872414"></a><a name="parmvalue10816165872414"></a>“-1”</span>，可以禁用显示。</p>
 <div class="note" id="note1562136162513"><a name="note1562136162513"></a><a name="note1562136162513"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p166418366254"><a name="p166418366254"></a><a name="p166418366254"></a>当前仅支持运行命令<b><span class="cmdname" id="cmdname86941634172615"><a name="cmdname86941634172615"></a><a name="cmdname86941634172615"></a>ANALYZE TABLE COMPUTE statistics noscan</span></b>的配置单元元存储表，和直接根据数据文件计算统计信息的基于文件的数据源表。</p>
 </div></div>
 </td>
 </tr>
 <tr id="row364020522314"><td class="cellrowborder" valign="top" width="29.43%" headers="mcps1.2.4.1.1 "><p id="p146401254236"><a name="p146401254236"></a><a name="p146401254236"></a>spark.sql.shuffle.partitions</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.85%" headers="mcps1.2.4.1.2 "><p id="p176409516238"><a name="p176409516238"></a><a name="p176409516238"></a>4096</p>
+<td class="cellrowborder" valign="top" width="15.83%" headers="mcps1.2.4.1.2 "><p id="p176409516238"><a name="p176409516238"></a><a name="p176409516238"></a>4096</p>
 </td>
-<td class="cellrowborder" valign="top" width="54.72%" headers="mcps1.2.4.1.3 "><p id="p186400514233"><a name="p186400514233"></a><a name="p186400514233"></a>为连接或聚合过滤数据时使用的默认分区数。</p>
+<td class="cellrowborder" valign="top" width="54.74%" headers="mcps1.2.4.1.3 "><p id="p186400514233"><a name="p186400514233"></a><a name="p186400514233"></a>为连接或聚合过滤数据时使用的默认分区数。</p>
 </td>
 </tr>
 <tr id="row1664018513237"><td class="cellrowborder" valign="top" width="29.43%" headers="mcps1.2.4.1.1 "><p id="p464005132313"><a name="p464005132313"></a><a name="p464005132313"></a>spark.sql.dynamicPartitionOverwrite.enabled</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.85%" headers="mcps1.2.4.1.2 "><p id="p4640185132312"><a name="p4640185132312"></a><a name="p4640185132312"></a>false</p>
+<td class="cellrowborder" valign="top" width="15.83%" headers="mcps1.2.4.1.2 "><p id="p4640185132312"><a name="p4640185132312"></a><a name="p4640185132312"></a>false</p>
 </td>
-<td class="cellrowborder" valign="top" width="54.72%" headers="mcps1.2.4.1.3 "><p id="p96408511235"><a name="p96408511235"></a><a name="p96408511235"></a>在动态模式下，Spark不会删除前面的分区，只覆盖那些运行时没有写入数据的分区。</p>
+<td class="cellrowborder" valign="top" width="54.74%" headers="mcps1.2.4.1.3 "><p id="p96408511235"><a name="p96408511235"></a><a name="p96408511235"></a>在动态模式下，Spark不会删除前面的分区，只覆盖那些运行时没有写入数据的分区。</p>
 </td>
 </tr>
 <tr id="row56403510234"><td class="cellrowborder" valign="top" width="29.43%" headers="mcps1.2.4.1.1 "><p id="p106403522310"><a name="p106403522310"></a><a name="p106403522310"></a>spark.sql.files.maxPartitionBytes</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.85%" headers="mcps1.2.4.1.2 "><p id="p9640175112311"><a name="p9640175112311"></a><a name="p9640175112311"></a>134217728</p>
+<td class="cellrowborder" valign="top" width="15.83%" headers="mcps1.2.4.1.2 "><p id="p9640175112311"><a name="p9640175112311"></a><a name="p9640175112311"></a>134217728</p>
 </td>
-<td class="cellrowborder" valign="top" width="54.72%" headers="mcps1.2.4.1.3 "><p id="p6640759237"><a name="p6640759237"></a><a name="p6640759237"></a>读取文件时要打包到单个分区中的最大字节数。</p>
+<td class="cellrowborder" valign="top" width="54.74%" headers="mcps1.2.4.1.3 "><p id="p6640759237"><a name="p6640759237"></a><a name="p6640759237"></a>读取文件时要打包到单个分区中的最大字节数。</p>
 </td>
 </tr>
 <tr id="row1364118532316"><td class="cellrowborder" valign="top" width="29.43%" headers="mcps1.2.4.1.1 "><p id="p1641751235"><a name="p1641751235"></a><a name="p1641751235"></a>spark.sql.badRecordsPath</p>
 </td>
-<td class="cellrowborder" valign="top" width="15.85%" headers="mcps1.2.4.1.2 "><p id="p206411656232"><a name="p206411656232"></a><a name="p206411656232"></a>-</p>
+<td class="cellrowborder" valign="top" width="15.83%" headers="mcps1.2.4.1.2 "><p id="p206411656232"><a name="p206411656232"></a><a name="p206411656232"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="54.72%" headers="mcps1.2.4.1.3 "><p id="p46411552315"><a name="p46411552315"></a><a name="p46411552315"></a>Bad Records的路径。</p>
+<td class="cellrowborder" valign="top" width="54.74%" headers="mcps1.2.4.1.3 "><p id="p46411552315"><a name="p46411552315"></a><a name="p46411552315"></a>Bad Records的路径。</p>
+</td>
+</tr>
+<tr id="row5844161611018"><td class="cellrowborder" valign="top" width="29.43%" headers="mcps1.2.4.1.1 "><p id="p10133536151012"><a name="p10133536151012"></a><a name="p10133536151012"></a>dli.sql.sqlasync.enabled</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.83%" headers="mcps1.2.4.1.2 "><p id="p213318364108"><a name="p213318364108"></a><a name="p213318364108"></a>false</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.74%" headers="mcps1.2.4.1.3 "><p id="p13134236121018"><a name="p13134236121018"></a><a name="p13134236121018"></a>DDL和DCL语句是否异步执行，值为<span class="parmvalue" id="parmvalue9134163671019"><a name="parmvalue9134163671019"></a><a name="parmvalue9134163671019"></a>“true”</span>时启用异步执行。</p>
+</td>
+</tr>
+<tr id="row12507743111016"><td class="cellrowborder" valign="top" width="29.43%" headers="mcps1.2.4.1.1 "><p id="p350815439108"><a name="p350815439108"></a><a name="p350815439108"></a>dli.sql.job.timeout</p>
+</td>
+<td class="cellrowborder" valign="top" width="15.83%" headers="mcps1.2.4.1.2 "><p id="p850814351015"><a name="p850814351015"></a><a name="p850814351015"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="54.74%" headers="mcps1.2.4.1.3 "><p id="p10508043181014"><a name="p10508043181014"></a><a name="p10508043181014"></a>设置作业运行超时时间，超时取消。单位：毫秒。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**表 4**  tags参数
+
+<a name="table9391124139"></a>
+<table><thead align="left"><tr id="row1440020130"><th class="cellrowborder" valign="top" width="14.899999999999999%" id="mcps1.2.5.1.1"><p id="p194012219139"><a name="p194012219139"></a><a name="p194012219139"></a>参数名称</p>
+</th>
+<th class="cellrowborder" valign="top" width="10.83%" id="mcps1.2.5.1.2"><p id="p540724136"><a name="p540724136"></a><a name="p540724136"></a>是否必选</p>
+</th>
+<th class="cellrowborder" valign="top" width="16.470000000000002%" id="mcps1.2.5.1.3"><p id="p840162161315"><a name="p840162161315"></a><a name="p840162161315"></a>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="57.8%" id="mcps1.2.5.1.4"><p id="p16401271318"><a name="p16401271318"></a><a name="p16401271318"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row194013231317"><td class="cellrowborder" valign="top" width="14.899999999999999%" headers="mcps1.2.5.1.1 "><p id="p13401329138"><a name="p13401329138"></a><a name="p13401329138"></a>key</p>
+</td>
+<td class="cellrowborder" valign="top" width="10.83%" headers="mcps1.2.5.1.2 "><p id="p940102141313"><a name="p940102141313"></a><a name="p940102141313"></a>是</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.470000000000002%" headers="mcps1.2.5.1.3 "><p id="p64019231317"><a name="p64019231317"></a><a name="p64019231317"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.8%" headers="mcps1.2.5.1.4 "><p id="p5401021139"><a name="p5401021139"></a><a name="p5401021139"></a>标签的键。</p>
+</td>
+</tr>
+<tr id="row1141142181320"><td class="cellrowborder" valign="top" width="14.899999999999999%" headers="mcps1.2.5.1.1 "><p id="p164118215134"><a name="p164118215134"></a><a name="p164118215134"></a>value</p>
+</td>
+<td class="cellrowborder" valign="top" width="10.83%" headers="mcps1.2.5.1.2 "><p id="p1141112181317"><a name="p1141112181317"></a><a name="p1141112181317"></a>是</p>
+</td>
+<td class="cellrowborder" valign="top" width="16.470000000000002%" headers="mcps1.2.5.1.3 "><p id="p174114281318"><a name="p174114281318"></a><a name="p174114281318"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="57.8%" headers="mcps1.2.5.1.4 "><p id="p16411125137"><a name="p16411125137"></a><a name="p16411125137"></a>标签的值。</p>
 </td>
 </tr>
 </tbody>
@@ -162,10 +227,10 @@
 
 ## 响应消息<a name="s04b3bd00c07846478613d3718f637112"></a>
 
-**表 4**  响应参数
+**表 5**  响应参数
 
 <a name="zh-cn_topic_0069077806_table43107464"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0069077806_row12322941"><th class="cellrowborder" valign="top" width="12.11%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0069077806_p17344522714"><a name="zh-cn_topic_0069077806_p17344522714"></a><a name="zh-cn_topic_0069077806_p17344522714"></a>参数</p>
+<table><thead align="left"><tr id="zh-cn_topic_0069077806_row12322941"><th class="cellrowborder" valign="top" width="12.11%" id="mcps1.2.5.1.1"><p id="zh-cn_topic_0069077806_p17344522714"><a name="zh-cn_topic_0069077806_p17344522714"></a><a name="zh-cn_topic_0069077806_p17344522714"></a>参数名称</p>
 </th>
 <th class="cellrowborder" valign="top" width="9.66%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0069077806_p3324582718"><a name="zh-cn_topic_0069077806_p3324582718"></a><a name="zh-cn_topic_0069077806_p3324582718"></a>是否必选</p>
 </th>
@@ -254,7 +319,17 @@
         "queue_name": "default",
         "conf": [
             "dli.sql.shuffle.partitions = 200"
-        ]
+        ],
+        "tags": [
+                {
+                  "key": "workspace",
+                  "value": "space1"
+                 },
+                {
+                  "key": "jobName",
+                  "value": "name1"
+                 }
+          ]
     }
     ```
 
@@ -293,7 +368,39 @@
     }
     ```
 
-    >![](public_sys-resources/icon-note.gif) **说明：** 
-    >调用API出错后，将不会返回上述结果，而是返回错误码和错误信息，详细介绍请参见[错误码](错误码.md)。
 
+## 状态码<a name="sf39cfd445ad24e9e82754fcb0027179d"></a>
+
+状态码如[表6](#tb12870f1c5f24b27abd55ca24264af36)所示。
+
+**表 6**  状态码
+
+<a name="tb12870f1c5f24b27abd55ca24264af36"></a>
+<table><thead align="left"><tr id="r8d54231f95b14c01a5e55e95f3b2e838"><th class="cellrowborder" valign="top" width="30%" id="mcps1.2.3.1.1"><p id="ab49d21f312644072a331f43e92baf853"><a name="ab49d21f312644072a331f43e92baf853"></a><a name="ab49d21f312644072a331f43e92baf853"></a>状态码</p>
+</th>
+<th class="cellrowborder" valign="top" width="70%" id="mcps1.2.3.1.2"><p id="aea1d3bd107bb4c499da79a88832d256c"><a name="aea1d3bd107bb4c499da79a88832d256c"></a><a name="aea1d3bd107bb4c499da79a88832d256c"></a>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="r211ad4eb571d4d938e5579998723174e"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="a3153e07b3a9749adba92599fe6628fbf"><a name="a3153e07b3a9749adba92599fe6628fbf"></a><a name="a3153e07b3a9749adba92599fe6628fbf"></a>200</p>
+</td>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p104431642124811"><a name="p104431642124811"></a><a name="p104431642124811"></a>提交成功。</p>
+</td>
+</tr>
+<tr id="row44937531727"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p184941532219"><a name="p184941532219"></a><a name="p184941532219"></a>400</p>
+</td>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p2049413539219"><a name="p2049413539219"></a><a name="p2049413539219"></a>请求错误。</p>
+</td>
+</tr>
+<tr id="row14726424133719"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p4726182423719"><a name="p4726182423719"></a><a name="p4726182423719"></a>500</p>
+</td>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p1726424103720"><a name="p1726424103720"></a><a name="p1726424103720"></a>内部服务器错误。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## 错误码<a name="section13596141025715"></a>
+
+调用接口出错后，将不会返回上述结果，而是返回错误码和错误信息，更多介绍请参见[错误码](错误码.md)。
 
