@@ -4,9 +4,13 @@
 
 ## 前提条件<a name="section9243114805018"></a>
 
-创建Flink SQL作业时，需要事先准备数据源以及数据输出通道，具体内容请参见[准备数据](准备数据.md)。
+-   创建Flink SQL作业时，需要事先准备数据源以及数据输出通道，具体内容请参见[准备Flink作业数据](准备Flink作业数据.md)。
+-   创建Flink SQL作业，访问其他外部数据源时，如访问OpenTSDB、HBase、Kafka、DWS、RDS、CSS、CloudTable、DCS Redis、DDS Mongo等，需要先创建跨源连接，打通作业运行队列到外部数据源之间的网络。
+    -   当前Flink作业支持访问的外部数据源详情请参考[跨源连接和跨源分析概述](跨源连接和跨源分析概述.md)。
+    -   创建跨源连接操作请参见[增强型跨源连接（推荐）](增强型跨源连接（推荐）.md)。创建完跨源连接后，可以通过“队列管理“页面，单击“操作“列“更多”中的“测试地址连通性”，验证队列到外部数据源之间的网络连通是否正常。详细操作可以参考[测试地址连通性](测试地址连通性.md)。
 
-## 创建Flink SQL作业<a name="section28145411519"></a>
+
+## <sub>创建Flink SQL作业</sub><a name="section28145411519"></a>
 
 1.  在DLI管理控制台的左侧导航栏中，单击“作业管理“\>“Flink作业“，进入“Flink作业“页面。
 2.  在“Flink作业“页面右上角单击“创建作业“，弹出“创建作业“对话框。
@@ -42,15 +46,21 @@
     <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p17362758174118"><a name="p17362758174118"></a><a name="p17362758174118"></a>作业的相关描述，长度为0～512字节。</p>
     </td>
     </tr>
-    <tr id="row936416582415"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p14362135844120"><a name="p14362135844120"></a><a name="p14362135844120"></a>编辑器</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p63641258114114"><a name="p63641258114114"></a><a name="p63641258114114"></a>支持<span class="parmvalue" id="parmvalue1736265817414"><a name="parmvalue1736265817414"></a><a name="parmvalue1736265817414"></a>“SQL编辑器”</span>和<span class="parmvalue" id="parmvalue4362658194111"><a name="parmvalue4362658194111"></a><a name="parmvalue4362658194111"></a>“可视化编辑器”</span>，默认选择<span class="parmvalue" id="parmvalue10364758194110"><a name="parmvalue10364758194110"></a><a name="parmvalue10364758194110"></a>“SQL编辑器”</span>。</p>
-    </td>
-    </tr>
     <tr id="row53646587415"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p2364958104115"><a name="p2364958104115"></a><a name="p2364958104115"></a>模板名称</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p136435815417"><a name="p136435815417"></a><a name="p136435815417"></a>当编辑器选择<span class="parmvalue" id="parmvalue83644587419"><a name="parmvalue83644587419"></a><a name="parmvalue83644587419"></a>“SQL编辑器”</span>时，该参数有效。</p>
-    <p id="p15364458144115"><a name="p15364458144115"></a><a name="p15364458144115"></a>用户可以选择样例模板或自定义的作业模板。关于模板的详细信息，请参见<a href="Flink模板管理.md">Flink模板管理</a>。</p>
+    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p15364458144115"><a name="p15364458144115"></a><a name="p15364458144115"></a>用户可以选择样例模板或自定义的作业模板。关于模板的详细信息，请参见<a href="Flink模板管理.md">Flink模板管理</a>。</p>
+    </td>
+    </tr>
+    <tr id="row258931813218"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p105901518162120"><a name="p105901518162120"></a><a name="p105901518162120"></a>标签</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p20590111813214"><a name="p20590111813214"></a><a name="p20590111813214"></a>使用标签标识云资源。包括<span class="parmname" id="parmname07049211238"><a name="parmname07049211238"></a><a name="parmname07049211238"></a>“标签键”</span>和<span class="parmname" id="parmname17539122872312"><a name="parmname17539122872312"></a><a name="parmname17539122872312"></a>“标签值”</span>。如果您需要使用同一标签标识多种云资源，即所有服务均可在标签输入框下拉选择同一标签，建议在标签管理服务（TMS）中创建预定义标签。具体请参考《<a href="https://support.huaweicloud.com/usermanual-tms/zh-cn_topic_0056266269.html" target="_blank" rel="noopener noreferrer">标签管理服务用户指南</a>》。</p>
+    <div class="note" id="note13631112418326"><a name="note13631112418326"></a><a name="note13631112418326"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul1972873412320"></a><a name="ul1972873412320"></a><ul id="ul1972873412320"><li>最多支持10个标签。</li><li>一个“键”只能添加一个“值”。</li></ul>
+    </div></div>
+    <a name="ul55819552289"></a><a name="ul55819552289"></a><ul id="ul55819552289"><li>标签键：在输入框中输入标签键名称。<div class="note" id="note14517544152920"><a name="note14517544152920"></a><a name="note14517544152920"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1250411385491"><a name="p1250411385491"></a><a name="p1250411385491"></a>标签键的最大长度为36个字符 ，只能包含大小写字母，数字，中划线“-”，下划线“_”，中文，且首尾字符不能为空格。</p>
+    </div></div>
+    </li><li>标签值：在输入框中输入标签值。<div class="note" id="note669311015310"><a name="note669311015310"></a><a name="note669311015310"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p622219515509"><a name="p622219515509"></a><a name="p622219515509"></a>标签值的最大长度为43个字符，只能包含大小写字母，数字，中划线“-”，下划线“_”，点“.”中文，且首尾字符不能为空格。</p>
+    </div></div>
+    </li></ul>
     </td>
     </tr>
     </tbody>
@@ -106,9 +116,9 @@
     </tr>
     <tr id="row1836772817456"><td class="cellrowborder" valign="top" width="22.189999999999998%" headers="mcps1.2.3.1.1 "><p id="p97589379456"><a name="p97589379456"></a><a name="p97589379456"></a>保存作业日志</p>
     </td>
-    <td class="cellrowborder" valign="top" width="77.81%" headers="mcps1.2.3.1.2 "><p id="p175893714515"><a name="p175893714515"></a><a name="p175893714515"></a>设置是否将作业运行时的日志信息保存到OBS。</p>
+    <td class="cellrowborder" valign="top" width="77.81%" headers="mcps1.2.3.1.2 "><p id="p175893714515"><a name="p175893714515"></a><a name="p175893714515"></a>设置是否将作业运行时的日志信息保存到OBS。日志信息的保存路径为：“桶名/jobs/logs/作业id开头的目录”。在作业列表中，单击对应的作业名称，在“运行日志”页签，可以单击页面提供的OBS链接跳转至对应的路径下。</p>
     <p id="p9822495517"><a name="p9822495517"></a><a name="p9822495517"></a>勾选后需配置下列参数：</p>
-    <div class="p" id="p135569492554"><a name="p135569492554"></a><a name="p135569492554"></a><span class="parmname" id="parmname258010545557"><a name="parmname258010545557"></a><a name="parmname258010545557"></a>“OBS桶”</span>：选择OBS桶用于保存用户作业日志信息。如果选择的OBS桶是未授权状态，需要单击<span class="uicontrol" id="uicontrol140431655316"><a name="uicontrol140431655316"></a><a name="uicontrol140431655316"></a>“OBS授权”</span>。<div class="note" id="note675883711459"><a name="note675883711459"></a><a name="note675883711459"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p97592373454"><a name="p97592373454"></a><a name="p97592373454"></a>如果同时勾选了<span class="uicontrol" id="uicontrol177597376459"><a name="uicontrol177597376459"></a><a name="uicontrol177597376459"></a>“开启Checkpoint”</span>和<span class="uicontrol" id="uicontrol4759203715456"><a name="uicontrol4759203715456"></a><a name="uicontrol4759203715456"></a>“保存作业日志”</span>，OBS授权一次即可。</p>
+    <div class="p" id="p135569492554"><a name="p135569492554"></a><a name="p135569492554"></a><span class="parmname" id="parmname258010545557"><a name="parmname258010545557"></a><a name="parmname258010545557"></a>“OBS桶”</span>：选择OBS桶用于保存用户作业日志信息。如果选择的OBS桶是未授权状态，需要单击<span class="uicontrol" id="uicontrol140431655316"><a name="uicontrol140431655316"></a><a name="uicontrol140431655316"></a>“OBS授权”</span>。<div class="note" id="note675883711459"><a name="note675883711459"></a><a name="note675883711459"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p193093317582"><a name="p193093317582"></a><a name="p193093317582"></a>如果同时勾选了<span class="uicontrol" id="uicontrol177597376459"><a name="uicontrol177597376459"></a><a name="uicontrol177597376459"></a>“开启Checkpoint”</span>和<span class="uicontrol" id="uicontrol4759203715456"><a name="uicontrol4759203715456"></a><a name="uicontrol4759203715456"></a>“保存作业日志”</span>，OBS授权一次即可。</p>
     </div></div>
     </div>
     </td>
@@ -136,7 +146,8 @@
     </td>
     <td class="cellrowborder" valign="top" width="77.81%" headers="mcps1.2.3.1.2 "><p id="p14416722154613"><a name="p14416722154613"></a><a name="p14416722154613"></a>设置是否启动异常自动重启功能，当作业异常时将自动重启并恢复作业。</p>
     <p id="p182651820924"><a name="p182651820924"></a><a name="p182651820924"></a>勾选后需配置下列参数：</p>
-    <p id="p156301742145614"><a name="p156301742145614"></a><a name="p156301742145614"></a><span class="parmname" id="parmname1086374785612"><a name="parmname1086374785612"></a><a name="parmname1086374785612"></a>“从Checkpoint恢复”</span>：需要同时勾选<span class="uicontrol" id="uicontrol1198512516313"><a name="uicontrol1198512516313"></a><a name="uicontrol1198512516313"></a>“开启Checkpoint”</span>才可配置该参数。</p>
+    <a name="ul12114713615"></a><a name="ul12114713615"></a><ul id="ul12114713615"><li><span class="parmname" id="parmname5780194210919"><a name="parmname5780194210919"></a><a name="parmname5780194210919"></a>“异常重试最大次数”</span>：配置异常重试最大次数。单位为“次/小时”。<a name="ul1442116221967"></a><a name="ul1442116221967"></a><ul id="ul1442116221967"><li>无限：无限次重试。</li><li>有限：自定义重试次数。</li></ul>
+    </li><li><span class="parmname" id="parmname1086374785612"><a name="parmname1086374785612"></a><a name="parmname1086374785612"></a>“从Checkpoint恢复”</span>：需要同时勾选<span class="uicontrol" id="uicontrol1198512516313"><a name="uicontrol1198512516313"></a><a name="uicontrol1198512516313"></a>“开启Checkpoint”</span>才可配置该参数。</li></ul>
     </td>
     </tr>
     <tr id="row106731444114614"><td class="cellrowborder" valign="top" width="22.189999999999998%" headers="mcps1.2.3.1.1 "><p id="p921774514475"><a name="p921774514475"></a><a name="p921774514475"></a>空闲状态保留时长</p>
@@ -160,32 +171,27 @@
     </td>
     <td class="cellrowborder" valign="top" width="77.81%" headers="mcps1.2.3.1.2 "><p id="p72291810132012"><a name="p72291810132012"></a><a name="p72291810132012"></a>默认选择<span class="parmvalue" id="parmvalue12292103206"><a name="parmvalue12292103206"></a><a name="parmvalue12292103206"></a>“共享队列”</span>，用户也可以选择自定义的独享队列。</p>
     <p id="p1587914232102"><a name="p1587914232102"></a><a name="p1587914232102"></a>选择<span class="parmvalue" id="parmvalue1627203615103"><a name="parmvalue1627203615103"></a><a name="parmvalue1627203615103"></a>“独享队列”</span>时需配置以下参数：</p>
-    <p id="p4254159125611"><a name="p4254159125611"></a><a name="p4254159125611"></a><span class="parmname" id="parmname150893115714"><a name="parmname150893115714"></a><a name="parmname150893115714"></a>“UDF Jar”</span>：在选择UDF Jar之前需要将对应的jar包上传至OBS桶中，并在<span class="menucascade" id="menucascade132601332513"><a name="menucascade132601332513"></a><a name="menucascade132601332513"></a>“<span class="uicontrol" id="uicontrol13260930514"><a name="uicontrol13260930514"></a><a name="uicontrol13260930514"></a>数据管理&gt;程序包管理</span>”</span>中创建程序包，具体操作请参考<a href="创建程序包.md">创建程序包</a>。</p>
+    <p id="p4254159125611"><a name="p4254159125611"></a><a name="p4254159125611"></a><span class="parmname" id="parmname150893115714"><a name="parmname150893115714"></a><a name="parmname150893115714"></a>“UDF Jar”</span>：用户自定义UDF文件，在选择UDF Jar之前需要将对应的jar包上传至OBS桶中，并在<span class="menucascade" id="menucascade132601332513"><a name="menucascade132601332513"></a><a name="menucascade132601332513"></a>“<span class="uicontrol" id="uicontrol13260930514"><a name="uicontrol13260930514"></a><a name="uicontrol13260930514"></a>数据管理&gt;程序包管理</span>”</span>中创建程序包，具体操作请参考<a href="创建程序包.md">创建程序包</a>。</p>
     <p id="p85110151218"><a name="p85110151218"></a><a name="p85110151218"></a>用户可以在SQL中调用插入Jar包中的自定义函数。</p>
-    <div class="note" id="note126945231017"><a name="note126945231017"></a><a name="note126945231017"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p11408165613126"><a name="p11408165613126"></a><a name="p11408165613126"></a>当子用户在创建作业时，子用户只能选择已经被分配的队列。</p>
-    <p id="p1926474342520"><a name="p1926474342520"></a><a name="p1926474342520"></a>当所选择队列的剩余容量不能满足作业需求时，系统会自动扩容，将按照增加的容量计费。当队列空闲时，系统也会自动缩容。</p>
+    <div class="note" id="note126945231017"><a name="note126945231017"></a><a name="note126945231017"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul11343322133114"></a><a name="ul11343322133114"></a><ul id="ul11343322133114"><li>当子用户在创建作业时，子用户只能选择已经被分配的队列。</li><li>当所选择队列的剩余容量不能满足作业需求时，系统会自动扩容，将按照增加的容量计费。当队列空闲时，系统也会自动缩容。</li></ul>
     </div></div>
-    </td>
-    </tr>
-    <tr id="row1084519084310"><td class="cellrowborder" valign="top" width="22.189999999999998%" headers="mcps1.2.3.1.1 "><p id="p14565124425411"><a name="p14565124425411"></a><a name="p14565124425411"></a>UDF Jar</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="77.81%" headers="mcps1.2.3.1.2 "><p id="p4565154465417"><a name="p4565154465417"></a><a name="p4565154465417"></a>用户自定义UDF文件，可通过“程序包管理”功能上传到数据湖探索服务使用。</p>
     </td>
     </tr>
     </tbody>
     </table>
 
-8.  单击“保存“，保存作业和相关参数。
-9.  单击“启动“，进入“启动Flink作业“页面，确认作业规格和费用后，单击“立即启动“，启动作业。
+8.  （可选）根据需要调试参数。作业调试功能只用于验证SQL逻辑，不会有数据写入操作。 具体操作请参见[调试Flink作业](调试Flink作业.md)。
+9.  单击“保存“，保存作业和相关参数。
+10. 单击“启动“，进入“启动Flink作业“页面，确认作业规格和费用后，单击“立即启动“，启动作业。
 
     启动作业后，系统将自动跳转到Flink作业管理页面，新创建的作业将显示在作业列表中，在“状态“列中可以查看作业状态。作业提交成功后，状态将由“提交中“变为“运行中“。运行完成后显示“已完成”。
 
-    如果作业状态为“提交失败“或“运行异常“，表示作业提交或运行失败。用户可以在作业列表中的“状态“列中，将鼠标移动到状态图标上查看错误信息，单击![](figures/icon-cs-copy.png)可以复制错误信息。根据错误信息解决故障后，重新提交。
+    如果作业状态为“提交失败“或“运行异常“，表示作业提交或运行失败。用户可以在作业列表中的“状态“列中，将鼠标移动到状态图标上查看错误信息，单击![](figures/icon-cs-copy-0.png)可以复制错误信息。根据错误信息解决故障后，重新提交。
 
     >![](public_sys-resources/icon-note.gif) **说明：** 
     >其他功能按钮说明如下：
     >-   另存为：将新建作业另存为一个新作业。
-    >-   调试：对作业进行调试。具体操作请参见[调试作业](调试作业.md)。
+    >-   调试：对作业进行调试。具体操作请参见[调试Flink作业](调试Flink作业.md)。
     >-   格式化：对SQL语句进行格式化。
     >-   设为模板：将新创建的作业设置为作业模板。
     >-   主题设置：设置页面主题，可以设置字体大小，自动换行和页面风格。

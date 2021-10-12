@@ -3,26 +3,31 @@
 在Flink作业管理页面可提交Flink作业。目前有以下作业类型：
 
 -   Flink SQL作业：使用SQL语句定义作业，可以提交到任意队列上。
--   Flink自定义作业：基于Flink API的自定义Jar包作业，可以运行在独享队列上。
--   Flink SQL边缘作业（公测）：通过SQL对边缘设备数据进行分析，可部署到边缘节点上。
+-   Flink Jar作业：基于Flink API的自定义Jar包作业，可以运行在独享队列上。
+-   Flink OpenSource SQL作业：兼容社区Flink 1.10版本SQL语法，仅支持运行在CCE类型队列上。
+-   Flink Edge SQL作业：通过SQL对边缘设备数据进行分析，可部署到边缘节点上。
 
 Flink作业管理主要包括如下功能：
 
 -   [Flink作业权限管理](Flink作业权限管理.md)
 -   [创建Flink SQL作业](创建Flink-SQL作业.md)
--   [创建Flink自定义作业](创建Flink自定义作业.md)
+-   [创建Flink Jar作业](创建Flink-Jar作业.md)
+-   [创建Flink OpenSource SQL作业](创建Flink-OpenSource-SQL作业.md)
 -   [创建Flink SQL边缘作业](创建Flink-SQL边缘作业.md)
--   [调试作业](调试作业.md)
--   [编辑作业](操作作业.md#section1950210297542)
--   [启动作业](操作作业.md#section20957159163012)
--   [停止作业](操作作业.md#section8678193324114)
--   [删除作业](操作作业.md#section1691624195713)
--   [导出作业](操作作业.md#section135831511323)
--   [导入作业](操作作业.md#section75781665389)
--   [名称和描述修改](操作作业.md#section15861321183619)
--   [导入保存点](操作作业.md#section83412445175)
--   [触发保存点](操作作业.md#section11401152191015)
--   [作业详情](作业详情.md)
+-   [边缘鉴权码管理](边缘鉴权码管理.md)
+-   [调试作业](调试Flink作业.md)
+-   [编辑作业](操作Flink作业.md#section1950210297542)
+-   [启动作业](操作Flink作业.md#section20957159163012)
+-   [停止作业](操作Flink作业.md#section8678193324114)
+-   [删除作业](操作Flink作业.md#section1691624195713)
+-   [导出作业](操作Flink作业.md#section135831511323)
+-   [导入作业](操作Flink作业.md#section75781665389)
+-   [名称和描述修改](操作Flink作业.md#section15861321183619)
+-   [导入保存点](操作Flink作业.md#section83412445175)
+-   [触发保存点](操作Flink作业.md#section11401152191015)
+-   [运行时配置](操作Flink作业.md#section48961252113110)
+-   [作业详情](Flink作业详情.md)
+-   [标签管理](标签管理.md)
 
 以及查看“使用指南”和“使用视频”。
 
@@ -42,7 +47,7 @@ DLI执行Flink作业需要进行委托授权，可在第一次登录管理控制
     >![](public_sys-resources/icon-note.gif) **说明：** 
     >由于云服务缓存需要时间，该权限30分钟左右才能生效。
 
--   CloudTable Administrator：DLI Flink作业访问和使用CloudTable数据源，需要获得访问和使用CloudTable（表格存储服务）的CloudTable Administrator限。
+-   CloudTable Administrator：DLI Flink作业访问和使用CloudTable数据源，需要获得访问和使用CloudTable（表格存储服务）的CloudTable Administrator权限。
 
     >![](public_sys-resources/icon-note.gif) **说明：** 
     >由于云服务缓存需要时间，该权限3分钟左右才能生效。
@@ -79,13 +84,13 @@ DLI执行Flink作业需要进行委托授权，可在第一次登录管理控制
 <tr id="row3289513151315"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="p102901113161318"><a name="p102901113161318"></a><a name="p102901113161318"></a>类型</p>
 </td>
 <td class="cellrowborder" valign="top" width="83.93%" headers="mcps1.2.3.1.2 "><p id="p1029001315135"><a name="p1029001315135"></a><a name="p1029001315135"></a>所提交Flink作业的类型。包括：</p>
-<a name="ul864114454138"></a><a name="ul864114454138"></a><ul id="ul864114454138"><li>Flink SQL：Flink SQL作业</li><li>Flink Jar：Flink自定义作业</li></ul>
+<a name="ul864114454138"></a><a name="ul864114454138"></a><ul id="ul864114454138"><li>Flink SQL：Flink SQL作业</li><li>Flink Jar：Flink Jar作业</li><li>Flink OpenSource SQL：Flink OpenSource SQL作业</li><li>Flink Edge SQL：Flink SQL边缘作业</li></ul>
 </td>
 </tr>
 <tr id="zh-cn_topic_0122090417_row31011923151038"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0122090417_p10671857151038"><a name="zh-cn_topic_0122090417_p10671857151038"></a><a name="zh-cn_topic_0122090417_p10671857151038"></a>状态</p>
 </td>
 <td class="cellrowborder" valign="top" width="83.93%" headers="mcps1.2.3.1.2 "><p id="zh-cn_topic_0122090417_p59114099151038"><a name="zh-cn_topic_0122090417_p59114099151038"></a><a name="zh-cn_topic_0122090417_p59114099151038"></a>作业的状态信息，包括：</p>
-<a name="zh-cn_topic_0122090417_ul32930526154023"></a><a name="zh-cn_topic_0122090417_ul32930526154023"></a><ul id="zh-cn_topic_0122090417_ul32930526154023"><li>草稿</li><li>提交中</li><li>提交失败</li><li>运行中（开始计费，提交作业后，返回正常结果）</li><li>运行异常（停止计费。作业发生运行时异常，停止运行作业）</li><li>停止中</li><li>已停止</li><li>停止失败</li><li>保存点创建中</li><li>因欠费被停止（结束计费。用户账户欠费，作业停止）</li><li>欠费作业恢复中（用户账户欠费，账户充值，作业恢复中）</li><li>已完成</li></ul>
+<a name="zh-cn_topic_0122090417_ul32930526154023"></a><a name="zh-cn_topic_0122090417_ul32930526154023"></a><ul id="zh-cn_topic_0122090417_ul32930526154023"><li>草稿</li><li>提交中</li><li>提交失败</li><li>运行中（开始计费，提交作业后，返回正常结果）</li><li>运行异常（停止计费。作业发生运行时异常，停止运行作业）</li><li>下载中</li><li>空闲</li><li>停止中</li><li>已停止</li><li>停止失败</li><li>保存点创建中</li><li>因欠费被停止（结束计费。用户账户欠费，作业停止）</li><li>欠费作业恢复中（用户账户欠费，账户充值，作业恢复中）</li><li>已完成</li></ul>
 </td>
 </tr>
 <tr id="zh-cn_topic_0122090417_row36301606171658"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0122090417_p14394959151048"><a name="zh-cn_topic_0122090417_p14394959151048"></a><a name="zh-cn_topic_0122090417_p14394959151048"></a>描述</p>
@@ -122,9 +127,13 @@ DLI执行Flink作业需要进行委托授权，可在第一次登录管理控制
 </tr>
 <tr id="zh-cn_topic_0122090417_row1662880815250"><td class="cellrowborder" valign="top" width="16.07%" headers="mcps1.2.3.1.1 "><p id="zh-cn_topic_0122090417_p475621615250"><a name="zh-cn_topic_0122090417_p475621615250"></a><a name="zh-cn_topic_0122090417_p475621615250"></a>操作</p>
 </td>
-<td class="cellrowborder" valign="top" width="83.93%" headers="mcps1.2.3.1.2 "><a name="zh-cn_topic_0122090417_ul181927155164"></a><a name="zh-cn_topic_0122090417_ul181927155164"></a><ul id="zh-cn_topic_0122090417_ul181927155164"><li>编辑：编辑已经创建好的作业。具体请参见<a href="操作作业.md#section1950210297542">编辑作业</a>。</li><li>启动：启动作业并运行。具体请参见<a href="操作作业.md#section20957159163012">启动作业</a>。</li><li>更多<a name="ul2162826144010"></a><a name="ul2162826144010"></a><ul id="ul2162826144010"><li>FlinkUI：单击后，将跳转至Flink任务运行情况界面。</li><li>停止：停止“提交中”或“运行中”的作业。</li><li>删除：删除作业。<div class="note" id="note386711433506"><a name="note386711433506"></a><a name="note386711433506"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p16867104316506"><a name="p16867104316506"></a><a name="p16867104316506"></a>作业删除后不可恢复，请谨慎操作。</p>
+<td class="cellrowborder" valign="top" width="83.93%" headers="mcps1.2.3.1.2 "><a name="zh-cn_topic_0122090417_ul181927155164"></a><a name="zh-cn_topic_0122090417_ul181927155164"></a><ul id="zh-cn_topic_0122090417_ul181927155164"><li>编辑：编辑已经创建好的作业。具体请参见<a href="操作Flink作业.md#section1950210297542">编辑作业</a>。</li><li>启动：启动作业并运行。具体请参见<a href="操作Flink作业.md#section20957159163012">启动作业</a>。</li><li>更多<div class="note" id="note44581315192213"><a name="note44581315192213"></a><a name="note44581315192213"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1446220154229"><a name="p1446220154229"></a><a name="p1446220154229"></a>Flink SQL边缘作业只支持“停止”，“删除”，“名称和描述修改”操作。</p>
 </div></div>
-</li><li>名称和描述修改：修改作业名称和描述。</li><li>导入保存点：导入原实时流计算服务作业导出的数据。</li><li>触发保存点：“运行中”的作业可以“触发保存点”，保存作业的状态信息。</li><li>权限管理：查看作业对应的用户权限信息以及对其他用户授权。</li></ul>
+<a name="ul2162826144010"></a><a name="ul2162826144010"></a><ul id="ul2162826144010"><li>FlinkUI：单击后，将跳转至Flink任务运行情况界面。<div class="note" id="note151024818191"><a name="note151024818191"></a><a name="note151024818191"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p181031586197"><a name="p181031586197"></a><a name="p181031586197"></a>新建队列，运行作业时会重新拉集群，大概需要10分钟左右才能拉好集群，在集群创建好之前单击FlinkUI会导致缓存空的projectID，从而导致无法查看FlinkUI。建议使用专属队列，集群不会被释放，就不会有该问题，或者提交作业后等一段时间再查看FlinkUI，确保集群已经拉好了，不要立即单击FlinkUI。</p>
+</div></div>
+</li><li>停止：停止“提交中”或“运行中”的作业。</li><li>删除：删除作业。<div class="note" id="note386711433506"><a name="note386711433506"></a><a name="note386711433506"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p16867104316506"><a name="p16867104316506"></a><a name="p16867104316506"></a>作业删除后不可恢复，请谨慎操作。</p>
+</div></div>
+</li><li>名称和描述修改：修改作业名称和描述。具体请参考<a href="操作Flink作业.md#section15861321183619">名称和描述修改</a>。</li><li>导入保存点：导入原实时流计算服务作业导出的数据。具体请参考<a href="操作Flink作业.md#section83412445175">导入保存点</a>。</li><li>触发保存点：“运行中”的作业可以“触发保存点”，保存作业的状态信息。具体请参考<a href="操作Flink作业.md#section11401152191015">触发保存点</a>。</li><li>权限管理：查看作业对应的用户权限信息以及对其他用户授权。具体请参考<a href="Flink作业权限管理.md">Flink作业权限管理</a>。</li><li>运行时配置：支持作业在运行时配置作业异常告警。具体请参考<a href="操作Flink作业.md#section48961252113110">运行时配置</a>。</li></ul>
 </li></ul>
 </td>
 </tr>

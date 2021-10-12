@@ -6,6 +6,19 @@ Spark作业编辑页面支持执行Spark作业，为用户提供全托管式的S
 
 进入Spark作业编辑页面，页面会提示系统将创建DLI临时数据桶。该桶用于存储使用DLI服务产生的临时数据，例如：作业日志、作业结果等。如果不创建该桶，将无法查看作业日志。可以通过[配置生命周期规则](https://support.huaweicloud.com/usermanual-obs/obs_03_0335.html)，实现定时删除OBS桶中的对象或者定时转换对象的存储类别。桶名称为系统默认。
 
+如果不需要创建DLI临时数据桶，并且希望不再收到该提示，可以勾选“下次不再提示”并单击“取消“。
+
+## 前提条件<a name="section1661873674317"></a>
+
+-   请先将所要依赖的程序包通过“数据管理\>程序包管理“页面上传至对应的OBS桶中。具体操作请参考[创建程序包](创建程序包.md)。
+-   创建Spark作业，访问其他外部数据源时，如访问OpenTSDB、HBase、Kafka、DWS、RDS、CSS、CloudTable、DCS Redis、DDS Mongo等，需要先创建跨源连接，打通作业运行队列到外部数据源之间的网络。
+    -   当前Spark作业支持访问的外部数据源详情请参考[跨源连接和跨源分析概述](跨源连接和跨源分析概述.md)。
+    -   创建跨源连接操作请参见[增强型跨源连接（推荐）](增强型跨源连接（推荐）.md)。
+
+        创建完跨源连接后，可以通过“队列管理“页面，单击“操作“列“更多”中的“测试地址连通性”，验证队列到外部数据源之间的网络连通是否正常。详细操作可以参考[测试地址连通性](测试地址连通性.md)。
+
+
+
 ## 界面说明<a name="zh-cn_topic_0115200017_zh-cn_topic_0093946815_section56922894165137"></a>
 
 -   左侧导航栏
@@ -30,7 +43,7 @@ Spark作业编辑页面支持执行Spark作业，为用户提供全托管式的S
     </thead>
     <tbody><tr id="zh-cn_topic_0115200017_row0576181717"><td class="cellrowborder" valign="top" width="7.329267073292671%" headers="mcps1.2.5.1.1 "><p id="p1846414494193"><a name="p1846414494193"></a><a name="p1846414494193"></a>1</p>
     </td>
-    <td class="cellrowborder" valign="top" width="13.638636136386362%" headers="mcps1.2.5.1.2 "><p id="p2772152211579"><a name="p2772152211579"></a><a name="p2772152211579"></a><a name="image91413515593"></a><a name="image91413515593"></a><span><img id="image91413515593" src="figures/zh-cn_image_0264374451.png"></span></p>
+    <td class="cellrowborder" valign="top" width="13.638636136386362%" headers="mcps1.2.5.1.2 "><p id="p2772152211579"><a name="p2772152211579"></a><a name="p2772152211579"></a><a name="image1234503258"></a><a name="image1234503258"></a><span><img id="image1234503258" src="figures/icon-队列(2).png"></span></p>
     </td>
     <td class="cellrowborder" valign="top" width="19.518048195180484%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0115200017_p2576081473"><a name="zh-cn_topic_0115200017_p2576081473"></a><a name="zh-cn_topic_0115200017_p2576081473"></a>队列</p>
     </td>
@@ -39,7 +52,7 @@ Spark作业编辑页面支持执行Spark作业，为用户提供全托管式的S
     </tr>
     <tr id="zh-cn_topic_0115200017_row1157678977"><td class="cellrowborder" valign="top" width="7.329267073292671%" headers="mcps1.2.5.1.1 "><p id="p7464049201918"><a name="p7464049201918"></a><a name="p7464049201918"></a>2</p>
     </td>
-    <td class="cellrowborder" valign="top" width="13.638636136386362%" headers="mcps1.2.5.1.2 "><p id="p57725223578"><a name="p57725223578"></a><a name="p57725223578"></a><a name="image7542172920595"></a><a name="image7542172920595"></a><span><img id="image7542172920595" src="figures/zh-cn_image_0264374479.png"></span></p>
+    <td class="cellrowborder" valign="top" width="13.638636136386362%" headers="mcps1.2.5.1.2 "><p id="p57725223578"><a name="p57725223578"></a><a name="p57725223578"></a><a name="image6223254192517"></a><a name="image6223254192517"></a><span><img id="image6223254192517" src="figures/icon-程序包(2).png"></span></p>
     </td>
     <td class="cellrowborder" valign="top" width="19.518048195180484%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0115200017_p0576138971"><a name="zh-cn_topic_0115200017_p0576138971"></a><a name="zh-cn_topic_0115200017_p0576138971"></a>程序包</p>
     </td>
@@ -48,7 +61,7 @@ Spark作业编辑页面支持执行Spark作业，为用户提供全托管式的S
     </tr>
     <tr id="zh-cn_topic_0115200017_row95761281676"><td class="cellrowborder" valign="top" width="7.329267073292671%" headers="mcps1.2.5.1.1 "><p id="p94641349181918"><a name="p94641349181918"></a><a name="p94641349181918"></a>3</p>
     </td>
-    <td class="cellrowborder" valign="top" width="13.638636136386362%" headers="mcps1.2.5.1.2 "><p id="p157726220576"><a name="p157726220576"></a><a name="p157726220576"></a><a name="image11701591599"></a><a name="image11701591599"></a><span><img id="image11701591599" src="figures/zh-cn_image_0264374589.png"></span></p>
+    <td class="cellrowborder" valign="top" width="13.638636136386362%" headers="mcps1.2.5.1.2 "><p id="p157726220576"><a name="p157726220576"></a><a name="p157726220576"></a><a name="image1067896112718"></a><a name="image1067896112718"></a><span><img id="image1067896112718" src="figures/icon-创建(2).png"></span></p>
     </td>
     <td class="cellrowborder" valign="top" width="19.518048195180484%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0115200017_p17576168971"><a name="zh-cn_topic_0115200017_p17576168971"></a><a name="zh-cn_topic_0115200017_p17576168971"></a>创建</p>
     </td>
@@ -57,7 +70,7 @@ Spark作业编辑页面支持执行Spark作业，为用户提供全托管式的S
     </tr>
     <tr id="zh-cn_topic_0115200017_row1857619810717"><td class="cellrowborder" valign="top" width="7.329267073292671%" headers="mcps1.2.5.1.1 "><p id="p046416495193"><a name="p046416495193"></a><a name="p046416495193"></a>4</p>
     </td>
-    <td class="cellrowborder" valign="top" width="13.638636136386362%" headers="mcps1.2.5.1.2 "><p id="p13772122155718"><a name="p13772122155718"></a><a name="p13772122155718"></a><a name="image59893191002"></a><a name="image59893191002"></a><span><img id="image59893191002" src="figures/zh-cn_image_0264374665.png"></span></p>
+    <td class="cellrowborder" valign="top" width="13.638636136386362%" headers="mcps1.2.5.1.2 "><p id="p13772122155718"><a name="p13772122155718"></a><a name="p13772122155718"></a><a name="image91455520326"></a><a name="image91455520326"></a><span><img id="image91455520326" src="figures/icon-刷新.png"></span></p>
     </td>
     <td class="cellrowborder" valign="top" width="19.518048195180484%" headers="mcps1.2.5.1.3 "><p id="zh-cn_topic_0115200017_p18576198871"><a name="zh-cn_topic_0115200017_p18576198871"></a><a name="zh-cn_topic_0115200017_p18576198871"></a>刷新</p>
     </td>
@@ -66,7 +79,7 @@ Spark作业编辑页面支持执行Spark作业，为用户提供全托管式的S
     </tr>
     <tr id="row181911018124413"><td class="cellrowborder" valign="top" width="7.329267073292671%" headers="mcps1.2.5.1.1 "><p id="p1192151811440"><a name="p1192151811440"></a><a name="p1192151811440"></a>5</p>
     </td>
-    <td class="cellrowborder" valign="top" width="13.638636136386362%" headers="mcps1.2.5.1.2 "><p id="p207721122145717"><a name="p207721122145717"></a><a name="p207721122145717"></a><a name="image105704451306"></a><a name="image105704451306"></a><span><img id="image105704451306" src="figures/zh-cn_image_0264374835.png"></span></p>
+    <td class="cellrowborder" valign="top" width="13.638636136386362%" headers="mcps1.2.5.1.2 "><p id="p207721122145717"><a name="p207721122145717"></a><a name="p207721122145717"></a><a name="image1188013430348"></a><a name="image1188013430348"></a><span><img id="image1188013430348" src="figures/icon-搜索(2).png"></span></p>
     </td>
     <td class="cellrowborder" valign="top" width="19.518048195180484%" headers="mcps1.2.5.1.3 "><p id="p1219211184449"><a name="p1219211184449"></a><a name="p1219211184449"></a>搜索</p>
     </td>
@@ -136,27 +149,31 @@ Spark作业编辑页面支持执行Spark作业，为用户提供全托管式的S
         </tr>
         <tr id="row136181414419"><td class="cellrowborder" valign="top" width="17.34%" headers="mcps1.2.3.1.1 "><p id="p136191549415"><a name="p136191549415"></a><a name="p136191549415"></a>应用程序参数</p>
         </td>
-        <td class="cellrowborder" valign="top" width="82.66%" headers="mcps1.2.3.1.2 "><p id="p126191141419"><a name="p126191141419"></a><a name="p126191141419"></a>用户自定义参数，多个参数以逗号分隔。</p>
+        <td class="cellrowborder" valign="top" width="82.66%" headers="mcps1.2.3.1.2 "><p id="p126191141419"><a name="p126191141419"></a><a name="p126191141419"></a>用户自定义参数，多个参数请以Enter键分隔。</p>
+        <p id="p1889161705816"><a name="p1889161705816"></a><a name="p1889161705816"></a>应用程序参数支持全局变量替换。例如，在<span class="wintitle" id="wintitle20228131111"><a name="wintitle20228131111"></a><a name="wintitle20228131111"></a>“全局配置”</span>&gt;<span class="wintitle" id="wintitle14944128917"><a name="wintitle14944128917"></a><a name="wintitle14944128917"></a>“全局变量”</span>中新增全局变量key为batch_num，可以使用{{batch_num}}，在提交作业之后进行变量替换。</p>
         </td>
         </tr>
         <tr id="row20647136165314"><td class="cellrowborder" valign="top" width="17.34%" headers="mcps1.2.3.1.1 "><p id="p196495619531"><a name="p196495619531"></a><a name="p196495619531"></a>Spark参数</p>
         </td>
-        <td class="cellrowborder" valign="top" width="82.66%" headers="mcps1.2.3.1.2 "><p id="p464986135314"><a name="p464986135314"></a><a name="p464986135314"></a>以“key/value”的形式设置提交Spark作业的属性，多个参数以Enter键分隔。具体参数请参考<a href="https://spark.apache.org/docs/latest/configuration.html" target="_blank" rel="noopener noreferrer">Spark Configuration</a>。</p>
+        <td class="cellrowborder" valign="top" width="82.66%" headers="mcps1.2.3.1.2 "><p id="p464986135314"><a name="p464986135314"></a><a name="p464986135314"></a>以“key=value”的形式设置提交Spark作业的属性，多个参数以Enter键分隔。具体参数请参考<a href="https://spark.apache.org/docs/latest/configuration.html" target="_blank" rel="noopener noreferrer">Spark Configuration</a>。</p>
+        <p id="p4974728416"><a name="p4974728416"></a><a name="p4974728416"></a>Spark参数value支持全局变量替换。例如，在<span class="wintitle" id="wintitle55353414914"><a name="wintitle55353414914"></a><a name="wintitle55353414914"></a>“全局配置”</span>&gt;<span class="wintitle" id="wintitle55315341493"><a name="wintitle55315341493"></a><a name="wintitle55315341493"></a>“全局变量”</span>中新增全局变量key为custom_class，可以使用"spark.sql.catalog"={{custom_class}}，在提交作业之后进行变量替换。</p>
+        <div class="note" id="note88771831085"><a name="note88771831085"></a><a name="note88771831085"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p28781335815"><a name="p28781335815"></a><a name="p28781335815"></a>Spark作业不支持自定义设置jvm垃圾回收算法。</p>
+        </div></div>
         </td>
         </tr>
         <tr id="row196014274377"><td class="cellrowborder" valign="top" width="17.34%" headers="mcps1.2.3.1.1 "><p id="p1458634211326"><a name="p1458634211326"></a><a name="p1458634211326"></a>依赖jar包</p>
         </td>
-        <td class="cellrowborder" valign="top" width="82.66%" headers="mcps1.2.3.1.2 "><p id="p175851042153219"><a name="p175851042153219"></a><a name="p175851042153219"></a>运行spark作业依赖的jars。</p>
+        <td class="cellrowborder" valign="top" width="82.66%" headers="mcps1.2.3.1.2 "><p id="p175851042153219"><a name="p175851042153219"></a><a name="p175851042153219"></a>运行spark作业依赖的jars。可以输入jar包名称，也可以输入对应的OBS路径，格式为：obs://桶名/包名。</p>
         </td>
         </tr>
         <tr id="row12662161114381"><td class="cellrowborder" valign="top" width="17.34%" headers="mcps1.2.3.1.1 "><p id="p166620111381"><a name="p166620111381"></a><a name="p166620111381"></a>依赖Python文件</p>
         </td>
-        <td class="cellrowborder" valign="top" width="82.66%" headers="mcps1.2.3.1.2 "><p id="p66621911103817"><a name="p66621911103817"></a><a name="p66621911103817"></a>运行spark作业依赖的py-files。</p>
+        <td class="cellrowborder" valign="top" width="82.66%" headers="mcps1.2.3.1.2 "><p id="p66621911103817"><a name="p66621911103817"></a><a name="p66621911103817"></a>运行spark作业依赖的py-files。可以输入Python文件名称，也可以输入对应的OBS路径，格式为：obs://桶名/文件名。</p>
         </td>
         </tr>
         <tr id="row15191336193816"><td class="cellrowborder" valign="top" width="17.34%" headers="mcps1.2.3.1.1 "><p id="p16520103618382"><a name="p16520103618382"></a><a name="p16520103618382"></a>其他依赖文件</p>
         </td>
-        <td class="cellrowborder" valign="top" width="82.66%" headers="mcps1.2.3.1.2 "><p id="p10520143643819"><a name="p10520143643819"></a><a name="p10520143643819"></a>运行spark作业依赖的其他files。</p>
+        <td class="cellrowborder" valign="top" width="82.66%" headers="mcps1.2.3.1.2 "><p id="p10520143643819"><a name="p10520143643819"></a><a name="p10520143643819"></a>运行spark作业依赖的其他files。可以输入依赖文件名称，也可以输入对应的OBS路径，格式为：obs://桶名/文件名。</p>
         </td>
         </tr>
         <tr id="row11895591189"><td class="cellrowborder" valign="top" width="17.34%" headers="mcps1.2.3.1.1 "><p id="p41904593813"><a name="p41904593813"></a><a name="p41904593813"></a>依赖分组</p>
@@ -164,7 +181,12 @@ Spark作业编辑页面支持执行Spark作业，为用户提供全托管式的S
         <td class="cellrowborder" valign="top" width="82.66%" headers="mcps1.2.3.1.2 "><p id="p121901659982"><a name="p121901659982"></a><a name="p121901659982"></a>在创建程序包时，如果选择了分组，在此处选择对应的分组，则可以同时选中该分组中的所有程序包和文件。创建程序包操作请参考<a href="创建程序包.md">创建程序包</a>。</p>
         </td>
         </tr>
-        <tr id="row1989081215461"><td class="cellrowborder" valign="top" width="17.34%" headers="mcps1.2.3.1.1 "><p id="p1689213127465"><a name="p1689213127465"></a><a name="p1689213127465"></a>作业失败重试</p>
+        <tr id="row1165183714514"><td class="cellrowborder" valign="top" width="17.34%" headers="mcps1.2.3.1.1 "><p id="p565203734518"><a name="p565203734518"></a><a name="p565203734518"></a>访问元数据</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="82.66%" headers="mcps1.2.3.1.2 "><p id="p11652173714454"><a name="p11652173714454"></a><a name="p11652173714454"></a>是否通过Spark作业访问元数据。具体请参考《<a href="https://support.huaweicloud.com/devg-dli/dli_09_0176.html" target="_blank" rel="noopener noreferrer">数据湖探索开发指南</a>》。</p>
+        </td>
+        </tr>
+        <tr id="row1989081215461"><td class="cellrowborder" valign="top" width="17.34%" headers="mcps1.2.3.1.1 "><p id="p1689213127465"><a name="p1689213127465"></a><a name="p1689213127465"></a>是否重试</p>
         </td>
         <td class="cellrowborder" valign="top" width="82.66%" headers="mcps1.2.3.1.2 "><p id="p19892111204612"><a name="p19892111204612"></a><a name="p19892111204612"></a>作业失败后是否进行重试。</p>
         <p id="p9810115810589"><a name="p9810115810589"></a><a name="p9810115810589"></a>选择“是”需要配置以下参数：</p>
@@ -249,6 +271,11 @@ Spark作业编辑页面支持执行Spark作业，为用户提供全托管式的S
         </tr>
         </tbody>
         </table>
+
+        >![](public_sys-resources/icon-note.gif) **说明：** 
+        >Spark作业参数计算：
+        >-   CU数=driver CPU核数+Executor个数\*Executor CPU核数
+        >-   内存数=driver内存+\(Executor个数\*Executor内存）
 
 
 

@@ -4,39 +4,40 @@ Flink模板包括样例模板和自定义模板。用户可以在已有的样例
 
 Flink模板管理主要包括如下功能：
 
--   [样例模板](#section3576173115914)
+-   [Flink SQL样例模板](#section3576173115914)
+-   [Flink OpenSource SQL样例模板](#section1619803119586)
 -   [自定义模板](#section4777152184911)
 -   [新建模板](#section5417513171115)
 -   [基于模板新建作业](#section123515484542)
 -   [修改模板](#section735234815411)
 -   [删除模板](#section1035264818548)
 
-## 样例模板<a name="section3576173115914"></a>
+## Flink SQL样例模板<a name="section3576173115914"></a>
 
-样例模板列表显示已有的样例作业模板，样例模板列表参数说明如[表 1](#table17778105244916)所示。
+Flink SQL样例模板列表显示已有的Flink SQL样例作业模板，Flink SQL样例模板列表参数说明如[表 1](#table17778105244916)所示。
 
-**表 1**  样例模板列表参数
+**表 1**  Flink SQL样例模板列表参数
 
 <a name="table1648113116167"></a>
-<table><thead align="left"><tr id="row64828111162"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.3.1.1"><p id="p9482412165"><a name="p9482412165"></a><a name="p9482412165"></a>参数</p>
+<table><thead align="left"><tr id="row64828111162"><th class="cellrowborder" valign="top" width="10.65%" id="mcps1.2.3.1.1"><p id="p9482412165"><a name="p9482412165"></a><a name="p9482412165"></a>参数</p>
 </th>
-<th class="cellrowborder" valign="top" width="80%" id="mcps1.2.3.1.2"><p id="p8482101141614"><a name="p8482101141614"></a><a name="p8482101141614"></a>参数说明</p>
+<th class="cellrowborder" valign="top" width="89.35%" id="mcps1.2.3.1.2"><p id="p8482101141614"><a name="p8482101141614"></a><a name="p8482101141614"></a>参数说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row1248221171613"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p1948219117166"><a name="p1948219117166"></a><a name="p1948219117166"></a>名称</p>
+<tbody><tr id="row1248221171613"><td class="cellrowborder" valign="top" width="10.65%" headers="mcps1.2.3.1.1 "><p id="p1948219117166"><a name="p1948219117166"></a><a name="p1948219117166"></a>名称</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p448216181618"><a name="p448216181618"></a><a name="p448216181618"></a>模板名称，只能由英文、中文、数字、中划线和下划线组成，并且长度为1～64个字符。</p>
-</td>
-</tr>
-<tr id="row18482141141615"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p1148271131614"><a name="p1148271131614"></a><a name="p1148271131614"></a>描述</p>
-</td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p1848213120160"><a name="p1848213120160"></a><a name="p1848213120160"></a>模板的相关描述，且长度为0～512个字符。</p>
+<td class="cellrowborder" valign="top" width="89.35%" headers="mcps1.2.3.1.2 "><p id="p448216181618"><a name="p448216181618"></a><a name="p448216181618"></a>模板名称，只能由英文、中文、数字、中划线和下划线组成，并且长度为1～64个字符。</p>
 </td>
 </tr>
-<tr id="row104837115166"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p13483171171614"><a name="p13483171171614"></a><a name="p13483171171614"></a>操作</p>
+<tr id="row18482141141615"><td class="cellrowborder" valign="top" width="10.65%" headers="mcps1.2.3.1.1 "><p id="p1148271131614"><a name="p1148271131614"></a><a name="p1148271131614"></a>描述</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p123372411717"><a name="p123372411717"></a><a name="p123372411717"></a><span class="uicontrol" id="uicontrol174844191611"><a name="uicontrol174844191611"></a><a name="uicontrol174844191611"></a>“创建作业”</span>：直接在该模板下创建作业，创建完后，系统跳转到<span class="menucascade" id="menucascade54848111162"><a name="menucascade54848111162"></a><a name="menucascade54848111162"></a>“<span class="uicontrol" id="uicontrol1048420181615"><a name="uicontrol1048420181615"></a><a name="uicontrol1048420181615"></a>作业管理</span>”</span>下的作业编辑页面。</p>
+<td class="cellrowborder" valign="top" width="89.35%" headers="mcps1.2.3.1.2 "><p id="p1848213120160"><a name="p1848213120160"></a><a name="p1848213120160"></a>模板的相关描述，且长度为0～512个字符。</p>
+</td>
+</tr>
+<tr id="row104837115166"><td class="cellrowborder" valign="top" width="10.65%" headers="mcps1.2.3.1.1 "><p id="p13483171171614"><a name="p13483171171614"></a><a name="p13483171171614"></a>操作</p>
+</td>
+<td class="cellrowborder" valign="top" width="89.35%" headers="mcps1.2.3.1.2 "><p id="p123372411717"><a name="p123372411717"></a><a name="p123372411717"></a><span class="uicontrol" id="uicontrol174844191611"><a name="uicontrol174844191611"></a><a name="uicontrol174844191611"></a>“创建作业”</span>：直接在该模板下创建作业，创建完后，系统跳转到<span class="menucascade" id="menucascade54848111162"><a name="menucascade54848111162"></a><a name="menucascade54848111162"></a>“<span class="uicontrol" id="uicontrol1048420181615"><a name="uicontrol1048420181615"></a><a name="uicontrol1048420181615"></a>作业管理</span>”</span>下的作业编辑页面。</p>
 </td>
 </tr>
 </tbody>
@@ -64,11 +65,48 @@ Flink模板管理主要包括如下功能：
 -   Stream-Join-Table\(DCS\)
 -   Stream-Join-Table\(RDS\)
 
+## Flink OpenSource SQL样例模板<a name="section1619803119586"></a>
+
+Flink OpenSource SQL样例模板列表显示已有的Flink OpenSource SQL样例作业模板，Flink OpenSource SQL样例模板列表参数说明如[表 1](#table17778105244916)所示。
+
+**表 2**  Flink OpenSource SQL样例模板列表参数
+
+<a name="table119883145818"></a>
+<table><thead align="left"><tr id="row319913116584"><th class="cellrowborder" valign="top" width="10.51%" id="mcps1.2.3.1.1"><p id="p1119983112583"><a name="p1119983112583"></a><a name="p1119983112583"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="89.49000000000001%" id="mcps1.2.3.1.2"><p id="p2199331145812"><a name="p2199331145812"></a><a name="p2199331145812"></a>参数说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row13199103135810"><td class="cellrowborder" valign="top" width="10.51%" headers="mcps1.2.3.1.1 "><p id="p151991031155811"><a name="p151991031155811"></a><a name="p151991031155811"></a>名称</p>
+</td>
+<td class="cellrowborder" valign="top" width="89.49000000000001%" headers="mcps1.2.3.1.2 "><p id="p619910318586"><a name="p619910318586"></a><a name="p619910318586"></a>模板名称，只能由英文、中文、数字、中划线和下划线组成，并且长度为1～64个字符。</p>
+</td>
+</tr>
+<tr id="row191991431105812"><td class="cellrowborder" valign="top" width="10.51%" headers="mcps1.2.3.1.1 "><p id="p16199133117589"><a name="p16199133117589"></a><a name="p16199133117589"></a>描述</p>
+</td>
+<td class="cellrowborder" valign="top" width="89.49000000000001%" headers="mcps1.2.3.1.2 "><p id="p020013125812"><a name="p020013125812"></a><a name="p020013125812"></a>模板的相关描述，且长度为0～512个字符。</p>
+</td>
+</tr>
+<tr id="row1520043105819"><td class="cellrowborder" valign="top" width="10.51%" headers="mcps1.2.3.1.1 "><p id="p10200173135820"><a name="p10200173135820"></a><a name="p10200173135820"></a>操作</p>
+</td>
+<td class="cellrowborder" valign="top" width="89.49000000000001%" headers="mcps1.2.3.1.2 "><p id="p420093119580"><a name="p420093119580"></a><a name="p420093119580"></a><span class="uicontrol" id="uicontrol9200203111588"><a name="uicontrol9200203111588"></a><a name="uicontrol9200203111588"></a>“创建作业”</span>：直接在该模板下创建作业，创建完后，系统跳转到<span class="menucascade" id="menucascade13200173118581"><a name="menucascade13200173118581"></a><a name="menucascade13200173118581"></a>“<span class="uicontrol" id="uicontrol1720010318585"><a name="uicontrol1720010318585"></a><a name="uicontrol1720010318585"></a>作业管理</span>”</span>下的作业编辑页面。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+当前已有的样例模板包括如下场景：
+
+-   利用地址信息的维表生成订单信息宽表
+-   实时统计每天成交额、订单数和支付人数等指标
+-   统计实时点击量最高的商品
+
 ## 自定义模板<a name="section4777152184911"></a>
 
-自定义模板列表显示所有的自定义作业模板，自定义模板列表参数说明如[表 1](#table17778105244916)所示。
+自定义模板列表显示所有的jar作业模板，自定义模板列表参数说明如[表 1](#table17778105244916)所示。
 
-**表 2**  自定义模板列表参数
+**表 3**  自定义模板列表参数
 
 <a name="table17778105244916"></a>
 <table><thead align="left"><tr id="row97781952154913"><th class="cellrowborder" valign="top" width="20%" id="mcps1.2.3.1.1"><p id="p6778195215495"><a name="p6778195215495"></a><a name="p6778195215495"></a>参数</p>
@@ -80,6 +118,12 @@ Flink模板管理主要包括如下功能：
 <tbody><tr id="row1477895215491"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p777817528498"><a name="p777817528498"></a><a name="p777817528498"></a>名称</p>
 </td>
 <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p6778452184915"><a name="p6778452184915"></a><a name="p6778452184915"></a>模板名称，只能由英文、中文、数字、中划线和下划线组成，并且长度为1～64个字符。</p>
+</td>
+</tr>
+<tr id="row11273125614313"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p8765150324"><a name="p8765150324"></a><a name="p8765150324"></a>类型</p>
+</td>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p77711157323"><a name="p77711157323"></a><a name="p77711157323"></a>模板类型。</p>
+<a name="ul1077815153216"></a><a name="ul1077815153216"></a><ul id="ul1077815153216"><li>Flink SQL作业模板</li><li>Flink OpenSource SQL作业模板</li></ul>
 </td>
 </tr>
 <tr id="row577885210496"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p20778145214918"><a name="p20778145214918"></a><a name="p20778145214918"></a>描述</p>
@@ -99,7 +143,8 @@ Flink模板管理主要包括如下功能：
 </tr>
 <tr id="row27784522494"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p1577818528492"><a name="p1577818528492"></a><a name="p1577818528492"></a>操作</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><a name="ul1460194517206"></a><a name="ul1460194517206"></a><ul id="ul1460194517206"><li><span class="uicontrol" id="uicontrol134593452200"><a name="uicontrol134593452200"></a><a name="uicontrol134593452200"></a>“编辑”</span>：对已经创建好的模板进行修改。</li><li><span class="uicontrol" id="uicontrol17459745102017"><a name="uicontrol17459745102017"></a><a name="uicontrol17459745102017"></a>“创建作业”</span>：直接在该模板下创建作业，创建完后，系统跳转到<span class="menucascade" id="menucascade114599453208"><a name="menucascade114599453208"></a><a name="menucascade114599453208"></a>“<span class="uicontrol" id="uicontrol1045914453200"><a name="uicontrol1045914453200"></a><a name="uicontrol1045914453200"></a>作业管理</span>”</span>下的作业编辑页面。</li><li><span class="uicontrol" id="uicontrol104601845102013"><a name="uicontrol104601845102013"></a><a name="uicontrol104601845102013"></a>“删除”</span>：将已经创建的模板删除。</li></ul>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><a name="ul1460194517206"></a><a name="ul1460194517206"></a><ul id="ul1460194517206"><li><span class="uicontrol" id="uicontrol134593452200"><a name="uicontrol134593452200"></a><a name="uicontrol134593452200"></a>“编辑”</span>：对已经创建好的模板进行修改。</li><li><span class="uicontrol" id="uicontrol17459745102017"><a name="uicontrol17459745102017"></a><a name="uicontrol17459745102017"></a>“创建作业”</span>：直接在该模板下创建作业，创建完后，系统跳转到<span class="menucascade" id="menucascade114599453208"><a name="menucascade114599453208"></a><a name="menucascade114599453208"></a>“<span class="uicontrol" id="uicontrol1045914453200"><a name="uicontrol1045914453200"></a><a name="uicontrol1045914453200"></a>作业管理</span>”</span>下的作业编辑页面。</li><li>更多：<a name="ul18906328103615"></a><a name="ul18906328103615"></a><ul id="ul18906328103615"><li><span class="uicontrol" id="uicontrol104601845102013"><a name="uicontrol104601845102013"></a><a name="uicontrol104601845102013"></a>“删除”</span>：将已经创建的模板删除。</li><li><span class="uicontrol" id="uicontrol86251715153313"><a name="uicontrol86251715153313"></a><a name="uicontrol86251715153313"></a>“标签”</span>：查看或添加标签。</li></ul>
+</li></ul>
 </td>
 </tr>
 </tbody>
@@ -114,10 +159,10 @@ Flink模板管理主要包括如下功能：
     2.  单击页面右上角“创建模板“，弹出“创建模板“页面。
     3.  输入“名称“和“描述“。
 
-        **图 1**  新建模板<a name="fig262345011527"></a>  
+        **图 1**  新建模板<a name="fig1665153218295"></a>  
         ![](figures/新建模板.png "新建模板")
 
-        **表 3**  模板配置信息
+        **表 4**  模板配置信息
 
         <a name="table54210431747"></a>
         <table><thead align="left"><tr id="row042184317411"><th class="cellrowborder" valign="top" width="14.14%" id="mcps1.2.3.1.1"><p id="p442111432040"><a name="p442111432040"></a><a name="p442111432040"></a>参数</p>
@@ -126,7 +171,13 @@ Flink模板管理主要包括如下功能：
         </th>
         </tr>
         </thead>
-        <tbody><tr id="row1421174311418"><td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.3.1.1 "><p id="p14219435417"><a name="p14219435417"></a><a name="p14219435417"></a>名称</p>
+        <tbody><tr id="row1940413553118"><td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.3.1.1 "><p id="p099813411311"><a name="p099813411311"></a><a name="p099813411311"></a>类型</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="85.86%" headers="mcps1.2.3.1.2 "><p id="p1621815418318"><a name="p1621815418318"></a><a name="p1621815418318"></a>模板类型。</p>
+        <a name="ul157218383215"></a><a name="ul157218383215"></a><ul id="ul157218383215"><li>Flink SQL作业模板</li><li>Flink OpenSource SQL作业模板</li></ul>
+        </td>
+        </tr>
+        <tr id="row1421174311418"><td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.3.1.1 "><p id="p14219435417"><a name="p14219435417"></a><a name="p14219435417"></a>名称</p>
         </td>
         <td class="cellrowborder" valign="top" width="85.86%" headers="mcps1.2.3.1.2 "><p id="p942116438414"><a name="p942116438414"></a><a name="p942116438414"></a>模板名称，只能由字母、中文、数字、中划线和下划线组成，并且长度为1～64个字符。</p>
         <div class="note" id="note96156558515"><a name="note96156558515"></a><a name="note96156558515"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p166161552517"><a name="p166161552517"></a><a name="p166161552517"></a>模板名称必须是唯一的。</p>
@@ -138,63 +189,75 @@ Flink模板管理主要包括如下功能：
         <td class="cellrowborder" valign="top" width="85.86%" headers="mcps1.2.3.1.2 "><p id="p04214433416"><a name="p04214433416"></a><a name="p04214433416"></a>模板的相关描述，且长度为0～512字符。</p>
         </td>
         </tr>
+        <tr id="row865217511331"><td class="cellrowborder" valign="top" width="14.14%" headers="mcps1.2.3.1.1 "><p id="p665355123320"><a name="p665355123320"></a><a name="p665355123320"></a>标签</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="85.86%" headers="mcps1.2.3.1.2 "><p id="p20590111813214"><a name="p20590111813214"></a><a name="p20590111813214"></a>使用标签标识云资源。包括<span class="parmname" id="parmname07049211238"><a name="parmname07049211238"></a><a name="parmname07049211238"></a>“标签键”</span>和<span class="parmname" id="parmname17539122872312"><a name="parmname17539122872312"></a><a name="parmname17539122872312"></a>“标签值”</span>。如果您需要使用同一标签标识多种云资源，即所有服务均可在标签输入框下拉选择同一标签，建议在标签管理服务（TMS）中创建预定义标签。具体请参考《<a href="https://support.huaweicloud.com/usermanual-tms/zh-cn_topic_0056266269.html" target="_blank" rel="noopener noreferrer">标签管理服务用户指南</a>》。</p>
+        <div class="note" id="note13631112418326"><a name="note13631112418326"></a><a name="note13631112418326"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul1972873412320"></a><a name="ul1972873412320"></a><ul id="ul1972873412320"><li>最多支持10个标签。</li><li>一个“键”只能添加一个“值”。</li></ul>
+        </div></div>
+        <a name="ul55819552289"></a><a name="ul55819552289"></a><ul id="ul55819552289"><li>标签键：在输入框中输入标签键名称。<div class="note" id="note14517544152920"><a name="note14517544152920"></a><a name="note14517544152920"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p82546131233"><a name="p82546131233"></a><a name="p82546131233"></a>标签键的最大长度为36个字符 ，只能包含大小写字母，数字，中划线“-”，下划线“_”，中文，且首尾字符不能为空格。</p>
+        </div></div>
+        </li><li>标签值：在输入框中输入标签值。<div class="note" id="note669311015310"><a name="note669311015310"></a><a name="note669311015310"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p16513101437"><a name="p16513101437"></a><a name="p16513101437"></a>标签值的最大长度为43个字符，只能包含大小写字母，数字，中划线“-”，下划线“_”，点“.”中文，且首尾字符不能为空格。</p>
+        </div></div>
+        </li></ul>
+        </td>
+        </tr>
         </tbody>
         </table>
 
-    4.  单击“确认“，进入“编辑“页面。
+    4.  单击“确定“，进入“编辑“页面。
 
         **图 2**  编辑作业模板<a name="fig1523173015213"></a>  
         ![](figures/编辑作业模板.png "编辑作业模板")
 
         按照从左到右，从上到下的顺序说明如下：
 
-        **表 4**  界面介绍
+        **表 5**  界面介绍
 
         <a name="table57746157116"></a>
-        <table><thead align="left"><tr id="row97759154113"><th class="cellrowborder" valign="top" width="18.98%" id="mcps1.2.3.1.1"><p id="p1977531516120"><a name="p1977531516120"></a><a name="p1977531516120"></a>功能</p>
+        <table><thead align="left"><tr id="row97759154113"><th class="cellrowborder" valign="top" width="22.770000000000003%" id="mcps1.2.3.1.1"><p id="p1977531516120"><a name="p1977531516120"></a><a name="p1977531516120"></a>功能</p>
         </th>
-        <th class="cellrowborder" valign="top" width="81.02000000000001%" id="mcps1.2.3.1.2"><p id="p1477501514119"><a name="p1477501514119"></a><a name="p1477501514119"></a>描述</p>
+        <th class="cellrowborder" valign="top" width="77.23%" id="mcps1.2.3.1.2"><p id="p1477501514119"><a name="p1477501514119"></a><a name="p1477501514119"></a>描述</p>
         </th>
         </tr>
         </thead>
-        <tbody><tr id="row552923111371"><td class="cellrowborder" valign="top" width="18.98%" headers="mcps1.2.3.1.1 "><p id="p1653023193715"><a name="p1653023193715"></a><a name="p1653023193715"></a>名称</p>
+        <tbody><tr id="row552923111371"><td class="cellrowborder" valign="top" width="22.770000000000003%" headers="mcps1.2.3.1.1 "><p id="p1653023193715"><a name="p1653023193715"></a><a name="p1653023193715"></a>名称</p>
         </td>
-        <td class="cellrowborder" valign="top" width="81.02000000000001%" headers="mcps1.2.3.1.2 "><p id="p1053014316376"><a name="p1053014316376"></a><a name="p1053014316376"></a>可以修改模板名称。</p>
-        </td>
-        </tr>
-        <tr id="row148316183817"><td class="cellrowborder" valign="top" width="18.98%" headers="mcps1.2.3.1.1 "><p id="p1083101173811"><a name="p1083101173811"></a><a name="p1083101173811"></a>描述</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="81.02000000000001%" headers="mcps1.2.3.1.2 "><p id="p283191123820"><a name="p283191123820"></a><a name="p283191123820"></a>可以修改模板描述。</p>
+        <td class="cellrowborder" valign="top" width="77.23%" headers="mcps1.2.3.1.2 "><p id="p1053014316376"><a name="p1053014316376"></a><a name="p1053014316376"></a>可以修改模板名称。</p>
         </td>
         </tr>
-        <tr id="row776216413916"><td class="cellrowborder" valign="top" width="18.98%" headers="mcps1.2.3.1.1 "><p id="p1876294103914"><a name="p1876294103914"></a><a name="p1876294103914"></a>保存方式</p>
+        <tr id="row148316183817"><td class="cellrowborder" valign="top" width="22.770000000000003%" headers="mcps1.2.3.1.1 "><p id="p1083101173811"><a name="p1083101173811"></a><a name="p1083101173811"></a>描述</p>
         </td>
-        <td class="cellrowborder" valign="top" width="81.02000000000001%" headers="mcps1.2.3.1.2 "><a name="ul17263191433914"></a><a name="ul17263191433914"></a><ul id="ul17263191433914"><li>修改：将修改保存至当前的模板中。</li><li>新增：将修改另存为新的模板。</li></ul>
-        </td>
-        </tr>
-        <tr id="row11775131511117"><td class="cellrowborder" valign="top" width="18.98%" headers="mcps1.2.3.1.1 "><p id="p4776151514117"><a name="p4776151514117"></a><a name="p4776151514117"></a>SQL语句编辑区域</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="81.02000000000001%" headers="mcps1.2.3.1.2 "><p id="p883019141171"><a name="p883019141171"></a><a name="p883019141171"></a>输入详细的SQL语句，实现业务逻辑功能。SQL语句的编写请参考<a href="https://support.huaweicloud.com/sqlreference-dli/dli_08_0219.html" target="_blank" rel="noopener noreferrer">《数据湖探索SQL语法参考》</a>。</p>
+        <td class="cellrowborder" valign="top" width="77.23%" headers="mcps1.2.3.1.2 "><p id="p283191123820"><a name="p283191123820"></a><a name="p283191123820"></a>可以修改模板描述。</p>
         </td>
         </tr>
-        <tr id="row877691510116"><td class="cellrowborder" valign="top" width="18.98%" headers="mcps1.2.3.1.1 "><p id="p127779153118"><a name="p127779153118"></a><a name="p127779153118"></a>保存</p>
+        <tr id="row776216413916"><td class="cellrowborder" valign="top" width="22.770000000000003%" headers="mcps1.2.3.1.1 "><p id="p1876294103914"><a name="p1876294103914"></a><a name="p1876294103914"></a>保存方式</p>
         </td>
-        <td class="cellrowborder" valign="top" width="81.02000000000001%" headers="mcps1.2.3.1.2 "><p id="p277716151116"><a name="p277716151116"></a><a name="p277716151116"></a>保存修改。</p>
-        </td>
-        </tr>
-        <tr id="row982893814405"><td class="cellrowborder" valign="top" width="18.98%" headers="mcps1.2.3.1.1 "><p id="p3828143812406"><a name="p3828143812406"></a><a name="p3828143812406"></a>创建作业</p>
-        </td>
-        <td class="cellrowborder" valign="top" width="81.02000000000001%" headers="mcps1.2.3.1.2 "><p id="p9828938194011"><a name="p9828938194011"></a><a name="p9828938194011"></a>使用当前模板创建作业。</p>
+        <td class="cellrowborder" valign="top" width="77.23%" headers="mcps1.2.3.1.2 "><a name="ul17263191433914"></a><a name="ul17263191433914"></a><ul id="ul17263191433914"><li>修改：将修改保存至当前的模板中。</li><li>新增：将修改另存为新的模板。</li></ul>
         </td>
         </tr>
-        <tr id="row15379135241612"><td class="cellrowborder" valign="top" width="18.98%" headers="mcps1.2.3.1.1 "><p id="p1637916528169"><a name="p1637916528169"></a><a name="p1637916528169"></a>格式化</p>
+        <tr id="row11775131511117"><td class="cellrowborder" valign="top" width="22.770000000000003%" headers="mcps1.2.3.1.1 "><p id="p4776151514117"><a name="p4776151514117"></a><a name="p4776151514117"></a>SQL语句编辑区域</p>
         </td>
-        <td class="cellrowborder" valign="top" width="81.02000000000001%" headers="mcps1.2.3.1.2 "><p id="p173809528166"><a name="p173809528166"></a><a name="p173809528166"></a>对SQL语句进行格式化，将SQL语句格式化后，需要重新编辑SQL语句。</p>
+        <td class="cellrowborder" valign="top" width="77.23%" headers="mcps1.2.3.1.2 "><p id="p883019141171"><a name="p883019141171"></a><a name="p883019141171"></a>输入详细的SQL语句，实现业务逻辑功能。SQL语句的编写请参考<a href="https://support.huaweicloud.com/sqlreference-dli/dli_08_0219.html" target="_blank" rel="noopener noreferrer">《数据湖探索SQL语法参考》</a>。</p>
         </td>
         </tr>
-        <tr id="row15591758111619"><td class="cellrowborder" valign="top" width="18.98%" headers="mcps1.2.3.1.1 "><p id="p11593583164"><a name="p11593583164"></a><a name="p11593583164"></a><a name="image7160122812416"></a><a name="image7160122812416"></a><span><img id="image7160122812416" src="figures/zh-cn_image_0238333104.png"></span></p>
+        <tr id="row877691510116"><td class="cellrowborder" valign="top" width="22.770000000000003%" headers="mcps1.2.3.1.1 "><p id="p127779153118"><a name="p127779153118"></a><a name="p127779153118"></a>保存</p>
         </td>
-        <td class="cellrowborder" valign="top" width="81.02000000000001%" headers="mcps1.2.3.1.2 "><p id="p1459115811610"><a name="p1459115811610"></a><a name="p1459115811610"></a>更改页面风格（黑色底或白色底）。</p>
+        <td class="cellrowborder" valign="top" width="77.23%" headers="mcps1.2.3.1.2 "><p id="p277716151116"><a name="p277716151116"></a><a name="p277716151116"></a>保存修改。</p>
+        </td>
+        </tr>
+        <tr id="row982893814405"><td class="cellrowborder" valign="top" width="22.770000000000003%" headers="mcps1.2.3.1.1 "><p id="p3828143812406"><a name="p3828143812406"></a><a name="p3828143812406"></a>创建作业</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="77.23%" headers="mcps1.2.3.1.2 "><p id="p9828938194011"><a name="p9828938194011"></a><a name="p9828938194011"></a>使用当前模板创建作业。</p>
+        </td>
+        </tr>
+        <tr id="row15379135241612"><td class="cellrowborder" valign="top" width="22.770000000000003%" headers="mcps1.2.3.1.1 "><p id="p1637916528169"><a name="p1637916528169"></a><a name="p1637916528169"></a>格式化</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="77.23%" headers="mcps1.2.3.1.2 "><p id="p173809528166"><a name="p173809528166"></a><a name="p173809528166"></a>对SQL语句进行格式化，将SQL语句格式化后，需要重新编辑SQL语句。</p>
+        </td>
+        </tr>
+        <tr id="row15591758111619"><td class="cellrowborder" valign="top" width="22.770000000000003%" headers="mcps1.2.3.1.1 "><p id="p11593583164"><a name="p11593583164"></a><a name="p11593583164"></a><a name="image7160122812416"></a><a name="image7160122812416"></a><span><img id="image7160122812416" src="figures/zh-cn_image_0238333104.png"></span></p>
+        </td>
+        <td class="cellrowborder" valign="top" width="77.23%" headers="mcps1.2.3.1.2 "><p id="p1459115811610"><a name="p1459115811610"></a><a name="p1459115811610"></a>更改页面风格（黑色底或白色底）。</p>
         </td>
         </tr>
         </tbody>
@@ -202,7 +265,7 @@ Flink模板管理主要包括如下功能：
 
     5.  在SQL语句编辑区域，输入SQL语句，实现业务逻辑功能。SQL语句的编写请参考[《数据湖探索SQL语法参考》](https://support.huaweicloud.com/sqlreference-dli/dli_08_0219.html)。
     6.  SQL编辑完成后，单击右上角的“保存“，完成创建模板。
-    7.  （可选）如果不需要进行修改，也可以单击右上角的“创建作业“基于当前模板创建作业。创建作业请参考[创建Flink SQL作业](创建Flink-SQL作业.md)和[创建Flink自定义作业](创建Flink自定义作业.md)。
+    7.  （可选）如果不需要进行修改，也可以单击右上角的“创建作业“基于当前模板创建作业。创建作业请参考[创建Flink SQL作业](创建Flink-SQL作业.md)、[创建Flink Jar作业](创建Flink-Jar作业.md)和[创建Flink OpenSource SQL作业](创建Flink-OpenSource-SQL作业.md)。
 
 -   基于现有作业模板新建模板
     1.  在DLI管理控制台的左侧导航栏中，单击“作业模板“\>“Flink模板“，单击“自定义模板“页签。
@@ -231,7 +294,7 @@ Flink模板管理主要包括如下功能：
 用户可以基于样例模板或者自定义模板新建作业。
 
 1.  在DLI管理控制台的左侧导航栏中，单击“作业模板“\>“Flink模板“。
-2.  在样例模板列表中，单击对应模板“操作“列中的“创建作业“。创建作业请参考[创建Flink SQL作业](创建Flink-SQL作业.md)和[创建Flink自定义作业](创建Flink自定义作业.md)。
+2.  在样例模板列表中，单击对应模板“操作“列中的“创建作业“。创建作业请参考[创建Flink SQL作业](创建Flink-SQL作业.md)和[创建Flink Jar作业](创建Flink-Jar作业.md)。
 
 ## 修改模板<a name="section735234815411"></a>
 

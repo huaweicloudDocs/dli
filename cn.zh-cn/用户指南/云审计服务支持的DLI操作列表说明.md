@@ -1,7 +1,5 @@
 # 云审计服务支持的DLI操作列表说明<a name="dli_01_0318"></a>
 
-数据湖探索服务（Data Lake Insight，简称DLI）是完全托管的数据分析服务，用户无需管理任何服务器，即开即用；服务支持标准SQL，完全兼容Spark生态接口，提供云上多态数据的统一分析能力。
-
 通过云审计服务，您可以记录与DLI服务相关的操作事件，便于日后的查询、审计和回溯。
 
 **表 1**  云审计服务支持的DLI操作列表
@@ -250,21 +248,21 @@
 </td>
 <td class="cellrowborder" valign="top" width="38.06060606060606%" headers="mcps1.2.4.1.2 "><p id="p058112400177"><a name="p058112400177"></a><a name="p058112400177"></a>flinkTemplate</p>
 </td>
-<td class="cellrowborder" valign="top" width="32.656565656565654%" headers="mcps1.2.4.1.3 "><p id="p1658119403176"><a name="p1658119403176"></a><a name="p1658119403176"></a>createJobTemplate</p>
+<td class="cellrowborder" valign="top" width="32.656565656565654%" headers="mcps1.2.4.1.3 "><p id="p1658119403176"><a name="p1658119403176"></a><a name="p1658119403176"></a>createFlinkTemplate</p>
 </td>
 </tr>
 <tr id="row126166251175"><td class="cellrowborder" valign="top" width="29.282828282828284%" headers="mcps1.2.4.1.1 "><p id="p45812405176"><a name="p45812405176"></a><a name="p45812405176"></a>更新Flink模板</p>
 </td>
 <td class="cellrowborder" valign="top" width="38.06060606060606%" headers="mcps1.2.4.1.2 "><p id="p1158164051711"><a name="p1158164051711"></a><a name="p1158164051711"></a>flinkTemplate</p>
 </td>
-<td class="cellrowborder" valign="top" width="32.656565656565654%" headers="mcps1.2.4.1.3 "><p id="p20581440141715"><a name="p20581440141715"></a><a name="p20581440141715"></a>updateJobTemplate</p>
+<td class="cellrowborder" valign="top" width="32.656565656565654%" headers="mcps1.2.4.1.3 "><p id="p20581440141715"><a name="p20581440141715"></a><a name="p20581440141715"></a>updateFlinkTemplate</p>
 </td>
 </tr>
 <tr id="row10617025141714"><td class="cellrowborder" valign="top" width="29.282828282828284%" headers="mcps1.2.4.1.1 "><p id="p1582134011170"><a name="p1582134011170"></a><a name="p1582134011170"></a>删除Flink模板</p>
 </td>
 <td class="cellrowborder" valign="top" width="38.06060606060606%" headers="mcps1.2.4.1.2 "><p id="p105825409177"><a name="p105825409177"></a><a name="p105825409177"></a>flinkTemplate</p>
 </td>
-<td class="cellrowborder" valign="top" width="32.656565656565654%" headers="mcps1.2.4.1.3 "><p id="p35827409176"><a name="p35827409176"></a><a name="p35827409176"></a>deleteJobTemplate</p>
+<td class="cellrowborder" valign="top" width="32.656565656565654%" headers="mcps1.2.4.1.3 "><p id="p35827409176"><a name="p35827409176"></a><a name="p35827409176"></a>deleteFlinkTemplate</p>
 </td>
 </tr>
 <tr id="row9351640846"><td class="cellrowborder" valign="top" width="29.282828282828284%" headers="mcps1.2.4.1.1 "><p id="p1793910506517"><a name="p1793910506517"></a><a name="p1793910506517"></a>创建数据上传任务</p>
@@ -414,13 +412,6 @@
 <td class="cellrowborder" valign="top" width="32.656565656565654%" headers="mcps1.2.4.1.3 "><p id="p1727816219483"><a name="p1727816219483"></a><a name="p1727816219483"></a>createAgency</p>
 </td>
 </tr>
-<tr id="row77841634122410"><td class="cellrowborder" valign="top" width="29.282828282828284%" headers="mcps1.2.4.1.1 "><p id="p078433410242"><a name="p078433410242"></a><a name="p078433410242"></a>查询DLI授权信息</p>
-</td>
-<td class="cellrowborder" valign="top" width="38.06060606060606%" headers="mcps1.2.4.1.2 "><p id="p1578413418246"><a name="p1578413418246"></a><a name="p1578413418246"></a>agency</p>
-</td>
-<td class="cellrowborder" valign="top" width="32.656565656565654%" headers="mcps1.2.4.1.3 "><p id="p1478413418247"><a name="p1478413418247"></a><a name="p1478413418247"></a>isTrustDLI</p>
-</td>
-</tr>
 <tr id="row1658454985411"><td class="cellrowborder" valign="top" width="29.282828282828284%" headers="mcps1.2.4.1.1 "><p id="p4584164912548"><a name="p4584164912548"></a><a name="p4584164912548"></a>创建批处理作业</p>
 </td>
 <td class="cellrowborder" valign="top" width="38.06060606060606%" headers="mcps1.2.4.1.2 "><p id="p1858484917541"><a name="p1858484917541"></a><a name="p1858484917541"></a>batch</p>
@@ -447,34 +438,6 @@
 <td class="cellrowborder" valign="top" width="38.06060606060606%" headers="mcps1.2.4.1.2 "><p id="p1043910372212"><a name="p1043910372212"></a><a name="p1043910372212"></a>session</p>
 </td>
 <td class="cellrowborder" valign="top" width="32.656565656565654%" headers="mcps1.2.4.1.3 "><p id="p1439237425"><a name="p1439237425"></a><a name="p1439237425"></a>deleteSession</p>
-</td>
-</tr>
-<tr id="row121811328848"><td class="cellrowborder" valign="top" width="29.282828282828284%" headers="mcps1.2.4.1.1 "><p id="p1718114289420"><a name="p1718114289420"></a><a name="p1718114289420"></a>查询会话列表</p>
-</td>
-<td class="cellrowborder" valign="top" width="38.06060606060606%" headers="mcps1.2.4.1.2 "><p id="p918114281040"><a name="p918114281040"></a><a name="p918114281040"></a>session</p>
-</td>
-<td class="cellrowborder" valign="top" width="32.656565656565654%" headers="mcps1.2.4.1.3 "><p id="p71815281418"><a name="p71815281418"></a><a name="p71815281418"></a>getSessionList</p>
-</td>
-</tr>
-<tr id="row973081019318"><td class="cellrowborder" valign="top" width="29.282828282828284%" headers="mcps1.2.4.1.1 "><p id="p2073015101310"><a name="p2073015101310"></a><a name="p2073015101310"></a>查询会话状态</p>
-</td>
-<td class="cellrowborder" valign="top" width="38.06060606060606%" headers="mcps1.2.4.1.2 "><p id="p167309103314"><a name="p167309103314"></a><a name="p167309103314"></a>session</p>
-</td>
-<td class="cellrowborder" valign="top" width="32.656565656565654%" headers="mcps1.2.4.1.3 "><p id="p973171017318"><a name="p973171017318"></a><a name="p973171017318"></a>getSessionState</p>
-</td>
-</tr>
-<tr id="row7239193215319"><td class="cellrowborder" valign="top" width="29.282828282828284%" headers="mcps1.2.4.1.1 "><p id="p1623973213319"><a name="p1623973213319"></a><a name="p1623973213319"></a>查询会话详情</p>
-</td>
-<td class="cellrowborder" valign="top" width="38.06060606060606%" headers="mcps1.2.4.1.2 "><p id="p162391332836"><a name="p162391332836"></a><a name="p162391332836"></a>session</p>
-</td>
-<td class="cellrowborder" valign="top" width="32.656565656565654%" headers="mcps1.2.4.1.3 "><p id="p192391532538"><a name="p192391532538"></a><a name="p192391532538"></a>getSessionDetail</p>
-</td>
-</tr>
-<tr id="row93901711845"><td class="cellrowborder" valign="top" width="29.282828282828284%" headers="mcps1.2.4.1.1 "><p id="p63911511347"><a name="p63911511347"></a><a name="p63911511347"></a>查询会话日志</p>
-</td>
-<td class="cellrowborder" valign="top" width="38.06060606060606%" headers="mcps1.2.4.1.2 "><p id="p83911411249"><a name="p83911411249"></a><a name="p83911411249"></a>session</p>
-</td>
-<td class="cellrowborder" valign="top" width="32.656565656565654%" headers="mcps1.2.4.1.3 "><p id="p143911812046"><a name="p143911812046"></a><a name="p143911812046"></a>getSessionLog</p>
 </td>
 </tr>
 <tr id="row0264622864"><td class="cellrowborder" valign="top" width="29.282828282828284%" headers="mcps1.2.4.1.1 "><p id="p182642221862"><a name="p182642221862"></a><a name="p182642221862"></a>创建语句</p>

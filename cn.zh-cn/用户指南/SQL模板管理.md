@@ -14,6 +14,21 @@ SQL模板管理主要包括如下功能：
 -   [修改模板](#section08698165316)
 -   [删除模板](#section1317681345320)
 
+## 表格设置<a name="section18354320771"></a>
+
+在“SQL模板”页面右上角，单击“设置”可以选择是否按照分组展示模板。
+
+![](figures/12-1SQL模板管理-zh.png)
+
+如果选择“按分组展示”，有以下三种展示方式：
+
+-   展开第一个分组
+-   全部展开
+-   全部收起
+
+**图 1**  SQL模板显示设置<a name="fig8560194210405"></a>  
+![](figures/SQL模板显示设置.png "SQL模板显示设置")
+
 ## 样例模板<a name="section1039614583412"></a>
 
 当前样例模板包括22条标准的TPC-H查询语句，您可以查看模板名称、描述、语句等信息。
@@ -123,7 +138,7 @@ SQL模板管理主要包括如下功能：
 
         输入模板名称、语句和描述信息，详细参数介绍请参见[表3](#table8760202135313)。
 
-        **图 1**  创建模板<a name="fig375913217530"></a>  
+        **图 2**  创建模板<a name="fig375913217530"></a>  
         ![](figures/创建模板.png "创建模板")
 
         **表 3**  参数说明
@@ -149,6 +164,16 @@ SQL模板管理主要包括如下功能：
         <tr id="row8760122115310"><td class="cellrowborder" valign="top" width="10.83%" headers="mcps1.2.3.1.1 "><p id="p6760162175317"><a name="p6760162175317"></a><a name="p6760162175317"></a>描述</p>
         </td>
         <td class="cellrowborder" valign="top" width="89.17%" headers="mcps1.2.3.1.2 "><p id="p13760102118531"><a name="p13760102118531"></a><a name="p13760102118531"></a>该模板的相应描述。</p>
+        </td>
+        </tr>
+        <tr id="row18481020155119"><td class="cellrowborder" valign="top" width="10.83%" headers="mcps1.2.3.1.1 "><p id="p684972045112"><a name="p684972045112"></a><a name="p684972045112"></a>分组设置</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="89.17%" headers="mcps1.2.3.1.2 "><a name="ul187917655212"></a><a name="ul187917655212"></a><ul id="ul187917655212"><li>已有分组</li><li>创建新分组</li><li>不分组</li></ul>
+        </td>
+        </tr>
+        <tr id="row1084922017517"><td class="cellrowborder" valign="top" width="10.83%" headers="mcps1.2.3.1.1 "><p id="p1184952015113"><a name="p1184952015113"></a><a name="p1184952015113"></a>分组名称</p>
+        </td>
+        <td class="cellrowborder" valign="top" width="89.17%" headers="mcps1.2.3.1.2 "><p id="p15849720175114"><a name="p15849720175114"></a><a name="p15849720175114"></a><span class="parmname" id="parmname69501567522"><a name="parmname69501567522"></a><a name="parmname69501567522"></a>“分组设置”</span>选择“已有分组”或者“创建新分组”时，需要填写分组名称。</p>
         </td>
         </tr>
         </tbody>

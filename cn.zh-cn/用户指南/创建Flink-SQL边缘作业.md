@@ -10,6 +10,7 @@
 -   已成功创建边缘节点和纳管边缘节点。具体操作步骤，请参见《智能边缘平台用户指南》中[边缘节点](https://support.huaweicloud.com/usermanual-ief/ief_01_0003.html)。
 -   已成功部署边缘流计算应用。具体操作步骤，请参见《智能边缘平台用户指南》中[应用部署](https://support.huaweicloud.com/usermanual-ief/ief_01_0011.html)。
 -   IEF服务必须具有Tenant Administrator权限才能运行作业。
+-   创建Flink SQL边缘作业前，请购买边缘鉴权码。边缘鉴权码的购买与使用详见[购买边缘鉴权码](边缘鉴权码管理.md#section573333259)。
 
 ## 注意事项<a name="section15350165714362"></a>
 
@@ -118,15 +119,22 @@
     <td class="cellrowborder" valign="top" width="84.72%" headers="mcps1.2.3.1.2 "><p id="p669883603313"><a name="p669883603313"></a><a name="p669883603313"></a>作业的相关描述，且长度为0～512字节。</p>
     </td>
     </tr>
-    <tr id="row1362515491434"><td class="cellrowborder" valign="top" width="15.28%" headers="mcps1.2.3.1.1 "><p id="p36261491333"><a name="p36261491333"></a><a name="p36261491333"></a>编辑器</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="84.72%" headers="mcps1.2.3.1.2 "><p id="p136265491239"><a name="p136265491239"></a><a name="p136265491239"></a>支持<span class="parmvalue" id="parmvalue1736265817414"><a name="parmvalue1736265817414"></a><a name="parmvalue1736265817414"></a>“SQL编辑器”</span>和<span class="parmvalue" id="parmvalue4362658194111"><a name="parmvalue4362658194111"></a><a name="parmvalue4362658194111"></a>“可视化编辑器”</span>，默认选择<span class="parmvalue" id="parmvalue10364758194110"><a name="parmvalue10364758194110"></a><a name="parmvalue10364758194110"></a>“SQL编辑器”</span>。</p>
-    </td>
-    </tr>
     <tr id="row37021836183311"><td class="cellrowborder" valign="top" width="15.28%" headers="mcps1.2.3.1.1 "><p id="p77021362335"><a name="p77021362335"></a><a name="p77021362335"></a>模板名称</p>
     </td>
     <td class="cellrowborder" valign="top" width="84.72%" headers="mcps1.2.3.1.2 "><p id="p184821439162612"><a name="p184821439162612"></a><a name="p184821439162612"></a>当编辑器选择<span class="parmvalue" id="parmvalue83644587419"><a name="parmvalue83644587419"></a><a name="parmvalue83644587419"></a>“SQL编辑器”</span>时，该参数有效。</p>
     <p id="p1702736153320"><a name="p1702736153320"></a><a name="p1702736153320"></a>用户可以选择样例模板或自定义的作业模板。关于模板的详细信息，请参见<a href="Flink模板管理.md">Flink模板管理</a>。</p>
+    </td>
+    </tr>
+    <tr id="row1280261974816"><td class="cellrowborder" valign="top" width="15.28%" headers="mcps1.2.3.1.1 "><p id="p105901518162120"><a name="p105901518162120"></a><a name="p105901518162120"></a>标签</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="84.72%" headers="mcps1.2.3.1.2 "><p id="p20590111813214"><a name="p20590111813214"></a><a name="p20590111813214"></a>使用标签标识云资源。包括<span class="parmname" id="parmname07049211238"><a name="parmname07049211238"></a><a name="parmname07049211238"></a>“标签键”</span>和<span class="parmname" id="parmname17539122872312"><a name="parmname17539122872312"></a><a name="parmname17539122872312"></a>“标签值”</span>。如果您需要使用同一标签标识多种云资源，即所有服务均可在标签输入框下拉选择同一标签，建议在标签管理服务（TMS）中创建预定义标签。具体请参考《<a href="https://support.huaweicloud.com/usermanual-tms/zh-cn_topic_0056266269.html" target="_blank" rel="noopener noreferrer">标签管理服务用户指南</a>》。</p>
+    <div class="note" id="note13631112418326"><a name="note13631112418326"></a><a name="note13631112418326"></a><span class="notetitle"> 说明： </span><div class="notebody"><a name="ul1972873412320"></a><a name="ul1972873412320"></a><ul id="ul1972873412320"><li>最多支持10个标签。</li><li>一个“键”只能添加一个“值”。</li></ul>
+    </div></div>
+    <a name="ul55819552289"></a><a name="ul55819552289"></a><ul id="ul55819552289"><li>标签键：在输入框中输入标签键名称。<div class="note" id="note14517544152920"><a name="note14517544152920"></a><a name="note14517544152920"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p15521922523"><a name="p15521922523"></a><a name="p15521922523"></a>标签键的最大长度为36个字符 ，只能包含大小写字母，数字，中划线“-”，下划线“_”，中文，且首尾字符不能为空格。</p>
+    </div></div>
+    </li><li>标签值：在输入框中输入标签值。<div class="note" id="note669311015310"><a name="note669311015310"></a><a name="note669311015310"></a><span class="notetitle"> 说明： </span><div class="notebody"><p id="p1250721519520"><a name="p1250721519520"></a><a name="p1250721519520"></a>标签值的最大长度为43个字符，只能包含大小写字母，数字，中划线“-”，下划线“_”，点“.”中文，且首尾字符不能为空格。</p>
+    </div></div>
+    </li></ul>
     </td>
     </tr>
     </tbody>
@@ -224,11 +232,11 @@
 
     提交作业后，系统将自动跳转到“作业管理“页面，新创建的作业将显示在作业列表中，在“状态“列中可以查看作业状态。作业提交成功后，状态将由“提交中“变为“运行中“。运行结束显示“已完成”。
 
-    如果作业状态为“提交失败“或“运行异常“，表示作业提交或运行失败。用户可以在作业列表中的“状态“列中，将鼠标移动到状态图标上查看错误信息，单击![](figures/icon-cs-copy-1.png)可以复制错误信息。根据错误信息解决故障后，重新提交。
+    如果作业状态为“提交失败“或“运行异常“，表示作业提交或运行失败。用户可以在作业列表中的“状态“列中，将鼠标移动到状态图标上查看错误信息，单击![](figures/icon-cs-copy-3.png)可以复制错误信息。根据错误信息解决故障后，重新提交。
 
     >![](public_sys-resources/icon-note.gif) **说明：** 
     >其他功能按钮说明如下：
-    >-   调试：对作业进行调试。具体操作请参见[调试作业](调试作业.md)。
+    >-   调试：对作业进行调试。具体操作请参见[调试作业](调试Flink作业.md)。
     >-   SQL格式化：将SQL格式化，将SQL语句格式化后，需要重新编辑SQL语句。
     >-   更多 \> 名称和描述修改：修改作业名称和描述。
     >-   更多 \> 另存为：将新建作业另存为一个新作业。
@@ -240,13 +248,13 @@
 ## 验证作业运行效果<a name="section57921043124614"></a>
 
 1.  在智能边缘平台中，登录任一节点（该节点需与边缘节点网络互通）。
-2.  本示例使用以下命令发送数据到边缘节点。
+2.  使用以下命令发送数据到边缘节点。
 
     ```
     mosquitto_pub -h 边缘节点IP -t abc -m '{"student":{"score":90,"name":"1bc2"}}'；
     ```
 
-    “abc“为作业中定义的topic名称。
+    “abc“为作业中定义输入流的topic名称。
 
 3.  打开新的窗口，使用命令监听输出。输入以下命令，可查询到成绩大于或者等于80的学生姓名和成绩。
 
@@ -254,6 +262,6 @@
     mosquitto_sub -h 边缘节点IP -t abcd
     ```
 
-    “abcd“为作业中定义的topic名称。
+    “abcd“为作业中定义输出流的topic名称。
 
 
