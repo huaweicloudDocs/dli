@@ -4,6 +4,10 @@
 
 该API用于检查SQL语法。
 
+## 调试<a name="section556523314214"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DLI&api=CheckSQL)中调试该接口。
+
 ## URI<a name="sec7331dc70ce415da2d94a4062c0e286"></a>
 
 -   URI格式：
@@ -15,19 +19,23 @@
     **表 1**  URI 参数
 
     <a name="zh-cn_topic_0069077896_table12850938"></a>
-    <table><thead align="left"><tr id="zh-cn_topic_0069077896_row26986831"><th class="cellrowborder" valign="top" width="18.41%" id="mcps1.2.4.1.1"><p id="ac4350eeb47b04ac3842d18c867bd44eb"><a name="ac4350eeb47b04ac3842d18c867bd44eb"></a><a name="ac4350eeb47b04ac3842d18c867bd44eb"></a>名称</p>
+    <table><thead align="left"><tr id="zh-cn_topic_0069077896_row26986831"><th class="cellrowborder" valign="top" width="17.03%" id="mcps1.2.5.1.1"><p id="ac4350eeb47b04ac3842d18c867bd44eb"><a name="ac4350eeb47b04ac3842d18c867bd44eb"></a><a name="ac4350eeb47b04ac3842d18c867bd44eb"></a>参数名称</p>
     </th>
-    <th class="cellrowborder" valign="top" width="14.31%" id="mcps1.2.4.1.2"><p id="a9c7aa8e702fe45d598376fcd31c9f5ce"><a name="a9c7aa8e702fe45d598376fcd31c9f5ce"></a><a name="a9c7aa8e702fe45d598376fcd31c9f5ce"></a>是否必选</p>
+    <th class="cellrowborder" valign="top" width="13.23%" id="mcps1.2.5.1.2"><p id="a9c7aa8e702fe45d598376fcd31c9f5ce"><a name="a9c7aa8e702fe45d598376fcd31c9f5ce"></a><a name="a9c7aa8e702fe45d598376fcd31c9f5ce"></a>是否必选</p>
     </th>
-    <th class="cellrowborder" valign="top" width="67.28%" id="mcps1.2.4.1.3"><p id="a319b72a499674bd8befd20b6a9358879"><a name="a319b72a499674bd8befd20b6a9358879"></a><a name="a319b72a499674bd8befd20b6a9358879"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="11.88%" id="mcps1.2.5.1.3"><p id="p17251748292"><a name="p17251748292"></a><a name="p17251748292"></a>参数类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="57.86%" id="mcps1.2.5.1.4"><p id="a319b72a499674bd8befd20b6a9358879"><a name="a319b72a499674bd8befd20b6a9358879"></a><a name="a319b72a499674bd8befd20b6a9358879"></a>说明</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row134331617104113"><td class="cellrowborder" valign="top" width="18.41%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0069077803_p43412436"><a name="zh-cn_topic_0069077803_p43412436"></a><a name="zh-cn_topic_0069077803_p43412436"></a>project_id</p>
+    <tbody><tr id="row134331617104113"><td class="cellrowborder" valign="top" width="17.03%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077803_p43412436"><a name="zh-cn_topic_0069077803_p43412436"></a><a name="zh-cn_topic_0069077803_p43412436"></a>project_id</p>
     </td>
-    <td class="cellrowborder" valign="top" width="14.31%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0069077803_p26746391"><a name="zh-cn_topic_0069077803_p26746391"></a><a name="zh-cn_topic_0069077803_p26746391"></a>是</p>
+    <td class="cellrowborder" valign="top" width="13.23%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0069077803_p26746391"><a name="zh-cn_topic_0069077803_p26746391"></a><a name="zh-cn_topic_0069077803_p26746391"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="67.28%" headers="mcps1.2.4.1.3 "><p id="p1310472724012"><a name="p1310472724012"></a><a name="p1310472724012"></a>项目编号，用于资源隔离。获取方式请参考<a href="获取项目ID.md">获取项目ID</a>。</p>
+    <td class="cellrowborder" valign="top" width="11.88%" headers="mcps1.2.5.1.3 "><p id="p1425144112910"><a name="p1425144112910"></a><a name="p1425144112910"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="57.86%" headers="mcps1.2.5.1.4 "><p id="p1310472724012"><a name="p1310472724012"></a><a name="p1310472724012"></a>项目编号，用于资源隔离。获取方式请参考<a href="获取项目ID.md">获取项目ID</a>。</p>
     </td>
     </tr>
     </tbody>
@@ -39,7 +47,7 @@
 **表 2**  请求参数
 
 <a name="table6376584143542"></a>
-<table><thead align="left"><tr id="row19110893143542"><th class="cellrowborder" valign="top" width="11.98989898989899%" id="mcps1.2.5.1.1"><p id="p42934984143542"><a name="p42934984143542"></a><a name="p42934984143542"></a>参数</p>
+<table><thead align="left"><tr id="row19110893143542"><th class="cellrowborder" valign="top" width="11.98989898989899%" id="mcps1.2.5.1.1"><p id="p42934984143542"><a name="p42934984143542"></a><a name="p42934984143542"></a>参数名称</p>
 </th>
 <th class="cellrowborder" valign="top" width="10.383838383838384%" id="mcps1.2.5.1.2"><p id="p55181642143542"><a name="p55181642143542"></a><a name="p55181642143542"></a>是否必选</p>
 </th>
@@ -77,7 +85,7 @@
 **表 3**  响应参数
 
 <a name="zh-cn_topic_0069077896_table33203075"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0069077896_row35922485"><th class="cellrowborder" valign="top" width="13.820000000000002%" id="mcps1.2.5.1.1"><p id="a5212f67c295f4ae7a136c5eb4d263e47"><a name="a5212f67c295f4ae7a136c5eb4d263e47"></a><a name="a5212f67c295f4ae7a136c5eb4d263e47"></a>参数</p>
+<table><thead align="left"><tr id="zh-cn_topic_0069077896_row35922485"><th class="cellrowborder" valign="top" width="13.820000000000002%" id="mcps1.2.5.1.1"><p id="a5212f67c295f4ae7a136c5eb4d263e47"><a name="a5212f67c295f4ae7a136c5eb4d263e47"></a><a name="a5212f67c295f4ae7a136c5eb4d263e47"></a>参数名称</p>
 </th>
 <th class="cellrowborder" valign="top" width="12.420000000000002%" id="mcps1.2.5.1.2"><p id="p6901173019816"><a name="p6901173019816"></a><a name="p6901173019816"></a>是否必选</p>
 </th>
@@ -138,7 +146,39 @@
     }
     ```
 
-    >![](public_sys-resources/icon-note.gif) **说明：** 
-    >调用接口出错后，将不会返回上述结果，而是返回错误码和错误信息，详细介绍请参见[错误码](错误码.md)。
 
+## 状态码<a name="sf39cfd445ad24e9e82754fcb0027179d"></a>
+
+状态码如[表4](#tb12870f1c5f24b27abd55ca24264af36)所示。
+
+**表 4**  状态码
+
+<a name="tb12870f1c5f24b27abd55ca24264af36"></a>
+<table><thead align="left"><tr id="r8d54231f95b14c01a5e55e95f3b2e838"><th class="cellrowborder" valign="top" width="30%" id="mcps1.2.3.1.1"><p id="ab49d21f312644072a331f43e92baf853"><a name="ab49d21f312644072a331f43e92baf853"></a><a name="ab49d21f312644072a331f43e92baf853"></a>状态码</p>
+</th>
+<th class="cellrowborder" valign="top" width="70%" id="mcps1.2.3.1.2"><p id="aea1d3bd107bb4c499da79a88832d256c"><a name="aea1d3bd107bb4c499da79a88832d256c"></a><a name="aea1d3bd107bb4c499da79a88832d256c"></a>描述</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="r211ad4eb571d4d938e5579998723174e"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="a3153e07b3a9749adba92599fe6628fbf"><a name="a3153e07b3a9749adba92599fe6628fbf"></a><a name="a3153e07b3a9749adba92599fe6628fbf"></a>200</p>
+</td>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p104431642124811"><a name="p104431642124811"></a><a name="p104431642124811"></a>请求成功。</p>
+</td>
+</tr>
+<tr id="row44937531727"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p184941532219"><a name="p184941532219"></a><a name="p184941532219"></a>400</p>
+</td>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p2049413539219"><a name="p2049413539219"></a><a name="p2049413539219"></a>请求错误。</p>
+</td>
+</tr>
+<tr id="row65331212142411"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p5537171216249"><a name="p5537171216249"></a><a name="p5537171216249"></a>500</p>
+</td>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p953813124249"><a name="p953813124249"></a><a name="p953813124249"></a>内部服务器错误。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## 错误码<a name="section13596141025715"></a>
+
+调用接口出错后，将不会返回上述结果，而是返回错误码和错误信息，更多介绍请参见[错误码](错误码.md)。
 

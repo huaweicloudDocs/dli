@@ -4,6 +4,10 @@
 
 该API用于获取DLI用户委托信息。
 
+## 调试<a name="section556523314214"></a>
+
+您可以在[API Explorer](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DLI&api=CreateDliAgency)中调试该接口。
+
 ## URI<a name="s9e1b8ec5b57c422a942b19835da7d66e"></a>
 
 -   URI格式：
@@ -15,19 +19,23 @@
     **表 1**  URI参数
 
     <a name="zh-cn_topic_0069077803_table60779388"></a>
-    <table><thead align="left"><tr id="zh-cn_topic_0069077803_row61411666"><th class="cellrowborder" valign="top" width="15.03%" id="mcps1.2.4.1.1"><p id="a420a62a594f9410eaea229ffc8037a61"><a name="a420a62a594f9410eaea229ffc8037a61"></a><a name="a420a62a594f9410eaea229ffc8037a61"></a>名称</p>
+    <table><thead align="left"><tr id="zh-cn_topic_0069077803_row61411666"><th class="cellrowborder" valign="top" width="13.900000000000002%" id="mcps1.2.5.1.1"><p id="a420a62a594f9410eaea229ffc8037a61"><a name="a420a62a594f9410eaea229ffc8037a61"></a><a name="a420a62a594f9410eaea229ffc8037a61"></a>参数名称</p>
     </th>
-    <th class="cellrowborder" valign="top" width="11.27%" id="mcps1.2.4.1.2"><p id="zh-cn_topic_0069077803_p873025824211"><a name="zh-cn_topic_0069077803_p873025824211"></a><a name="zh-cn_topic_0069077803_p873025824211"></a>是否必选</p>
+    <th class="cellrowborder" valign="top" width="10.42%" id="mcps1.2.5.1.2"><p id="zh-cn_topic_0069077803_p873025824211"><a name="zh-cn_topic_0069077803_p873025824211"></a><a name="zh-cn_topic_0069077803_p873025824211"></a>是否必选</p>
     </th>
-    <th class="cellrowborder" valign="top" width="73.7%" id="mcps1.2.4.1.3"><p id="a692d3cd97b464aed90ba6d841900a4a5"><a name="a692d3cd97b464aed90ba6d841900a4a5"></a><a name="a692d3cd97b464aed90ba6d841900a4a5"></a>说明</p>
+    <th class="cellrowborder" valign="top" width="11.27%" id="mcps1.2.5.1.3"><p id="p1020675622515"><a name="p1020675622515"></a><a name="p1020675622515"></a>参数类型</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="64.41%" id="mcps1.2.5.1.4"><p id="a692d3cd97b464aed90ba6d841900a4a5"><a name="a692d3cd97b464aed90ba6d841900a4a5"></a><a name="a692d3cd97b464aed90ba6d841900a4a5"></a>说明</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="zh-cn_topic_0069077803_row48589216"><td class="cellrowborder" valign="top" width="15.03%" headers="mcps1.2.4.1.1 "><p id="zh-cn_topic_0069077803_p43412436"><a name="zh-cn_topic_0069077803_p43412436"></a><a name="zh-cn_topic_0069077803_p43412436"></a>project_id</p>
+    <tbody><tr id="zh-cn_topic_0069077803_row48589216"><td class="cellrowborder" valign="top" width="13.900000000000002%" headers="mcps1.2.5.1.1 "><p id="zh-cn_topic_0069077803_p43412436"><a name="zh-cn_topic_0069077803_p43412436"></a><a name="zh-cn_topic_0069077803_p43412436"></a>project_id</p>
     </td>
-    <td class="cellrowborder" valign="top" width="11.27%" headers="mcps1.2.4.1.2 "><p id="zh-cn_topic_0069077803_p26746391"><a name="zh-cn_topic_0069077803_p26746391"></a><a name="zh-cn_topic_0069077803_p26746391"></a>是</p>
+    <td class="cellrowborder" valign="top" width="10.42%" headers="mcps1.2.5.1.2 "><p id="zh-cn_topic_0069077803_p26746391"><a name="zh-cn_topic_0069077803_p26746391"></a><a name="zh-cn_topic_0069077803_p26746391"></a>是</p>
     </td>
-    <td class="cellrowborder" valign="top" width="73.7%" headers="mcps1.2.4.1.3 "><p id="p1310472724012"><a name="p1310472724012"></a><a name="p1310472724012"></a>项目编号，用于资源隔离。获取方式请参考<a href="获取项目ID.md">获取项目ID</a>。</p>
+    <td class="cellrowborder" valign="top" width="11.27%" headers="mcps1.2.5.1.3 "><p id="p11207155615251"><a name="p11207155615251"></a><a name="p11207155615251"></a>String</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="64.41%" headers="mcps1.2.5.1.4 "><p id="p1310472724012"><a name="p1310472724012"></a><a name="p1310472724012"></a>项目编号，用于资源隔离。获取方式请参考<a href="获取项目ID.md">获取项目ID</a>。</p>
     </td>
     </tr>
     </tbody>
@@ -43,7 +51,7 @@
 **表 2**  响应参数
 
 <a name="zh-cn_topic_0069077927_table56638444"></a>
-<table><thead align="left"><tr id="zh-cn_topic_0069077927_row48911609"><th class="cellrowborder" valign="top" width="19.79%" id="mcps1.2.5.1.1"><p id="ae076f6b3f1bf463b9cc087fc566253d5"><a name="ae076f6b3f1bf463b9cc087fc566253d5"></a><a name="ae076f6b3f1bf463b9cc087fc566253d5"></a>参数</p>
+<table><thead align="left"><tr id="zh-cn_topic_0069077927_row48911609"><th class="cellrowborder" valign="top" width="19.79%" id="mcps1.2.5.1.1"><p id="ae076f6b3f1bf463b9cc087fc566253d5"><a name="ae076f6b3f1bf463b9cc087fc566253d5"></a><a name="ae076f6b3f1bf463b9cc087fc566253d5"></a>参数名称</p>
 </th>
 <th class="cellrowborder" valign="top" width="9.43%" id="mcps1.2.5.1.2"><p id="p12583123083811"><a name="p12583123083811"></a><a name="p12583123083811"></a>是否必选</p>
 </th>
@@ -71,26 +79,34 @@
 <td class="cellrowborder" valign="top" width="60.88%" headers="mcps1.2.5.1.4 "><p id="a4fa277540d3e42e48cec2027a36ca6bc"><a name="a4fa277540d3e42e48cec2027a36ca6bc"></a><a name="a4fa277540d3e42e48cec2027a36ca6bc"></a>系统提示信息，执行成功时，信息可能为空。</p>
 </td>
 </tr>
+<tr id="row201938224388"><td class="cellrowborder" valign="top" width="19.79%" headers="mcps1.2.5.1.1 "><p id="p519319226387"><a name="p519319226387"></a><a name="p519319226387"></a>version</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.43%" headers="mcps1.2.5.1.2 "><p id="p1419332213385"><a name="p1419332213385"></a><a name="p1419332213385"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.9%" headers="mcps1.2.5.1.3 "><p id="p18194192210383"><a name="p18194192210383"></a><a name="p18194192210383"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="60.88%" headers="mcps1.2.5.1.4 "><p id="p2194152217388"><a name="p2194152217388"></a><a name="p2194152217388"></a>委托版本信息。</p>
+</td>
+</tr>
+<tr id="row1155484311388"><td class="cellrowborder" valign="top" width="19.79%" headers="mcps1.2.5.1.1 "><p id="p0554144317381"><a name="p0554144317381"></a><a name="p0554144317381"></a>current_roles</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.43%" headers="mcps1.2.5.1.2 "><p id="p355404393815"><a name="p355404393815"></a><a name="p355404393815"></a>否</p>
+</td>
+<td class="cellrowborder" valign="top" width="9.9%" headers="mcps1.2.5.1.3 "><p id="p05545432381"><a name="p05545432381"></a><a name="p05545432381"></a>Array of Strings</p>
+</td>
+<td class="cellrowborder" valign="top" width="60.88%" headers="mcps1.2.5.1.4 "><p id="p45541431386"><a name="p45541431386"></a><a name="p45541431386"></a>角色。目前只支持：obs_adm、dis_adm、ctable_adm、vpc_netadm、smn_adm、te_admin。</p>
+</td>
+</tr>
 </tbody>
 </table>
 
 ## 示例<a name="section17446171164041"></a>
 
 -   请求样例：
-    -   **描述:**
 
-        获取用户的委托信息。
-
-    -   **示例URL:**
-
-        GET https://dli.cn-north-1.myhuaweicloud.com/v2/330e068af1334c9782f4226acc00a2e2/agency
-
-    -   **值:**
-
-        ```
-        {}
-        ```
-
+    ```
+    None
+    ```
 
 -   成功响应样例：
 
@@ -134,10 +150,42 @@
 <td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p154287617445"><a name="p154287617445"></a><a name="p154287617445"></a>请求失败。</p>
 </td>
 </tr>
+<tr id="row85081627195515"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p650915272550"><a name="p650915272550"></a><a name="p650915272550"></a>404</p>
+</td>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p2509112711552"><a name="p2509112711552"></a><a name="p2509112711552"></a>未发现。</p>
+</td>
+</tr>
+<tr id="row85241345185417"><td class="cellrowborder" valign="top" width="30%" headers="mcps1.2.3.1.1 "><p id="p18525104516548"><a name="p18525104516548"></a><a name="p18525104516548"></a>500</p>
+</td>
+<td class="cellrowborder" valign="top" width="70%" headers="mcps1.2.3.1.2 "><p id="p1525345155412"><a name="p1525345155412"></a><a name="p1525345155412"></a>内部服务器错误。</p>
+</td>
+</tr>
 </tbody>
 </table>
 
 ## 错误码<a name="section13596141025715"></a>
 
 调用接口出错后，将不会返回上述结果，而是返回错误码和错误信息，更多介绍请参见[错误码](错误码.md)。
+
+**表 4**  错误码
+
+<a name="dli_02_0225_table847819307387"></a>
+<table><thead align="left"><tr id="dli_02_0225_row2479163016383"><th class="cellrowborder" valign="top" width="14.299999999999999%" id="mcps1.2.3.1.1"><p id="dli_02_0225_p114796309389"><a name="dli_02_0225_p114796309389"></a><a name="dli_02_0225_p114796309389"></a>错误码</p>
+</th>
+<th class="cellrowborder" valign="top" width="85.7%" id="mcps1.2.3.1.2"><p id="dli_02_0225_p1647973053817"><a name="dli_02_0225_p1647973053817"></a><a name="dli_02_0225_p1647973053817"></a>错误信息</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="dli_02_0225_row1047920308387"><td class="cellrowborder" valign="top" width="14.299999999999999%" headers="mcps1.2.3.1.1 "><p id="p113714404567"><a name="p113714404567"></a><a name="p113714404567"></a>DLI.0002</p>
+</td>
+<td class="cellrowborder" valign="top" width="85.7%" headers="mcps1.2.3.1.2 "><p id="p8324115965715"><a name="p8324115965715"></a><a name="p8324115965715"></a>The object does not exis</p>
+</td>
+</tr>
+<tr id="row342113312412"><td class="cellrowborder" valign="top" width="14.299999999999999%" headers="mcps1.2.3.1.1 "><p id="p4422332417"><a name="p4422332417"></a><a name="p4422332417"></a>DLI.0999</p>
+</td>
+<td class="cellrowborder" valign="top" width="85.7%" headers="mcps1.2.3.1.2 "><p id="p1251850191316"><a name="p1251850191316"></a><a name="p1251850191316"></a>An internal error occurre</p>
+</td>
+</tr>
+</tbody>
+</table>
 
